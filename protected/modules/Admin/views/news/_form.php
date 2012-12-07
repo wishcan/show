@@ -31,7 +31,7 @@
     <div>
     <div class="row">
     <div id="divFileProgressContainer"></div>
-    <div class="swfupload"><button id="swfupload"></button></div>
+    <div class="swfupload" style="width:150px;hegiht:30px;background:#ddd;"><button id="swfupload"></button></div>
     </div>
 </div>
 
@@ -114,7 +114,7 @@
 
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+        <?php echo CHtml::submitButton($model->isNewRecord ? '添加' : 'Save'); ?>
     </div>
 
   <?php $this->endWidget(); ?>
@@ -140,8 +140,8 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
         'button_placeholder_id'=>'swfupload',
         'button_width'=>170,
         'button_height'=>30,
-        'button_text'=>'<button style="color:red;">上传文件 (Max 2 MB)</button>',
-        'button_text_style'=>'.button { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 11pt; text-align: center;}',
+        'button_text'=>'<button class="button"><b></b></button>',
+        'button_text_style'=>'.button { text-align: center;}',
         'button_text_top_padding'=>0,
         'button_text_left_padding'=>0,
         'button_window_mode'=>'js:SWFUpload.WINDOW_MODE.TRANSPARENT',
@@ -154,6 +154,7 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
 <?php echo CHtml::beginForm(array("")); ?>
 
 <?php echo CHtml::endForm(); ?>
+
 
 
 
