@@ -3,6 +3,8 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'news-form',
 	'enableAjaxValidation'=>false,
+    'htmlOptions'=>array(
+        'enctype'=>'multipart/form-data'),
 )); ?>
 
 	<p class="note"> <span class="required">*</span> 为必填项</p>
@@ -13,12 +15,31 @@
 		<?php echo $form->textField($model,'title',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
-        <div class="row">
+
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'source'); ?>
+        <?php echo $form->textField($model,'source',array('size'=>10,'maxlength'=>10)); ?>
+        <?php echo $form->error($model,'source'); ?>
+    </div>
+    
+    <div class="row">
         <?php echo $form->labelEx($model,'decription'); ?>
         <?php echo $form->textArea($model,'decription',array('size'=>60,'maxlength'=>100,'style'=>'width:300px;height:50px;resize:none;')); ?>
         <?php echo $form->error($model,'decription'); ?>
     </div>
+    <div>
+    <div class="row">
+    <div id="divFileProgressContainer"></div>
+    <div class="swfupload"><button id="swfupload"></button></div>
+    </div>
+</div>
 
+    <div class="row">
+        <?php echo $form->labelEx($model,'tag'); ?>
+        <?php echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?>
+        <?php echo $form->error($model,'tag'); ?>
+    </div>
 	<div class="row">
         <b>内容</b><br/>
     <?php
@@ -76,20 +97,6 @@
 
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'source'); ?>
-		<?php echo $form->textField($model,'source',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'source'); ?>
-	</div>
-		
-
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'tag'); ?>
-		<?php echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?>
-		<?php echo $form->error($model,'tag'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'type_id'); ?>
 		<?php echo $form->dropDownList($model,'type_id',NewsType::model()->getTypeList(0)); ?>
 
@@ -98,26 +105,55 @@
 
 	<div class="row">
 		<?php echo $form->checkBox($model,'recomendation'); ?> 推荐
-		<?php echo $form->checkBOx($model,'home_top'); ?> &nbsp;首页置顶
-		<?php echo $form->checkBox($model,'home_cate'); ?>&nbsp; 首页栏目
-		<?php echo $form->checkBOx($model,'children_top'); ?>&nbsp; 栏目页置顶
+		<?php echo $form->checkBOx($model,'home_top'); ?> 首页置顶
+		<?php echo $form->checkBox($model,'home_cate'); ?>首页栏目
+		<?php echo $form->checkBOx($model,'children_top'); ?>栏目页置顶
 
 	</div>
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
 
+
+    <div class="row buttons">
+        <?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+    </div>
 
   <?php $this->endWidget(); ?>
 </div><!-- form -->
-        <?php
-        $this->widget('xupload.XUpload', array(
-            'url' =>'http://localhost/newWeb/index.php?r=site/upload',          
-            'model' => $model2,
-            'attribute' => 'file',
-            'multiple' => true,
-        ));
-        ?> 
+<?php
+$this->widget('application.extensions.swfupload.CSwfUpload', array(
+    'jsHandlerUrl'=>Yii::app()->baseUrl.'/js/handler.js', //Relative path
+    'postParams'=>array(),
+    'config'=>array(
+        'use_query_string'=>true,
+        'upload_url'=>'http://localhost/show/index.php?r=Admin/news/upload', //Use $this->createUrl method or define yourself
+        'file_size_limit'=>'2 MB',
+        'file_types'=>'*.jpg;*.png;*.gif',
+        'file_types_description'=>'Image Files',
+        'file_upload_limit'=>1,
+        'file_queue_error_handler'=>'js:fileQueueError',
+        'file_dialog_complete_handler'=>'js:fileDialogComplete',
+        'upload_progress_handler'=>'js:uploadProgress',
+        'upload_error_handler'=>'js:uploadError',
+        'upload_success_handler'=>'js:uploadSuccess',
+        'upload_complete_handler'=>'js:uploadComplete',
+        'custom_settings'=>array('upload_target'=>'divFileProgressContainer'),
+        'button_placeholder_id'=>'swfupload',
+        'button_width'=>170,
+        'button_height'=>30,
+        'button_text'=>'<button style="color:red;">上传文件 (Max 2 MB)</button>',
+        'button_text_style'=>'.button { font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size: 11pt; text-align: center;}',
+        'button_text_top_padding'=>0,
+        'button_text_left_padding'=>0,
+        'button_window_mode'=>'js:SWFUpload.WINDOW_MODE.TRANSPARENT',
+        'button_cursor'=>'js:SWFUpload.CURSOR.HAND',
+        ),
+    )
+);
+?>
+ 
+<?php echo CHtml::beginForm(array("")); ?>
+
+<?php echo CHtml::endForm(); ?>
+
 
 

@@ -1,5 +1,5 @@
 <?php
-Yii::import("xupload.models.XUploadForm");
+
 class NewsController extends Controller
 {
 	/**
@@ -11,13 +11,7 @@ class NewsController extends Controller
 	/**
 	 * @return array action filters
 	 */
-	public function actions() {
-		return array('upload' =>
-		 array(
-		 	'class' => 'application.extentions.xupload.actions.XUploadAction', 
-		 	'path' => Yii::app() -> getBasePath() . "/../images/uploads", 
-			"publicPath" => Yii::app()->getBaseUrl()."/images/uploads" ), );
-	}
+
 
 
 
@@ -49,7 +43,7 @@ class NewsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','upload'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -60,9 +54,9 @@ class NewsController extends Controller
 				'actions'=>array('admin','delete'),
 				'users'=>array('*'),
 			),
-			array('deny',  // deny all users
-				'users'=>array('*'),
-			),
+			// array('deny',  // deny all users
+			// 	'users'=>array('*'),
+			// ),
 		);
 	}
 
@@ -84,12 +78,17 @@ class NewsController extends Controller
 	public function actionCreate()
 	{
 		$model=new News;
-		$model2 = new XUploadForm;
+	
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['News']))
 		{
+			
+			echo "<pre>";
+			print_r($_FILES);exit;
+			$filedata=$_FILES['Filedata'];
+			@move_uploaded_file($filedata['tmp_name'], Yii::app()->baseUrl."/upload");
 			$model->attributes=$_POST['News'];
 
 			if($model->save())
@@ -97,7 +96,7 @@ class NewsController extends Controller
 		}
 		$this->render('create',array(
 			'model'=>$model,
-			'model2'=>$model2,
+			
 		));
 	}
 
@@ -188,5 +187,11 @@ class NewsController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+	public function actionUpload()
+	{
+		$filedata=$_FILES['Filedata'];
+			@move_uploaded_file($filedata['tmp_name'], "C:/wamp/www/show/upload/".$filedata['name']);
+		// Not relative. Full path
 	}
 }

@@ -6118,3 +6118,224 @@ Stack trace:
 REQUEST_URI=/newWeb/index.php?r=site/login
 HTTP_REFERER=http://localhost/newWeb/index.php?r=Admin
 ---
+2012/12/07 11:22:09 [error] [exception.CException] exception 'CException' with message 'Alias "ext.EAjaxUpload.EAjaxUpload" is invalid. Make sure it points to an existing PHP file.' in C:\wamp\www\yii\framework\YiiBase.php:318
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(147): YiiBase::import('ext.EAjaxUpload...', true)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(GalleryController), 'ext.EAjaxUpload...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('ext.EAjaxUpload...', Array)
+#3 C:\wamp\www\show\protected\modules\Admin\views\gallery\_form.php(64): CBaseController->widget('ext.EAjaxUpload...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#7 C:\wamp\www\show\protected\modules\Admin\views\gallery\create.php(20): CController->renderPartial('_form', Array)
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#10 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#12 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(78): CController->render('create', Array)
+#13 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#14 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#16 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#24 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\show\index.php(13): CApplication->run()
+#26 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create
+HTTP_REFERER=http://localhost/show/index.php?r=site/login
+---
+2012/12/07 11:22:43 [error] [php] include(C:\wamp\www\show\protected\extensions\xupload\models\XUploadForm.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:397)
+Stack trace:
+#0 C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php(87): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): NewsController->runAction()
+#4 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): NewsController->filterAccessControl()
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(266): NewsController->runActionWithFilters()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(276): NewsController->run()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=4
+in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (87)
+in C:\wamp\www\show\index.php (13)
+2012/12/07 11:26:10 [error] [php] Undefined variable: model2 (C:\wamp\www\show\protected\modules\Admin\views\news\create.php:20)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): NewsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): NewsController->renderPartial()
+#2 C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php(95): NewsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): NewsController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): NewsController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): NewsController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): NewsController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=6
+in C:\wamp\www\show\protected\modules\Admin\views\news\create.php (20)
+in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (95)
+in C:\wamp\www\show\index.php (13)
+2012/12/07 11:26:27 [error] [php] Undefined variable: model2 (C:\wamp\www\show\protected\modules\Admin\views\news\create.php:20)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): NewsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): NewsController->renderPartial()
+#2 C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php(95): NewsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): NewsController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): NewsController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): NewsController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): NewsController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=3
+in C:\wamp\www\show\protected\modules\Admin\views\news\create.php (20)
+in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (95)
+in C:\wamp\www\show\index.php (13)
+2012/12/07 11:54:40 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.basUrl" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(106): CComponent->__get('basUrl')
+#1 C:\wamp\www\show\protected\modules\Admin\views\news\_form.php(116): CModule->__get('basUrl')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\show\protected\modules\Admin\views\news\create.php(20): CController->renderPartial('_form', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#10 C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php(95): CController->render('create', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/crea...')
+#22 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\show\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=4
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
+2012/12/07 11:59:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Admin/create/upload".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/create/up...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/create/upload&PHPSESSID=ijpesjh7bgl8fslefk69kdl0k7
+---
+2012/12/07 12:00:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Admin/create/upload".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/create/up...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/create/upload&PHPSESSID=ijpesjh7bgl8fslefk69kdl0k7
+---
+2012/12/07 12:02:46 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('upload')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/uplo...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/upload&PHPSESSID=ijpesjh7bgl8fslefk69kdl0k7
+---
+2012/12/07 12:04:03 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('upload')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/uplo...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/upload
+---
+2012/12/07 12:30:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Admin/Admin/news/upload".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/Admin/new...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/Admin/news/upload&PHPSESSID=ijpesjh7bgl8fslefk69kdl0k7
+---
+2012/12/07 12:31:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "news/upload".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/upload')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=news/upload&PHPSESSID=ijpesjh7bgl8fslefk69kdl0k7
+---
+2012/12/07 12:35:02 [error] [php] Undefined index: Filedata (C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php:81)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): NewsController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): NewsController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): NewsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): NewsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=2
+in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (81)
+in C:\wamp\www\show\index.php (13)
+2012/12/07 12:35:32 [error] [php] Undefined index: Filedata (C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php:87)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): NewsController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): NewsController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): NewsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): NewsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=2
+in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (87)
+in C:\wamp\www\show\index.php (13)
