@@ -6339,3 +6339,96 @@ Stack trace:
 REQUEST_URI=/show/index.php?r=Admin/news/create&cid=2
 in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (87)
 in C:\wamp\www\show\index.php (13)
+2012/12/09 14:45:09 [error] [exception.CException] exception 'CException' with message 'UEditor must specify "model" and "attribute" or "name" property values.' in C:\wamp\www\yii\framework\web\widgets\CInputWidget.php:61
+Stack trace:
+#0 C:\wamp\www\show\protected\extensions\ueditor\UEditor.php(214): CInputWidget->resolveNameID()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(174): UEditor->run()
+#2 C:\wamp\www\show\protected\modules\Admin\views\news\_form.php(93): CBaseController->widget('ext.ueditor.UEd...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\views\news\create.php(20): CController->renderPartial('_form', Array)
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#10 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#11 C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php(100): CController->render('create', Array)
+#12 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#13 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/crea...')
+#23 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\show\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=5
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
+2012/12/09 14:46:19 [error] [exception.CException] exception 'CException' with message 'UEditor must specify "model" and "attribute" or "name" property values.' in C:\wamp\www\yii\framework\web\widgets\CInputWidget.php:61
+Stack trace:
+#0 C:\wamp\www\show\protected\extensions\ueditor\UEditor.php(214): CInputWidget->resolveNameID()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(174): UEditor->run()
+#2 C:\wamp\www\show\protected\modules\Admin\views\news\_form.php(93): CBaseController->widget('ext.ueditor.UEd...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\views\news\create.php(20): CController->renderPartial('_form', Array)
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#10 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#11 C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php(100): CController->render('create', Array)
+#12 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#13 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/crea...')
+#23 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\show\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=4
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
+2012/12/09 14:46:21 [error] [exception.CException] exception 'CException' with message 'UEditor must specify "model" and "attribute" or "name" property values.' in C:\wamp\www\yii\framework\web\widgets\CInputWidget.php:61
+Stack trace:
+#0 C:\wamp\www\show\protected\extensions\ueditor\UEditor.php(214): CInputWidget->resolveNameID()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(174): UEditor->run()
+#2 C:\wamp\www\show\protected\modules\Admin\views\news\_form.php(93): CBaseController->widget('ext.ueditor.UEd...', Array)
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\views\news\create.php(20): CController->renderPartial('_form', Array)
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#10 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#11 C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php(100): CController->render('create', Array)
+#12 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#13 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#17 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/crea...')
+#23 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#24 C:\wamp\www\show\index.php(13): CApplication->run()
+#25 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=3
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---

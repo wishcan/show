@@ -30,8 +30,10 @@
     </div>
     <div>
     <div class="row">
+
     <div id="divFileProgressContainer"></div>
-    <div class="swfupload" style="width:150px;hegiht:30px;background:#ddd;"><button id="swfupload"></button></div>
+  <label>缩略图上传</label>
+    <div class="swfupload" id="bswf"style=""><button id="swfupload"></button></div>
     </div>
 </div>
 
@@ -43,12 +45,12 @@
 	<div class="row">
         <b>内容</b><br/>
     <?php
-    $data=new NewsType;
+    $data=new NewsData;
     $this->widget('ext.ueditor.UEditor',
             array(
                 'id'=>'editor',
                 'model'=>$data,
-                'attribute'=>'typeName',
+                'attribute'=>'content',
                 'UEDITOR_CONFIG'=>array(
                     'UEDITOR_HOME_URL'=>Yii::app()->baseUrl.'/ueditor/',
                     'initialContent'=>'',
@@ -138,8 +140,8 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
         'upload_complete_handler'=>'js:uploadComplete',
         'custom_settings'=>array('upload_target'=>'divFileProgressContainer'),
         'button_placeholder_id'=>'swfupload',
-        'button_width'=>170,
-        'button_height'=>30,
+        'button_width'=>50,
+        'button_height'=>50,
         'button_text'=>'<button class="button"><b></b></button>',
         'button_text_style'=>'.button { text-align: center;}',
         'button_text_top_padding'=>0,
@@ -151,9 +153,6 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
 );
 ?>
  
-<?php echo CHtml::beginForm(array("")); ?>
-
-<?php echo CHtml::endForm(); ?>
 
 
 

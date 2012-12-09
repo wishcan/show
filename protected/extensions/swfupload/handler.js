@@ -91,11 +91,9 @@ function uploadComplete(file) {
 		if (this.getStats().files_queued > 0) {
 			this.startUpload();
 		} else {
-			var i;
 			var progress = new FileProgress(file,  this.customSettings.upload_target);
 			progress.setComplete();
-			progress.setStatus("上传成功");
-			$(".form form").append("<input type='hidden' name='News_data[thumb][]' value='"+file.name+"' />" );
+			progress.setStatus(typeof (file));
 			progress.toggleCancel(false);
 		}
 	} catch (ex) {

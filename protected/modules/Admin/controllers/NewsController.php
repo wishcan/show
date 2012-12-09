@@ -78,17 +78,15 @@ class NewsController extends Controller
 	public function actionCreate()
 	{
 		$model=new News;
-	
+
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
 		if(isset($_POST['News']))
 		{
-			
-			echo "<pre>";
-			print_r($_FILES);exit;
-			$filedata=$_FILES['Filedata'];
-			@move_uploaded_file($filedata['tmp_name'], Yii::app()->baseUrl."/upload");
+		echo "<pre>";
+		print_r($_POST);
+		exit;
 			$model->attributes=$_POST['News'];
 
 			if($model->save())
