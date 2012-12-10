@@ -91,3 +91,15 @@ div.form #bswf{
 	background:url(/show/images/admin_img/upload_bg.gif)no-repeat scroll left 0px ;
 	background-color: none;
 }
+div.form label .limit{
+	color:red;
+}
+div.form #smallImg{
+	border:solid 1px red;
+	width:800px;
+	height:200px;
+}
+div.form #smallImg img{
+width: 80px;
+height:80px;
+}

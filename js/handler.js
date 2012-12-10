@@ -89,13 +89,17 @@ function uploadComplete(file) {
 	try {
 		/*  I want the next upload to continue automatically so I'll call startUpload here */
 		if (this.getStats().files_queued > 0) {
-			this.startUpload();
+			// this.startUpload();
+			for
 		} else {
 			var i;
 			var progress = new FileProgress(file,  this.customSettings.upload_target);
 			progress.setComplete();
-			progress.setStatus("上传成功");
-			$(".form form").append("<input type='hidden' name='News_data[thumb][]' value='"+file.name+"' />" );
+			progress.setStatus('上传成功');
+			
+		    $(".form form").append("<input type='hidden' class='newsdata'name='News_data[thumb][]' value='"+file.name+"' />" );
+			$("#smallImg").append('<img  src="http://localhost/show/upload/temp/'+file.name+'" />');
+			
 			progress.toggleCancel(false);
 		}
 	} catch (ex) {

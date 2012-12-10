@@ -27,7 +27,7 @@ class GalleryController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','upload'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -101,24 +101,6 @@ class GalleryController extends Controller
 			'model'=>$model,
 		));
 	}
-	public function actionUpload()
-	{	
- 
-        Yii::import("ext.EAjaxUpload.qqFileUploader");
- 
-        $folder=Yii::getPathOfAlias('webroot').'/upload/';// folder for uploaded files
-        $allowedExtensions = array("jpg","jpeg","gif","exe","mov","mp4");//array("jpg","jpeg","gif","exe","mov" and etc...
-        $sizeLimit = 100 * 1024 * 1024;// maximum file size in bytes
-        $uploader = new qqFileUploader($allowedExtensions, $sizeLimit);
-        $result = $uploader->handleUpload($folder);
-        $return = htmlspecialchars(json_encode($result), ENT_NOQUOTES);
- 
-        $fileSize=filesize($folder.$result['filename']);//GETTING FILE SIZE
-        $fileName=$result['filename'];//GETTING FILE NAME
-        //$img = CUploadedFile::getInstance($model,'image');
- 
-        echo $return;// it's array
-	}
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -182,6 +164,13 @@ class GalleryController extends Controller
 	 * Performs the AJAX validation.
 	 * @param CModel the model to be validated
 	 */
+	public function actionUpload()
+	{
+		$filedata=$_FILES['Filedata'];
+			@move_uploaded_file($filedata['tmp_name'], "C:/wamp/www/show/upload/".$filedata['name']);
+		
+	}
+
 	protected function performAjaxValidation($model)
 	{
 		if(isset($_POST['ajax']) && $_POST['ajax']==='gallery-form')

@@ -32,8 +32,10 @@
     <div class="row">
 
     <div id="divFileProgressContainer"></div>
-  <label>缩略图上传</label>
+  <label>缩略图上传(<span class='limit'>限一张</span>)</label>
     <div class="swfupload" id="bswf"style=""><button id="swfupload"></button></div>
+    </div>
+    <div id="smallImg"> 
     </div>
 </div>
 
@@ -118,16 +120,17 @@
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ? '添加' : 'Save'); ?>
     </div>
-
   <?php $this->endWidget(); ?>
 </div><!-- form -->
+
 <?php
+
 $this->widget('application.extensions.swfupload.CSwfUpload', array(
     'jsHandlerUrl'=>Yii::app()->baseUrl.'/js/handler.js', //Relative path
     'postParams'=>array(),
     'config'=>array(
         'use_query_string'=>true,
-        'upload_url'=>'http://localhost/show/index.php?r=Admin/news/upload', //Use $this->createUrl method or define yourself
+        'upload_url'=>Yii::app()->createUrl("Upload/add"), //Use $this->createUrl method or define yourself
         'file_size_limit'=>'2 MB',
         'file_types'=>'*.jpg;*.png;*.gif',
         'file_types_description'=>'Image Files',
@@ -138,6 +141,7 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
         'upload_error_handler'=>'js:uploadError',
         'upload_success_handler'=>'js:uploadSuccess',
         'upload_complete_handler'=>'js:uploadComplete',
+        'upload_addImage_handler'=>'js:addImage',
         'custom_settings'=>array('upload_target'=>'divFileProgressContainer'),
         'button_placeholder_id'=>'swfupload',
         'button_width'=>50,

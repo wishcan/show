@@ -3,71 +3,101 @@
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'gallery-form',
 	'enableAjaxValidation'=>false,
+    'htmlOptions'=>array(
+        'enctype'=>'multipart/form-data'),
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note"> <span class="required">*</span> 为必填项</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
 	<div class="row">
 		<?php echo $form->labelEx($model,'title'); ?>
-		<?php echo $form->textField($model,'title',array('size'=>45,'maxlength'=>45)); ?>
+		<?php echo $form->textField($model,'title',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'description'); ?>
-		<?php echo $form->textField($model,'description',array('size'=>60,'maxlength'=>200)); ?>
-		<?php echo $form->error($model,'description'); ?>
-	</div>
+    
+    <div class="row">
+        <?php echo $form->labelEx($model,'description'); ?>
+        <?php echo $form->textArea($model,'description',array('size'=>60,'maxlength'=>100,'style'=>'width:300px;height:50px;resize:none;')); ?>
+        <?php echo $form->error($model,'description'); ?>
+    </div>
+    <div>
+    <div class="row">
 
+    <div id="divFileProgressContainer"></div>
+  <label>缩略图上传(<span class='limit'>限99张</span>)</label>
+    <div class="swfupload" id="bswf"style=""><button id="swfupload"></button></div>
+    </div>
+    <div id="smallImg"> 
+    <label>图片预览 </label>
+    </div>
+</div>
+
+    <div class="row">
+        <?php echo $form->labelEx($model,'tag'); ?>
+        <?php echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?>
+        <?php echo $form->error($model,'tag'); ?>
+    </div>
+	<div class="row">
+        <b>内容</b><br/>
+    
+</div>
 	<div class="row">
 		<?php echo $form->labelEx($model,'type_id'); ?>
-		<?php echo $form->textField($model,'type_id'); ?>
+		<?php echo $form->dropDownList($model,'type_id',NewsType::model()->getTypeList(0)); ?>
+
 		<?php echo $form->error($model,'type_id'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'recommendation'); ?>
-		<?php echo $form->textField($model,'recommendation'); ?>
-		<?php echo $form->error($model,'recommendation'); ?>
+
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'tag'); ?>
-		<?php echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?>
-		<?php echo $form->error($model,'tag'); ?>
-	</div>
+
+
+    <div class="row buttons">
+        <?php echo CHtml::submitButton($model->isNewRecord ? '添加' : 'Save'); ?>
+    </div>
+
+  <?php $this->endWidget(); ?>
+</div><!-- form -->
 
 <?php
- $this->widget('ext.EAjaxUpload.EAjaxUpload',
-array(
-        'id'=>'uploadFile',
-        'config'=>array(
-               'action'=>$this->createAbsoluteUrl('gallery/upload'),
-               'allowedExtensions'=>array("jpg","jpeg","gif","mov","mp4","txt","xls","3gp","avi","png"),//array("jpg","jpeg","gif","exe","mov" and etc...
-               'sizeLimit'=>1000*1024*1024,// maximum file size in bytes
-               'minSizeLimit'=>1*1024,
-               'auto'=>true,
-               'multiple' => true,
-               'onComplete'=>"js:function(id, fileName, responseJSON){ alert(fileName) }",
-               'messages'=>array(
-                                 'typeError'=>"{file} has invalid extension. Only {extensions} are allowed.",
-                                'sizeError'=>"{file} is too large, maximum file size is {sizeLimit}.",
-                                'minSizeError'=>"{file} is too small, minimum file size is {minSizeLimit}.",
-                                'emptyError'=>"{file} is empty, please select files again without it.",
-                                'onLeave'=>"The files are being uploaded, if you leave now the upload will be cancelled."
-                               ),
-               'showMessage'=>"js:function(message){ alert(message); }"
-               )
- 
-               ));
+
+$this->widget('application.extensions.swfupload.CSwfUpload', array(
+    'jsHandlerUrl'=>Yii::app()->baseUrl.'/js/handler.js', //Relative path
+    'postParams'=>array(),
+    'config'=>array(
+        'use_query_string'=>true,
+        'upload_url'=>Yii::app()->createUrl("Upload/add"), //Use $this->createUrl method or define yourself
+        'file_size_limit'=>'2 MB',
+        'file_types'=>'*.jpg;*.png;*.gif',
+        'file_types_description'=>'Image Files',
+        'file_upload_limit'=>99,
+        'file_queue_error_handler'=>'js:fileQueueError',
+        'file_dialog_complete_handler'=>'js:fileDialogComplete',
+        'upload_progress_handler'=>'js:uploadProgress',
+        'upload_error_handler'=>'js:uploadError',
+        'upload_success_handler'=>'js:uploadSuccess',
+        'upload_complete_handler'=>'js:uploadComplete',
+        'upload_addImage_handler'=>'js:addImage',
+        'custom_settings'=>array('upload_target'=>'divFileProgressContainer'),
+        'button_placeholder_id'=>'swfupload',
+        'button_width'=>50,
+        'button_height'=>50,
+        'button_text'=>'<button class="button"><b></b></button>',
+        'button_text_style'=>'.button { text-align: center;}',
+        'button_text_top_padding'=>0,
+        'button_text_left_padding'=>0,
+        'button_window_mode'=>'js:SWFUpload.WINDOW_MODE.TRANSPARENT',
+        'button_cursor'=>'js:SWFUpload.CURSOR.HAND',
+        ),
+    )
+);
 ?>
+ 
 
-	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
-	</div>
 
-<?php $this->endWidget(); ?>
 
-</div><!-- form -->
+

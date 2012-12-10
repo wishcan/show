@@ -84,9 +84,6 @@ class NewsController extends Controller
 
 		if(isset($_POST['News']))
 		{
-		echo "<pre>";
-		print_r($_POST);
-		exit;
 			$model->attributes=$_POST['News'];
 
 			if($model->save())
@@ -186,10 +183,5 @@ class NewsController extends Controller
 			Yii::app()->end();
 		}
 	}
-	public function actionUpload()
-	{
-		$filedata=$_FILES['Filedata'];
-			@move_uploaded_file($filedata['tmp_name'], "C:/wamp/www/show/upload/".$filedata['name']);
-		// Not relative. Full path
-	}
+
 }
