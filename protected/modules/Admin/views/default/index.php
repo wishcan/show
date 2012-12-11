@@ -38,7 +38,7 @@
     </div>
 </div>
 <!--}Head End-->
-
+<?php echo Yii::app()->getBaseUrl(true);?>
 <!--Content Begin -->
 <div id="content">
 	<!--LeftMenu Begin-->
@@ -81,6 +81,8 @@
 				</div>
 				 <div class="l_menu">
 	          		 <h3 class="f14"><span class="switchs cu on" title="文章管理"></span>文章管理</h3>
+	<ul>
+	<li><h6>发布</h6>	
 	<?php
 			$this->beginWidget('CTreeView',array(
 				'data'=>Category::model()->getCateList(0,'news/create'),
@@ -91,14 +93,30 @@
 				));
 
  $this->endWidget();?>
+       	
+	</li>
+	<li><h6>管理</h6>
+			<?php
+			$this->beginWidget('CTreeView',array(
+				'data'=>Category::model()->getCateList(0,'news/admin'),
+				'animated'=>'slow',
+				'collapsed'=>'true',
+				'persist'=>'cookie',
+
+				));
+
+ $this->endWidget();?>
+
+	</li>
+
        			 </div>
        			 <div class="l_menu">
 	          		 <h3 class="f14"><span class="switchs cu on" title="作品管理"></span>作品管理</h3>
 	          	    <ul class="show">
 		               	<li class="sub_menu">
-		                	<a href="<?php echo $this->createAbsoluteUrl("gallery/create");?>" target="con" hidefocus="true" style="outline:none;">添加预览</a></li>
+		                	<a href="<?php echo $this->createAbsoluteUrl("gallery/create",array('cid'=>18));?>" target="con" hidefocus="true" style="outline:none;">添加预览</a></li>
 		                <li class="sub_menu">
-		                	<a href="<?php echo $this->createAbsoluteUrl("gallery/admin");?>" hidefocus="true" target="con" style="outline:none;">预览管理</a></li>
+		                	<a href="<?php echo $this->createAbsoluteUrl("gallery/admin",array('cid'=>18));?>" hidefocus="true" target="con" style="outline:none;">预览管理</a></li>
 	           		 </ul>
        			 </div>
 

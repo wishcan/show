@@ -151,7 +151,7 @@ class Category extends CActiveRecord
 		}
 
 	}
-	public static function getCateList($id=0)
+	public static function getCateList($id=0,$method)
 	{
 		$data=array();
 	
@@ -159,8 +159,8 @@ class Category extends CActiveRecord
 			
 		foreach ($model as $v) {
 
-			$list['text']=CHtml::link($v->cname,array('news/create','cid'=>$v->id),array('target'=>'con','class'=>'treea'));
-			$list['children']=Category::model()->getCateList($v->id);
+			$list['text']=CHtml::link($v->cname,array($method,'cid'=>$v->id),array('target'=>'con','class'=>'treea'));
+			$list['children']=Category::model()->getCateList($v->id,$method);
 			$data[]=$list;
 			
 		}

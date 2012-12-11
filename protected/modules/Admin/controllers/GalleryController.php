@@ -68,8 +68,27 @@ class GalleryController extends Controller
 
 		if(isset($_POST['Gallery']))
 		{
+			/**
+			 *文章完成添加后，链接数据库 进行附表的添加，图片的地址为年月日+图片本来名字	
+			 *	
+			 *
+			*/
 			$model->attributes=$_POST['Gallery'];
-
+			if($model->save())
+			{
+				$db=Yii::app()->db;
+				$sql="insert into bl_gallery_data(thumb,gid)values(:thumb,:gid)";
+				$command=$db->createCommand($sql);
+				$gid=$model->gid;
+				$command->bindParam(":gid",$gid);
+				
+				foreach ($_POST['thumb'] as $v)
+				 {
+					$v=date("ymd").$v;
+					$command->bindParam(":thumb",$v);
+					$command->execute();
+				}
+			}
 					
 		}
 
@@ -138,6 +157,7 @@ class GalleryController extends Controller
 	public function actionAdmin()
 	{
 		$model=new Gallery('search');
+
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Gallery']))
 			$model->attributes=$_GET['Gallery'];

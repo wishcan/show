@@ -85,9 +85,21 @@ class NewsController extends Controller
 		if(isset($_POST['News']))
 		{
 			$model->attributes=$_POST['News'];
-
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+			{
+
+				$db=Yii::app()->db;
+				$content="'".$_POST['NewsData']['content']."'";
+				$nid=$model->id;
+				$thumb=date("ymd").$_POST['thumb'][0];
+				$sql="insert into bl_news_data(nid,thumb,content)values(:nid,:thumb,:content)";
+				$command=$db->createCommand($sql);
+				$command->bindParam(":nid",$nid);
+				$command->bindParam(":thumb",$thumb);
+				$command->bindParam(":content",$content);
+				$command->execute();
+				echo 1;exit;
+			}
 		}
 		$this->render('create',array(
 			'model'=>$model,
@@ -148,10 +160,14 @@ class NewsController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new News('search');
+
+
+		$model=new News();
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['News']))
-			$model->attributes=$_GET['News'];
+		if(isset($_GET['cid']))
+		{
+
+		}		
 
 		$this->render('admin',array(
 			'model'=>$model,

@@ -52,6 +52,8 @@ function uploadProgress(file, bytesLoaded) {
 		progress.setProgress(percent);
 		if (percent === 100) {
 			progress.setStatus("Creating thumbnail...");
+			$(".form form").append("<input type='hidden' value="+file.name+" name='thumb[]'/>");
+			$("#smallImg").append("<img src='http://localhost/show/upload/temp/"+file.name+"'/>");
 			progress.toggleCancel(false, this);
 		} else {
 			progress.setStatus("Uploading...");
@@ -64,6 +66,7 @@ function uploadProgress(file, bytesLoaded) {
 
 function uploadSuccess(file, serverData) {
 	try {
+		
 		var progress = new FileProgress(file,  this.customSettings.upload_target);
 
 		if (serverData.substring(0, 7) === "FILEID:") {
@@ -89,17 +92,13 @@ function uploadComplete(file) {
 	try {
 		/*  I want the next upload to continue automatically so I'll call startUpload here */
 		if (this.getStats().files_queued > 0) {
-			// this.startUpload();
-			for
+			 this.startUpload();
+
 		} else {
 			var i;
 			var progress = new FileProgress(file,  this.customSettings.upload_target);
 			progress.setComplete();
 			progress.setStatus('上传成功');
-			
-		    $(".form form").append("<input type='hidden' class='newsdata'name='News_data[thumb][]' value='"+file.name+"' />" );
-			$("#smallImg").append('<img  src="http://localhost/show/upload/temp/'+file.name+'" />');
-			
 			progress.toggleCancel(false);
 		}
 	} catch (ex) {

@@ -24,7 +24,7 @@
     </div>
     <div>
     <div class="row">
-
+<!--图片上传后会自动生成input hidden表单 name为thumb 这个在所有的图片上传中通用-->
     <div id="divFileProgressContainer"></div>
   <label>缩略图上传(<span class='limit'>限99张</span>)</label>
     <div class="swfupload" id="bswf"style=""><button id="swfupload"></button></div>

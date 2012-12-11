@@ -27,7 +27,7 @@ class UploadController extends Controller
 		date_default_timezone_set('PRC');
 		$filedata=$_FILES['Filedata'];
 		$temp=$this->dir.'temp/'.$filedata['name'];
-		$filedata['name']=date("ymdHis").$filedata['name'];
+		$filedata['name']=date("ymd").$filedata['name'];
 		$this->dir=$this->dir.date('ym').'/';
 		$tmp_name=$filedata['tmp_name'];
 		$file=$this->dir.$filedata['name'];
@@ -42,12 +42,26 @@ class UploadController extends Controller
 		if(file_exists($this->dir.$fileName))
 		{
 			@unlink($fileName);
-			echo "删除成功";
+			echo 1;
 		}else{
-			echo "文件不存在";
+			echo 0;
 		}
 
 
+	}
+	/**
+	 *删除缓存的图片文件	
+	*/
+	public function actionDeleteTemp($fileName)
+	{
+		if(file_exists($filneName))
+		{
+			@unlink($fileName);
+			echo 1;
+		}else
+		{
+			echo 0;
+		}
 	}
 
 

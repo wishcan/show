@@ -6901,3 +6901,321 @@ Stack trace:
 REQUEST_URI=/show/index.php?r=Admin/news/create&cid=4
 HTTP_REFERER=http://localhost/show/index.php?r=Admin/
 ---
+2012/12/11 03:30:04 [error] [exception.CException] exception 'CException' with message 'Property "Gallery.type_id" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('type_id')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('type_id')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1402): CHtml::resolveValue(Object(Gallery), 'type_id')
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(681): CHtml::activeDropDownList(Object(Gallery), 'type_id', Array, Array)
+#4 C:\wamp\www\show\protected\modules\Admin\views\gallery\_form.php(48): CActiveForm->dropDownList(Object(Gallery), 'type_id', Array)
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#8 C:\wamp\www\show\protected\modules\Admin\views\gallery\create.php(17): CController->renderPartial('_form', Array)
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(78): CController->render('create', Array)
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create
+HTTP_REFERER=http://localhost/show/index.php?r=site/login
+---
+2012/12/11 05:22:21 [error] [exception.CException] exception 'CException' with message 'Property "Gallery.id" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('id')
+#1 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(73): CActiveRecord->__get('id')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create
+---
+2012/12/11 05:24:06 [error] [exception.CException] exception 'CException' with message 'Property "Gallery.uid" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('uid', 'admin')
+#1 C:\wamp\www\show\protected\models\Gallery.php(117): CActiveRecord->__set('uid', 'admin')
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1008): Gallery->beforeSave()
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(73): CActiveRecord->save()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\show\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create
+---
+2012/12/11 05:24:43 [error] [exception.CException] exception 'CException' with message 'Property "Gallery.uid" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('uid', 'admin')
+#1 C:\wamp\www\show\protected\models\Gallery.php(117): CActiveRecord->__set('uid', 'admin')
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1008): Gallery->beforeSave()
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(73): CActiveRecord->save()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\show\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create
+---
+2012/12/11 05:25:38 [error] [exception.CException] exception 'CException' with message 'Property "Gallery.uid" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('uid', 'admin')
+#1 C:\wamp\www\show\protected\models\Gallery.php(117): CActiveRecord->__set('uid', 'admin')
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1008): Gallery->beforeSave()
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(73): CActiveRecord->save()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\show\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create
+---
+2012/12/11 05:25:53 [error] [exception.CException] exception 'CException' with message 'Property "Gallery.uid" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('uid', 'admin')
+#1 C:\wamp\www\show\protected\models\Gallery.php(117): CActiveRecord->__set('uid', 'admin')
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1008): Gallery->beforeSave()
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(73): CActiveRecord->save()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\show\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create
+---
+2012/12/11 06:52:22 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "db".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(75): CComponent->__call('db', Array)
+#1 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(75): CWebApplication->db()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create&cid=18
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create&cid=18
+---
+2012/12/11 06:54:22 [error] [php] Indirect modification of overloaded property Gallery::$gid has no effect (C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php:78)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): GalleryController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/gallery/create&cid=18
+in C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php (78)
+in C:\wamp\www\show\index.php (13)
+2012/12/11 06:57:08 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'thumb' in 'field list'. The SQL statement executed was: insert into bl_gallery(thumb,gid)values(:thumb,:gid).
+in C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php (84)
+in C:\wamp\www\show\index.php (13)
+2012/12/11 06:57:08 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'thumb' in 'field list'. The SQL statement executed was: insert into bl_gallery(thumb,gid)values(:thumb,:gid)' in C:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(84): CDbCommand->execute()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\show\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create&cid=18
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create&cid=18
+---
+2012/12/11 07:13:01 [error] [exception.CException] exception 'CException' with message 'Property "CWebApplication.hostInfo" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(106): CComponent->__get('hostInfo')
+#1 C:\wamp\www\show\protected\modules\Admin\views\default\index.php(41): CModule->__get('hostInfo')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', NULL, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', NULL, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\DefaultController.php(10): CController->render('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=Admin
+---
+2012/12/11 07:28:10 [error] [exception.CException] exception 'CException' with message 'Property "User.sex" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('sex')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('sex')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(User), 'sex')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(User), 'sex', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(User), 'sex', Array)
+#5 C:\wamp\www\show\protected\modules\Admin\views\user\_search.php(10): CActiveForm->textField(Object(User), 'sex', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#9 C:\wamp\www\show\protected\modules\Admin\views\user\admin.php(40): CController->renderPartial('_search', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#14 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(148): CController->render('admin', Array)
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionAdmin()
+#16 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/User/admi...')
+#26 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\wamp\www\show\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/show/index.php?r=Admin/User/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2012/12/11 07:49:54 [error] [exception.CException] exception 'CException' with message 'Property "News.bl_user_uid" is not defined.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('bl_user_uid', 'admin')
+#1 C:\wamp\www\show\protected\models\News.php(138): CActiveRecord->__set('bl_user_uid', 'admin')
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1008): News->beforeSave()
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php(88): CActiveRecord->save()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/crea...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\show\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/create&cid=1
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/news/create&cid=1
+---
+2012/12/11 08:14:38 [error] [php] Missing argument 2 for Category::getCateList(), called in C:\wamp\www\show\protected\models\Category.php on line 163 and defined (C:\wamp\www\show\protected\models\Category.php:154)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(96): DefaultController->renderInternal()
+#2 C:\wamp\www\yii\framework\web\CController.php(870): DefaultController->renderFile()
+#3 C:\wamp\www\yii\framework\web\CController.php(783): DefaultController->renderPartial()
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\DefaultController.php(10): DefaultController->render()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#7 C:\wamp\www\yii\framework\web\CController.php(287): DefaultController->runAction()
+#8 C:\wamp\www\yii\framework\web\CController.php(266): DefaultController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): DefaultController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin
+in C:\wamp\www\show\protected\models\Category.php (154)
+in C:\wamp\www\show\protected\models\Category.php (163)
+in C:\wamp\www\show\protected\modules\Admin\views\default\index.php (88)
+2012/12/11 08:16:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "2".' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('2')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('2')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/default/2')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/default/2&cid=2
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---

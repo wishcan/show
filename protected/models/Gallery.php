@@ -63,7 +63,7 @@ class Gallery extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-			'galleryDatas' => array(self::HAS_MANY, 'GalleryData', 'bl_art_aid'),
+			'galleryDatas' => array(self::HAS_MANY, 'GalleryData', 'gid'),
 		);
 	}
 
@@ -79,8 +79,8 @@ class Gallery extends CActiveRecord
 			'type_id' => '状态',
 			'recommendation' => 'Recommendation',
 			'tag' => 'Tag',
-			'createTime' => 'Create Time',
-			'updateTime' => 'Update Time',
+			'createTime' => '添加时间',
+			'updateTime' => '更新时间',
 		);
 	}
 
@@ -114,7 +114,8 @@ class Gallery extends CActiveRecord
 		{
 			if($this->isNewRecord)
 			{
-				$this->uid=Yii::app()->user->id;	
+				$this->uid=Yii::app()->user->id;
+				$this->cid=$_GET['cid'];	
 			}else{
 				$this->updateTime=date('Y-m-d h:i:s');
 			}

@@ -48,7 +48,7 @@ class News extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cid,title', 'required'),
+			array('title', 'required'),
 			array('cid, bl_user_id, click, recomendation, updateTime, type_id, home_cate, home_top, children_top', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>30),
 			array('decription', 'length', 'max'=>100),
@@ -69,6 +69,7 @@ class News extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+			"newsData"=>array(self::HAS_ONE,'NewsData','nid'),
 		);
 	}
 
@@ -135,19 +136,18 @@ class News extends CActiveRecord
 		{
 			if($this->isNewRecord)
 			{
-				$this->bl_user_uid=Yii::app()->user->id;
-
+				$this->bl_user_id=Yii::app()->user->id;
+				$this->cid=$_GET['cid'];
 			}else
 			{
 				$this->updateTime=time();
 			}
+			return true;
 		}else
 		{
 			return false;
 		}
 	}
-	public function afterSave()
-	{
-		
-	}
+
+
 }
