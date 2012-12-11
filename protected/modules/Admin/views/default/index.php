@@ -38,7 +38,7 @@
     </div>
 </div>
 <!--}Head End-->
-<?php echo Yii::app()->getBaseUrl(true);?>
+
 <!--Content Begin -->
 <div id="content">
 	<!--LeftMenu Begin-->

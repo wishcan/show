@@ -162,12 +162,9 @@ class NewsController extends Controller
 	{
 
 
-		$model=new News();
+		$model=new News('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['cid']))
-		{
 
-		}		
 
 		$this->render('admin',array(
 			'model'=>$model,

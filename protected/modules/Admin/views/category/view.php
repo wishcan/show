@@ -3,7 +3,6 @@ $this->breadcrumbs=array(
 	'Categories'=>array('index'),
 	$model->id,
 );
-
 $this->menu=array(
 	array('label'=>'List Category', 'url'=>array('index')),
 	array('label'=>'Create Category', 'url'=>array('create')),
@@ -12,6 +11,8 @@ $this->menu=array(
 	array('label'=>'Manage Category', 'url'=>array('admin')),
 );
 ?>
+
+
 
 <h1>栏目列表 #<?php echo $model->id; ?></h1>
 

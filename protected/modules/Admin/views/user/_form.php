@@ -33,32 +33,8 @@
 		<?php echo $form->error($model,'creatime'); ?>
 	</div>
 
-	<div class="row">
-		<?php echo $form->labelEx($model,'rid'); ?>
-		<?php echo $form->textField($model,'rid'); ?>
-		<?php echo $form->error($model,'rid'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'phone'); ?>
-		<?php echo $form->textField($model,'phone'); ?>
-		<?php echo $form->error($model,'phone'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'email'); ?>
-		<?php echo $form->textField($model,'email',array('size'=>20,'maxlength'=>20)); ?>
-		<?php echo $form->error($model,'email'); ?>
-	</div>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'updateTime'); ?>
-		<?php echo $form->textField($model,'updateTime'); ?>
-		<?php echo $form->error($model,'updateTime'); ?>
-	</div>
-
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? '提交' : '更改'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

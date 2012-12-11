@@ -14,7 +14,10 @@ $this->menu=array(
 ?>
 
 <h1>View News #<?php echo $model->id; ?></h1>
+<?php
 
+
+?>
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
@@ -33,5 +36,12 @@ $this->menu=array(
 		'home_cate',
 		'home_top',
 		'children_top',
+		'newsData.content',
+		
 	),
 )); ?>
+<?php if(!is_null($model->newsData)){?>
+
+<img src="http://localhost/show/upload/1212/<?php echo $model->newsData->thumb;?>" /> 
+
+<?php }?>

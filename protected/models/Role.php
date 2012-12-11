@@ -60,7 +60,7 @@ class Role extends CActiveRecord
 	{
 		return array(
 			'rid' => 'Rid',
-			'rname' => 'Rname',
+			'rname' => '角色名',
 		);
 	}
 

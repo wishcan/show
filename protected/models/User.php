@@ -4,15 +4,11 @@
  * This is the model class for table "bl_user".
  *
  * The followings are the available columns in table 'bl_user':
- * @property string $sex
  * @property integer $id
+ * @property string $sex
  * @property string $username
  * @property string $password
  * @property string $creatime
- * @property integer $rid
- * @property integer $phone
- * @property string $email
- * @property string $updateTime
  *
  * The followings are the available model relations:
  * @property Video[] $videos
@@ -45,15 +41,14 @@ class User extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('username,password,phone, email', 'required'),
-			array('rid, phone', 'numerical', 'integerOnly'=>true),
+			array('username,password', 'required'),
 			array('sex', 'length', 'max'=>3),
-			array('username, email', 'length', 'max'=>20),
+			array('username', 'length', 'max'=>20),
 			array('password', 'length', 'max'=>36),
-			array('rid,sex,updateTime,rid,sex', 'safe'),
+			array('sex', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('sex, id, username, password, creatime, rid, phone, email, updateTime', 'safe', 'on'=>'search'),
+			array('id, sex, username, password, creatime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -75,14 +70,11 @@ class User extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'sex' => '性别',
 			'id' => 'ID',
-			'username' => '账户名',
+			'sex' => '性别',
+			'username' => '帐号',
 			'password' => '密码',
-			'creatime' => 'Creatime',
-			'phone' => '手机号',
-			'email' => '邮箱',
-			'updateTime' => 'Update Time',
+			'creatime' => '创建时间',
 		);
 	}
 
@@ -97,33 +89,28 @@ class User extends CActiveRecord
 
 		$criteria=new CDbCriteria;
 
-		$criteria->compare('sex',$this->sex,true);
 		$criteria->compare('id',$this->id);
+		$criteria->compare('sex',$this->sex,true);
 		$criteria->compare('username',$this->username,true);
 		$criteria->compare('password',$this->password,true);
 		$criteria->compare('creatime',$this->creatime,true);
-		$criteria->compare('rid',$this->rid);
-		$criteria->compare('phone',$this->phone);
-		$criteria->compare('email',$this->email,true);
-		$criteria->compare('updateTime',$this->updateTime,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
 	}
 
-
+	#md5加密密码
+	public function encty($password)
+	{
+		return md5($password);
+	}
 	public function beforeSave()
 	{
 		if(parent::beforeSave())
 		{
-			if($this->isNewRecord)
-			{
-
-			}else
-			{
-				$this->updateTime=date('Y-m-d h:i:s');
-			}
+			$this->username=trim($this->username);
+			$this->password=$this->encty(trim($this->password));
 			return true;
 		}else
 		{

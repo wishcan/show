@@ -80,16 +80,16 @@ class News extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'cid' => 'Cid',
+			'cid' => '栏目',
 			'title' => '标题',
 			'decription' => '简介',
-			'createTime' => 'Create Time',
+			'createTime' => '添加时间',
 			'source' => '来源',
-			'bl_user_id' => 'Bl User',
-			'click' => 'Click',
-			'recomendation' => 'Recomendation',
-			'tag' => 'Tag',
-			'updateTime' => 'Update Time',
+			'bl_user_id' => '作者',
+			'click' => '点击数',
+			'recomendation' => '推荐',
+			'tag' => '标签',
+			'updateTime' => '更新时间',
 			'type_id' => '状态',
 			'home_cate' => '首页置顶',
 			'home_top' => '更新到首页',
@@ -107,7 +107,11 @@ class News extends CActiveRecord
 		// should not be searched.
 
 		$criteria=new CDbCriteria;
-
+		if(isset($_GET['cid']))
+		{
+			$criteria->condition='cid=:cid';
+			$criteria->params=array(":cid"=>$_GET['cid']);
+		}
 		$criteria->compare('id',$this->id);
 		$criteria->compare('cid',$this->cid);
 		$criteria->compare('title',$this->title,true);
