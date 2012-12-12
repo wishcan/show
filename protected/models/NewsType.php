@@ -87,4 +87,12 @@ class NewsType extends CActiveRecord
 		$model=NewsType::model()->findAll('tid!=4');
 		return CHtml::listData($model,'tid','typeName');
 	}
+	public function getTypeName($tid)
+	{	
+		if($tid)
+		{
+			$model=self::model()->find('tid=:tid',array(':tid'=>$tid));
+			return $model->typeName;
+		}
+	}
 }

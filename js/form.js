@@ -12,6 +12,17 @@ window.load=$(function(){
 	})
 
 
+$("div.form #smallImg .close").live('click',function(){
+		data=$(this).next('img').attr('val');
+		$(this).next("img").remove();
+		$(this).remove();
+		$.post(
+			'http://localhost/show/index.php?r=Upload/delete',
+			{'data':data},
+			function(data){
 
+			}
+			)
+})
 
 })

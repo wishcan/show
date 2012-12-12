@@ -112,6 +112,11 @@ class News extends CActiveRecord
 			$criteria->condition='cid=:cid';
 			$criteria->params=array(":cid"=>$_GET['cid']);
 		}
+		if(isset($_GET['typeid']))
+		{
+			$criteria->condition='type_id=:typeid';
+			$criteria->params=array(":typeid"=>$_GET['typeid']);
+		}
 		$criteria->compare('id',$this->id);
 		$criteria->compare('cid',$this->cid);
 		$criteria->compare('title',$this->title,true);

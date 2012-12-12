@@ -111,9 +111,6 @@ class Category extends CActiveRecord
 			return  $model->cname;
 
 		}
-
-
-
 	}
 
 	/**
@@ -166,6 +163,22 @@ class Category extends CActiveRecord
 		}
 		
 		return $data;
+	}
+	public static function getTypeCate($type)//获得指定类型的栏目比如图片
+	{
+		$data=array();
+		if(!isset($type))
+		{
+			return ;
+		}else{
+			$model=self::model()->findAllByAttributes(array('type'=>$type));
+			return CHtml::listData($model,'id','cname');
+
+
+		}
+
+
+
 	}
 
 

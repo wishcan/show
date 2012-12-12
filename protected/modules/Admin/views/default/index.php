@@ -30,8 +30,9 @@
      <!--    <li id="_M2" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">模块</a></li> -->
         <li id="_M2" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">用户</a></li>
         <li id="_M3" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">文章管理</a></li>
-        <li id="_M4" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">作品管理</a></li>
-        <li id="_M5" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">栏目管理</a></li>
+        <li id="_M4" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">图片信息</a></li>
+        <li id="_M5" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">栏目管理</a>
+        	<li id="_M6" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">模块管理</a></li>
        <!--  <li id="_M6" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">phpsso</a></li>   -->
         <!-- <li class="tab_web"><a href="javascript:;"><span>默认站点</span></a></li> -->
         </ul>
@@ -111,13 +112,37 @@
 
        			 </div>
        			 <div class="l_menu">
-	          		 <h3 class="f14"><span class="switchs cu on" title="作品管理"></span>作品管理</h3>
-	          	    <ul class="show">
-		               	<li class="sub_menu">
-		                	<a href="<?php echo $this->createAbsoluteUrl("gallery/create",array('cid'=>18));?>" target="con" hidefocus="true" style="outline:none;">添加预览</a></li>
-		                <li class="sub_menu">
-		                	<a href="<?php echo $this->createAbsoluteUrl("gallery/admin",array('cid'=>18));?>" hidefocus="true" target="con" style="outline:none;">预览管理</a></li>
-	           		 </ul>
+	          		 <h3 class="f14"><span class="switchs cu on" title="作品管理"></span>图片类文章</h3>
+	          		 	<h6>发布</h6>
+		          		 	<ul>
+		          		 	<?php 
+		          		 	$model=Category::model()->getTypeCate(2);
+
+		          		 		foreach($model as $k=> $v)
+		          		 	{
+		          		 		
+		          		 		
+		          		 	 echo "<li class='sub_menu'><a href=".$this->createAbsoluteUrl('gallery/create',array('cid'=>$k))." target='con'>".$v."添加</a></li>";
+		          		 	}
+		          		 	
+
+		          				?>
+		          			</ul>
+	          		 	<h6>管理</h6>
+	          		 		<ul>
+		          		 	<?php 
+		          		 	$model=Category::model()->getTypeCate(2);
+
+		          		 		foreach($model as $k=> $v)
+		          		 	{
+		          		 		
+		          		 		
+		          		 	 echo "<li class='sub_menu'><a href=".$this->createAbsoluteUrl('gallery/admin',array('cid'=>$k))." target='con'>".$v."管理</a></li>";
+		          		 	}
+		          		 	
+
+		          				?>
+		          			</ul>
        			 </div>
 
        			  <div class="l_menu">
@@ -129,6 +154,25 @@
 		                	<a href="<?php echo $this->createAbsoluteUrl("Category/create");?>" target="con" hidefocus="true" style="outline:none;">新建栏目</a></li>
 		                <li class="sub_menu">
 		                	<a href="<?php echo $this->createAbsoluteUrl("Category/admin");?>" hidefocus="true" target="con" style="outline:none;">栏目管理</a></li>
+	           		 </ul>
+       			 </div>
+       			        			  <div class="l_menu">
+	          		 <h3 class="f14"><span class="switchs cu on" title="栏目管理"></span>模块管理</h3>
+
+
+	           		 <ul class="show">
+		               	<li class="sub_menu">
+		                <h6>广告模块</h6>
+
+		                	<ul>
+		                	<li><a href="">首页幻灯片管理</a></li>
+		                	<li><a href="">二级页面幻灯片管理</a></li>
+		                	<li><a href="">广告位管理</a></li>
+		                	</ul>
+		                </li>
+		                <li class="sub_menu">
+		               <h6>艺术家模块</h6>
+		           </li>
 	           		 </ul>
        			 </div>
         </div>

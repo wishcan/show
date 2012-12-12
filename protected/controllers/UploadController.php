@@ -24,6 +24,7 @@ class UploadController extends Controller
 		 *upload下的temp文件为缓存文件显示缩略图，上传的时候将这个文件夹清空
 		 *
 		 */
+ 		
 		date_default_timezone_set('PRC');
 		$filedata=$_FILES['Filedata'];
 		$temp=$this->dir.'temp/'.$filedata['name'];
@@ -37,12 +38,13 @@ class UploadController extends Controller
 
 
 	}
-	public function actionDelete($fileName)
+	public function actionDelete()
 	{
-		if(file_exists($this->dir.$fileName))
+		$fileName=$this->dir.'temp/'.$_POST['data'];
+		if(file_exists($fileName))
 		{
 			@unlink($fileName);
-			echo 1;
+			
 		}else{
 			echo 0;
 		}
@@ -52,15 +54,20 @@ class UploadController extends Controller
 	/**
 	 *删除缓存的图片文件	
 	*/
-	public function actionDeleteTemp($fileName)
+	public static function actionDeleteTemp()
 	{
-		if(file_exists($filneName))
+		$dir=$this->dir.'temp';
+		if(is_dir($dir))
 		{
-			@unlink($fileName);
-			echo 1;
-		}else
-		{
-			echo 0;
+			foreach (scandir($dir) as $v) {
+					# code...
+					if(file_exists($v))
+					{
+						@unlink($dir.'/'.$v);
+					}
+			}
+		}else{		
+			echo '目录不存在';
 		}
 	}
 

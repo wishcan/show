@@ -95,11 +95,35 @@ div.form label .limit{
 	color:red;
 }
 div.form #smallImg{
-	border:solid 1px red;
-	width:800px;
-	height:200px;
+	border:solid 1px #ddd;
+	border-radius: 2px;
+	width:auto;
+	height:auto;
 }
 div.form #smallImg img{
-width: 80px;
-height:80px;
+	width: 100px;
+	height: 100px;
+	display: none;
+	position:relative;
+	z-index: 10;
+	left: -12px;
+}
+div.form #smallImg .close{
+	position: relative;
+	color:#ff5000;
+	z-index: 11;
+	left:5px;
+	top:-85px;
+}
+.form_link{
+	font-weight: bold;
+	padding: 3px;
+	color:#72AED0;
+	text-decoration: none;
+}
+.form_link:hover{
+	color:#ff5500;
+}
+table{
+	text-align: center;
 }

@@ -50,6 +50,11 @@ class GalleryController extends Controller
 	 */
 	public function actionView($id)
 	{
+
+		if(isset($_GET['id']))
+		{
+			$id=$_GET['id'];
+		}
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));

@@ -3,7 +3,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-	<link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css"> -->
 
 <!-- <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/style.css"> -->
 

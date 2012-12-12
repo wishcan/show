@@ -1,13 +1,7 @@
-<?php
-$this->breadcrumbs=array(
-	'News'=>array('index'),
-	'Manage',
-);
 
-$this->menu=array(
-	array('label'=>'List News', 'url'=>array('index')),
-	array('label'=>'Create News', 'url'=>array('create')),
-);
+
+
+<?php
 
 Yii::app()->clientScript->registerScript('search', "
 $('.search-button').click(function(){
@@ -28,7 +22,14 @@ $('.search-form form').submit(function(){
 <div id="form_content">
 <h3 class="top_l"><span id="title">文章管理</span><i class="top_r"></i></h3>
 <div class="c"></div>
-<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button')); ?>
+<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button form_link')); ?>
+<?php
+echo CHtml::link('草稿箱',array('news/admin','typeid'=>3),array('class'=>'form_link','value'=>3));
+
+echo CHtml::link('未审核',array('news/admin','typeid'=>2),array('class'=>'form_link','value'=>2));
+
+echo CHtml::link('回收站',array('news/admin','typeid'=>4),array('class'=>'form_link','value'=>4));
+?>
 <div class="search-form" style="display:none">
 
 
@@ -66,7 +67,11 @@ $('.search-form form').submit(function(){
 		'recomendation',
 		'tag',
 		'updateTime',
-		'type_id',
+		array(
+			'name'=>'type_id',
+			'value'=>'NewsType::model()->getTypeName($data->type_id)',
+
+			),
 		'home_cate',
 		'home_top',
 		'children_top',

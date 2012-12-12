@@ -123,6 +123,7 @@
   <?php $this->endWidget(); ?>
 </div><!-- form -->
 
+
 <?php
 
 $this->widget('application.extensions.swfupload.CSwfUpload', array(

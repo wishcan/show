@@ -98,7 +98,7 @@ class NewsController extends Controller
 				$command->bindParam(":thumb",$thumb);
 				$command->bindParam(":content",$content);
 				$command->execute();
-				echo 1;exit;
+				$this->redirect(array('create','id'=>$model->id));
 			}
 		}
 		$this->render('create',array(

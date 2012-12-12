@@ -53,7 +53,11 @@ function uploadProgress(file, bytesLoaded) {
 		if (percent === 100) {
 			progress.setStatus("Creating thumbnail...");
 			$(".form form").append("<input type='hidden' value="+file.name+" name='thumb[]'/>");
-			$("#smallImg").append("<img src='http://localhost/show/upload/temp/"+file.name+"'/>");
+				if($("#smallImg").append("<span class='close'>X</span><img val="+file.name+" src='http://localhost/show/upload/temp/"+file.name+"'/>"))
+				{
+					$("#smallImg img").fadeIn(1500);
+				}
+				
 			progress.toggleCancel(false, this);
 		} else {
 			progress.setStatus("Uploading...");
