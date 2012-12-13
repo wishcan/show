@@ -1,5 +1,5 @@
 <?php
-Yii::import("xupload.models.XUploadForm");
+
 class SiteController extends Controller {
 
 
