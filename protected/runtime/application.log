@@ -9455,3 +9455,30 @@ Stack trace:
 #20 {main}
 REQUEST_URI=/show/index.php?r=Admin/
 ---
+2012/12/13 11:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Admin/advert/create".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/advert/cr...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/advert/create
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/advert/admin
+---
+2012/12/13 11:37:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Admin/advert/admin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/advert/ad...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/advert/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
+2012/12/13 11:37:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "Admin/advert/admin".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/advert/ad...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/advert/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
