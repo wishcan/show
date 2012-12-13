@@ -9,7 +9,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'后台管理',
-
+	'defaultController'=>'index',
 	// preloading 'log' component
 	'preload'=>array('log'),
 
