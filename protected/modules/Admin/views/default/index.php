@@ -165,9 +165,10 @@
 		                <h6>广告模块</h6>
 
 		                	<ul>
+		                	<li><a href="<?php echo $this->createAbsoluteUrl('advert/admin');?>"  target='con'>广告位管理</a></li>
 		                	<li><a href="">首页幻灯片管理</a></li>
 		                	<li><a href="">二级页面幻灯片管理</a></li>
-		                	<li><a href="">广告位管理</a></li>
+		                	
 		                	</ul>
 		                </li>
 		                <li class="sub_menu">
