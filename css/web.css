@@ -1,0 +1,121 @@
+*{
+	padding:0px;
+	margin:0px;
+	font-family:'微软雅黑'；
+}
+ul li{
+	list-style:none;
+}
+body{
+background-color: #f5f5f5;
+}
+.center{
+	width:960px;
+	margin:0 auto;
+	}
+.text_l{
+	text-align:left;	
+}
+.text_r{
+	text-align:right;
+}	
+.orange{
+	color:#ff6600;
+}
+.black{
+	color:black;
+}
+#header{
+	height:35px;
+
+	background:url('/show/images/top_bg.jpg')repeat-x;
+}
+#header b{
+line-height:28px;
+margin: 20px 20px 40px 0px;
+}
+#header a{
+	border:none;
+	text-decoration:none;
+	color:black;
+}
+
+.logo{
+	padding:20px 0px 0 150px;
+}
+#search-form{
+	margin:20px 270px;
+	margin-right:0px;
+}
+#search-form input[type="text"]{
+	width:260px;
+	margin-top:3px;
+	border-left:solid 1px #689812;
+	color:#999999;
+	font-weight:nomal;
+	margin-left:-5px;
+}
+#search-form .button{
+	width:87px;
+	height:30px;
+	margin-left:2px;
+	background:url(./images/bg.png)no-repeat scroll  -278px 1px;
+	cursor:pointer;
+}
+#search-form select{
+width:80px;
+color:#6B832D;
+background:url(./images/xiala.jpg)no-repeat 44px 2px;
+font-weight:bold;
+}
+select option{
+	color:#000;
+	font-weight: normal;
+}
+#search-form select,#search-form input{
+	height:25px; 
+	border:none;
+	font-size:20px;
+	float: left;
+}
+.select1{
+	border:solid 1px #D2E4B1;
+	float: left;
+	overflow: hidden;
+}
+
+.select2{
+	padding:0px 5px;
+	width:60px;
+	/*overflow: hidden;*/
+	float: left;
+	margin-top:3px;
+	
+}
+.u1{
+	width:960px;
+	height:60px;
+	background:#EBEBEB;
+	margin-top:15px;
+}
+.u1 li{
+	float: left;
+	padding:5px;
+	font-weight:bold;
+	background:#ebebeb;
+}
+.u1 li:hover{
+	background:#0EBEFE;
+}
+.u1 li:hover #header .u1 li a{
+	color:#fff;
+}
+#header .u1 li a{
+		color:#8EB136;
+		font-size:20px;
+		line-height:50px;
+
+}
+#header .u1 li .on{
+	color:#ff6600;
+}

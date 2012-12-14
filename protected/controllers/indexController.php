@@ -5,9 +5,9 @@
 
  	public function actionIndex()
  	{
-
+ 		$model=Category::model()->findAll();
  	
- 		$this->render("index");
+ 		$this->render("index",array("model"=>$model));
 
  	}
 
