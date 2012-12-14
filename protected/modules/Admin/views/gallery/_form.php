@@ -32,7 +32,8 @@
     <div id="smallImg"> 
     <label>图片预览 </label>
     </div>
-</div>
+    </div>
+
 
     <div class="row">
         <?php echo $form->labelEx($model,'tag'); ?>
@@ -46,7 +47,6 @@
 	<div class="row">
 		<?php echo $form->labelEx($model,'type_id'); ?>
 		<?php echo $form->dropDownList($model,'type_id',NewsType::model()->getTypeList(0)); ?>
-
 		<?php echo $form->error($model,'type_id'); ?>
 	</div>
 

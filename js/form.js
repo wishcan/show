@@ -1,4 +1,4 @@
-window.load=$(function(){
+$(function(){
 	$("input[type]").focus(function(){
 
 		$(this).addClass("inputFocus");
@@ -10,19 +10,20 @@ window.load=$(function(){
 		$(this).removeClass("inputFocus");
 
 	})
-
+$("#smallImg").hide();
 
 $("div.form #smallImg .close").live('click',function(){
 		data=$(this).next('img').attr('val');
-		$(this).next("img").remove();
-		$(this).remove();
+		var th=$(this);
 		$.post(
-			'http://localhost/show/index.php?r=Upload/delete',
-			{'data':data},
+			'/show/index.php?r=Upload/delete',
+			{data:data},
 			function(data){
-
+				$(th).next("img").remove();
+				$(th).remove();
 			}
 			)
-})
+
+    })
 
 })

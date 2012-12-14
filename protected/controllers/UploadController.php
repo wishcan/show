@@ -23,8 +23,8 @@ class UploadController extends Controller
 	     *文件按年月日时分秒加上本来的文件名进行命名
 		 *upload下的temp文件为缓存文件显示缩略图，上传的时候将这个文件夹清空
 		 *
-		 */
- 		
+		 */	
+ 		$this->deleteTemp();
 		date_default_timezone_set('PRC');
 		$filedata=$_FILES['Filedata'];
 		$temp=$this->dir.'temp/'.$filedata['name'];
@@ -38,9 +38,29 @@ class UploadController extends Controller
 
 
 	}
+		public function deleteTemp()
+	{
+		$dir=$this->dir.'temp';
+		if(is_dir($dir))
+		{
+			foreach (scandir($dir) as $v) {
+					# code...
+					
+					if(file_exists($dir.'/'.$v) && $v!=='.'&&$v!=='..' )
+					{
+						
+						@unlink($dir.'/'.$v);
+					}
+			}
+		}else{		
+			echo '目录不存在';
+		}
+	}
 	public function actionDelete()
 	{
-		$fileName=$this->dir.'temp/'.$_POST['data'];
+		 $month=date("ym");
+		$fileName=$this->dir.$month.'/'.date("ymd").$_POST['data'];
+		echo $fileName;
 		if(file_exists($fileName))
 		{
 			@unlink($fileName);
@@ -54,22 +74,7 @@ class UploadController extends Controller
 	/**
 	 *删除缓存的图片文件	
 	*/
-	public static function actionDeleteTemp()
-	{
-		$dir=$this->dir.'temp';
-		if(is_dir($dir))
-		{
-			foreach (scandir($dir) as $v) {
-					# code...
-					if(file_exists($v))
-					{
-						@unlink($dir.'/'.$v);
-					}
-			}
-		}else{		
-			echo '目录不存在';
-		}
-	}
+
 
 
 }

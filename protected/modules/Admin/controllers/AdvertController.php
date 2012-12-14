@@ -184,7 +184,7 @@ class AdvertController extends Controller
 		$command->bindParam(":aid",$aid);
 		foreach($_POST['thumb'] as $v)
 		{
-			$v=date().
+			$v=date("ymd").$v;
 			$command->bindParam(":thumb",$v);
 			$command->execute();
 			$type=1;
