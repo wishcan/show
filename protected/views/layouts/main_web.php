@@ -53,34 +53,40 @@
 			</form>
 		</div>
 		<div class="c"></div>
-		<div id="menu">
-		<ul class="u1">
-			
-			<li style="margin-left:20px;"><a  class='on' href="<?php echo Yii::app()->getBaseUrl();?>">首页</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">新闻动态</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">作品欣赏</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">杨彦摄影</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">爱达杨作品</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">视频短片</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">度一学堂</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">诸家评论</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">爱达杨作品</a></li>
-			<li><a href="<?php echo Yii::app()->getBaseUrl();?>">杨彦相关</a></li>
-			
-		</ul>
-		
-		</div>
-
 	</div>
+	<div id="menu">
+		  <div class="center">	
+			<ul class="u1">
+				
+				<li style="margin-left:20px;">
+				<a  class='on' href="<?php echo Yii::app()->getBaseUrl();?>">首页</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("news");?>">新闻动态</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("gallery");?>">作品欣赏</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("gallery/shey");?>">杨彦摄影</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("gallery/ada");?>">爱达杨作品</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("video");?>">视频短片</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("news/duyi");?>">度一学堂</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("news/comment");?>">诸家评论</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("about");?>">杨彦相关</a></li>
+				
+			</ul>
+			
+			</div>
+	</div>
+	
 	
 
 </div>
 
-
-
-
+<!-- 输出开始 -->
 <?php  echo $content;?>
+<!-- 输出结束 -->
+<!-- 尾部开始 -->
+<div id="foot">
 
+
+</div>
+<!-- 尾部结束 -->
 
 
 
