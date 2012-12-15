@@ -75,7 +75,7 @@ $(function(){
 						
 						$(".form").fadeOut(1000);
 						$(".loading").fadeIn();	
-						$("iframe").attr("src","http://localhost/show/index.php?r=Admin/advert/showImg&aid="+data);
+						$("iframe").attr("src","http://localhost/show/index.php?r=Admin/advert/edit&aid="+data);
 						$(".loading").hide();
 						$("iframe").fadeIn(1100);
 					}else{
@@ -85,21 +85,7 @@ $(function(){
 				}
 
 				});
-			// $.post(
-			// 		'http://localhost/show/index.php?r=Admin/advert/createImg',
-			// 		{data:data},
-			// 		function(data)
-			// 		{
-			// 			if(data==1){
 
-			// 				alert("添加成功");
-			// 			}else{
-			// 				alert(data);
-			// 			}
-
-
-			// 		}
-			// 	);
 	return false;
 	})
 

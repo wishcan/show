@@ -196,17 +196,39 @@ class AdvertController extends Controller
 		}
 
 	}
-	public function actionShowImg()
-	{
-		$aid=$_GET['aid'];
+
+	#显示广告信息
+	public function actionEdit()
+	{	
+
+
+		$db=Yii::app()->db;
+			if(isset($_GET['aid']))
+			{
+				$on='a.aid='.$_GET['aid'];
+			}else{
+				$on='a.aid=ad.aid ';
+			}
+
+		$sql="select ad.link, cid,a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad on ".$on." order by a.aid";
+
+		$command=$db->createCommand($sql);
+		$row=$command->queryAll();
+		foreach($row as $k=>$v)
+		{
+				
+			$row[$k]['thumb']=parent::getImgDir($v['thumb']).$v['thumb'];	
+
+		}
 		if(isset($_GET['aid']))
 		{
-			$db=Yii::app()->db;
-			$sql='select  a.title,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad on a.aid=ad.aid where a.aid= '.$aid;
-			$command=$db->createCommand($sql);
-			$row=$command->queryAll();
-			$this->render('editImg',array('row'=>$row));
+				$this->render('editImg',array('row'=>$row));
+		}else
+		{
+			$this->render('edit',array('row'=>$row));
 		}
 	}
+
+
 
 }

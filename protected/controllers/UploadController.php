@@ -38,9 +38,14 @@ class UploadController extends Controller
 
 
 	}
+	/**
+	 *删除缓存的图片文件	
+	*/
+
 		public function deleteTemp()
 	{
 		$dir=$this->dir.'temp';
+
 		if(is_dir($dir))
 		{
 			foreach (scandir($dir) as $v) {
@@ -56,11 +61,15 @@ class UploadController extends Controller
 			echo '目录不存在';
 		}
 	}
+
+	/**
+	 *异步删除图片	
+	*/
 	public function actionDelete()
 	{
 		 $month=date("ym");
 		$fileName=$this->dir.$month.'/'.date("ymd").$_POST['data'];
-		echo $fileName;
+		// echo $fileName;
 		if(file_exists($fileName))
 		{
 			@unlink($fileName);
@@ -71,9 +80,7 @@ class UploadController extends Controller
 
 
 	}
-	/**
-	 *删除缓存的图片文件	
-	*/
+
 
 
 

@@ -10737,3 +10737,197 @@ Stack trace:
 REQUEST_URI=/show/index.php?r=Admin/gallery/create&cid=21
 in C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php (90)
 in C:\wamp\www\show\index.php (13)
+2012/12/15 03:36:31 [error] [php] substr() expects parameter 1 to be string, array given (C:\wamp\www\show\protected\components\Controller.php:36)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionShowImg()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#3 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/showImg&aid=1
+in C:\wamp\www\show\protected\components\Controller.php (36)
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (211)
+in C:\wamp\www\show\index.php (13)
+2012/12/15 05:47:59 [error] [php] Undefined index: thumb (C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php:185)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/createImg
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (185)
+in C:\wamp\www\show\index.php (13)
+2012/12/15 05:48:00 [error] [php] Undefined index: thumb (C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php:185)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/createImg
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (185)
+in C:\wamp\www\show\index.php (13)
+2012/12/15 08:49:14 [error] [php] Undefined index: link (C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php:118)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): AdvertController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): AdvertController->renderPartial()
+#2 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(232): AdvertController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/edit
+in C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php (118)
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (232)
+in C:\wamp\www\show\index.php (13)
+2012/12/15 08:50:09 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_ad' at line 1. The SQL statement executed was: select ad.link a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad on a.aid=ad.aid group by a.aid.
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (225)
+in C:\wamp\www\show\index.php (13)
+2012/12/15 08:50:09 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_ad' at line 1. The SQL statement executed was: select ad.link a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad on a.aid=ad.aid group by a.aid' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(225): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('edit')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/advert/ed...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=Admin/advert/edit
+---
+2012/12/15 08:51:41 [error] [exception.CException] exception 'CException' with message 'AdvertController and its behaviors do not have a method or closure named "creatAbsoluteUrl".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php(126): CComponent->__call('creatAbsoluteUr...', Array)
+#1 C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php(126): AdvertController->creatAbsoluteUrl('advert/edit', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('edit', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(232): CController->render('edit', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('edit')
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/advert/ed...')
+#18 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\show\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/show/index.php?r=Admin/advert/edit
+---
+2012/12/15 08:52:22 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "creatUrl".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php(126): CComponent->__call('creatUrl', Array)
+#1 C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php(126): CWebApplication->creatUrl('advert/edit', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('edit', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(232): CController->render('edit', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('edit')
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/advert/ed...')
+#18 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\show\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/show/index.php?r=Admin/advert/edit
+---
+2012/12/15 09:49:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ona.aid=ad.aid order by a.aid' at line 1. The SQL statement executed was: select ad.link, cid,a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad ona.aid=ad.aid order by a.aid.
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (216)
+in C:\wamp\www\show\index.php (13)
+2012/12/15 09:49:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ona.aid=ad.aid order by a.aid' at line 1. The SQL statement executed was: select ad.link, cid,a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad ona.aid=ad.aid order by a.aid' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(216): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('edit')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/advert/ed...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=Admin/advert/edit
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2012/12/15 09:51:57 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by a.aid' at line 1. The SQL statement executed was: select ad.link, cid,a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad on a.aid=1order by a.aid.
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (216)
+in C:\wamp\www\show\index.php (13)
+2012/12/15 09:51:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'by a.aid' at line 1. The SQL statement executed was: select ad.link, cid,a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad on a.aid=1order by a.aid' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(216): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('edit')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/advert/ed...')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=Admin/advert/edit&aid=1
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/advert/create&aid=1
+---

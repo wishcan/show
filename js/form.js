@@ -1,11 +1,11 @@
 $(function(){
-	$("input[type]").focus(function(){
+	$("input[type='text']").focus(function(){
 
 		$(this).addClass("inputFocus");
 
 
 	})
-	$("input[type]").blur(function(){
+	$("input[type='text']").blur(function(){
 
 		$(this).removeClass("inputFocus");
 
