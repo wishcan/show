@@ -1,5 +1,4 @@
 
-
 <style type="text/css">
 
 </style>
@@ -26,11 +25,11 @@
 			<td>1</td>
 			<td>2</td>
 			<td>
-				<a class="btn btn-success edit" href="<?php Yii::app()->createUrl('advert/edit',array('adi'=>$v['adid']))?>">
+				<a class="btn btn-success edit" href="<?php echo $this->createAbsoluteUrl('advert/change',array('adid'=>$v['adid']))?>">
 					<i class="icon-zoom-in icon icon-white"></i>
 					编辑
 				</a>
-				<a class="btn btn-danger delete" href="javascript:void(0)">
+				<a class="btn btn-danger delete"  val="<?php echo $v['adid']?>" href="javascript:void(0)">
 					<i class="icon-zoom-in icon icon-white"></i>
 					删除
 				</a>				
@@ -42,5 +41,38 @@
 
 </table>
 </div>
+<script type="text/javascript">
+	$(function(){
+		$(".delete").click(function(){
+		var type=confirm("真的要删除吗?");
+			if(type){
+			var data=$(this).attr("val");	
+			var th=$(this).parent().parent();
+			var src=$(th).find("img").attr("src");
+			$.get(
+				"<?php echo $this->createAbsoluteUrl('advert/deleteImg');?>",
+				{"data":data,"src":src},
+				function(data){
 
+					if(data==1)
+					{
+						alert("删除成功");
+						$(th).remove();
+					}else{
+						alert(data);
+					}
+
+
+
+
+				}
+				);
+		}
+
+		})
+	})
+
+
+
+</script>
 

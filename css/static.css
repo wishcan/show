@@ -159,7 +159,7 @@ table{
 tbody tr:hover{
 	background-color:#F5F5F5;
 }
-td img{
+.table td img{
 	width: 80px;
 	height:80px;
 }
@@ -190,6 +190,9 @@ td img{
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
+.btn-success:hover{
+	background:#9CD84E;
+}
 i[class^="icon-"] {
     opacity: 0.8;
 }
@@ -213,6 +216,7 @@ i[class^="icon-"] {
     background-repeat: repeat-x;
     border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
+
 i{
 	display: inline-block;
 	width: 14px;
@@ -226,4 +230,7 @@ i{
 }
 .table{
 margin-left: 100px;
+}
+.delete:hover{
+	background-image:-moz-linear-gradient(center top , #F14B56, #F55E68);
 }

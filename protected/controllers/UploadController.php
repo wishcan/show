@@ -5,6 +5,7 @@ class UploadController extends Controller
 {
 
 	public $dir='C:/wamp/www/show/upload/';
+
 		public function filters()
 	{
 		return array(

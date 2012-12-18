@@ -12,14 +12,14 @@ return array(
 
 	// preloading 'log' component
 	'preload'=>array('log'),
-
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
 	),
 	'aliases' => array(
-		'xupload' => 'ext.xupload'
+		'xupload' => 'ext.xupload',
+		'upload'=>'C:/wamp/www',
 	),
 	'modules'=>array(
 		// uncomment the following to enable the Gii tool

@@ -6,6 +6,7 @@ class AdvertController extends Controller
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
 	 */
+
 	public $layout='/layouts/column_admin';
 
 	/**
@@ -27,7 +28,7 @@ class AdvertController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','createImg'),
+				'actions'=>array('index','view','createImg','updateImg'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -173,6 +174,7 @@ class AdvertController extends Controller
 			Yii::app()->end();
 		}
 	}
+	#添加广告图片
 	public function actionCreateImg()
 	{
 		
@@ -210,7 +212,7 @@ class AdvertController extends Controller
 				$on='a.aid=ad.aid ';
 			}
 
-		$sql="select ad.link, cid,a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad on ".$on." order by a.aid";
+		$sql="select ad.link, cid,a.title as guangao,ad.adid,ad.title,ad.thumb from bl_advert as a inner join bl_advert_data as ad on ".$on." order by a.aid desc";
 
 		$command=$db->createCommand($sql);
 		$row=$command->queryAll();
@@ -227,6 +229,69 @@ class AdvertController extends Controller
 		{
 			$this->render('edit',array('row'=>$row));
 		}
+	}
+	#单张广告图片编辑页面显示
+	public function actionChange($adid)
+	{
+		$db=Yii::app()->db;
+		$sql='select * from bl_advert_data where adid=:adid';
+		$command=$db->createCommand($sql);
+		$command->bindParam(":adid",$_GET['adid']);
+		$row=$command->query();
+		$row=$row->read();
+		$row['thumb']=parent::getImgDir($row['thumb']).$row['thumb'];
+		$this->render('change',array('row'=>$row));
+
+	}
+
+	#完成广告图片的修改
+	public function actionUpdateImg()
+	{
+
+		$set='';
+		$adid=$_POST['adid'];
+		
+		foreach($_POST as $k =>$v)
+		{
+			if($k!=='aid' && $k!=='adid')
+			$set.=','.$k.'='."'".$v."'";
+			
+		}
+		$set=substr($set,'1');
+
+			$db=Yii::app()->db;
+			$sql='update bl_advert_data set '.$set.' where adid = '.$adid;
+			$command=$db->createCommand($sql);
+
+			// $commadn->execute();
+		
+			if($command->execute())
+			{
+				echo 1;
+			}else{
+				echo 2;
+			}
+	}
+	public function actionDeleteImg()
+	{
+		$dir=$_SERVER['DOCUMENT_ROOT'];
+		if(is_file($dir.$_GET['src']))
+		{
+			unlink($dir.$_GET['src']);
+		}
+		$adid=$_GET['data'];
+		$db=Yii::app()->db;
+		$sql='delete from bl_advert_data where adid=:adid';
+		$command=$db->createCommand($sql);
+		$command->bindParam(":adid",$adid);
+		if($command->execute())
+		{	
+			echo 1;
+		}else{
+			echo '系统出了点小问题，请重试';
+		}
+
+
 	}
 
 

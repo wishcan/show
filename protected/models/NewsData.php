@@ -64,7 +64,7 @@ class NewsData extends CActiveRecord
 	{
 		return array(
 			'nid' => 'Nid',
-			'content' => 'Content',
+			'content' => '内容',
 			'thumb' => 'Thumb',
 		);
 	}

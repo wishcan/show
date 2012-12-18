@@ -21,7 +21,7 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
 
-	function p($val)
+	public function p($val)
 	{
 		if(isset($val)&&!is_null($val)&&!empty($val))
 		{
