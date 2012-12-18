@@ -6,6 +6,7 @@
 ul li{
 	list-style:none;
 }
+a:visited {color: #333}
 a{
 	text-decoration:none;
 
@@ -217,7 +218,7 @@ h2,h3,h4{
 
 }
 
-#zonghui,#xinwen,.video,.qutan,.xuetang,#chuban{
+#zonghui,#xinwen,.video,.qutan,.xuetang,#chuban,.liebiao li{
 	width:940px;
 	padding:10px;
 	border:solid 1px #ddd;
@@ -264,4 +265,28 @@ padding:3px;
 	background-color: #f4f4f4;
 	margin-bottom:5px;
 	box-shadow: 0px 0px 5px rgba(180,180,180,0.5);
+}
+#foot {
+	margin-top:25px;
+	background-color: #999;
+}
+#foot hr{
+	border:solid 2px #333;
+}
+#foot p,#foot a{
+	color:#f4f4f4;
+	text-align:center;
+}
+#foot h1{
+	color:#000;
+}
+#weizhi{
+	padding:5px;
+}
+#weizhi b{
+	font-size:18px;
+
+}
+#weizhi a{
+	text-decoration:underline;
 }

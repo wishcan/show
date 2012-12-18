@@ -1,0 +1,74 @@
+@CHARSET "UTF-8";
+a{
+	color:#333;
+}
+#list_l{
+	width:660px;
+
+}
+#list_r{
+	width:280px;
+	padding-top:8px;
+	
+}
+#list_l .wenzi{
+	width:500px;
+	
+}
+#list_l .shijian{
+	text-align:right;
+	float: right;
+	margin-right:5px;
+}
+.liebiao li{
+width:640px;
+}
+.liebiao li a:hover{
+	cursor: pointer;
+text-decoration:underline;
+}
+.shijian .shuxian{
+	font-size:24px;
+	color:#999;
+
+
+}
+.tupian{
+	margin-top:5px;
+	margin-right:3px;
+	padding:3px;
+	border:solid  1px #ddd;
+}
+.biaoqian a{
+	display: block;
+	float: left;
+	padding:5px 8px;
+	margin:8px;
+	background-color: #DDD;
+	border-radius:2px;
+}
+.biaoqian a:hover{
+	background-color: #999;
+	color:#f5f5f5;
+	box-shadow: 0px 0px 5px rgba(186,188,182,1);
+	/*box-shadow: 0px 0px 10px rgba(0,0,0,0.8) inset;*/
+}
+.toubu h3{
+	color:#333;
+	text-align:center;
+}
+.toubu{
+	padding:10px;
+	border-bottom:solid 2px #ddd;
+}
+.neirong,.jianjie{
+	border:solid 1px #ddd;
+	border-top:none;
+	padding:10px;
+}
+.toubu .xinxi{
+	padding:2px;
+}
+.jianjie p{
+	color:#3189F4;
+}

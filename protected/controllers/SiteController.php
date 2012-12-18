@@ -2,7 +2,7 @@
 
 class SiteController extends Controller {
 
-
+	public $layout='//layouts/column';
 public function actionIndex()
 	{
 		// renders the view file 'protected/views/site/index.php'
@@ -49,6 +49,7 @@ public function actionIndex()
 	 */
 	public function actionLogin()
 	{
+		$this->layout='';
 		$model=new LoginForm;
 
 		// if it is ajax validation request

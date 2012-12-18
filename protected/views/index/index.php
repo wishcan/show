@@ -1,4 +1,4 @@
-<div class="c"></div>
+
 	<!-- 幻灯片开始 -->
 	<div id="huandeng">
 		
