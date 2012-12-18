@@ -1,0 +1,46 @@
+Merge branch 'master' of https://github.com/wishcan/show
+
+Conflicts:
+	upload/1212/1212186-3 - 鍓湰.JPG
+#
+# It looks like you may be committing a merge.
+# If this is not correct, please remove the file
+#	.git/MERGE_HEAD
+# and try again.
+
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch and 'origin/master' have diverged,
+# and have 1 and 2 different commits each, respectively.
+#
+# All conflicts fixed but you are still merging.
+#   (use "git commit" to conclude merge)
+#
+# Changes to be committed:
+#
+#	modified:   css/form.css
+#	modified:   css/static.css
+#	new file:   images/glyphicons-halflings-white.png
+#	new file:   images/glyphicons-halflings.png
+#	modified:   js/form.js
+#	modified:   protected/components/Controller.php
+#	modified:   protected/config/main.php
+#	modified:   protected/controllers/UploadController.php
+#	modified:   protected/models/NewsData.php
+#	modified:   protected/modules/Admin/controllers/AdvertController.php
+#	modified:   protected/modules/Admin/controllers/NewsController.php
+#	modified:   protected/modules/Admin/views/advert/_form2.php
+#	new file:   protected/modules/Admin/views/advert/change.php
+#	new file:   protected/modules/Admin/views/advert/edit.php
+#	modified:   protected/modules/Admin/views/advert/editImg.php
+#	deleted:    protected/modules/Admin/views/default/admin.php
+#	modified:   protected/modules/Admin/views/default/index.php
+#	modified:   protected/runtime/application.log
+#	renamed:    protected/runtime/application.log -> protected/runtime/application.log.1
+#	new file:   "upload/1212/1212186-3 - \351\215\223\356\210\233\346\271\260.JPG"
+#	new file:   "upload/1212/1212187-8 - \351\215\223\356\210\233\346\271\260.JPG"
+#	new file:   "upload/temp/6-3 - \351\215\223\356\210\233\346\271\260.JPG"
+#
+

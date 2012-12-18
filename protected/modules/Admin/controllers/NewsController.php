@@ -91,14 +91,20 @@ class NewsController extends Controller
 				$db=Yii::app()->db;
 				$content="'".$_POST['NewsData']['content']."'";
 				$nid=$model->id;
-				$thumb=date("ymd").$_POST['thumb'][0];
+
 				$sql="insert into bl_news_data(nid,thumb,content)values(:nid,:thumb,:content)";
 				$command=$db->createCommand($sql);
 				$command->bindParam(":nid",$nid);
+				if(isset($_POST['thumb']))
+				{
+					$thumb=date("ymd").$_POST['thumb'][0];
+				}else{
+					$thumb=' ';
+				}
 				$command->bindParam(":thumb",$thumb);
 				$command->bindParam(":content",$content);
 				$command->execute();
-				$this->redirect(array('create','id'=>$model->id));
+				$this->redirect(array('view','id'=>$model->id));
 			}
 		}
 		$this->render('create',array(

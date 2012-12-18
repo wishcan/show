@@ -191,8 +191,11 @@ class GalleryController extends Controller
 	 */
 	public function actionUpload()
 	{
-		$filedata=$_FILES['Filedata'];
-			@move_uploaded_file($filedata['tmp_name'], "C:/wamp/www/show/upload/".$filedata['name']);
+		
+		echo 1;
+		exit;
+		// $filedata=$_FILES['Filedata'];
+		// 	@move_uploaded_file($filedata['tmp_name'], "C:/wamp/www/show/upload/".$filedata['name']);
 		
 	}
 
