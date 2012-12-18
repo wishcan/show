@@ -1,3 +1,5 @@
+
+<link rel="stylesheet" type="text/css" href="<?php Yii::app()->baseUrl.'css/default.css' ?>">
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -23,7 +25,7 @@
 
   <?php $this->endWidget(); ?>
   <img  class="loading" src="/show/images/loading.gif" style="display:none;text-align:center;margin-left:431px;" />
-<iframe src="" style='display:none;width:100%;height:100%;border:none;'></iframe>
+<iframe src="" style='display:none;width:100%;height:80%;border:none;'></iframe>
 </div><!-- form -->
 
 <?php
@@ -61,12 +63,15 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
 ?>
  <script type="text/javascript">
 $(function(){
-
 	$("input[type=submit]").click(function(){
-
+            if($("input[name='thumb[]']").length==0)
+            {
+                alert("上传图片不能为空");
+                return false;
+            }   
 			var data=$("form").serialize();
 			$.ajax({
-				url:'http://localhost/show/index.php?r=Admin/advert/createImg',
+				url:'/show/index.php?r=Admin/advert/createImg',
 				data:data,
 				type:'post',
 				success:function(data){
@@ -75,9 +80,9 @@ $(function(){
 						
 						$(".form").fadeOut(1000);
 						$(".loading").fadeIn();	
-						$("iframe").attr("src","http://localhost/show/index.php?r=Admin/advert/showImg&aid="+data);
+						$("iframe").attr("src","http://localhost/show/index.php?r=Admin/advert/edit&aid="+data);
 						$(".loading").hide();
-						$("iframe").fadeIn(1100);
+						$("iframe").fadeIn(1500);
 					}else{
 
 						alert(data);
@@ -85,21 +90,7 @@ $(function(){
 				}
 
 				});
-			// $.post(
-			// 		'http://localhost/show/index.php?r=Admin/advert/createImg',
-			// 		{data:data},
-			// 		function(data)
-			// 		{
-			// 			if(data==1){
 
-			// 				alert("添加成功");
-			// 			}else{
-			// 				alert(data);
-			// 			}
-
-
-			// 		}
-			// 	);
 	return false;
 	})
 

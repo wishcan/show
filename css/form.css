@@ -158,3 +158,17 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	clear: left;
 	padding-left: 110px;
 }
+.editImg{
+
+    background: none repeat scroll 0 0 #F6F6F6;
+    border: 1px solid #DDDDDD;
+    padding: 5px;
+}
+.s1{
+	margin-left:10px;
+}
+.editImg input[type="text"]
+{
+	width:200px;
+	height:25px;
+}

@@ -21,7 +21,7 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
 
-	function p($val)
+	public function p($val)
 	{
 		if(isset($val)&&!is_null($val)&&!empty($val))
 		{
@@ -29,5 +29,12 @@ class Controller extends CController
 			print_r($val);
 			echo "</pre>";
 		}
+	}
+	#获取上传文件的目录所在
+	public static function getImgDir($fileName)
+	{
+		$dir=substr($fileName,0,4);
+		$dir=Yii::app()->getBaseUrl().'/upload/'.$dir.'/';
+		return $dir;
 	}
 }
