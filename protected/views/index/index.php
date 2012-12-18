@@ -71,19 +71,19 @@
 	<div id="xinwen">
 		<h3>新闻动态</h3>
 		<ul class="l">
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span> </li>
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
-		</ul>
-		
-		<ul class="r">
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
-			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
+			<?php foreach ($news as $k=> $v){?>
+			<li>
+				<a href="<?php echo $this->createAbsoluteUrl('news/neiRong',array('nid'=>$v->id))?>">
+				<?php echo  mb_substr($v->title,'0',16,'UTF-8').'...';?>
+					<span>
+					<?php echo $v->createTime; ?>
+					</span>		
+				</a>
+			</li>
+			<?php if(($k+1)/5==1){
+				echo "</ul><ul class='r'>";
+			}?>
+			<?php } ?>
 		</ul>
 	
 	</div>

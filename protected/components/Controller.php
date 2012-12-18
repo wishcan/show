@@ -21,9 +21,7 @@ class Controller extends CController
 	 */
 	public $breadcrumbs=array();
 
-<<<<<<< HEAD
 
-=======
 	public function p($val)
 	{
 		if(isset($val)&&!is_null($val)&&!empty($val))
@@ -40,5 +38,5 @@ class Controller extends CController
 		$dir=Yii::app()->getBaseUrl().'/upload/'.$dir.'/';
 		return $dir;
 	}
->>>>>>> master
+
 }
