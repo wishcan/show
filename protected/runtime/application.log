@@ -1364,3 +1364,52 @@ REQUEST_URI=/show/index.php?r=news/neiRong&nid=36
 in C:\wamp\www\show\protected\views\news\neirong.php (35)
 in C:\wamp\www\show\protected\controllers\newsController.php (25)
 in C:\wamp\www\show\index.php (13)
+2012/12/19 10:44:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "gallery/index".' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/index')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=gallery/index
+HTTP_REFERER=http://localhost/show/index.php?r=news/index
+---
+2012/12/19 11:26:22 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\neirong.php:46)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(25): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionNeiRong()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/neiRong&nid=28
+in C:\wamp\www\show\protected\views\news\neirong.php (46)
+in C:\wamp\www\show\protected\controllers\newsController.php (25)
+in C:\wamp\www\show\index.php (13)
+2012/12/19 11:49:34 [error] [php] include(CHTMLPurifier.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(147): import()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(190): newsController->createWidget()
+#3 C:\wamp\www\show\protected\views\news\neirong.php(48): newsController->beginWidget()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): newsController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#7 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#8 C:\wamp\www\show\protected\controllers\newsController.php(25): newsController->render()
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionNeiRong()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/neiRong&nid=36
+in C:\wamp\www\show\protected\views\news\neirong.php (48)
+in C:\wamp\www\show\protected\controllers\newsController.php (25)
+in C:\wamp\www\show\index.php (13)

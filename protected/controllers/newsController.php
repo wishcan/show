@@ -6,7 +6,8 @@ class newsController extends  Controller
 	#默认显示页面
 	public function actionIndex()
 	{
-		$this->render('news');
+		$news=News::model()->findAll();
+		$this->render('news',array('news'=>$news));
 	}
 	#内容显示页面
 	public function actionNeiRong()
