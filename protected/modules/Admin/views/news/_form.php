@@ -1,11 +1,20 @@
 <div class="form">
 
-<?php $form=$this->beginWidget('CActiveForm', array(
-	'id'=>'news-form',
-	'enableAjaxValidation'=>false,
-    'htmlOptions'=>array(
-        'enctype'=>'multipart/form-data'),
-)); ?>
+<?php 
+
+	$content='欢迎使用百度编辑器!';
+	if(!empty($model->newsData))
+	{
+		$news=$model->newsData->attributes;
+		$content=trim($news['content'],'\'');
+	}
+		$form=$this->beginWidget('CActiveForm', array(
+		'id'=>'news-form',
+		'enableAjaxValidation'=>false,
+	    'htmlOptions'=>array(
+	        'enctype'=>'multipart/form-data'),
+	));
+	 ?>
 
 	<p class="note"> <span class="required">*</span> 为必填项</p>
 
@@ -47,15 +56,15 @@
 	<div class="row">
         <b>内容</b><br/>
     <?php
-    $data=new NewsData;
+
     $this->widget('ext.ueditor.UEditor',
             array(
                 'id'=>'editor',
-                'model'=>$data,
-                'attribute'=>'content',
+                'model'=>$model,
+                'attribute'=>'newsData[content]',
                 'UEDITOR_CONFIG'=>array(
                     'UEDITOR_HOME_URL'=>Yii::app()->baseUrl.'/ueditor/',
-                    'initialContent'=>'',
+                    'initialContent'=>$content,
                     'imageUrl'=>Yii::app()->baseUrl.'/ueditor/php/imageUp.php',
                     'imagePath'=>Yii::app()->baseUrl.'/ueditor/php/',
                     'emotionLocalization'=>true,

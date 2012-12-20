@@ -3,14 +3,16 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+	<meta name="language" content="zh_cn" />
 	<!-- <link rel="stylesheet" href="http://blueimp.github.com/cdn/css/bootstrap.min.css"> -->
+
 
 <!-- <link rel="stylesheet" href="<?php echo Yii::app()->baseUrl; ?>/css/style.css"> -->
 
 <?php	$url=Yii::app()->request->baseUrl;?>
 <link href="<?php echo $url;?>/css/static.css" rel="stylesheet" tpye="text/css"/>
 <?php Yii::app()->clientScript->registerCoreScript('jquery');?>
-
+<script src="<?php echo $url?>/js/form.js" type="text/javascript" charset="utf-8" async defer></script>
 
 <link href="<?php echo $url;?>/css/form.css" rel="stylesheet" type="text/css" />
 
