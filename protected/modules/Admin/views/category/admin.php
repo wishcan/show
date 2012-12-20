@@ -44,9 +44,9 @@ $('.search-form form').submit(function(){
 		array(
 			'class'=>'CButtonColumn',
 			'header'=>'操作',
-		    'viewButtonImageUrl'=>false,
-             'updateButtonImageUrl'=>false,
-             'deleteButtonImageUrl'=>false,
+// 		    'viewButtonImageUrl'=>false,
+//              'updateButtonImageUrl'=>false,
+//              'deleteButtonImageUrl'=>false,
              'createButtonLabel'=>'添加子栏目',
              'headerHtmlOptions'=>array(
              		'style'=>'width:200px;'

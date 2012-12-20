@@ -1,6 +1,6 @@
 <?php
 
-class NewsController extends Controller
+class ArtersCategoryController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -11,22 +11,6 @@ class NewsController extends Controller
 	/**
 	 * @return array action filters
 	 */
-
-
-
-
-	public function actionIndex()
-	{
-		
-		
-		$dataProvider=new CActiveDataProvider('News');
-		$this->render('index',array(
-			'dataProvider'=>$dataProvider,
-			
-		));
-	}
-
-
 	public function filters()
 	{
 		return array(
@@ -43,20 +27,20 @@ class NewsController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','upload'),
+				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
 				'actions'=>array('create','update'),
-				'users'=>array('*'),
+				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
+				'users'=>array('admin'),
+			),
+			array('deny',  // deny all users
 				'users'=>array('*'),
 			),
-			// array('deny',  // deny all users
-			// 	'users'=>array('*'),
-			// ),
 		);
 	}
 
@@ -77,40 +61,20 @@ class NewsController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new News;
+		$model=new ArtersCategory;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['News']))
+		if(isset($_POST['ArtersCategory']))
 		{
-
-			$model->attributes=$_POST['News'];
+			$model->attributes=$_POST['ArtersCategory'];
 			if($model->save())
-			{
-
-				$db=Yii::app()->db;
-				$content="'".$_POST['News']['newsData']['content']."'";
-				$nid=$model->id;
-
-				$sql="insert into bl_news_data(nid,thumb,content)values(:nid,:thumb,:content)";
-				$command=$db->createCommand($sql);
-				$command->bindParam(":nid",$nid);
-				if(isset($_POST['thumb']))
-				{
-					$thumb=date("ymd").$_POST['thumb'][0];
-				}else{
-					$thumb=' ';
-				}
-				$command->bindParam(":thumb",$thumb);
-				$command->bindParam(":content",$content);
-				$command->execute();
-				$this->redirect(array('view','id'=>$model->id));
-			}
+				$this->redirect(array('view','id'=>$model->cateid));
 		}
+
 		$this->render('create',array(
 			'model'=>$model,
-			
 		));
 	}
 
@@ -126,11 +90,11 @@ class NewsController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['News']))
+		if(isset($_POST['ArtersCategory']))
 		{
-			$model->attributes=$_POST['News'];
+			$model->attributes=$_POST['ArtersCategory'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('view','id'=>$model->cateid));
 		}
 
 		$this->render('update',array(
@@ -161,17 +125,23 @@ class NewsController extends Controller
 	/**
 	 * Lists all models.
 	 */
+	public function actionIndex()
+	{
+		$dataProvider=new CActiveDataProvider('ArtersCategory');
+		$this->render('index',array(
+			'dataProvider'=>$dataProvider,
+		));
+	}
 
 	/**
 	 * Manages all models.
 	 */
 	public function actionAdmin()
 	{
-
-
-		$model=new News('search');
+		$model=new ArtersCategory('search');
 		$model->unsetAttributes();  // clear any default values
-
+		if(isset($_GET['ArtersCategory']))
+			$model->attributes=$_GET['ArtersCategory'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -185,7 +155,7 @@ class NewsController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=News::model()->findByPk($id);
+		$model=ArtersCategory::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -197,11 +167,10 @@ class NewsController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='news-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='arters-category-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
-
 }
