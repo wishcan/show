@@ -234,3 +234,14 @@ margin-left: 100px;
 .delete:hover{
 	background-image:-moz-linear-gradient(center top , #F14B56, #F55E68);
 }
+#pager li{
+	display:inline;
+	top:0px;
+	background:none;
+	
+}
+#huandeng #pager .next
+{
+	position:none;
+	
+}

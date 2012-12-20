@@ -69,6 +69,10 @@ text-decoration:underline;
 .toubu .xinxi{
 	padding:2px;
 }
+.wenzi hr{
+	color:#ddd;
+	font-weight:10;
+}
 .jianjie p{
 	color:#3189F4;
 }

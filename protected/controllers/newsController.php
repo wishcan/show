@@ -6,8 +6,14 @@ class newsController extends  Controller
 	#默认显示页面
 	public function actionIndex()
 	{
-		$news=News::model()->findAll();
-		$this->render('news',array('news'=>$news));
+		$criteria =new CDbCriteria();
+		$criteria->order='createTime desc';	
+		$count=News::model()->count($criteria);
+		$pager=new CPagination($count);
+		$pager->pageSize=10;
+		$pager->applyLimit($criteria);
+		$news=News::model()->findAll($criteria);
+		$this->render('news',array('pages'=>$pager,'news'=>$news));
 	}
 	#内容显示页面
 	public function actionNeiRong()

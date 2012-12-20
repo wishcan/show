@@ -31,11 +31,11 @@
 			<span>
 			<?php if(empty($neirong->description))
 				{
-  					echo mb_substr(strip_tags($neirong->newsData->content),'0','60','UTF-8').'...';
+  					echo trim(mb_substr(strip_tags($neirong->newsData->content),'0','60','UTF-8'),'\'').'...';
 				}else
 				{
 					
-					echo strip_tags($neirong->decription);
+					echo trim(strip_tags($neirong->decription,'\''));
 				}	
 			?>
 			
@@ -47,7 +47,7 @@
 					$this->beginWidget('CHtmlPurifier');
 			
 			
-					echo $neirong->newsData->content; 
+					echo trim($neirong->newsData->content,'\''); 
 					
 					$this->endWidget();
 				?>	

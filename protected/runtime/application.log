@@ -2125,3 +2125,552 @@ HTTP_REFERER=http://localhost/show/index.php?r=Admin
 >>>>>>> 76bd58a69b0b1ecb039a75caea4d955e1c7b7dc3
 ---
 >>>>>>> master
+2012/12/20 11:26:58 [error] [php] Undefined variable: v (C:\wamp\www\show\protected\views\news\news.php:22)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(24): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (22)
+in C:\wamp\www\show\protected\controllers\newsController.php (24)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:33:53 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0 10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE limit :start :end.
+in C:\wamp\www\show\protected\controllers\newsController.php (13)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:33:53 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'limit 0 10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE limit :start :end' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\controllers\newsController.php(13): CActiveRecord->findAll('limit :start :e...', Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=news/index
+---
+2012/12/20 11:35:27 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end.
+in C:\wamp\www\show\protected\controllers\newsController.php (13)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:35:27 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\controllers\newsController.php(13): CActiveRecord->findAll('id !="" limit :...', Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=news/index
+---
+2012/12/20 11:35:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end.
+in C:\wamp\www\show\protected\controllers\newsController.php (13)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:35:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\controllers\newsController.php(13): CActiveRecord->findAll('id !="" limit :...', Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=news/index
+---
+2012/12/20 11:36:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end.
+in C:\wamp\www\show\protected\controllers\newsController.php (13)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:36:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\controllers\newsController.php(13): CActiveRecord->findAll('id !="" limit :...', Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=news/index
+---
+2012/12/20 11:36:00 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end.
+in C:\wamp\www\show\protected\controllers\newsController.php (13)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:36:00 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\controllers\newsController.php(13): CActiveRecord->findAll('id !="" limit :...', Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=news/index
+---
+2012/12/20 11:36:01 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end.
+in C:\wamp\www\show\protected\controllers\newsController.php (13)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:36:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '10' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id !="" limit :start :end' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\controllers\newsController.php(13): CActiveRecord->findAll('id !="" limit :...', Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=news/index
+---
+2012/12/20 11:42:07 [error] [php] include(CDbCritera.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\newsController.php(12): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#4 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\controllers\newsController.php (12)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:42:49 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:33)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(17): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (33)
+in C:\wamp\www\show\protected\controllers\newsController.php (17)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:43:30 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:33)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(17): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (33)
+in C:\wamp\www\show\protected\controllers\newsController.php (17)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:43:31 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:33)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(17): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (33)
+in C:\wamp\www\show\protected\controllers\newsController.php (17)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:46:50 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id>1 limit 0 5.
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:46:50 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '5' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id>1 limit 0 5' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\controllers\newsController.php(14): CActiveRecord->findAll('id>1 limit 0 5')
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=news/index
+---
+2012/12/20 11:49:54 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (21)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:50:07 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (21)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:50:07 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (21)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:50:35 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (21)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:52:35 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:31)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (31)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:55:02 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:46)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (46)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:55:21 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:33)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (33)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:55:38 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (18)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:55:43 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (18)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:55:44 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:18)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (18)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 11:56:16 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\news.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (47)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 12:02:40 [error] [php] Missing argument 1 for CController::__construct(), called in C:\wamp\www\show\protected\views\news\news.php on line 19 and defined (C:\wamp\www\yii\framework\web\CController.php:111)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(96): newsController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#3 C:\wamp\www\show\protected\controllers\newsController.php(14): newsController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (19)
+in C:\wamp\www\show\protected\controllers\newsController.php (14)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 12:04:40 [error] [exception.CException] exception 'CException' with message 'newsController and its behaviors do not have a method or closure named "getDir".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\views\news\news.php(20): CComponent->__call('getDir', Array)
+#1 C:\wamp\www\show\protected\views\news\news.php(20): Controller->getDir('121217203145reb...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('news', Array, true)
+#6 C:\wamp\www\show\protected\controllers\newsController.php(14): CController->render('news', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=news/index
+---
+2012/12/20 12:17:15 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\neirong.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(30): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionNeiRong()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/neirong&nid=21
+in C:\wamp\www\show\protected\views\news\neirong.php (23)
+in C:\wamp\www\show\protected\controllers\newsController.php (30)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 12:39:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "gallery/index"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/index')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=gallery/index
+HTTP_REFERER=http://localhost/show/index.php?r=news/index
+---
+2012/12/20 12:50:58 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id>0 limit :start,:end order by id.
+in C:\wamp\www\show\protected\controllers\newsController.php (12)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 12:50:58 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'order by id' at line 1. The SQL statement executed was: SELECT * FROM `bl_news` `t` WHERE id>0 limit :start,:end order by id' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\controllers\newsController.php(12): CActiveRecord->findAll('id>0 limit :sta...', Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=news/index
+HTTP_REFERER=http://localhost/show/
+---
+2012/12/20 12:51:10 [error] [php] Undefined variable: artList (C:\wamp\www\show\protected\controllers\newsController.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\controllers\newsController.php (16)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 12:51:19 [error] [exception.CException] exception 'CException' with message 'newsController 无法找到请求的视图 "index".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#1 C:\wamp\www\show\protected\controllers\newsController.php(16): CController->render('index', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/index')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=news/index
+HTTP_REFERER=http://localhost/show/
+---
+2012/12/20 12:51:29 [error] [php] Undefined variable: news (C:\wamp\www\show\protected\views\news\news.php:30)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(16): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/index
+in C:\wamp\www\show\protected\views\news\news.php (30)
+in C:\wamp\www\show\protected\controllers\newsController.php (16)
+in C:\wamp\www\show\index.php (13)
+2012/12/20 13:14:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('index')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/index')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=gallery/index
+HTTP_REFERER=http://localhost/show/index.php?r=news/index
+---
