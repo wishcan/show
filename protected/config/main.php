@@ -17,6 +17,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 	),
+	'language'=>'zh_cn',
 	'aliases' => array(
 		'xupload' => 'ext.xupload',
 		'upload'=>'C:/wamp/www',

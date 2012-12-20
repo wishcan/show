@@ -31,20 +31,27 @@
 			<span>
 			<?php if(empty($neirong->description))
 				{
-					
-//  					echo mb_substr($neirong->newsData->content,'0','10','gb2312');
+  					echo mb_substr(strip_tags($neirong->newsData->content),'0','60','UTF-8').'...';
 				}else
 				{
-					echo $neirong->decription;
+					
+					echo strip_tags($neirong->decription);
 				}	
 			?>
 			
 			</span></p>
 			</div>
 			<div class="neirong" style="padding:10px;">
+
+			<?php
+					$this->beginWidget('CHtmlPurifier');
 			
-			<?php echo $neirong->newsData->content; ?>	
 			
+					echo $neirong->newsData->content; 
+					
+					$this->endWidget();
+				?>	
+				
 			</div>
 		</div>
 <!-- 		<div id="list_r" class="r"> -->
