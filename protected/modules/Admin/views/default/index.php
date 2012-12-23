@@ -164,12 +164,27 @@
 		               	<li class="sub_menu">
 		                <h6>广告模块</h6>
 
+<<<<<<< HEAD
+<<<<<<< HEAD
+		                	<ul>
+		                	<li><a href="<?php echo $this->createAbsoluteUrl('advert/admin');?>"  target='con'>广告位管理</a></li>
+		                	<li><a href="<?php echo $this->createAbsoluteUrl('advert/edit')?>" target='con'>广告管理</a></li>
+		                	<!-- <li><a href="">二级页面幻灯片管理</a></li> -->
+		                	
+		                	</ul>
+=======
+=======
+>>>>>>> 76bd58a69b0b1ecb039a75caea4d955e1c7b7dc3
 			                	<ul>
 			                		<li><a href="<?php echo $this->createAbsoluteUrl('advert/admin');?>"  target='con'>广告位管理</a></li>
 			                		<li><a href="<?php echo $this->createAbsoluteUrl('advert/edit')?>" target='con'>广告管理</a></li>
 			                	<!-- <li><a href="">二级页面幻灯片管理</a></li> -->
 			                	
 			                	</ul>
+<<<<<<< HEAD
+>>>>>>> 76bd58a69b0b1ecb039a75caea4d955e1c7b7dc3
+=======
+>>>>>>> 76bd58a69b0b1ecb039a75caea4d955e1c7b7dc3
 		                </li>
 		                <li class="sub_menu">
 		               <h6>艺术家模块</h6>
