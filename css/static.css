@@ -126,13 +126,13 @@ div.form #smallImg .close{
 .form_link:hover{
 	color:#ff5500;
 }
-table{
+.table{
 	text-align: center;
 }
 a{
 	text-decoration: none;
 }
-th,td{
+.table th,.table td{
 	font-weight: normal;
 	width: 186px;
 	border-left: 1px solid #DDDDDD;
@@ -145,10 +145,10 @@ th,td{
 .tr2{
 
 }
-table td{
+.table td{
 	border-top: 1px solid #DDDDDD;
 }
-table{
+.table{
 	border-spacing: 0;
     border-collapse: separate;
     border-color: #DDDDDD #DDDDDD #DDDDDD -moz-use-text-color;
@@ -156,7 +156,7 @@ table{
     border-style: solid solid solid none;
     border-width: 1px 1px 1px 0;
 }
-tbody tr:hover{
+.tbody tr:hover{
 	background-color:#F5F5F5;
 }
 .table td img{

@@ -44,7 +44,7 @@ $('.search-form form').submit(function(){
 	'filter'=>$model,
 	'columns'=>array(
 		'cateid',
-		'cname',
+		array('name'=>'cname'),
 		array(
 			'class'=>'CButtonColumn',
 		),

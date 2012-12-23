@@ -1147,3 +1147,141 @@ Stack trace:
 REQUEST_URI=/show/index.php?r=Admin/arters/admin
 HTTP_REFERER=http://localhost/show/index.php?r=Admin
 ---
+2012/12/23 05:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/arters/admin"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2012/12/23 05:55:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/arters/admin"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2012/12/23 05:56:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/arters/admin"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2012/12/23 05:56:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/arters/admin"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2012/12/23 08:08:29 [error] [php] Use of undefined constant aid - assumed 'aid' (C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#2 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(148): ArtersController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (47)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (148)
+in C:\wamp\www\show\index.php (13)
+2012/12/23 08:08:30 [error] [php] Use of undefined constant aid - assumed 'aid' (C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php:47)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#2 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(148): ArtersController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (47)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (148)
+in C:\wamp\www\show\index.php (13)
+2012/12/23 08:08:56 [error] [exception.CException] exception 'CException' with message '属性 "CDataColumn.headHtmlOptions" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\YiiBase.php(222): CComponent->__set('headHtmlOptions', Array)
+#1 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(313): YiiBase::createComponent(Array, Object(CGridView))
+#2 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(284): CGridView->initColumns()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(148): CGridView->init()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#5 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#10 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(148): CController->render('admin', Array)
+#11 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#12 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#14 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#18 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#21 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#22 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#23 C:\wamp\www\show\index.php(13): CApplication->run()
+#24 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2012/12/23 08:15:41 [error] [exception.CException] exception 'CException' with message '属性 "CGridView.0" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWidgetFactory.php(162): CComponent->__set('0', Array)
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(147): CWidgetFactory->createWidget(Object(ArtersController), 'zii.widgets.gri...', Array)
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#3 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(62): CBaseController->widget('zii.widgets.gri...', Array)
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#8 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(148): CController->render('admin', Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\show\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
