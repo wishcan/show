@@ -1,19 +1,14 @@
-<div class="form">
+
+<div class="form" style="margin-left:50px;">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'arters-form',
 	'enableAjaxValidation'=>false,
 )); ?>
 
-	<p class="note">Fields with <span class="required">*</span> are required.</p>
+	<p class="note"> <span class="required">*</span> 为必填项</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
-		<?php echo $form->labelEx($model,'aid'); ?>
-		<?php echo $form->textField($model,'aid'); ?>
-		<?php echo $form->error($model,'aid'); ?>
-	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'name'); ?>
@@ -28,26 +23,29 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'click'); ?>
-		<?php echo $form->textField($model,'click'); ?>
-		<?php echo $form->error($model,'click'); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->labelEx($model,'description'); ?>
 		<?php echo $form->textField($model,'description',array('size'=>60,'maxlength'=>300)); ?>
 		<?php echo $form->error($model,'description'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'birthDay'); ?>
-		<?php echo $form->textField($model,'birthDay',array('size'=>10,'maxlength'=>10)); ?>
-		<?php echo $form->error($model,'birthDay'); ?>
+	
+	<span>生日</span> <input size="30" id="f_date" name="Arters[birthDay]" /><button id="f_btn">选择</button><br />
+	<script type="text/javascript">//<![CDATA[
+	      Calendar.setup({
+	        inputField : "f_date",
+	        trigger    : "f_btn",
+	        onSelect   : function() { this.hide() },
+	        showTime   : 12,
+	        dateFormat : "%Y-%m-%d"
+	      });
+
+    //]]></script>
 	</div>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'bl_arters_category_cateid'); ?>
-		<?php echo $form->textField($model,'bl_arters_category_cateid'); ?>
+		<?php echo $form->dropDownList($model,'bl_arters_category_cateid',ArtersCategory::getCateName()); ?>
 		<?php echo $form->error($model,'bl_arters_category_cateid'); ?>
 	</div>
 
@@ -70,7 +68,7 @@
 	</div>
 
 	<div class="row buttons">
-		<?php echo CHtml::submitButton($model->isNewRecord ? 'Create' : 'Save'); ?>
+		<?php echo CHtml::submitButton($model->isNewRecord ? '添加' : '更新'); ?>
 	</div>
 
 <?php $this->endWidget(); ?>

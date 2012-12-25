@@ -38,13 +38,17 @@ $('.search-form form').submit(function(){
 	'model'=>$model,
 )); ?>
 </div><!-- search-form -->
-
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'arters-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
 	'columns'=>array(
-		array('name'=>'aid','headerHtmlOptions'=>array('style'=>'width:40px;padding:0;')),
+		array('name'=>'aid',
+				'headerHtmlOptions'=>
+				array('style'=>'width:40px;padding:0;'),
+				'htmlOptions'=>
+				array('style'=>'text-align:center'),
+				),
 		array('name'=>'name',
 				'headerHtmlOptions'=>
 				array(
@@ -64,6 +68,13 @@ $('.search-form form').submit(function(){
 		
 		array(
 			'class'=>'CButtonColumn',
+			'header'=>'操作',
+				'createButtonLabel'=>'编辑',
+			'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/change.png',	 
+			'createButtonUrl'=>'Yii::app()->createAbsoluteUrl("arters/index")',
+			
 		),
 	),
 )); ?>
+
+

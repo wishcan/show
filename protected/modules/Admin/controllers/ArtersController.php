@@ -68,6 +68,7 @@ class ArtersController extends Controller
 
 		if(isset($_POST['Arters']))
 		{
+			
 			$model->attributes=$_POST['Arters'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->aid));

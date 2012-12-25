@@ -168,8 +168,6 @@
 			                	<ul>
 			                		<li><a href="<?php echo $this->createAbsoluteUrl('advert/admin');?>"  target='con'>广告位管理</a></li>
 			                		<li><a href="<?php echo $this->createAbsoluteUrl('advert/edit')?>" target='con'>广告管理</a></li>
-			                	<!-- <li><a href="">二级页面幻灯片管理</a></li> -->
-			                	
 			                	</ul>
 		                </li>
 		                <li class="sub_menu">

@@ -82,6 +82,8 @@ echo CHtml::link('回收站',array('news/admin','typeid'=>4),array('class'=>'for
 		
 		array(
 			'class'=>'CButtonColumn',
+			'header'=>'操作',
+				'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
 			'headerHtmlOptions'=>array(
 					'style'=>'width:100px;'
 					

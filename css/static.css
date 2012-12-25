@@ -13,7 +13,7 @@
 	float:left;
 
 	display:block;
-	background:url(/newWeb/images/admin_img/top_2.png)repeat-x;
+	background:url(../images/admin_img/top_2.png)repeat-x;
 
 }
 h3{
@@ -21,7 +21,7 @@ color:#317EAC;
 
 }
 .top_l{
-	background:url(/newWeb/images/admin_img/top_1.png)no-repeat scroll left 0px ;
+	background:url(../images/admin_img/top_1.png)no-repeat scroll left 0px ;
 	
 	padding-left:6px;
 }
@@ -36,7 +36,7 @@ color:#317EAC;
 	float: left;
 	width: 6px;
 	display: block;
-	background:url(/newWeb/images/admin_img/top_3.png)no-repeat scroll right 0px;
+	background:url(../images/admin_img/top_3.png)no-repeat scroll right 0px;
 }
 #form_content{
 	width: 1000px;
@@ -90,7 +90,7 @@ div.form #bswf{
 	width: 50px;
 	height:50px;
 	padding:5px;
-	background:url(/show/images/admin_img/upload_bg.gif)no-repeat scroll left 0px ;
+	background:url(../images/admin_img/upload_bg.gif)no-repeat scroll left 0px ;
 	background-color: none;
 }
 div.form label .limit{
@@ -200,7 +200,7 @@ i[class^="icon-"] {
     background-position: -336px 0;
 }
 .icon-white {
-    background-image: url(/show/images/glyphicons-halflings-white.png);
+    background-image: url(../images/glyphicons-halflings-white.png);
 }
 
 .btn-info {

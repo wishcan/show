@@ -88,6 +88,7 @@ echo CHtml::link('回收站',array('gallery/admin','typeid'=>4),array('class'=>'
 			),
 		array(
 			'class'=>'CButtonColumn',
+				'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
 		),
 	),
 )); ?>

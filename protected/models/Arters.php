@@ -43,7 +43,7 @@ class Arters extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('aid, sex, bl_arters_category_cateid', 'required'),
+			array('sex,name,description,bl_arters_category_cateid', 'required'),
 			array('aid, click, bl_arters_category_cateid', 'numerical', 'integerOnly'=>true),
 			array('name, country', 'length', 'max'=>45),
 			array('sex', 'length', 'max'=>3),
@@ -65,6 +65,7 @@ class Arters extends CActiveRecord
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+// 				'artersIndex'=>array(self::HAS_MANY,),
 		);
 	}
 
