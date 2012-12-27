@@ -114,4 +114,15 @@ class Arters extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	public static  function getArtName($aid=0)
+	{
+		if($aid)
+		{
+			$model=Arters::model()->findByPk($aid);
+			return $model->name;
+		}else{
+			$model=Arters::model()->findAll();
+			return CHtml::listData($model,'aid','name');
+		}
+	}
 }

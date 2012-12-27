@@ -36,6 +36,9 @@ $("div.form #smallImg .close").live('click',function(){
 				$(th).next("img").remove();
 				$(th).remove();
 				$("input[value='"+v+"']").remove();
+				$("#smallImg").hide();
+				$(".progressContainer").remove();
+				$("#swf").before("<span class='red'>删除成功</span>");
 			}
 			)
 

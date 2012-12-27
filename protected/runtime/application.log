@@ -1282,6 +1282,8 @@ HTTP_REFERER=http://localhost/show/index.php?r=Admin
 >>>>>>> 76bd58a69b0b1ecb039a75caea4d955e1c7b7dc3
 =======
 >>>>>>> 76bd58a69b0b1ecb039a75caea4d955e1c7b7dc3
+<<<<<<< HEAD
+=======
 ---
 2012/12/23 05:55:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/arters/admin"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
 Stack trace:
@@ -1593,4 +1595,118 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/show/index.php?r=arters/index
 HTTP_REFERER=http://localhost/show/index.php?r=Admin/arters/admin
+---
+2012/12/27 02:29:34 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1259): tag()
+#2 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(620): activeTextArea()
+#3 C:\wamp\www\show\protected\modules\Admin\views\arters\_form.php(25): CActiveForm->textArea()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#6 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#7 C:\wamp\www\show\protected\modules\Admin\views\arters\create.php(12): ArtersController->renderPartial()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#10 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#11 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#12 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(79): ArtersController->render()
+#13 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionCreate()
+#14 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#16 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#18 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#19 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#20 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#21 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#22 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#24 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#25 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/create
+in C:\wamp\www\show\protected\modules\Admin\views\arters\_form.php (25)
+in C:\wamp\www\show\protected\modules\Admin\views\arters\create.php (12)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (79)
+2012/12/27 07:16:05 [error] [php] include(Areters.php): failed to open stream: No such file or directory (C:\wamp\www\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 C:\wamp\www\show\protected\modules\Admin\views\artersIndex\_form.php(14): spl_autoload_call()
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersIndexController->renderInternal()
+#3 C:\wamp\www\yii\framework\web\CController.php(870): ArtersIndexController->renderFile()
+#4 C:\wamp\www\show\protected\modules\Admin\views\artersIndex\create.php(15): ArtersIndexController->renderPartial()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersIndexController->renderInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(870): ArtersIndexController->renderFile()
+#8 C:\wamp\www\yii\framework\web\CController.php(783): ArtersIndexController->renderPartial()
+#9 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersIndexController.php(78): ArtersIndexController->render()
+#10 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersIndexController->actionCreate()
+#11 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersIndexController->runAction()
+#13 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#15 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersIndexController->filterAccessControl()
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#17 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(266): ArtersIndexController->runActionWithFilters()
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersIndexController->run()
+#20 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#21 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#22 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/artersindex/create
+in C:\wamp\www\show\protected\modules\Admin\views\artersIndex\_form.php (14)
+in C:\wamp\www\show\protected\modules\Admin\views\artersIndex\create.php (15)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersIndexController.php (78)
+2012/12/27 07:16:17 [error] [php] Missing argument 1 for Arters::getArtName(), called in C:\wamp\www\show\protected\modules\Admin\views\artersIndex\_form.php on line 14 and defined (C:\wamp\www\show\protected\models\Arters.php:117)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersIndexController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(870): ArtersIndexController->renderFile()
+#2 C:\wamp\www\show\protected\modules\Admin\views\artersIndex\create.php(15): ArtersIndexController->renderPartial()
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersIndexController->renderInternal()
+#5 C:\wamp\www\yii\framework\web\CController.php(870): ArtersIndexController->renderFile()
+#6 C:\wamp\www\yii\framework\web\CController.php(783): ArtersIndexController->renderPartial()
+#7 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersIndexController.php(78): ArtersIndexController->render()
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersIndexController->actionCreate()
+#9 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersIndexController->runAction()
+#11 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#13 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersIndexController->filterAccessControl()
+#14 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#15 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#16 C:\wamp\www\yii\framework\web\CController.php(266): ArtersIndexController->runActionWithFilters()
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersIndexController->run()
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#19 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#20 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/artersindex/create
+in C:\wamp\www\show\protected\models\Arters.php (117)
+in C:\wamp\www\show\protected\modules\Admin\views\artersIndex\_form.php (14)
+in C:\wamp\www\show\protected\modules\Admin\views\artersIndex\create.php (15)
+2012/12/27 07:17:48 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `bl_arters` (`name`, `sex`, `description`, `birthDay`, `bl_arters_category_cateid`, `tags`, `district`, `country`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7).
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (73)
+in C:\wamp\www\show\index.php (13)
+2012/12/27 07:17:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '0' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `bl_arters` (`name`, `sex`, `description`, `birthDay`, `bl_arters_category_cateid`, `tags`, `district`, `country`) VALUES (:yp0, :yp1, :yp2, :yp3, :yp4, :yp5, :yp6, :yp7)' in C:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1014): CDbCommand->execute()
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(73): CActiveRecord->save()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionCreate()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/cr...')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/create
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/arters/create
+>>>>>>> d2041ed7319d8f4f7e55e31f9c5531c3639b135c
 ---

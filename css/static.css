@@ -1,3 +1,9 @@
+*{
+	font-family: '微软雅黑';
+}
+div.form label{
+	display:inline;
+}
 .c{
 	clear:both;
 }
@@ -61,7 +67,6 @@ input[type="submit"],input[type="button"]{
 	    background-image: linear-gradient(to bottom, #FFFFFF, #E6E6E6);
 	    background-repeat: repeat-x;
 	    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #A2A2A2;
-	    border-image: none;
 	    border-radius: 4px 4px 4px 4px;
 	    border-style: solid;
 	    border-width: 1px;
@@ -72,13 +77,14 @@ input[type="submit"],input[type="button"]{
 	    font-size: 14px;
 	    line-height: 20px;
 	    margin-bottom: 0;
-	    padding: 4px 12px;
+	    padding: 3px 20px;
 	    text-align: center;
 	    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75);
 	    vertical-align: middle;
 }
 input[type="submit"]:hover,input[type="button"]:hover{
-	background-color:#E2E9EA; 
+	background-color:#88CF00; 
+	color:#fff;
 }
 .alink{
 	color:#3C86C5;
