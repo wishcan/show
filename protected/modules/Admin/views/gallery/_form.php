@@ -41,10 +41,6 @@
         <?php echo $form->error($model,'tag'); ?>
     </div>
 	<div class="row">
-        <b>内容</b><br/>
-    
-</div>
-	<div class="row">
 		<?php echo $form->labelEx($model,'type_id'); ?>
 		<?php echo $form->dropDownList($model,'type_id',NewsType::model()->getTypeList(0)); ?>
 		<?php echo $form->error($model,'type_id'); ?>

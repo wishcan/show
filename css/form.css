@@ -36,6 +36,8 @@
 
 div.form
 {
+	padding:0 100px;
+	margin-left:100px;
 }
 
 div.form input,
@@ -172,3 +174,27 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	width:200px;
 	height:25px;
 }
+div.form input[type="text"]{
+	width:200px;
+	height:25px;
+	margin-left:15px;
+	/*border-radius: 2px;*/
+
+}
+div.form textarea{
+	resize:none;
+	width:600px;
+	height:200px;
+}
+select{
+	width:200px;
+
+}
+option{
+	width:180px;
+	border:solid 1px #ddd;
+}
+ form input[type="submit"]{
+	margin-left:200px;
+}
+.red{margin-left:10px;color:red}
