@@ -1710,3 +1710,37 @@ REQUEST_URI=/show/index.php?r=Admin/arters/create
 HTTP_REFERER=http://localhost/show/index.php?r=Admin/arters/create
 >>>>>>> d2041ed7319d8f4f7e55e31f9c5531c3639b135c
 ---
+2012/12/27 11:07:32 [error] [exception.CException] exception 'CException' with message '属性 "Arters.sex" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('sex')
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(2044): CActiveRecord->__get('sex')
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1774): CHtml::resolveValue(Object(Arters), 'sex')
+#3 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1205): CHtml::activeInputField('text', Object(Arters), 'sex', Array)
+#4 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(575): CHtml::activeTextField(Object(Arters), 'sex', Array)
+#5 C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php(20): CActiveForm->textField(Object(Arters), 'sex', Array)
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#8 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#9 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(39): CController->renderPartial('_search', Array)
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#14 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(149): CController->render('admin', Array)
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#16 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#18 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#26 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\wamp\www\show\index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=site/login
+---
