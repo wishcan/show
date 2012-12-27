@@ -44,10 +44,16 @@ $('.search-form form').submit(function(){
 	'filter'=>$model,
 	'columns'=>array(
 		'cateid',
+<<<<<<< HEAD
+		'cname',
+		array(
+			'class'=>'CButtonColumn',
+=======
 		array('name'=>'cname'),
 		array(
 			'class'=>'CButtonColumn',
 				'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
+>>>>>>> d2041ed7319d8f4f7e55e31f9c5531c3639b135c
 		),
 	),
 )); ?>
