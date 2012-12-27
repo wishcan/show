@@ -7,9 +7,7 @@
 	<b>现在位置:</b> <a href="<?php echo Yii::app()->getBaseUrl();?>">首页</a> -><a href="<?php $this->createAbsoluteUrl('news/index')?>">新闻</a>
 	</div>
 </div>
-<div id="pager">
 
-</div>
 <!-- 内容 -->
 <div id="content">
 	<div class="center">

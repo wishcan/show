@@ -43,6 +43,9 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+		'error'=>array(
+			'class'=>array('CController'),
+		),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -69,7 +72,7 @@ return array(
 		
 		'errorHandler'=>array(
 			// use 'site/error' action to display errors
-            'errorAction'=>'site/error',
+            'errorAction'=>'index/error',
         ),
 		'log'=>array(
 			'class'=>'CLogRouter',

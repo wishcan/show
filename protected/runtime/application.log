@@ -2674,3 +2674,1792 @@ Stack trace:
 REQUEST_URI=/show/index.php?r=gallery/index
 HTTP_REFERER=http://localhost/show/index.php?r=news/index
 ---
+2012/12/23 20:53:42 [error] [php] copy(C:/wamp/www/show/upload/temp/95.jpg) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (C:\wamp\www\show\protected\controllers\UploadController.php:38)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Upload/add&PHPSESSID=bcs8t81vhar9ibicikgnp4kf27
+in C:\wamp\www\show\protected\controllers\UploadController.php (38)
+in C:\wamp\www\show\index.php (13)
+2012/12/23 12:59:43 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.order by" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\schema\CDbCriteria.php(153): CComponent->__set('order by', 'gid desc')
+#1 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1405): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\show\protected\controllers\galleryController.php(9): CActiveRecord->findAll(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=gallery/index
+---
+2012/12/23 13:00:47 [error] [exception.CException] exception 'CException' with message 'galleryController and its behaviors do not have a method or closure named "s".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(10): CComponent->__call('s', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(10): galleryController->s(Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionIndex()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/index')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/index
+---
+2012/12/23 13:01:44 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.gid >" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\schema\CDbCriteria.php(153): CComponent->__set('gid >', '0')
+#1 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1405): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\show\protected\controllers\galleryController.php(10): CActiveRecord->findAll(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=gallery/index
+---
+2012/12/23 13:01:53 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.gid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\schema\CDbCriteria.php(153): CComponent->__set('gid', '>0')
+#1 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1405): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\show\protected\controllers\galleryController.php(10): CActiveRecord->findAll(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionIndex()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/index')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=gallery/index
+---
+2012/12/23 13:03:02 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\controllers\galleryController.php:10)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/index
+in C:\wamp\www\show\protected\controllers\galleryController.php (10)
+in C:\wamp\www\show\index.php (13)
+2012/12/23 13:58:53 [error] [php] Undefined variable: model (C:\wamp\www\show\protected\controllers\galleryController.php:10)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/index
+in C:\wamp\www\show\protected\controllers\galleryController.php (10)
+in C:\wamp\www\show\index.php (13)
+2012/12/23 13:59:21 [error] [php] Undefined variable: model (C:\wamp\www\show\protected\views\gallery\index.php:6)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): galleryController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): galleryController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(11): galleryController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionIndex()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/index
+in C:\wamp\www\show\protected\views\gallery\index.php (6)
+in C:\wamp\www\show\protected\controllers\galleryController.php (11)
+in C:\wamp\www\show\index.php (13)
+2012/12/24 05:25:49 [error] [exception.CException] exception 'CException' with message 'galleryController and its behaviors do not have a method or closure named "getDir".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\views\gallery\index.php(68): CComponent->__call('getDir', Array)
+#1 C:\wamp\www\show\protected\views\gallery\index.php(68): galleryController->getDir('121223100.jpg')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#6 C:\wamp\www\show\protected\controllers\galleryController.php(11): CController->render('index', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/index')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=gallery/index
+---
+2012/12/24 08:24:09 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\neirong.php:34)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(32): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionNeiRong()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/neiRong&nid=28
+in C:\wamp\www\show\protected\views\news\neirong.php (34)
+in C:\wamp\www\show\protected\controllers\newsController.php (32)
+in C:\wamp\www\show\index.php (13)
+2012/12/24 08:24:12 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\news\neirong.php:34)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): newsController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): newsController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\newsController.php(32): newsController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): newsController->actionNeiRong()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): newsController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): newsController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): newsController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=news/neiRong&nid=28
+in C:\wamp\www\show\protected\views\news\neirong.php (34)
+in C:\wamp\www\show\protected\controllers\newsController.php (32)
+in C:\wamp\www\show\index.php (13)
+2012/12/24 08:30:51 [error] [exception.CException] exception 'CException' with message 'galleryController and its behaviors do not have a method or closure named "GetOuter".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(22): CComponent->__call('GetOuter', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(22): galleryController->GetOuter('1')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('showImg')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/showImg')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=4
+---
+2012/12/24 08:31:04 [error] [exception.CException] exception 'CException' with message 'galleryController 无法找到请求的视图 "showImg".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('showImg', Array, true)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(23): CController->render('showImg', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('showImg')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/showImg')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=4
+---
+2012/12/24 08:31:23 [error] [exception.CException] exception 'CException' with message 'galleryController 无法找到请求的视图 "showImg".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('showImg', Array, true)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(23): CController->render('showImg', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('showImg')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/showImg')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=4
+---
+2012/12/24 08:34:47 [error] [exception.CException] exception 'CException' with message 'galleryController 无法找到请求的视图 "showImg".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('showImg', Array, true)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(23): CController->render('showImg', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('showImg')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/showImg')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=6
+HTTP_REFERER=http://localhost/show/index.php?r=gallery/index
+---
+2012/12/24 09:22:10 [error] [exception.CException] exception 'CException' with message 'galleryController 无法找到请求的视图 "showImg".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('showImg', Array, true)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(23): CController->render('showImg', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('showImg')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/showImg')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=6
+HTTP_REFERER=http://localhost/show/index.php?r=gallery/index
+---
+2012/12/24 09:31:57 [error] [php] Undefined index: thumb (C:\wamp\www\show\protected\views\gallery\showImg.php:21)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): galleryController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): galleryController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(24): galleryController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=6
+in C:\wamp\www\show\protected\views\gallery\showImg.php (21)
+in C:\wamp\www\show\protected\controllers\galleryController.php (24)
+in C:\wamp\www\show\index.php (13)
+2012/12/24 09:32:18 [error] [php] Undefined index: thumb (C:\wamp\www\show\protected\views\gallery\showImg.php:22)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): galleryController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): galleryController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(24): galleryController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=6
+in C:\wamp\www\show\protected\views\gallery\showImg.php (22)
+in C:\wamp\www\show\protected\controllers\galleryController.php (24)
+in C:\wamp\www\show\index.php (13)
+2012/12/24 09:52:14 [error] [php] Missing argument 1 for CController::createUrl(), called in C:\wamp\www\show\protected\views\gallery\showImg.php on line 27 and defined (C:\wamp\www\yii\framework\web\CController.php:960)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(96): galleryController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(870): galleryController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(783): galleryController->renderPartial()
+#3 C:\wamp\www\show\protected\controllers\galleryController.php(24): galleryController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=5
+in C:\wamp\www\show\protected\views\gallery\showImg.php (27)
+in C:\wamp\www\show\protected\controllers\galleryController.php (24)
+in C:\wamp\www\show\index.php (13)
+2012/12/24 09:57:27 [error] [php] Missing argument 1 for CController::createUrl(), called in C:\wamp\www\show\protected\views\gallery\showImg.php on line 27 and defined (C:\wamp\www\yii\framework\web\CController.php:960)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(96): galleryController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(870): galleryController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(783): galleryController->renderPartial()
+#3 C:\wamp\www\show\protected\controllers\galleryController.php(24): galleryController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#7 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=6
+in C:\wamp\www\show\protected\views\gallery\showImg.php (27)
+in C:\wamp\www\show\protected\controllers\galleryController.php (24)
+in C:\wamp\www\show\index.php (13)
+2012/12/24 09:57:35 [error] [exception.CException] exception 'CException' with message '属性 "galleryController.returnUrl" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\show\protected\views\gallery\showImg.php(27): CComponent->__get('returnUrl')
+#1 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#3 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('showImg', Array, true)
+#5 C:\wamp\www\show\protected\controllers\galleryController.php(24): CController->render('showImg', Array)
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('showImg')
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/showImg')
+#12 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 C:\wamp\www\show\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=6
+---
+2012/12/24 12:39:59 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\views\gallery\showImg.php:61)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): galleryController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): galleryController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(24): galleryController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShowImg()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=1
+in C:\wamp\www\show\protected\views\gallery\showImg.php (61)
+in C:\wamp\www\show\protected\controllers\galleryController.php (24)
+in C:\wamp\www\show\index.php (13)
+2012/12/25 14:25:11 [error] [exception.CException] exception 'CException' with message '属性 "Category.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cid')
+#1 C:\wamp\www\show\protected\views\index\index.php(26): CActiveRecord->__get('cid')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', Array, true)
+#6 C:\wamp\www\show\protected\controllers\indexController.php(20): CController->render('index', Array)
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): indexController->actionIndex()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/
+---
+2012/12/25 14:33:37 [error] [php] Undefined index: gdid (C:\wamp\www\show\protected\controllers\galleryController.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&cid=52
+in C:\wamp\www\show\protected\controllers\galleryController.php (16)
+in C:\wamp\www\show\index.php (13)
+2012/12/25 14:34:15 [error] [php] Undefined index: gdid (C:\wamp\www\show\protected\controllers\galleryController.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&cid=45
+in C:\wamp\www\show\protected\controllers\galleryController.php (16)
+in C:\wamp\www\show\index.php (13)
+2012/12/25 14:35:20 [error] [php] Undefined index: gdid (C:\wamp\www\show\protected\controllers\galleryController.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&cid=37
+in C:\wamp\www\show\protected\controllers\galleryController.php (16)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 10:43:21 [error] [php] Undefined index: gdid (C:\wamp\www\show\protected\controllers\galleryController.php:16)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&cid=29
+in C:\wamp\www\show\protected\controllers\galleryController.php (16)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 11:29:45 [error] [php] Missing argument 1 for Controller::error(), called in C:\wamp\www\show\protected\controllers\galleryController.php on line 37 and defined (C:\wamp\www\show\protected\components\Controller.php:39)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\components\Controller.php (39)
+in C:\wamp\www\show\protected\controllers\galleryController.php (37)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 11:31:20 [error] [php] Undefined variable: message (C:\wamp\www\show\protected\components\Controller.php:41)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#2 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\components\Controller.php (41)
+in C:\wamp\www\show\protected\controllers\galleryController.php (37)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 11:41:21 [error] [exception.CException] exception 'CException' with message '属性 "galleryController.index" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(37): CComponent->__get('index')
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\show\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:41:58 [error] [exception.CException] exception 'CException' with message '属性 "CWebApplication.index" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(106): CComponent->__get('index')
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:42:45 [error] [exception.CException] exception 'CException' with message 'Yii 应用程序只能被产生一次.' in C:\wamp\www\yii\framework\YiiBase.php:154
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CApplication.php(123): YiiBase::setApplication(Object(CWebApplication))
+#1 C:\wamp\www\yii\framework\YiiBase.php(127): CApplication->__construct('C:\wamp\www\sho...')
+#2 C:\wamp\www\yii\framework\YiiBase.php(100): YiiBase::createApplication('CWebApplication', 'C:\wamp\www\sho...')
+#3 C:\wamp\www\show\index.php(13): YiiBase::createWebApplication('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\YiiBase.php(418): include('C:\wamp\www\sho...')
+#5 [internal function]: YiiBase::autoload('index')
+#6 C:\wamp\www\show\protected\controllers\galleryController.php(37): spl_autoload_call('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:42:56 [error] [exception.CException] exception 'CException' with message 'Yii 应用程序只能被产生一次.' in C:\wamp\www\yii\framework\YiiBase.php:154
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CApplication.php(123): YiiBase::setApplication(Object(CWebApplication))
+#1 C:\wamp\www\yii\framework\YiiBase.php(127): CApplication->__construct('C:\wamp\www\sho...')
+#2 C:\wamp\www\yii\framework\YiiBase.php(100): YiiBase::createApplication('CWebApplication', 'C:\wamp\www\sho...')
+#3 C:\wamp\www\show\index.php(13): YiiBase::createWebApplication('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\YiiBase.php(418): include('C:\wamp\www\sho...')
+#5 [internal function]: YiiBase::autoload('index')
+#6 C:\wamp\www\show\protected\controllers\galleryController.php(37): spl_autoload_call('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:42:56 [error] [exception.CException] exception 'CException' with message 'Yii 应用程序只能被产生一次.' in C:\wamp\www\yii\framework\YiiBase.php:154
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CApplication.php(123): YiiBase::setApplication(Object(CWebApplication))
+#1 C:\wamp\www\yii\framework\YiiBase.php(127): CApplication->__construct('C:\wamp\www\sho...')
+#2 C:\wamp\www\yii\framework\YiiBase.php(100): YiiBase::createApplication('CWebApplication', 'C:\wamp\www\sho...')
+#3 C:\wamp\www\show\index.php(13): YiiBase::createWebApplication('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\YiiBase.php(418): include('C:\wamp\www\sho...')
+#5 [internal function]: YiiBase::autoload('index')
+#6 C:\wamp\www\show\protected\controllers\galleryController.php(37): spl_autoload_call('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:42:57 [error] [exception.CException] exception 'CException' with message 'Yii 应用程序只能被产生一次.' in C:\wamp\www\yii\framework\YiiBase.php:154
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CApplication.php(123): YiiBase::setApplication(Object(CWebApplication))
+#1 C:\wamp\www\yii\framework\YiiBase.php(127): CApplication->__construct('C:\wamp\www\sho...')
+#2 C:\wamp\www\yii\framework\YiiBase.php(100): YiiBase::createApplication('CWebApplication', 'C:\wamp\www\sho...')
+#3 C:\wamp\www\show\index.php(13): YiiBase::createWebApplication('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\YiiBase.php(418): include('C:\wamp\www\sho...')
+#5 [internal function]: YiiBase::autoload('index')
+#6 C:\wamp\www\show\protected\controllers\galleryController.php(37): spl_autoload_call('index')
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:49:19 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "errorHandler".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(37): CComponent->__call('errorHandler', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CWebApplication->errorHandler()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:49:51 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "errorHandler".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(37): CComponent->__call('errorHandler', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CWebApplication->errorHandler('????????????')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:49:52 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "errorHandler".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(37): CComponent->__call('errorHandler', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CWebApplication->errorHandler('????????????')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:55:10 [error] [exception.CException] exception 'CException' with message 'CErrorHandler and its behaviors do not have a method or closure named "error".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(37): CComponent->__call('error', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CErrorHandler->error('cuowu')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:55:37 [error] [exception.CException] exception 'CException' with message 'CErrorHandler and its behaviors do not have a method or closure named "error".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(37): CComponent->__call('error', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CErrorHandler->error(Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:55:37 [error] [exception.CException] exception 'CException' with message 'CErrorHandler and its behaviors do not have a method or closure named "error".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(37): CComponent->__call('error', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CErrorHandler->error(Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:56:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:36
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:56:39 [error] [exception.CHttpException.500] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:36
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:56:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:36
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:56:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:36
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:57:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:57:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:57:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:57:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:57:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:57:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:57:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:57:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:58:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 11:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:01:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:37
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:01:51 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:03:10 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:03:22 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:03:23 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:03:23 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:03:23 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:03:23 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:03:23 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:03:48 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:04:18 [error] [exception.CException] exception 'CException' with message '属性 "CWebUser.index" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CWebUser.php(141): CComponent->__get('index')
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CWebUser->__get('index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:04:31 [error] [exception.CException] exception 'CException' with message '属性 "CWebUser.index" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CWebUser.php(141): CComponent->__get('index')
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CWebUser->__get('index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:04:31 [error] [exception.CException] exception 'CException' with message '属性 "CWebUser.index" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CWebUser.php(141): CComponent->__get('index')
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CWebUser->__get('index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:04:54 [error] [exception.CException] exception 'CException' with message '属性 "CWebUser.index" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CWebUser.php(141): CComponent->__get('index')
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(37): CWebUser->__get('index')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:05:02 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:06:35 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(37): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:40:15 [error] [php] Undefined property: Error::$index (C:\wamp\www\show\protected\controllers\galleryController.php:38)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\controllers\galleryController.php (38)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 12:41:01 [error] [exception.CException] exception 'CException' with message '对象配置必须是内含有一个 "class" 元素的一个数组.' in C:\wamp\www\yii\framework\YiiBase.php:195
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(387): YiiBase::createComponent(Array)
+#1 C:\wamp\www\yii\framework\base\CModule.php(104): CModule->getComponent('error')
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(39): CModule->__get('error')
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:42:08 [error] [php] class_exists() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\YiiBase.php:197)
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(39): CWebApplication->__get()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#5 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\controllers\galleryController.php (39)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 12:42:39 [error] [php] class_exists() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\YiiBase.php:197)
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(39): CWebApplication->__get()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#5 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\controllers\galleryController.php (39)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 12:43:34 [error] [php] class_exists() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\YiiBase.php:197)
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(39): CWebApplication->__get()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#5 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\controllers\galleryController.php (39)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 12:43:42 [error] [php] class_exists() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\YiiBase.php:197)
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(39): CWebApplication->__get()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#5 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\controllers\galleryController.php (39)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 12:43:50 [error] [php] class_exists() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\YiiBase.php:197)
+Stack trace:
+#0 C:\wamp\www\yii\framework\base\CModule.php(104): CWebApplication->getComponent()
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(39): CWebApplication->__get()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#5 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\controllers\galleryController.php (39)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 12:44:19 [error] [exception.CException] exception 'CException' with message 'galleryController and its behaviors do not have a method or closure named "index".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(39): CComponent->__call('index', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(39): galleryController->index('1')
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:44:27 [error] [exception.CException] exception 'CException' with message '属性 "galleryController.error" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\show\protected\controllers\galleryController.php(39): CComponent->__get('error')
+#1 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#2 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#4 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#7 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#8 C:\wamp\www\show\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:44:50 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\controllers\galleryController.php:39)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show
+in C:\wamp\www\show\protected\controllers\galleryController.php (39)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 12:47:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:38
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:47:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '<script>' in C:\wamp\www\show\protected\controllers\galleryController.php:38
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:47:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '此页面不存在' in C:\wamp\www\show\protected\controllers\galleryController.php:38
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:48:43 [error] [php] Undefined index: gdid (C:\wamp\www\show\protected\controllers\galleryController.php:19)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg
+in C:\wamp\www\show\protected\controllers\galleryController.php (19)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 12:49:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('showImg')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/showImg')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\show\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/show/index.php?r=gallery/showImg
+---
+2012/12/26 12:50:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in C:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#2 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#5 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#6 C:\wamp\www\show\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/show/index.php?r=gallery/show
+---
+2012/12/26 12:53:09 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.:cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\schema\CDbCriteria.php(153): CComponent->__set(':cid', '29')
+#1 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1471): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'cid=:cid', Array, Array, '`t`.')
+#4 C:\wamp\www\show\protected\controllers\galleryController.php(44): CActiveRecord->findAllByAttributes('cid=:cid', Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\show\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+---
+2012/12/26 12:53:17 [error] [exception.CException] exception 'CException' with message 'Gallery and its behaviors do not have a method or closure named "findAllByAttribute".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(226): CComponent->__call('findAllByAttrib...', Array)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(44): CActiveRecord->__call('findAllByAttrib...', Array)
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(44): Gallery->findAllByAttribute('cid=:cid', Array)
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+---
+2012/12/26 12:54:01 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.:cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\schema\CDbCriteria.php(153): CComponent->__set(':cid', '29')
+#1 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1471): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'cid=:cid', Array, Array, '`t`.')
+#4 C:\wamp\www\show\protected\controllers\galleryController.php(44): CActiveRecord->findAllByAttributes('cid=:cid', Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\show\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+---
+2012/12/26 12:54:09 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.:cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\schema\CDbCriteria.php(153): CComponent->__set(':cid', '29')
+#1 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1471): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'cid=:cid', Array, Array, '`t`.')
+#4 C:\wamp\www\show\protected\controllers\galleryController.php(44): CActiveRecord->findAllByAttributes('cid=:cid', Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\show\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+---
+2012/12/26 12:54:34 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\schema\CDbCriteria.php(153): CComponent->__set('cid', '29')
+#1 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1405): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\show\protected\controllers\galleryController.php(44): CActiveRecord->findAll(Array)
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+---
+2012/12/26 13:08:01 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:546)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#3 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=30
+in C:\wamp\www\show\protected\controllers\galleryController.php (44)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:08:24 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php:546)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#1 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#3 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#4 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#5 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#6 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=30
+in C:\wamp\www\show\protected\controllers\galleryController.php (44)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:08:36 [error] [exception.CException] exception 'CException' with message '属性 "CDbCriteria.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\schema\CDbCriteria.php(153): CComponent->__set('cid', '30')
+#1 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(462): CDbCriteria->__construct(Array)
+#2 C:\wamp\www\yii\framework\db\schema\CDbCommandBuilder.php(537): CDbCommandBuilder->createCriteria(Array, Array)
+#3 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1471): CDbCommandBuilder->createColumnCriteria(Object(CMysqlTableSchema), 'cid', Array, Array, '`t`.')
+#4 C:\wamp\www\show\protected\controllers\galleryController.php(44): CActiveRecord->findAllByAttributes('cid', Array)
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('show')
+#10 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/show')
+#11 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 C:\wamp\www\show\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/show/index.php?r=gallery/show&cid=30
+---
+2012/12/26 13:09:37 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=38
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:09:44 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=39
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:16:26 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=35
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:16:29 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:16:50 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:17:25 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:17:33 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:18:10 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:18:10 [error] [php] Undefined offset: 0 (C:\wamp\www\show\protected\controllers\galleryController.php:45)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=29
+in C:\wamp\www\show\protected\controllers\galleryController.php (45)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:19:39 [error] [php] Undefined index: title (C:\wamp\www\show\protected\controllers\galleryController.php:49)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=25
+in C:\wamp\www\show\protected\controllers\galleryController.php (49)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:22:44 [error] [php] Undefined index: gdid (C:\wamp\www\show\protected\views\gallery\showImg.php:93)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): galleryController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): galleryController->renderPartial()
+#2 C:\wamp\www\show\protected\controllers\galleryController.php(49): galleryController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShow()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/show&cid=25
+in C:\wamp\www\show\protected\views\gallery\showImg.php (93)
+in C:\wamp\www\show\protected\controllers\galleryController.php (49)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:28:27 [error] [php] Undefined variable: date (C:\wamp\www\show\protected\controllers\galleryController.php:30)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=5
+in C:\wamp\www\show\protected\controllers\galleryController.php (30)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:28:38 [error] [php] Undefined variable: data (C:\wamp\www\show\protected\controllers\galleryController.php:30)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=5
+in C:\wamp\www\show\protected\controllers\galleryController.php (30)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:28:40 [error] [php] Undefined variable: data (C:\wamp\www\show\protected\controllers\galleryController.php:30)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(287): galleryController->runAction()
+#1 C:\wamp\www\yii\framework\web\CController.php(266): galleryController->runActionWithFilters()
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(276): galleryController->run()
+#3 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=gallery/showImg&gdid=5
+in C:\wamp\www\show\protected\controllers\galleryController.php (30)
+in C:\wamp\www\show\index.php (13)
+2012/12/26 13:59:31 [error] [exception.CException] exception 'CException' with message '属性 "Category.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cid')
+#1 C:\wamp\www\show\protected\modules\Admin\views\category\update.php(4): CActiveRecord->__get('cid')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\CategoryController.php(107): CController->render('update', Array)
+#7 [internal function]: CategoryController->actionUpdate('29')
+#8 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/category/...')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\show\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/show/index.php?r=Admin/category/update&id=29
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/Category/admin
+---
+2012/12/26 14:00:13 [error] [exception.CException] exception 'CException' with message '属性 "Category.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cid')
+#1 C:\wamp\www\show\protected\modules\Admin\views\category\update.php(4): CActiveRecord->__get('cid')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\CategoryController.php(107): CController->render('update', Array)
+#7 [internal function]: CategoryController->actionUpdate('29')
+#8 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/category/...')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\show\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/show/index.php?r=Admin/category/update&id=29
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/Category/admin
+---
+2012/12/26 14:00:38 [error] [exception.CException] exception 'CException' with message '属性 "Category.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cid')
+#1 C:\wamp\www\show\protected\modules\Admin\views\category\update.php(4): CActiveRecord->__get('cid')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\CategoryController.php(107): CController->render('update', Array)
+#7 [internal function]: CategoryController->actionUpdate('29')
+#8 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/category/...')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\show\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/show/index.php?r=Admin/category/update&id=29
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/Category/admin
+---
+2012/12/26 14:00:41 [error] [exception.CException] exception 'CException' with message '属性 "Category.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cid')
+#1 C:\wamp\www\show\protected\modules\Admin\views\category\update.php(4): CActiveRecord->__get('cid')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\CategoryController.php(107): CController->render('update', Array)
+#7 [internal function]: CategoryController->actionUpdate('26')
+#8 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/category/...')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\show\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/show/index.php?r=Admin/category/update&id=26
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/Category/admin
+---
+2012/12/26 14:00:56 [error] [exception.CException] exception 'CException' with message '属性 "Category.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cid')
+#1 C:\wamp\www\show\protected\modules\Admin\views\category\update.php(11): CActiveRecord->__get('cid')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\CategoryController.php(107): CController->render('update', Array)
+#7 [internal function]: CategoryController->actionUpdate('28')
+#8 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/category/...')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\show\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/show/index.php?r=Admin/category/update&id=28
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/Category/admin
+---
+2012/12/26 14:01:10 [error] [exception.CException] exception 'CException' with message '属性 "Category.cid" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('cid')
+#1 C:\wamp\www\show\protected\modules\Admin\views\category\update.php(16): CActiveRecord->__get('cid')
+#2 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#4 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('update', Array, true)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\CategoryController.php(107): CController->render('update', Array)
+#7 [internal function]: CategoryController->actionUpdate('29')
+#8 C:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(CategoryController), Array)
+#9 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(CategoryController), Object(ReflectionMethod), Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#19 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/category/...')
+#20 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 C:\wamp\www\show\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/show/index.php?r=Admin/category/update&id=29
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/Category/admin
+---
+2012/12/27 10:49:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/arters/admin"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---

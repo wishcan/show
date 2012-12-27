@@ -16,9 +16,19 @@
  					  'condition'=>'cid=:cid',
 					   'params'=>array(':cid'=>'27'),	
  						));
- 				
- 		$this->render("index",array('news'=>$news));
+ 		$cate=Category::model()->getChildren(23);		
+ 		$this->render("index",array('news'=>$news,'cate'=>$cate));
 
+ 	}
+ 	public function actionError()
+ 	{
+ 		if($error=Yii::app()->errorHandler->error)
+ 		{
+ 			if(Yii::app()->request->isAjaxRequest)
+ 				echo $error['message'];
+ 			else
+ 				$this->render('error', $error);
+ 		}
  	}
 
 

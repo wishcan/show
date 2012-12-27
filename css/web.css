@@ -183,6 +183,7 @@ select option{
 }
 .u4 li a {
 	margin-left:27px;width:213px;
+
 }
 .u5 li a{
 	margin-left:23px;
@@ -198,9 +199,14 @@ float:left;
 
 } 
 #huihua ul li a{
+	color:#333;
 	float:left;
 	line-height:47px;
 	text-align:center;
+}
+#huihua ul li a:hover{
+	background:#5F655F;
+	color:#fdfdfd;
 }
 h1,h2,h3,h4{
 	color:#84AB26;
@@ -235,12 +241,13 @@ h2,h3,h4{
 
 }
 #xinwen ul li a,.qutan li a,.xuetang li a{
-	margin-right:30px;
+	margin-right:20px;
 }
 #xinwen ul li a:hover,.qutan li a:hover,.xuetang li a:hover{
 	text-decoration:underline;
 	color:#ff6600;
 }
+
 #xinwen ul li{
 
 padding:3px;

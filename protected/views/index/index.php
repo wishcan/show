@@ -1,4 +1,6 @@
 
+
+
 	<!-- 幻灯片开始 -->
 	<div id="huandeng">
 		
@@ -10,7 +12,6 @@
 		<div class="c"></div>
 	</div>
 	<!-- 幻灯片结束 -->
-
 <div class="endHuandeng"></div>
 <div id="content">
 	<div class="center">
@@ -18,37 +19,18 @@
 	<h1>杨彦绘画史</h1>
 		<div id="huihua">
 		<ul class="u2">
-			<li><a href=""><span class="l date">2012</span><span>航母系列</span></a></li>
-			<li><a href=""><span class="l date">2011</span><span>太和系列</span></a></li>
-			<li><a href=""><span class="l date">2011</span><span>百度系列</span></a></li>
-			<li><a href=""><span class="l date">2009</span><span>非水墨|非油画|非版画|</span></a></li>
-			<li><a href=""><span class="l date">2008</span><span>度一系列</span></a></li>
-			<li><a href=""><span class="l date">2008</span><span>青藤系列</span></a></li>
+		<?php $u=2;foreach ($cate as $k=>$v) :?>
+			
+		
+			<li><a href="<?php echo Yii::app()->createUrl('gallery/show',array('cid'=>$v->id));?>"><span class="l date">2012</span><span><?php echo mb_substr($v->cname,0,12,'UTF-8');?></span></a></li>
+		<?php if(($k+1)%6==0){
+			$u++;
+			echo '</ul><ul class="u'.$u.'">';}
+			?>
+		<?php endforeach;?>
 		</ul>
-		<ul class="u3">
-			<li><a href=""><span class="l date">2012</span><span>航母系列</span></a></li>
-			<li><a href=""><span class="l date">2011</span><span>太和系列</span></a></li>
-			<li><a href=""><span class="l date">2011</span><span>百度系列</span></a></li>
-			<li><a href=""><span class="l date">2009</span><span>非水墨|非油画|非版画|</span></a></li>
-			<li><a href=""><span class="l date">2008</span><span>度一系列</span></a></li>
-			<li><a href=""><span class="l date">2008</span><span>青藤系列</span></a></li>
-		</ul>
-		<ul class="u4">
-			<li><a href=""><span class="l date">2012</span><span>航母系列</span></a></li>
-			<li><a href=""><span class="l date">2011</span><span>太和系列</span></a></li>
-			<li><a href=""><span class="l date">2011</span><span>百度系列</span></a></li>
-			<li><a href=""><span class="l date">2009</span><span>非水墨|非油画|非版画|</span></a></li>
-			<li><a href=""><span class="l date">2008</span><span>度一系列</span></a></li>
-			<li><a href=""><span class="l date">2008</span><span>青藤系列</span></a></li>
-		</ul>
-		<ul class="u5">
-			<li><a href=""><span class="l date">2012</span><span>航母系列</span></a></li>
-			<li><a href=""><span class="l date">2011</span><span>太和系列</span></a></li>
-			<li><a href=""><span class="l date">2011</span><span>百度系列</span></a></li>
-			<li><a href=""><span class="l date">2009</span><span>非水墨|非油画|非版画|</span></a></li>
-			<li><a href=""><span class="l date">2008</span><span>度一系列</span></a></li>
-			<li><a href=""><span class="l date">2008</span><span>青藤系列</span></a></li>
-		</ul>
+		
+
 			<img class="hui" src="<?php echo Yii::app()->getBaseUrl();?>/images/huihui_bg.png"/>
 		</div>
 		<!-- 绘画史结束 -->
@@ -111,7 +93,7 @@
 	<!-- 视频结束 -->
 	<div class="c"></div>
 	<!-- 综合开始 -->
-	<div id="zonghe">
+	<div id="zonghe" style='width:980px;'>
 		
 		<ul class='l qutan'>
 			<h3>趣谈</h3>

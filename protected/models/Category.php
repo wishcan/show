@@ -70,13 +70,6 @@ class Category extends CActiveRecord
 			'type'=>'栏目类分类',
 		);
 	}
-	public function p($val)
-	{
-		echo "<pre>";
-		print_r($val);
-		echo "</pre>";
-	}
-
 	/**
 	 * Retrieves a list of models based on the current search/filter conditions.
 	 * @return CActiveDataProvider the data provider that can return the models based on the search/filter conditions.
@@ -132,6 +125,21 @@ class Category extends CActiveRecord
 		}
 	//	exit;
 		return $data;
+		
+	}
+	/**
+	 * 获取子栏目
+	 * */
+	public static function  getChildren($pid)
+	{
+		if(!isset($pid))
+		{
+			return;
+		}	
+		$model=self::model()->findByPk($pid);
+		$children=$model->children;
+
+		return $children;
 		
 	}
 	public static function appendChildren(&$data,$model,$path=5)
