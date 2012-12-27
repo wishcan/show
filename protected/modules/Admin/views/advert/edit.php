@@ -17,7 +17,7 @@
 		<?php  foreach ($row as $k => $v):?>
 		<tr class="<?php if($k%2==0) echo 'tr1';?>">
 			<td>
-				<a href="<?php echo $v['link'];?>">
+				<a href="<?php $url=substr();echo $v['link'];?>">
 					<img src="<?php echo $v['thumb']?>" />
 				</a>
 

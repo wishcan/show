@@ -163,7 +163,12 @@
 	           		 <ul class="show">
 		               	<li class="sub_menu">
 		                <h6>广告模块</h6>
+			                	<ul>
+			                		<li><a href="<?php echo $this->createAbsoluteUrl('advert/admin');?>"  target='con'>广告位管理</a></li>
+			                		<li><a href="<?php echo $this->createAbsoluteUrl('advert/edit')?>" target='con'>广告管理</a></li>
+			                	</ul>
 
+<<<<<<< HEAD
 
 		                	<ul>
 		                	<li><a href="<?php echo $this->createAbsoluteUrl('advert/admin');?>"  target='con'>广告位管理</a></li>
@@ -172,6 +177,8 @@
 		                	
 		                	</ul>
 
+=======
+>>>>>>> master
 		                </li>
 		                <li class="sub_menu">
 		               <h6>艺术家模块</h6>

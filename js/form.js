@@ -10,7 +10,16 @@ $(function(){
 		$(this).removeClass("inputFocus");
 
 	})
-
+$(".button-column a img").css({"width":"11","height":"11"});
+	$(".button-column a img").hover(function(){
+		$(this).css({"width":13,"height":13});
+	},function(){
+		$(this).css({"width":11,"height":11});
+	})
+	$(".button-column .delete").hover(function(){
+			
+		$(this).css("background",'none');
+	})
 /*
 上传文件删除JS效果
 
@@ -27,6 +36,9 @@ $("div.form #smallImg .close").live('click',function(){
 				$(th).next("img").remove();
 				$(th).remove();
 				$("input[value='"+v+"']").remove();
+				$("#smallImg").hide();
+				$(".progressContainer").remove();
+				$("#swf").before("<span class='red'>删除成功</span>");
 			}
 			)
 
