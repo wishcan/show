@@ -29,9 +29,9 @@ $('.search-form form').submit(function(){
 <div class="c"></div>
 
 <?php 
-		  echo CHtml::link('高级信息管理','#',array('class'=>'search-button form_link'));
+		  echo CHtml::link('高级搜索','#',array('class'=>'search-button form_link'));
 		  echo CHtml::link('添加成员',array('arters/create'),array('class'=>'form_link','target'=>'con'));
-		  echo CHtml::link('艺术家指数管理',array('arters/create'),array('class'=>'form_link','target'=>'con'));
+		  echo CHtml::link('艺术家指数管理',array('artersindex/admin'),array('class'=>'form_link','target'=>'con'));
 ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(

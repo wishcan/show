@@ -20,28 +20,30 @@
 
 	<?php echo $form->errorSummary($model); ?>
 	<div class="row">
-		<?php echo $form->labelEx($model,'title'); ?>
+		<span>标题</span>
 		<?php echo $form->textField($model,'title',array('size'=>30,'maxlength'=>30)); ?>
+		 <span class="red">*</span>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
 
     <div class="row">
-        <?php echo $form->labelEx($model,'source'); ?>
+        <span>来源</span>
         <?php echo $form->textField($model,'source',array('size'=>10,'maxlength'=>10)); ?>
         <?php echo $form->error($model,'source'); ?>
     </div>
     
     <div class="row">
-        <?php echo $form->labelEx($model,'decription'); ?>
-        <?php echo $form->textArea($model,'decription',array('size'=>60,'maxlength'=>100,'style'=>'width:300px;height:50px;resize:none;')); ?>
+       <span>简介</span><br />
+        <?php echo $form->textArea($model,'decription'); ?>
+      
         <?php echo $form->error($model,'decription'); ?>
     </div>
     <div>
     <div class="row">
 
     <div id="divFileProgressContainer"></div>
-  <label>缩略图上传(<span class='limit'>限一张</span>)</label>
+  <span>缩略图上传(<span class='red'>限一张</span> &nbsp;)</span>
     <div class="swfupload" id="bswf"style=""><button id="swfupload"></button></div>
     </div>
     <div id="smallImg"> 
@@ -49,7 +51,7 @@
 </div>
 
     <div class="row">
-        <?php echo $form->labelEx($model,'tag'); ?>
+       <span>标签</span>
         <?php echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?>
         <?php echo $form->error($model,'tag'); ?>
     </div>
@@ -110,7 +112,7 @@
 
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'type_id'); ?>
+		<span>状态</span>
 		<?php echo $form->dropDownList($model,'type_id',NewsType::model()->getTypeList(0)); ?>
 
 		<?php echo $form->error($model,'type_id'); ?>
