@@ -11,14 +11,14 @@
 
 	<?php echo $form->errorSummary($model); ?>
 	<div class="row">
-		<?php echo $form->labelEx($model,'title'); ?>
+		<span>标题</span>
 		<?php echo $form->textField($model,'title',array('size'=>30,'maxlength'=>30)); ?>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
     
     <div class="row">
-        <?php echo $form->labelEx($model,'description'); ?>
+        <span>简介</span>
         <?php echo $form->textArea($model,'description',array('size'=>60,'maxlength'=>100,'style'=>'width:300px;height:50px;resize:none;')); ?>
         <?php echo $form->error($model,'description'); ?>
     </div>
@@ -36,12 +36,12 @@
 
 
     <div class="row">
-        <?php echo $form->labelEx($model,'tag'); ?>
-        <?php echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?>
+        
+       <span>标签</span> <?php echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?>
         <?php echo $form->error($model,'tag'); ?>
     </div>
 	<div class="row">
-		<?php echo $form->labelEx($model,'type_id'); ?>
+		<span>状态</span>
 		<?php echo $form->dropDownList($model,'type_id',NewsType::model()->getTypeList(0)); ?>
 		<?php echo $form->error($model,'type_id'); ?>
 	</div>

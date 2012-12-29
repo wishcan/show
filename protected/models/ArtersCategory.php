@@ -87,16 +87,21 @@ class ArtersCategory extends CActiveRecord
 	 * 如果传入ID的话就输出指定；
 	 * 如果没有就输出一个LIST列表；
 	 * */
-	public static function getCateName()
+	public static function getCateName($cateid=0)
 	{
-		 if(!isset($_GET['cateid'])){		
-			$model=self::model()->findAll();
-			return CHtml::listData($model,'cateid','cname');
-		 }else
-		 {
-		 	$model=self::model()->findByPk("cateid=:cateid",array(":cateid"=>$_GET['cateid']));
-		 	return $model->cname;
-		 }
+
+					if($cateid)
+					{
+						$model=self::model()->findByPk($cateid);
+						return $model->cname;
+					}else
+					{
+						
+				 	$model=self::model()->findAll();
+					return CHtml::listData($model,'cateid','cname');
+					}
+			 
+
 	}
 	
 }

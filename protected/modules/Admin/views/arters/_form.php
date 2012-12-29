@@ -1,23 +1,32 @@
-
+    <script src="<?php echo Yii::app()->baseUrl.'/js/jscal2/jscal2.js'; ?>"></script>
+    <script src="<?php echo Yii::app()->baseUrl.'/js/jscal2/cn.js' ?>"></script>
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.'/js/jscal2/jscal2.css' ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.'/js/jscal2/steel/steel.css' ?>" />
+    <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl.'/js/jscal2/border-radius.css' ?>" />
 <div class="form" style="margin-left:50px;">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'arters-form',
-	'enableAjaxValidation'=>false,
+	'enableAjaxValidation'=>true,
 )); ?>
 
 	<p class="note"> <span class="required">*</span> 为必填项</p>
 
 	<?php echo $form->errorSummary($model); ?>
-
-	<div class="row">
+	<div class='row'>
 		<span>姓名</span>
 		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
-				<select name="Arters[sex]">
-					<option value='1'>男</option>
-					<option value='2'>女</option>
-		
-				</select><span class="red">*</span>
+		<select value='' name="Arters[sex]" >
+			<?php if($model->sex=='女'){?>
+				<option value='2'>女</option>
+				<option value='1'>男</option>
+
+			<?php }else{?>
+				<option value='1'>男</option>
+				<option value='2'>女</option>
+			<?php }?>
+		</select>
+	<span class="red">*</span>
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 	<div class="row">
@@ -28,7 +37,8 @@
 
 	<div class="row">
 	
-	<span>生日</span> <input  type="text"id="f_date" name="Arters[birthDay]" /><br />
+	<span>生日</span>
+	<?php echo $form->textField($model,'birthDay',array('id'=>'f_date','value'=>$model->birthDay));?><br />		
 	<script type="text/javascript">//<![CDATA[
 	      Calendar.setup({
 	        inputField : "f_date",
@@ -42,7 +52,8 @@
 	</div>
 
 	<div class="row">
-		<span>分类</span>
+		<span>分类</span>&nbsp;&nbsp;&nbsp;
+		
 		<?php echo $form->dropDownList($model,'bl_arters_category_cateid',ArtersCategory::getCateName()); ?><span class="red">*</span>
 		<?php echo $form->error($model,'bl_arters_category_cateid'); ?>
 	</div>

@@ -83,8 +83,8 @@ class Arters extends CActiveRecord
 			'birthDay' => '生日',
 			'bl_arters_category_cateid' => '分类',
 			'tags' => '标签',
-			'district' => '城市',
-			'country' => '国家',
+			'district' => '国家',
+			'country' => '城市',
 		);
 	}
 
@@ -114,6 +114,10 @@ class Arters extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	/*
+	 * 获取艺术家的名字如果指定了aid的话就返回指定的的艺术家名
+	 * 如果没有就返回一个数组下拉框
+	 */
 	public static  function getArtName($aid=0)
 	{
 		if($aid)
@@ -125,4 +129,10 @@ class Arters extends CActiveRecord
 			return CHtml::listData($model,'aid','name');
 		}
 	}
+	public static function getSex()
+	{
+		$array=array('1'=>'男','2'=>'女');
+		return $array;
+	}
+	
 }
