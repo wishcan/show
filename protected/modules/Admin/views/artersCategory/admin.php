@@ -44,12 +44,21 @@ $('.search-form form').submit(function(){
 	'filter'=>$model,
 	'columns'=>array(
 		'cateid',
+<<<<<<< HEAD
+		'cname',
+		array(
+			'class'=>'CButtonColumn',
+=======
 		array('name'=>'cname'),
 		array(
 			'class'=>'CButtonColumn',
 				'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
+<<<<<<< HEAD
 				'createButtonLabel'=>'添加成员',
 				'createButtonUrl'=>'Yii::app()->createUrl("Admin/arters/create",array("cateid"=>$data->cateid))',
+=======
+>>>>>>> d2041ed7319d8f4f7e55e31f9c5531c3639b135c
+>>>>>>> 30ad2d0ea9a7d79bfaa93836b4ed9d48c422705d
 		),
 	),
 )); ?>
