@@ -1,6 +1,8 @@
 
 <style type="text/css">
-
+.table{
+	width:820px;
+}
 </style>
 
 <div class="table">
@@ -17,7 +19,20 @@
 		<?php  foreach ($row as $k => $v):?>
 		<tr class="<?php if($k%2==0) echo 'tr1';?>">
 			<td>
-				<a href="<?php $url=substr();echo $v['link'];?>">
+			
+			<?php 
+			if(substr($v['link'],0,3)=='www' || substr($v['link'],0,4)=='http')
+				{
+						$v['link']='arters/create';
+					echo ' <a href="http://'.$v['link'].'">';
+				}else
+				{
+					echo 	' <a href="localhost/'.$v['link'].">";
+				}
+				
+			?>
+				<a href="<?php echo 'http://'.$v['link'];?>">
+			
 					<img src="<?php echo $v['thumb']?>" />
 				</a>
 
