@@ -55,11 +55,14 @@
 				})
 				$(".next").click(function(){
 					 left=parseInt($(element).parent().css("margin-left"));
-					if((left-width)<uw)
+
+					if((left-width)>(-uw))
 					{
+
 						$(element).parent().stop(true,true).animate({'margin-left':left-width},animateTime);
 
 					}else{
+
 						return false;
 					}
 				})
@@ -125,7 +128,9 @@
 		var pw=width*len;
 		$(parent).css('width',pw);
 		$(parent).stop(true,true).animate({"margin-left":-width*index},animateTime);
-
+		if(index==0){
+			$(parent).stop(true,true).animate({"margin-left":0},0);
+		}
 	}
 
 	function imgPlay3(element,index,animateTime)
@@ -134,5 +139,7 @@
 		var height=$(element).height();
 		var parent=$(element).parent();
 		$(parent).stop(true,true).animate({"margin-top":-height*index},animateTime);
-
+		if(index==0){
+			$(parent).stop(true,true).animate({"margin-left":0},0);
+		}
 	}
