@@ -11,12 +11,14 @@
 	<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/imgJquery.js');  ?>  
 <title>作品欣赏</title>
 <style type="text/css">
+
 .l{
 	float:left;
 }
 body{
-	background:url(/show/images/body_bg2.jpg);
+	background:url(./images/body_bg2.jpg);
 	background-border:none;
+	
 }
 h1 a:hover,h2 a:hover{
 	color:#29A2B5;
@@ -32,6 +34,17 @@ h1 a, h2,a{
 	margin-left:10px;
 	padding:5px;
 	overflow:hidden;
+}
+.back{
+	display:block;	
+	width:108px;
+	height:53px;
+	cursor:pointer;
+	background:url(./images/back_link.png) no-repeat;
+}
+.back:hover{
+	background:url(./images/back_hover.png) no-repeat;
+	padding:0 2px;
 }
 ul li
 {	
@@ -56,17 +69,85 @@ filter:alpha(opacity=40);  /* ie 有效*/
  	margin:0 5px 0 10px;
 
  }
-
+.gengduo{
+	border-top:solid 2px #12F10E;
+	width:100%;
+	background:#ddd;
+	position:fixed;
+	bottom:0px;
+ 	filter:alpha(opacity=80);  /* ie 有效*/
+	-moz-opacity:0.8; /* Firefox  有效*/
+	opacity:0.8; /* 通用，其他浏览器  有效*/
+}
+.gengduo p{
+	margin:0px;
+	text-align:center;height:20px;
+	cursor:pointer;
+}
+.gengduo p:hover{
+	color:#ff6600;
+}
+.gengduo p b{
+	position:relative;top:-5px;
+}
+.qita{
+	position:fixed;
+	right:-210px;
+	width:200px;
+	top:240px;
+	padding:5px;
+}
+.qita a{
+	display:block;
+	float:left;
+	width:97px;
+	height:36px;
+	background:url(./images/biaoqian_1.png)no-repeat;
+	color:#fff;
+	font-size:12px;
+	text-align:center;
+	line-height:36px;
+}
+.qita a:hover{
+	text-decoration:underline;
+	color:#000;
+}
+.click{
+	width:38px;
+	height:275px;
+	background:url(./images/qita.png)no-repeat;
+	position:fixed;
+	right:0px;
+	color:#ff6600;
+	top:400px;
+}
+.click p{
+	width:20px;
+	font-size:16px;
+	text-align:center;
+	margin-top:0px;
+	padding:10px 10px;
+	font-weight:bold;
+	cursor:pointer;
+}
+.click p:hover{
+	background:url(./images/qita1.png)no-repeat;
+	color:#fff;
+}
 </style>
 <script type="text/javascript">
 $(function(){
-
+	$("body").css("width",parseInt($(".img img").width())+400);
 	$(".link").height();	
 	$(".line").css("height",$(".link").height());
-	$("h2 a").click(function()
+	$("h2").click(function()
 			{
 				history.go(-1);
 		})	
+	for(var i=0;i<$(".qita a").length;i++)
+		{
+			$(".qita a").eq(i).css("background","url(./images/biaoqian_"+Math.floor(Math.random()*9+1)+".png)");
+		}
 	$(".xiaotu li img").click(function()
 			{
 		$(".on").removeClass("on");
@@ -76,15 +157,31 @@ $(function(){
 		$(".img").append("<img src='"+src+"' />");	
 
 		})
+		$(".click").click(function(){
+				
+		
+					$(this).animate({'right':200},500);
+					$(".qita").animate({'right':0},500);
+					$(this).find("p").addClass("hide");
+			
+			})
+			$(".qita").mouseleave(function(){
+				$(this).animate({'right':-210},10);
+				$(".click").animate({'right':0},10);
+				})
+
+
+
 		
 })
 
 </script>
 </head>
 <body>
+<div id='content'>
 <div class="l link">
 	<h1 ><a style="color:#3333" href="<?php echo $this->createUrl('index/index');?>">杨彦艺术网</a></h1>
-	<h2 ><a style="color:#3333" href="javascript:void(0)"?>返回</a></h2>
+	<h2 class="back"></h2><!-- 返回按钮 -->
 	<div class='xiaotu' >
 		<div>
 			<?php foreach ($xiaotu as $v):?>
@@ -94,7 +191,7 @@ $(function(){
 		</div>
 	</div>
 </div>
-
+	
 <img src="<?php echo Yii::app()->getBaseUrl()?>/images/color_line.png" class="l line">
 <div class="l img">
 
@@ -106,6 +203,17 @@ if(isset($datu)){
 		echo Yii::app()->controller->getImgDir($xiaotu[0]['thumb']).$xiaotu[0]['thumb'];}?>" />
 
 </div>
+<div class='c'></div>
 
+<div class="qita">
+
+		<?php foreach (Category::getChildren(23) as $v):?>
+		
+		<a href="<?php echo Yii::App()->createUrl('gallery/showImg',array('cid'=>$v->id));?> "><?php echo $v->cname?></a>
+			<?php endforeach;?>
+		</div>
+</div>
+<div class='c'></div>
+<div class="click l"><p>更多作品</p></div>
 </body>
 </html>

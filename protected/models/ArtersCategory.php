@@ -87,13 +87,6 @@ class ArtersCategory extends CActiveRecord
 	 * 如果传入ID的话就输出指定；
 	 * 如果没有就输出一个LIST列表；
 	 * */
-<<<<<<< HEAD
-	public function getCateName()
-	{
-		 if(!isset($_GET['cateid'])){		
-		$model=self::model()->findAll();
-		return CHml::listData($model,'cateid','cname');
-=======
 
 	public static function getCateName()
 	{
@@ -101,7 +94,6 @@ class ArtersCategory extends CActiveRecord
 			$model=self::model()->findAll();
 			return CHtml::listData($model,'cateid','cname');
 
->>>>>>> master
 		 }else
 		 {
 		 	$model=self::model()->findByPk("cateid=:cateid",array(":cateid"=>$_GET['cateid']));
