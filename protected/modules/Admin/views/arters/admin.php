@@ -61,8 +61,11 @@ $('.search-form form').submit(function(){
 		'click',
 		'description',
 		'birthDay',
-		'bl_arters_category_cateid',
-		'tags',
+		array(
+				'name'=>'bl_arters_category_cateid',
+			'value'=>'ArtersCategory::getCateName($data->bl_arters_category_cateid)',
+				),
+			'tags',
 // 		'district',
 		'country',
 		

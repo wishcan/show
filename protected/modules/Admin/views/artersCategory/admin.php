@@ -49,6 +49,10 @@ $('.search-form form').submit(function(){
 		array(
 			'class'=>'CButtonColumn',
 				'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
+
+				'createButtonLabel'=>'添加成员',
+				'createButtonUrl'=>'Yii::app()->createUrl("Admin/arters/create",array("cateid"=>$data->cateid))',
+
 		),
 	),
 )); ?>

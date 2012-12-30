@@ -10,8 +10,8 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->labelEx($model,'cname'); ?>
-		<?php echo $form->textField($model,'cname',array('size'=>45,'maxlength'=>45)); ?>
+		<span>分类名</span>
+		<?php echo $form->textField($model,'cname',array('size'=>45,'maxlength'=>45)); ?><span class="red">*</span>
 		<?php echo $form->error($model,'cname'); ?>
 	</div>
 
