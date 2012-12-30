@@ -31,11 +31,19 @@
 			<span>
 			<?php if(empty($neirong->description))
 				{
+<<<<<<< HEAD
   					echo trim(mb_substr(strip_tags($neirong->newsData->content),'0','60','UTF-8'),'\'').'...';
 				}else
 				{
 					
 					echo trim(strip_tags($neirong->decription,'\''));
+=======
+  					echo mb_substr(strip_tags($neirong->newsData->content),'0','60','UTF-8').'...';
+				}else
+				{
+					
+					echo strip_tags($neirong->decription);
+>>>>>>> 6ce639bfa10bb4c337d40db9ce125256dbb362bb
 				}	
 			?>
 			
@@ -47,7 +55,11 @@
 					$this->beginWidget('CHtmlPurifier');
 			
 			
+<<<<<<< HEAD
 					echo trim($neirong->newsData->content,'\''); 
+=======
+					echo $neirong->newsData->content; 
+>>>>>>> 6ce639bfa10bb4c337d40db9ce125256dbb362bb
 					
 					$this->endWidget();
 				?>	
