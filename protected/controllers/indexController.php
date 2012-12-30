@@ -16,8 +16,9 @@
  					  'condition'=>'cid=:cid',
 					   'params'=>array(':cid'=>'27'),	
  						));
- 		$cate=Category::model()->getChildren(23);		
- 		$this->render("index",array('news'=>$news,'cate'=>$cate));
+ 		$cate=Category::model()->getChildren(23);	
+ 		$advert=Advert::model()->getAdverts(1);	
+ 		$this->render("index",array('news'=>$news,'cate'=>$cate,'advert'=>$advert));
 
  	}
  	public function actionError()

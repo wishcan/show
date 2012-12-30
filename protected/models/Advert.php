@@ -88,4 +88,18 @@ class Advert extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	public static function getAdverts($aid=0)
+	{
+		if($aid)
+		{
+			$db=Yii::app()->db;
+			$sql='select * from bl_advert_data where aid=:aid order by adid desc';
+			$command=$db->createCommand($sql);
+			$command->bindParam(':aid',$aid);
+			$row=$command->queryAll();
+			return $row;
+		}else{
+			return false;
+		}
+	}
 }

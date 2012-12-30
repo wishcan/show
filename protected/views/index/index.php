@@ -1,15 +1,21 @@
-
-
+<script type="text/javascript">
+$(function(){
+	imgJquery('#huandeng ul li',2,3000);
+})
+</script>
 
 	<!-- 幻灯片开始 -->
+
 	<div id="huandeng">
-		
+	<div class="center">
 		<ul class="center">	
-			<li><a href="#"><img src="/show/images/huan1.jpg" /></a></li>		
+			<?php foreach ($advert as $v):?>
+			<li><a href="<?php echo $v['link'];?>"><img title='<?php echo $v['title']?>' src="<?php echo Yii::app()->controller->getImgDir($v['thumb']).$v['thumb'];?>" /></a></li>		
+			<?php endforeach;?>
 		</ul>
-		<span class="prev l"></span>
-		<span class="next r"></span>
+
 		<div class="c"></div>
+	</div>
 	</div>
 	<!-- 幻灯片结束 -->
 <div class="endHuandeng"></div>

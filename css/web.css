@@ -136,20 +136,26 @@ select option{
 }
 #huandeng img{
 	width:960px;
+	height:300px;
 }
 #huandeng{
 	background:#333;
 	margin-top:5px;
-	height:235px;
+	height:300px;
+	overflow:hidden;
+}
+#huandeng div{
+	width:960px;
+overflow:hidden;
 }
 #huandeng .prev,.next{
 	display: block;
 	position: relative;
 	width:40px;
 	height:40px;
-	top:-130px;
-	display:none;
+	top:-150px;
 	background:url(../images/sprite.png);
+	cursor:pointer;
 }
 #huandeng .prev{
 	background-position:-261px -122px;
