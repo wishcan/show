@@ -65,7 +65,9 @@ class ArtersController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
+		if(isset($_GET['cateid'])){
+			$model->bl_arters_category_cateid=$_GET['cateid'];
+		}
 		if(isset($_POST['Arters']))
 		{
 			
@@ -94,6 +96,7 @@ class ArtersController extends Controller
 		if(isset($_POST['Arters']))
 		{
 			$model->attributes=$_POST['Arters'];
+			
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->aid));
 		}
