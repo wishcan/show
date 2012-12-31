@@ -13,6 +13,17 @@
 	<p class="note"> <span class="required">*</span> 为必填项</p>
 
 	<?php echo $form->errorSummary($model); ?>
+<<<<<<< HEAD
+
+	<div class="row">
+		<span>姓名</span>
+		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
+				<select name="Arters[sex]">
+					<option value='1'>男</option>
+					<option value='2'>女</option>
+		
+				</select><span class="red">*</span>
+=======
 	<div class='row'>
 		<span>姓名</span>
 		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
@@ -27,6 +38,7 @@
 			<?php }?>
 		</select>
 	<span class="red">*</span>
+>>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
 		<?php echo $form->error($model,'name'); ?>
 	</div>
 	<div class="row">
@@ -37,8 +49,12 @@
 
 	<div class="row">
 	
+<<<<<<< HEAD
+	<span>生日</span> <input  type="text"id="f_date" name="Arters[birthDay]" /><br />
+=======
 	<span>生日</span>
 	<?php echo $form->textField($model,'birthDay',array('id'=>'f_date','value'=>$model->birthDay));?><br />		
+>>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
 	<script type="text/javascript">//<![CDATA[
 	      Calendar.setup({
 	        inputField : "f_date",
@@ -52,8 +68,12 @@
 	</div>
 
 	<div class="row">
+<<<<<<< HEAD
+		<span>分类</span>
+=======
 		<span>分类</span>&nbsp;&nbsp;&nbsp;
 		
+>>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
 		<?php echo $form->dropDownList($model,'bl_arters_category_cateid',ArtersCategory::getCateName()); ?><span class="red">*</span>
 		<?php echo $form->error($model,'bl_arters_category_cateid'); ?>
 	</div>

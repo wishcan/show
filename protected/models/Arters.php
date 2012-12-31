@@ -114,10 +114,13 @@ class Arters extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+<<<<<<< HEAD
+=======
 	/*
 	 * 获取艺术家的名字如果指定了aid的话就返回指定的的艺术家名
 	 * 如果没有就返回一个数组下拉框
 	 */
+>>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
 	public static  function getArtName($aid=0)
 	{
 		if($aid)
@@ -129,10 +132,13 @@ class Arters extends CActiveRecord
 			return CHtml::listData($model,'aid','name');
 		}
 	}
+<<<<<<< HEAD
+=======
 	public static function getSex()
 	{
 		$array=array('1'=>'男','2'=>'女');
 		return $array;
 	}
 	
+>>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
 }

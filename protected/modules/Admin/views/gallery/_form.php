@@ -41,7 +41,11 @@
         <?php echo $form->error($model,'tag'); ?>
     </div>
 	<div class="row">
+<<<<<<< HEAD
+		<?php echo $form->labelEx($model,'type_id'); ?>
+=======
 		<span>状态</span>
+>>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
 		<?php echo $form->dropDownList($model,'type_id',NewsType::model()->getTypeList(0)); ?>
 		<?php echo $form->error($model,'type_id'); ?>
 	</div>
