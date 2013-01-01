@@ -1,6 +1,7 @@
 <?php
 class galleryController extends Controller
 {
+	#作品欣赏
 	public function actionIndex()
 	{
 		
@@ -12,6 +13,7 @@ class galleryController extends Controller
 	}
 	/*
 	 * 点击图片的显示单张图片
+	 * 
 	 * */
 	public function actionShowImg()
 	{
@@ -49,6 +51,9 @@ class galleryController extends Controller
 			$this->render('showImg',array('xiaotu'=>$xiaotu,'title'=>$model[0]->title));
 		}
 	}
+	/*
+	 * 获得更多图片
+	 */
 	public static function getOuter($gid)
 	{
 		if(!isset($gid))
@@ -63,6 +68,10 @@ class galleryController extends Controller
 		$model=$command->queryAll();
 		return $model;
 	}
+	/*
+	 * 异步获取图片
+	 * 
+	 */
 	public function actionGetMoreImg()
 	{
 		if(!isset($_GET['start']))
@@ -81,6 +90,14 @@ class galleryController extends Controller
 		}else{
 			echo '没有了';
 		}
+	}
+	#摄影作品
+	public function actionShey()
+	{
+		$sql='select * from bl_gallery_data order by gdid';
+		$command=parent::dbLink($sql);
+		$row=$command->queryAll();
+		$this->render('shey',array('row'=>$row));
 	}
 	
 	

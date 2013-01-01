@@ -68,27 +68,7 @@
 		</div>
 		<div id="list_r" class="r">
 			<div class="biaoqian">
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>度一系列</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>度一系列</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>度一系列</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
-			<a href=''>山水</a>
+				<iframe src="<?php echo Yii::app()->createUrl('index/showCate');?>"></iframe>
 			</div>
 		</div>
 	</div>

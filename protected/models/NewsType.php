@@ -84,7 +84,7 @@ class NewsType extends CActiveRecord
 	}
 	public function getTypeList()
 	{
-		$model=NewsType::model()->findAll('tid!=4');
+		$model=NewsType::model()->findAll("tid!=4");
 		return CHtml::listData($model,'tid','typeName');
 	}
 	public function getTypeName($tid)

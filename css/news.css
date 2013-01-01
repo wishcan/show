@@ -39,19 +39,14 @@ text-decoration:underline;
 	padding:3px;
 	border:solid  1px #ddd;
 }
-.biaoqian a{
-	display: block;
-	float: left;
-	padding:5px 8px;
-	margin:8px;
-	background-color: #DDD;
-	border-radius:2px;
+.biaoqian {
+	height:780px;
+}
+.biaoqian iframe a{
+
 }
 .biaoqian a:hover{
-	background-color: #999;
-	color:#f5f5f5;
-	box-shadow: 0px 0px 5px rgba(186,188,182,1);
-	/*box-shadow: 0px 0px 10px rgba(0,0,0,0.8) inset;*/
+
 }
 .toubu h3{
 	color:#333;

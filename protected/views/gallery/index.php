@@ -1,6 +1,18 @@
 <meta charset='UTF-8' />
 <link  rel="stylesheet" type="text/css" href="<?php echo Yii::app()->getBaseUrl();?>/css/gallery.css" />
+<script type="text/javascript">
+$(function(){
 
+imgJquery(".tu li");
+$(".jieshao li").hover(function(){
+	imgPlay1(".tu li",$(this).index(),500);
+	$(".on").removeClass("on");
+	$(this).addClass("on");
+})
+
+})
+
+</script>
 <!-- 现在位置 -->
 <div id="weizhi">
 	<div class="center">
@@ -14,46 +26,31 @@
 		<div class="donghua">
 			<ul class="tu l">
 				<li><a href=""><img src="/show/images/zanwei_5.jpg" /></a></li>
+				<li><a href=""><img src="/show/images/zanwei3.jpg" /></a></li>
+				<li><a href=""><img src="/show/images/zanwei4.jpg" /></a></li>
 				<li><a href=""><img src="/show/images/zanwei_5.jpg" /></a></li>
-				<li><a href=""><img src="/show/images/zanwei_5.jpg" /></a></li>
-				<li><a href=""><img src="/show/images/zanwei_5.jpg" /></a></li>
-				<li><a href=""><img src="/show/images/zanwei_5.jpg" /></a></li>
+				<li><a href=""><img src="/show/images/zanwei3.jpg" /></a></li>
 			</ul>
 			<ul class="jieshao r">
 				<li>
-					<p class="zuopin">山水画作</p>
-					<p class="xinxi">
-						<span class="s1 l">度一系列</span>
-						<span class="s2 r">2012</span>
-					</p>
+					<p class="zuopin"><a href=''>山水画作</a></p>
+
 				</li>
 				<li>
-					<p class="zuopin">山水画作</p>
-					<p class="xinxi">
-						<span class="s1 l">度一系列</span>
-						<span class="s2 r">2012</span>
-					</p>
+					<p class="zuopin"><a href=''>山水画作</a></p>
+
 				</li>
 				<li>
-					<p class="zuopin">山水画作</p>
-					<p class="xinxi">
-						<span class="s1 l">度一系列</span>
-						<span class="s2 r">2012</span>
-					</p>
+					<p class="zuopin"><a href=''>山水画作</a></p>
+
 				</li>
 				<li>
-					<p class="zuopin">山水画作</p>
-					<p class="xinxi">
-						<span class="s1 l">度一系列</span>
-						<span class="s2 r">2012</span>
-					</p>
+					<p class="zuopin"><a href=''>山水画作</a></p>
+
 				</li>
-								<li>
-					<p class="zuopin">山水画作</p>
-					<p class="xinxi">
-						<span class="s1 l">度一系列</span>
-						<span class="s2 r">2012</span>
-					</p>
+				<li>
+					<p class="zuopin"><a href=''>山水画作</a></p>
+
 				</li>
 
 			

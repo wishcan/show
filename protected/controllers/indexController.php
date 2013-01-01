@@ -16,7 +16,7 @@
  					  'condition'=>'cid=:cid',
 					   'params'=>array(':cid'=>'27'),	
  						));
- 		$cate=Category::model()->getChildren(23);	
+ 		$cate=self::getGalleryCate();	
  		$advert=Advert::model()->getAdverts(1);	
  		$this->render("index",array('news'=>$news,'cate'=>$cate,'advert'=>$advert));
 
@@ -30,6 +30,15 @@
  			else
  				$this->render('error', $error);
  		}
+ 	}
+ 	public function actionShowCate(){
+ 		$this->layout='//';
+ 		$cate=self::getGalleryCate();
+ 		$this->render('showCate',array('cate'=>$cate));
+ 	}
+ 	public function getGalleryCate()
+ 	{
+ 		return Category::model()->getChilDren(23);
  	}
 
 

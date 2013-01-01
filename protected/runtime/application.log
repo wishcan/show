@@ -7179,3 +7179,596 @@ in C:\wamp\www\show\index.php (13)
 =======
 >>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
 >>>>>>> master
+2012/12/30 14:16:41 [error] [php] substr() expects at least 2 parameters, 0 given (C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(96): AdvertController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(870): AdvertController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(783): AdvertController->renderPartial()
+#3 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(231): AdvertController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/edit
+in C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php (23)
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (231)
+in C:\wamp\www\show\index.php (13)
+2012/12/30 14:16:43 [error] [php] substr() expects at least 2 parameters, 0 given (C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(96): AdvertController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(870): AdvertController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(783): AdvertController->renderPartial()
+#3 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(231): AdvertController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/edit
+in C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php (23)
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (231)
+in C:\wamp\www\show\index.php (13)
+2012/12/30 14:16:45 [error] [php] substr() expects at least 2 parameters, 0 given (C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php:23)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CBaseController.php(96): AdvertController->renderInternal()
+#1 C:\wamp\www\yii\framework\web\CController.php(870): AdvertController->renderFile()
+#2 C:\wamp\www\yii\framework\web\CController.php(783): AdvertController->renderPartial()
+#3 C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php(231): AdvertController->render()
+#4 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AdvertController->actionEdit()
+#5 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#7 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#9 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#10 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#11 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/edit
+in C:\wamp\www\show\protected\modules\Admin\views\advert\edit.php (23)
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (231)
+in C:\wamp\www\show\index.php (13)
+2012/12/30 14:19:13 [error] [php] Invalid argument supplied for foreach() (C:\wamp\www\yii\framework\db\ar\CActiveRecord.php:2289)
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(78): ArtersCategory->getMetaData()
+#1 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersCategoryController.php(141): ArtersCategory->__construct()
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersCategoryController->actionAdmin()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersCategoryController->runAction()
+#5 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#7 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersCategoryController->filterAccessControl()
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#9 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(266): ArtersCategoryController->runActionWithFilters()
+#11 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersCategoryController->run()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#13 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersCategoryController.php (141)
+in C:\wamp\www\show\index.php (13)
+2012/12/30 14:20:55 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1777): tag()
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1205): activeInputField()
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(575): activeTextField()
+#4 C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php(20): CActiveForm->textField()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#8 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(39): ArtersController->renderPartial()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#11 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#12 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(152): ArtersController->render()
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+in C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php (20)
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (39)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (152)
+2012/12/30 14:24:30 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1777): tag()
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1205): activeInputField()
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(575): activeTextField()
+#4 C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php(20): CActiveForm->textField()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#8 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(39): ArtersController->renderPartial()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#11 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#12 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(152): ArtersController->render()
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+in C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php (20)
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (39)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (152)
+2012/12/30 14:24:54 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1777): tag()
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1205): activeInputField()
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(575): activeTextField()
+#4 C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php(20): CActiveForm->textField()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#8 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(39): ArtersController->renderPartial()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#11 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#12 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(152): ArtersController->render()
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+in C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php (20)
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (39)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (152)
+2012/12/30 14:24:59 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1777): tag()
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1205): activeInputField()
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(575): activeTextField()
+#4 C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php(20): CActiveForm->textField()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#8 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(39): ArtersController->renderPartial()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#11 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#12 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(152): ArtersController->render()
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+in C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php (20)
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (39)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (152)
+2012/12/30 14:25:14 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1777): tag()
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1205): activeInputField()
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(575): activeTextField()
+#4 C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php(20): CActiveForm->textField()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#8 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(39): ArtersController->renderPartial()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#11 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#12 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(152): ArtersController->render()
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+in C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php (20)
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (39)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (152)
+2012/12/30 14:25:50 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\wamp\www\yii\framework\web\helpers\CHtml.php:85)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\helpers\CHtml.php(140): renderAttributes()
+#1 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1777): tag()
+#2 C:\wamp\www\yii\framework\web\helpers\CHtml.php(1205): activeInputField()
+#3 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(575): activeTextField()
+#4 C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php(20): CActiveForm->textField()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#7 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#8 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(39): ArtersController->renderPartial()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): ArtersController->renderInternal()
+#11 C:\wamp\www\yii\framework\web\CController.php(870): ArtersController->renderFile()
+#12 C:\wamp\www\yii\framework\web\CController.php(783): ArtersController->renderPartial()
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(152): ArtersController->render()
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): ArtersController->runAction()
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): ArtersController->filterAccessControl()
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): ArtersController->runActionWithFilters()
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): ArtersController->run()
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+in C:\wamp\www\show\protected\modules\Admin\views\arters\_search.php (20)
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (39)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (152)
+2012/12/30 14:26:11 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sex' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `bl_arters` `t` WHERE sex IN (:ycp0, :ycp1).
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (81)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (152)
+in C:\wamp\www\show\index.php (13)
+2012/12/30 14:26:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sex' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `bl_arters` `t` WHERE sex IN (:ycp0, :ycp1)' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1536): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(105): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(269): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(148): CGridView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(81): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#15 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(152): CController->render('admin', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#17 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\wamp\www\show\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
+2012/12/30 14:26:48 [error] [system.db.CDbCommand] CDbCommand::fetchColumn() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sex' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `bl_arters` `t` WHERE sex IN (:ycp0, :ycp1).
+in C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php (81)
+in C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php (152)
+in C:\wamp\www\show\index.php (13)
+2012/12/30 14:26:48 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'sex' in 'where clause'. The SQL statement executed was: SELECT COUNT(*) FROM `bl_arters` `t` WHERE sex IN (:ycp0, :ycp1)' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(425): CDbCommand->queryInternal('fetchColumn', 0, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1536): CDbCommand->queryScalar()
+#2 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(179): CActiveRecord->count(Object(CDbCriteria))
+#3 C:\wamp\www\yii\framework\web\CDataProvider.php(193): CActiveDataProvider->calculateTotalItemCount()
+#4 C:\wamp\www\yii\framework\web\CActiveDataProvider.php(129): CDataProvider->getTotalItemCount()
+#5 C:\wamp\www\yii\framework\web\CDataProvider.php(137): CActiveDataProvider->fetchData()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(105): CDataProvider->getData()
+#7 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(269): CBaseListView->init()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(148): CGridView->init()
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(173): CBaseController->createWidget('zii.widgets.gri...', Array)
+#10 C:\wamp\www\show\protected\modules\Admin\views\arters\admin.php(81): CBaseController->widget('zii.widgets.gri...', Array)
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#12 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#13 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#14 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('admin', Array, true)
+#15 C:\wamp\www\show\protected\modules\Admin\controllers\ArtersController.php(152): CController->render('admin', Array)
+#16 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ArtersController->actionAdmin()
+#17 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#18 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#19 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#20 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#22 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#23 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#24 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#26 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#27 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#28 C:\wamp\www\show\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
+2013/01/01 12:11:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "video/index"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('video/index')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=video/index
+HTTP_REFERER=http://localhost/show/index.php?r=news/index
+---
+2013/01/01 12:11:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ada" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('ada')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('ada')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/ada')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=gallery/ada
+HTTP_REFERER=http://localhost/show/index.php?r=video/index
+---
+2013/01/01 12:11:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "video/index"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('video/index')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=video/index
+HTTP_REFERER=http://localhost/show/index.php?r=gallery/ada
+---
+2013/01/01 12:11:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ada" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('ada')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('ada')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/ada')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=gallery/ada
+HTTP_REFERER=http://localhost/show/index.php?r=video/index
+---
+2013/01/01 12:11:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "video/index"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('video/index')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=video/index
+HTTP_REFERER=http://localhost/show/index.php?r=gallery/ada
+---
+2013/01/01 12:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ada" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('ada')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('ada')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/ada')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=gallery/ada
+HTTP_REFERER=http://localhost/show/index.php?r=video/index
+---
+2013/01/01 12:11:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "video/index"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('video/index')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=video/index
+HTTP_REFERER=http://localhost/show/index.php?r=gallery/ada
+---
+2013/01/01 12:11:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "ada" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('ada')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('ada')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/ada')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=gallery/ada
+HTTP_REFERER=http://localhost/show/index.php?r=video/index
+---
+2013/01/01 12:11:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "shey" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('shey')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('shey')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/shey')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=gallery/shey
+HTTP_REFERER=http://localhost/show/index.php?r=gallery/ada
+---
+2013/01/01 12:13:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "shey" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('shey')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('shey')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/shey')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=gallery/shey
+HTTP_REFERER=http://localhost/show/index.php?r=gallery/shey
+---
+2013/01/01 12:33:33 [error] [exception.CException] exception 'CException' with message 'galleryController 无法找到请求的视图 "shey".' in C:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('shey', Array, true)
+#1 C:\wamp\www\show\protected\controllers\galleryController.php(100): CController->render('shey', Array)
+#2 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShey()
+#3 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('shey')
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/shey')
+#8 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 C:\wamp\www\show\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/show/index.php?r=gallery/shey
+---
+2013/01/01 12:45:46 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=4' at line 1. The SQL statement executed was: SELECT * FROM `bl_news_type` `t` WHERE tid!==4.
+in C:\wamp\www\show\protected\models\NewsType.php (87)
+in C:\wamp\www\show\protected\modules\Admin\views\gallery\_form.php (49)
+in C:\wamp\www\show\protected\modules\Admin\views\gallery\create.php (17)
+2013/01/01 12:45:46 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=4' at line 1. The SQL statement executed was: SELECT * FROM `bl_news_type` `t` WHERE tid!==4' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\models\NewsType.php(87): CActiveRecord->findAll('tid!==4')
+#4 C:\wamp\www\show\protected\modules\Admin\views\gallery\_form.php(49): NewsType->getTypeList(0)
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#8 C:\wamp\www\show\protected\modules\Admin\views\gallery\create.php(17): CController->renderPartial('_form', Array)
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(102): CController->render('create', Array)
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create&cid=53
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
+2013/01/01 12:45:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=4' at line 1. The SQL statement executed was: SELECT * FROM `bl_news_type` `t` WHERE tid!==4.
+in C:\wamp\www\show\protected\models\NewsType.php (87)
+in C:\wamp\www\show\protected\modules\Admin\views\gallery\_form.php (49)
+in C:\wamp\www\show\protected\modules\Admin\views\gallery\create.php (17)
+2013/01/01 12:45:52 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=4' at line 1. The SQL statement executed was: SELECT * FROM `bl_news_type` `t` WHERE tid!==4' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\models\NewsType.php(87): CActiveRecord->findAll('tid!==4')
+#4 C:\wamp\www\show\protected\modules\Admin\views\gallery\_form.php(49): NewsType->getTypeList(0)
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#8 C:\wamp\www\show\protected\modules\Admin\views\gallery\create.php(17): CController->renderPartial('_form', Array)
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(102): CController->render('create', Array)
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create&cid=44
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---
+2013/01/01 12:45:55 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=4' at line 1. The SQL statement executed was: SELECT * FROM `bl_news_type` `t` WHERE tid!==4.
+in C:\wamp\www\show\protected\models\NewsType.php (87)
+in C:\wamp\www\show\protected\modules\Admin\views\gallery\_form.php (49)
+in C:\wamp\www\show\protected\modules\Admin\views\gallery\create.php (17)
+2013/01/01 12:45:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '=4' at line 1. The SQL statement executed was: SELECT * FROM `bl_news_type` `t` WHERE tid!==4' in C:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1287): CDbCommand->queryAll()
+#2 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1406): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\wamp\www\show\protected\models\NewsType.php(87): CActiveRecord->findAll('tid!==4')
+#4 C:\wamp\www\show\protected\modules\Admin\views\gallery\_form.php(49): NewsType->getTypeList(0)
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#6 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#7 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#8 C:\wamp\www\show\protected\modules\Admin\views\gallery\create.php(17): CController->renderPartial('_form', Array)
+#9 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#11 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#12 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php(102): CController->render('create', Array)
+#14 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#15 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#25 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 C:\wamp\www\show\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/show/index.php?r=Admin/gallery/create&cid=42
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/
+---

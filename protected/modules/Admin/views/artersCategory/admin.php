@@ -50,12 +50,10 @@ $('.search-form form').submit(function(){
 			'class'=>'CButtonColumn',
 				'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
 
-<<<<<<< HEAD
-=======
 				'createButtonLabel'=>'添加成员',
 				'createButtonUrl'=>'Yii::app()->createUrl("Admin/arters/create",array("cateid"=>$data->cateid))',
 
->>>>>>> master
+
 		),
 	),
 )); ?>

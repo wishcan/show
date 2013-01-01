@@ -9,6 +9,11 @@ div.form label{
 }
 .l{float: left;}
 .r{float:right}
+
+.biaoqian iframe{
+	border:none;
+	height:100%;
+}
 #title
 {	
 	padding:0 6px;

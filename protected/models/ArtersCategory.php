@@ -49,8 +49,8 @@ class ArtersCategory extends CActiveRecord
 	{
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
-		return array(
-		);
+		return array();
+		
 	}
 
 	/**
@@ -87,20 +87,7 @@ class ArtersCategory extends CActiveRecord
 	 * 如果传入ID的话就输出指定；
 	 * 如果没有就输出一个LIST列表；
 	 * */
-<<<<<<< HEAD
 
-	public static function getCateName()
-	{
-		 if(!isset($_GET['cateid'])){		
-			$model=self::model()->findAll();
-			return CHtml::listData($model,'cateid','cname');
-
-		 }else
-		 {
-		 	$model=self::model()->findByPk("cateid=:cateid",array(":cateid"=>$_GET['cateid']));
-		 	return $model->cname;
-		 }
-=======
 	public static function getCateName($cateid=0)
 	{
 
@@ -115,8 +102,6 @@ class ArtersCategory extends CActiveRecord
 					return CHtml::listData($model,'cateid','cname');
 					}
 			 
-
->>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
 	}
 	
 }

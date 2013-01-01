@@ -30,18 +30,18 @@
 						$(".prev,.next").hide();
 				})
 				//uw->UL的总宽度
-				//当
-				var width=$(element).width();
-				var uw=parseInt($(element).length)*width;
+				// //点击.prev 或者.next 的时候停止动画计算当前
+				// var width=$(element).width();
+				// var uw=parseInt($(element).length)*width;
 			
-				$(".prev,.next").hover(function(){
+				// $(".prev,.next").hover(function(){
 
-					clearInterval(set);
-				},function(){
-					var left=parseInt($(element).parent().css("margin-left"));
-					index=-(parseInt(left/width));
-					imgShow(index);
-				})
+				// 	clearInterval(set);
+				// },function(){
+				// 	var left=parseInt($(element).parent().css("margin-left"));
+				// 	index=-(parseInt(left/width));
+				// 	imgShow(index);
+				// })
 
 				$(".prev").click(function(){
 						
@@ -116,7 +116,7 @@
 	*/
 	function imgPlay1(element,index,animateTime)
 	{
-		$(element).eq(index).fadeIn(animateTime).siblings().hide();
+		$(element).eq(index).stop(true,true).fadeIn(animateTime).siblings().hide();
 	}
 	function imgPlay2(element,index,animateTime)
 	{

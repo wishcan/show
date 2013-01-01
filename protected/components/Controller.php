@@ -41,5 +41,11 @@ class Controller extends CController
 // 		$message=$msg;
 		
 	}
+	public function dbLink($sql)
+	{
+		$db=Yii::app()->db;
+		$command=$db->createCommand($sql);
+		return $command;
+	}
 
 }
