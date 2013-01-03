@@ -174,7 +174,7 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 	width:200px;
 	height:25px;
 }
-div.form input[type="text"]{
+div.form input[type="text"],div.form input[type='password'],div.form select{
 	width:200px;
 	height:25px;
 	margin-left:15px;
@@ -192,9 +192,9 @@ select{
 }
 option{
 	width:180px;
-	border:solid 1px #ddd;
+
 }
  form input[type="submit"]{
-	margin-left:200px;
-}
+		margin-left:200px;
+	}
 .red{margin-left:10px;color:red}

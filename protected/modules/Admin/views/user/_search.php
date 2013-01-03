@@ -11,11 +11,6 @@
 	</div>
 
 	<div class="row">
-		<?php echo $form->label($model,'sex'); ?>
-		<?php echo $form->textField($model,'sex',array('size'=>3,'maxlength'=>3)); ?>
-	</div>
-
-	<div class="row">
 		<?php echo $form->label($model,'username'); ?>
 		<?php echo $form->textField($model,'username',array('size'=>20,'maxlength'=>20)); ?>
 	</div>
@@ -23,6 +18,16 @@
 	<div class="row">
 		<?php echo $form->label($model,'creatime'); ?>
 		<?php echo $form->textField($model,'creatime'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'sex'); ?>
+		<?php echo $form->textField($model,'sex',array('size'=>3,'maxlength'=>3)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'bl_role_rid'); ?>
+		<?php echo $form->textField($model,'bl_role_rid'); ?>
 	</div>
 
 	<div class="row buttons">

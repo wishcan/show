@@ -72,14 +72,6 @@ echo CHtml::link('回收站',array('news/admin','typeid'=>4),array('class'=>'for
 			'value'=>'NewsType::model()->getTypeName($data->type_id)',
 
 			),
-// 		'home_cate',
-// 		'home_top',
-// 		array('name'=>'children_top',
-// 				 'headerHtmlOptions'=>array(
-// 				 		'style'=>'background:#dddd'
-// 				 		),	
-// 				),
-		
 		array(
 			'class'=>'CButtonColumn',
 			'header'=>'操作',

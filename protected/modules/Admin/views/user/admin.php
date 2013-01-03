@@ -22,15 +22,14 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
-<?php 
-$url=Yii::app()->request->baseUrl;?>
-<script src="<?php echo $url?>/js/form.js" type="text/javascript" charset="utf-8" async defer></script>
+
 <div id="form_content">
 <link rel="stylesheet" type="text/css" href="<?php Yii::app()->baseUrl.'css/default.css' ?>">
 <h3 class="top_l"><span id="title">用户管理</span><i class="top_r"></i></h3>
 <div class="c"></div>
-<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button')); ?>
-<?php echo CHtml::link('添加用户',array("user/create"),array('target'=>'con','style'=>'margin-left:5px;font-weight:bold;'))?>
+
+<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button form_link')); ?>
+<?php echo CHtml::link('添加用户',array('user/create'),array('class'=>'form_link')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,
@@ -43,10 +42,11 @@ $url=Yii::app()->request->baseUrl;?>
 	'filter'=>$model,
 	'columns'=>array(
 		'id',
-		'sex',
 		'username',
 		'password',
 		'creatime',
+		'sex',
+		'bl_role_rid',
 		array(
 			'class'=>'CButtonColumn',
 		),

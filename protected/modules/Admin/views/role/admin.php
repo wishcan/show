@@ -29,8 +29,8 @@ $('.search-form form').submit(function(){
 <h3 class="top_l"><span id="title">角色管理</span><i class="top_r"></i></h3>
 <div class="c"></div>
 
-<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button')); ?>
-<?php echo CHtml::link('角色添加',array('role/create'),array('style'=>'font-weight:bold;margin-left:5px;'))?>
+<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button form_link')); ?>
+<?php echo CHtml::link('角色添加',array('role/create'),array('class'=>'form_link'))?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,

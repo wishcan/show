@@ -19,10 +19,6 @@
 		<?php  foreach ($row as $k => $v):?>
 		<tr class="<?php if($k%2==0) echo 'tr1';?>">
 			<td>
-<<<<<<< HEAD
-				<a href="<?php $url=substr();echo $v['link'];?>">
-=======
-			
 			<?php 
 			if(substr($v['link'],0,3)=='www' || substr($v['link'],0,4)=='http')
 				{
@@ -34,9 +30,7 @@
 				}
 				
 			?>
-				<a href="<?php echo 'http://'.$v['link'];?>">
-			
->>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
+		
 					<img src="<?php echo $v['thumb']?>" />
 				</a>
 

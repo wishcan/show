@@ -42,6 +42,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'loginUrl'=>'index.php?r=Admin/user/login',//修改默认的登陆控制器和方法
 		),
 		// uncomment the following to enable URLs in path-format
 		/*

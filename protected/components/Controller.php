@@ -28,4 +28,5 @@ class Controller extends CController
 		$dir=Yii::app()->getBaseUrl().'/upload/'.$dir.'/';
 		return $dir;
 	}
+
 }

@@ -1,5 +1,5 @@
 $(function(){
-	$("input[type='text']").focus(function(){
+	$("input[type='text'],input[type='password']").focus(function(){
 
 		$(this).addClass("inputFocus");
 

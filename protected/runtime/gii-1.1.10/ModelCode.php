@@ -4,5 +4,5 @@ return array (
   'tablePrefix' => 'bl_',
   'modelPath' => 'application.models',
   'baseClass' => 'CActiveRecord',
-  'buildRelations' => '1',
+  'buildRelations' => '0',
 );
