@@ -7919,3 +7919,45 @@ REQUEST_URI=/show/index.php?r=gallery/shey
 in C:\wamp\www\show\protected\views\gallery\shey.php (10)
 in C:\wamp\www\show\protected\controllers\galleryController.php (82)
 in C:\wamp\www\show\index.php (13)
+2013/01/03 10:48:50 [error] [exception.CException] exception 'CException' with message '属性 "Gallery.thumb" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('thumb')
+#1 C:\wamp\www\yii\framework\base\CModel.php(593): CActiveRecord->__get('thumb')
+#2 C:\wamp\www\show\protected\views\gallery\shey.php(19): CModel->offsetGet('thumb')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('shey', Array, true)
+#7 C:\wamp\www\show\protected\controllers\galleryController.php(82): CController->render('shey', Array)
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShey()
+#9 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('shey')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/shey')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/show/index.php?r=gallery/shey
+---
+2013/01/03 10:48:51 [error] [exception.CException] exception 'CException' with message '属性 "Gallery.thumb" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('thumb')
+#1 C:\wamp\www\yii\framework\base\CModel.php(593): CActiveRecord->__get('thumb')
+#2 C:\wamp\www\show\protected\views\gallery\shey.php(19): CModel->offsetGet('thumb')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('shey', Array, true)
+#7 C:\wamp\www\show\protected\controllers\galleryController.php(82): CController->render('shey', Array)
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): galleryController->actionShey()
+#9 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('shey')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('gallery/shey')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/show/index.php?r=gallery/shey
+---

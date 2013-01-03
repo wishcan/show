@@ -131,7 +131,11 @@ class Gallery extends CActiveRecord
 		{
 			return false;
 		}
+		if(is_int($gid)){
 		$sql='select * from bl_gallery_data where gid=:gid order by gdid';
+		}else{
+			$sql='select * from bl_gallery_data where gid in (:gid) order by gdid';
+		}
 		$command=Yii::app()->controller->dbLink($sql);
 		$command->bindParam(':gid',$gid);
 		$row=$command->queryAll();
