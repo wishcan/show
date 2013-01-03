@@ -93,7 +93,7 @@ class GalleryController extends Controller
 					$command->bindParam(":thumb",$v);
 					$command->execute();
 				}
-				$this->redirect(array('view','gid'=>$model->id));
+				$this->redirect(array('view','id'=>$model->gid));
 			}
 					
 		}

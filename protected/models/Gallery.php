@@ -125,19 +125,17 @@ class Gallery extends CActiveRecord
 			return false;
 		}
 	}
-	public static function getData($gid)
+	//$num获取的数量为30张
+	public static function getData($gid,$start=0,$end=30)
 	{
 		if(!isset($gid))
 		{
 			return false;
 		}
-		if(is_int($gid)){
-		$sql='select * from bl_gallery_data where gid=:gid order by gdid';
-		}else{
-			$sql='select * from bl_gallery_data where gid in (:gid) order by gdid';
-		}
+		$num=30;
+		$limit=$start.', '.$end;
+		$sql='select * from bl_gallery_data where gid in ('.$gid.') order by gdid limit '.$limit;
 		$command=Yii::app()->controller->dbLink($sql);
-		$command->bindParam(':gid',$gid);
 		$row=$command->queryAll();
 		return $row;
 	}
@@ -147,5 +145,6 @@ class Gallery extends CActiveRecord
 		$model=Gallery::model()->findAll("cid=:cid order by gid",array(":cid"=>$cid));
 		return $model;
 	}
+
 	
 }

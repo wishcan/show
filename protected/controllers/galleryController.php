@@ -58,28 +58,42 @@ class galleryController extends Controller
 	 */
 	public function actionGetMoreImg()
 	{
-		if(!isset($_GET['start']))
+		if(isset($_GET['gid']))
 		{
-			return false;
-		}
-		$start=$_GET['start'];
-		$db=Yii::app()->db;
-		$sql='select * from bl_gallery_data order by gdid limit :start,20';
-		$command=$db->createCommand($sql);
-		$command->bindParam(":start",$start);
-		$row=$command->queryAll();
-		if(!empty($row))
+			$gid=$_GET['gid'];
+		}else
 		{
-			echo json_encode($row);
-		}else{
-			echo '没有了';
+			$gid=Gallery::model()->getGallery(25);
+			$gid='';
+			foreach($model as $v){
+				$gid.=','.$v->gid;
+			}
 		}
+		$start=0;
+		isset($_POST['start'])? $start=$_POST['start']:$start=0;
+		isset($_POST['end'])? $end=$_POST['end']:$end=30;
+		$row=Gallery::model()->getData($gid,$start,$end);
+		foreach ($row as $k=>$v){
+			$row[$k]['thumb']=parent::getImgDir($v['thumb']).$v['thumb'];
+		}
+		echo json_encode($row);
 	}
 	#摄影作品
 	public function actionShey()
 	{
-			$model=Gallery::model()->getGallery(25);
-			$this->render('shey',array('model'=>$model));
+
+		$model=Gallery::model()->getGallery(25);
+		$gid='';
+		foreach($model as $v){
+		$gid.=','.$v->gid;
+		}
+		$gid=trim($gid,',');	
+		$this->render('shey',array('gid'=>$gid));
+	}
+	public function actionPhoto()//显示单个类别的照片
+	{
+		$gid=$_GET['gid'];
+		$this->render('shey',array('gid'=>$gid));	
 	}
 
 	/*
