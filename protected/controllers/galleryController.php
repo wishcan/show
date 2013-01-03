@@ -28,7 +28,7 @@ class galleryController extends Controller
 		$command->bindParam(":gdid",$gdid);
 		$datu=$command->queryAll();
 		$gid=$datu[0]['gid'];
-		$xiaotu=self::GetOuter($gid);
+		$xiaotu=Gallery::model()->getData($gid);
 		$this->render('showImg',array("datu"=>$datu,"xiaotu"=>$xiaotu,'title'=>$datu[0]['title']));
 	}
 	/**
@@ -51,23 +51,7 @@ class galleryController extends Controller
 			$this->render('showImg',array('xiaotu'=>$xiaotu,'title'=>$model[0]->title));
 		}
 	}
-	/*
-	 * 获得更多图片
-	 */
-	public static function getOuter($gid)
-	{
-		if(!isset($gid))
-		{
-			return false;
-		}
-		
-		$db=Yii::app()->db;
-		$sql='select * from bl_gallery_data where gid=:gid order by gdid';
-		$command=$db->createCommand($sql);
-		$command->bindParam(':gid',$gid);
-		$model=$command->queryAll();
-		return $model;
-	}
+
 	/*
 	 * 异步获取图片
 	 * 
@@ -94,11 +78,14 @@ class galleryController extends Controller
 	#摄影作品
 	public function actionShey()
 	{
-		$sql='select * from bl_gallery_data order by gdid';
-		$command=parent::dbLink($sql);
-		$row=$command->queryAll();
-		$this->render('shey',array('row'=>$row));
+			$model=Gallery::model()->getGallery(25);
+			$this->render('shey',array('model'=>$model));
 	}
+
+	/*
+	 * 获得指定栏目的图片文章ID
+	 */
+
 	
 	
 	

@@ -7,6 +7,7 @@
 **/
 	function imgJquery(element,size,setTime,animateTime)
 	{
+
 		
 		var set;
 		var imgPlay;
@@ -31,17 +32,17 @@
 				})
 				//uw->UL的总宽度
 				// //点击.prev 或者.next 的时候停止动画计算当前
-				// var width=$(element).width();
-				// var uw=parseInt($(element).length)*width;
+				var width=$(element).width();
+				var uw=parseInt($(element).length)*width;
 			
-				// $(".prev,.next").hover(function(){
+				$(".prev,.next").hover(function(){
 
-				// 	clearInterval(set);
-				// },function(){
-				// 	var left=parseInt($(element).parent().css("margin-left"));
-				// 	index=-(parseInt(left/width));
-				// 	imgShow(index);
-				// })
+					clearInterval(set);
+				},function(){
+					var left=parseInt($(element).parent().css("margin-left"));
+					index=-(parseInt(left/width));
+					imgShow(index);
+				})
 
 				$(".prev").click(function(){
 						
@@ -54,6 +55,7 @@
 						}
 				})
 				$(".next").click(function(){
+					
 					 left=parseInt($(element).parent().css("margin-left"));
 
 					if((left-width)>(-uw))

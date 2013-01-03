@@ -125,4 +125,23 @@ class Gallery extends CActiveRecord
 			return false;
 		}
 	}
+	public static function getData($gid)
+	{
+		if(!isset($gid))
+		{
+			return false;
+		}
+		$sql='select * from bl_gallery_data where gid=:gid order by gdid';
+		$command=Yii::app()->controller->dbLink($sql);
+		$command->bindParam(':gid',$gid);
+		$row=$command->queryAll();
+		return $row;
+	}
+	public static function getGallery($cid)
+	{
+		if(!isset($cid))return false;
+		$model=Gallery::model()->findAll("cid=:cid order by gid",array(":cid"=>$cid));
+		return $model;
+	}
+	
 }

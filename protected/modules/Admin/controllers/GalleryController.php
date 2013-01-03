@@ -93,6 +93,7 @@ class GalleryController extends Controller
 					$command->bindParam(":thumb",$v);
 					$command->execute();
 				}
+				$this->redirect(array('view','gid'=>$model->id));
 			}
 					
 		}
@@ -189,16 +190,6 @@ class GalleryController extends Controller
 	 * Performs the AJAX validation.
 	 * @param CModel the model to be validated
 	 */
-	public function actionUpload()
-	{
-		
-		echo 1;
-		exit;
-		// $filedata=$_FILES['Filedata'];
-		// 	@move_uploaded_file($filedata['tmp_name'], "C:/wamp/www/show/upload/".$filedata['name']);
-		
-	}
-
 	protected function performAjaxValidation($model)
 	{
 		if(isset($_POST['ajax']) && $_POST['ajax']==='gallery-form')
