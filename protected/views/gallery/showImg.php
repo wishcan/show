@@ -30,10 +30,15 @@ h1 a, h2,a{
 .link{
 /* 	border-right:solid 5px #333; */
 }
+/*大图*/
 .img{
 	margin-left:10px;
 	padding:5px;
 	overflow:hidden;
+}
+.img img{
+	max-width:960px;
+	max-height:960px;
 }
 .back{
 	display:block;	
