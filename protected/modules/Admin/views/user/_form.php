@@ -1,3 +1,5 @@
+
+
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
@@ -14,17 +16,39 @@
 	<div class="row">
 		<span>用户账号</span>&nbsp;&nbsp;
 		<?php echo $form->textField($model,'username',array('size'=>20,'maxlength'=>20)); ?>
+		
 		<span class='red'>*</span>
+			<p class='user_error'>
+				<i></i>
+				<span class='error0'>用户名不能为空</span>
+				<span class='error1'>用户名已存在</span>
+				<span class='error2'>用户名应该为5-20个字符(一个中文占2个字符)</span>
+			</p>
+			<p class='pass'>
+				<i></i>
+				<span>恭喜用户名可以注册</span>
+			</p>
 	</div>
 
 	<div class="row">
 		<span>用户密码</span>&nbsp;&nbsp;
 		<?php echo $form->passwordField($model,'password',array('size'=>36,'maxlength'=>36)); ?>
+	
 		<span class='red'>*</span>
+			<p class='pwd_error'>
+				<i></i>
+				<span class='error3'>密码不能为空</span>
+				<span class='error4'>密码应该为6-20位英文字母和数字组合</span>
+			</p>
+			<p class='pass'><i></i></p>
 	</div>
 	<div class="row">
 		<span>确认密码</span>&nbsp;&nbsp;
-		<input type='password' name='repass' />&nbsp;<span class='red'>*</span>
+		<input type='password' name='repass' class='passwordc' />&nbsp;<span class='red'>*</span>
+		<p class='rpwd_error'>
+				<span class='error5'>俩次输入的密码不一致</span>
+				<p class='pass'><i></i></p>
+		</p>
 	</div>
 	<div class="row">
 		<span>用户性别</span>&nbsp;&nbsp;
@@ -52,4 +76,5 @@
 <?php $this->endWidget(); ?>
 
 </div>
+<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/sign.js');  ?>
 <!-- form -->

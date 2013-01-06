@@ -198,3 +198,31 @@ option{
 		margin-left:200px;
 	}
 .red{margin-left:10px;color:red}
+.user_error,.pwd_error,.rpwd_error,.pass{
+
+color:#CD392E;
+display: none;
+}
+.user_error span,.pwd_error span,.rpwd_error span,.pass span{
+line-height: 12px;
+position: relative;
+top:-3px;
+display: none;
+}
+.user_error i,.pwd_error i,.rpwd_error i,.pass i{
+	display: inline-block;
+	width:20px;
+	height:20px;
+	background: url(/show/images/opa-icons-color32.png) no-repeat scroll -390px -37px;
+}
+.pass{
+	color:#429C38;
+}
+.pass i{
+background-position: -422px -38px;
+
+}
+.inperror{
+box-shadow:0 1px 1px rgba(249, 9, 25, 0.075) inset, 0 0 8px rgba(249, 9, 25, 0.6);
+
+}

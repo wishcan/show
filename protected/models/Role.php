@@ -82,7 +82,7 @@ class Role extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
-	public function getRoles($rid=0)
+	public static  function getRoles($rid=0)
 	{
 		if($rid)
 		{

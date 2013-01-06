@@ -13,6 +13,7 @@
  */
 class User extends CActiveRecord
 {
+		
 	/**
 	 * Returns the static model of the specified AR class.
 	 * @param string $className active record class name.
@@ -41,8 +42,8 @@ class User extends CActiveRecord
 		return array(
 			array('sex, bl_role_rid', 'required'),
 			array('bl_role_rid', 'numerical', 'integerOnly'=>true),
-			array('username', 'length', 'max'=>20),
-			array('password', 'length', 'max'=>36),
+			array('username', 'length','message'=>'用户名不能为空' ,'max'=>20),
+			array('password', 'length', 'message'=>'密码格式不正确' ,'max'=>36),
 			array('sex', 'length', 'max'=>3),
 			array('creatime', 'safe'),
 			// The following rule is used by search().
@@ -69,11 +70,11 @@ class User extends CActiveRecord
 	{
 		return array(
 			'id' => 'ID',
-			'username' => 'Username',
-			'password' => 'Password',
-			'creatime' => 'Creatime',
-			'sex' => 'Sex',
-			'bl_role_rid' => 'Bl Role Rid',
+			'username' => '用户名',
+			'password' => '密码',
+			'creatime' => '创建时间',
+			'sex' => '性别',
+			'bl_role_rid' => '角色',
 		);
 	}
 
@@ -110,5 +111,24 @@ class User extends CActiveRecord
 		}else{
 			return false;
 		}
+	}
+	public function validatePassword($password)
+	{
+		return $this->password === md5($password);
+
+	}
+	/*
+	 *检查用户是否存在	
+	*/
+	public static function check($username)
+	{
+		$model=self::model()->find('username=:username',array(":username"=>$username));
+		if(!$model)
+		{
+			return 1;
+		}else{
+			return 2;
+		}
+
 	}
 }

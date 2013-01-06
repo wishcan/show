@@ -138,6 +138,8 @@ class ArtersCategoryController extends Controller
 	 */
 	public function actionAdmin()
 	{
+		
+	
 		$model=new ArtersCategory('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['ArtersCategory']))

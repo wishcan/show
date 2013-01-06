@@ -43,10 +43,12 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		'id',
 		'username',
-		'password',
 		'creatime',
 		'sex',
-		'bl_role_rid',
+		array(
+				'name'=>'bl_role_rid',
+				'value'=>'Role::getRoles($data->bl_role_rid)',	
+				),
 		array(
 			'class'=>'CButtonColumn',
 		),

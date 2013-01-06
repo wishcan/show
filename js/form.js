@@ -5,7 +5,7 @@ $(function(){
 
 
 	})
-	$("input[type='text']").blur(function(){
+	$("input[type='text'],input[type='password']").blur(function(){
 
 		$(this).removeClass("inputFocus");
 

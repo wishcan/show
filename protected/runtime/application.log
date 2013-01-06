@@ -3508,3 +3508,822 @@ Stack trace:
 REQUEST_URI=/show/index.php?r=Admin
 in C:\wamp\www\show\protected\components\AdminController.php (11)
 in C:\wamp\www\show\index.php (13)
+2013/01/05 01:59:34 [error] [php] Undefined variable: model (C:\wamp\www\show\protected\modules\Admin\views\user\login.php:53)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(870): UserController->renderFile()
+#1 C:\wamp\www\yii\framework\web\CController.php(783): UserController->renderPartial()
+#2 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(194): UserController->render()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#6 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#8 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(266): UserController->runActionWithFilters()
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): UserController->run()
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/user/login
+in C:\wamp\www\show\protected\modules\Admin\views\user\login.php (53)
+in C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php (194)
+in C:\wamp\www\show\index.php (13)
+2013/01/05 02:25:50 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "validatepassword".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\components\UserIdentity.php(24): CComponent->__call('validatepasswor...', Array)
+#1 C:\wamp\www\show\protected\components\UserIdentity.php(24): UserIdentity->validatepassword('admin')
+#2 C:\wamp\www\show\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#4 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(190): CModel->validate()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logi...')
+#18 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\show\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/login
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/login
+---
+2013/01/05 02:26:19 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "validatePassword".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\components\UserIdentity.php(24): CComponent->__call('validatePasswor...', Array)
+#1 C:\wamp\www\show\protected\components\UserIdentity.php(24): UserIdentity->validatePassword('admin')
+#2 C:\wamp\www\show\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#4 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(190): CModel->validate()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logi...')
+#18 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\show\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/login
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/login
+---
+2013/01/05 02:26:42 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "validatePassword".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\components\UserIdentity.php(24): CComponent->__call('validatePasswor...', Array)
+#1 C:\wamp\www\show\protected\components\UserIdentity.php(24): UserIdentity->validatePassword('admin')
+#2 C:\wamp\www\show\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#4 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(190): CModel->validate()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logi...')
+#18 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\show\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/login
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/login
+---
+2013/01/05 02:33:57 [error] [exception.CException] exception 'CException' with message 'CCaptchaValidator.action "captcha" 是无效的. 无法在目前的控制器中找到此一动作.' in C:\wamp\www\yii\framework\validators\CCaptchaValidator.php:76
+Stack trace:
+#0 C:\wamp\www\yii\framework\validators\CCaptchaValidator.php(92): CCaptchaValidator->getCaptchaAction()
+#1 C:\wamp\www\yii\framework\web\widgets\CActiveForm.php(477): CCaptchaValidator->clientValidateAttribute(Object(ContactForm), 'verifyCode')
+#2 C:\wamp\www\show\protected\views\site\contact.php(69): CActiveForm->error(Object(ContactForm), 'verifyCode')
+#3 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', Array, true)
+#5 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', Array, true)
+#6 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('contact', Array, true)
+#7 C:\wamp\www\show\protected\controllers\SiteController.php(44): CController->render('contact', Array)
+#8 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionContact()
+#9 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#10 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#11 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('contact')
+#13 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/contact')
+#14 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 C:\wamp\www\show\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/show/index.php?r=site/contact
+HTTP_REFERER=http://localhost/show/index.php
+---
+2013/01/05 02:34:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "page" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('page')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('page')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/page')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=site/page&view=about
+HTTP_REFERER=http://localhost/show/index.php
+---
+2013/01/05 02:36:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "user/create"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('user/create')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=user/create
+---
+2013/01/05 03:24:16 [error] [exception.CException] exception 'CException' with message 'UserIdentity and its behaviors do not have a method or closure named "addError".' in C:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\wamp\www\show\protected\components\UserIdentity.php(25): CComponent->__call('addError', Array)
+#1 C:\wamp\www\show\protected\components\UserIdentity.php(25): UserIdentity->addError('username', '???????????????...')
+#2 C:\wamp\www\show\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#3 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#4 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#5 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#6 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(190): CModel->validate()
+#7 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#8 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#9 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#10 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#14 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logi...')
+#18 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\show\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/login
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/login
+---
+2013/01/05 03:52:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('logout')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logo...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/logout
+---
+2013/01/05 05:48:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:48:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:48:31 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:48:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:48:33 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:48:34 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:48:41 [error] [php] Undefined index: src (C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php:279)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/deleteImg&data=2
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (279)
+in C:\wamp\www\show\index.php (13)
+2013/01/05 05:48:47 [error] [php] Undefined index: src (C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php:279)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/deleteImg&data=2
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (279)
+in C:\wamp\www\show\index.php (13)
+2013/01/05 05:49:01 [error] [php] Undefined index: src (C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php:279)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): AdvertController->runAction()
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): AdvertController->filterAccessControl()
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): AdvertController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): AdvertController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/advert/deleteImg&data=2
+in C:\wamp\www\show\protected\modules\Admin\controllers\AdvertController.php (279)
+in C:\wamp\www\show\index.php (13)
+2013/01/05 05:49:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:49:26 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:49:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/Category/...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/Category/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:49:32 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/Category/...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/Category/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:49:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:49:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:50:51 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:50:52 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:51:37 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/arters/ad...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/arters/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:51:38 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:54:10 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 05:55:57 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 06:05:00 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 06:21:05 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/artersCat...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/artersCategory/admin
+HTTP_REFERER=http://localhost/show/index.php?r=Admin
+---
+2013/01/05 06:22:47 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('logout')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logo...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/logout
+---
+2013/01/05 06:23:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('logout')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logo...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/logout
+---
+2013/01/05 06:26:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "create" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('create')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/create')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=site/create
+---
+2013/01/05 06:49:48 [error] [exception.CException] exception 'CException' with message '属性 "UserIdentity.errrCode" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 C:\wamp\www\show\protected\components\UserIdentity.php(36): CComponent->__set('errrCode', 0)
+#1 C:\wamp\www\show\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#2 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#3 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#4 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#5 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(190): CModel->validate()
+#6 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#7 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#14 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logi...')
+#17 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 C:\wamp\www\show\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/login
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/login
+---
+2013/01/05 07:36:46 [error] [exception.CException] exception 'CException' with message '属性 "LoginForm._indentity" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\show\protected\models\LoginForm.php(53): CComponent->__get('_indentity')
+#1 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(190): CModel->validate()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logi...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\show\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/login
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/login
+---
+2013/01/05 07:37:37 [error] [exception.CException] exception 'CException' with message '属性 "LoginForm._indentity" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\show\protected\models\LoginForm.php(53): CComponent->__get('_indentity')
+#1 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(190): CModel->validate()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logi...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\show\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/login
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/login
+---
+2013/01/06 01:53:49 [error] [exception.CException] exception 'CException' with message '属性 "LoginForm._indentity" 未被定义.' in C:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 C:\wamp\www\show\protected\models\LoginForm.php(53): CComponent->__get('_indentity')
+#1 C:\wamp\www\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#2 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#3 C:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#4 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(190): CModel->validate()
+#5 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionLogin()
+#6 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('login')
+#15 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/logi...')
+#16 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 C:\wamp\www\show\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/login
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/login
+---
+2013/01/06 02:03:44 [error] [php] Missing argument 2 for CModel::addError(), called in C:\wamp\www\show\protected\models\LoginForm.php on line 61 and defined (C:\wamp\www\yii\framework\base\CModel.php:379)
+Stack trace:
+#0 C:\wamp\www\yii\framework\validators\CValidator.php(197): CInlineValidator->validateAttribute()
+#1 C:\wamp\www\yii\framework\base\CModel.php(158): CInlineValidator->validate()
+#2 C:\wamp\www\show\protected\controllers\SiteController.php(62): LoginForm->validate()
+#3 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#4 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 C:\wamp\www\yii\framework\web\CController.php(287): SiteController->runAction()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): SiteController->runActionWithFilters()
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): SiteController->run()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=site/login
+in C:\wamp\www\show\protected\models\LoginForm.php (61)
+in C:\wamp\www\show\protected\controllers\SiteController.php (62)
+in C:\wamp\www\show\index.php (13)
+2013/01/06 07:22:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "chekUsername" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('chekUsername')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('chekUsername')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/chek...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/chekUsername
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/create
+---
+2013/01/06 07:22:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "chekUsername"" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('chekUsername"')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('chekUsername"')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/chek...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/chekUsername%22
+---
+2013/01/06 07:22:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "chekUsername" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('chekUsername')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('chekUsername')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/chek...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/chekUsername
+---
+2013/01/06 07:22:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "chekUsername" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('chekUsername')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('chekUsername')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/chek...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/chekUsername
+---
+2013/01/06 07:23:20 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 C:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 C:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkUsername')
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/user/chec...')
+#9 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 C:\wamp\www\show\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/show/index.php?r=Admin/user/checkUsername
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/user/create
+---
+2013/01/06 09:07:38 [error] [php] Non-static method Role::getRoles() should not be called statically, assuming $this from incompatible context (C:\wamp\www\yii\framework\base\CComponent.php(607) : eval()'d code:1)
+Stack trace:
+#0 C:\wamp\www\yii\framework\zii\widgets\grid\CGridColumn.php(138): CDataColumn->renderDataCellContent()
+#1 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(517): CDataColumn->renderDataCell()
+#2 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(490): CGridView->renderTableRow()
+#3 C:\wamp\www\yii\framework\zii\widgets\grid\CGridView.php(400): CGridView->renderTableBody()
+#4 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(158): CGridView->renderItems()
+#5 unknown(0): CGridView->renderSection()
+#6 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(141): preg_replace_callback()
+#7 C:\wamp\www\yii\framework\zii\widgets\CBaseListView.php(126): CGridView->renderContent()
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(174): CGridView->run()
+#9 C:\wamp\www\show\protected\modules\Admin\views\user\admin.php(57): UserController->widget()
+#10 C:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#11 C:\wamp\www\yii\framework\web\CBaseController.php(96): UserController->renderInternal()
+#12 C:\wamp\www\yii\framework\web\CController.php(870): UserController->renderFile()
+#13 C:\wamp\www\yii\framework\web\CController.php(783): UserController->renderPartial()
+#14 C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php(148): UserController->render()
+#15 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UserController->actionAdmin()
+#16 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#17 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UserController->runAction()
+#18 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#19 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#20 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UserController->filterAccessControl()
+#21 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#22 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#23 C:\wamp\www\yii\framework\web\CController.php(266): UserController->runActionWithFilters()
+#24 C:\wamp\www\yii\framework\web\CWebApplication.php(276): UserController->run()
+#25 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#26 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#27 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/User/admin
+in C:\wamp\www\show\protected\modules\Admin\views\user\admin.php (57)
+in C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php (148)
+in C:\wamp\www\show\index.php (13)

@@ -12,9 +12,8 @@
 <?php	$url=Yii::app()->request->baseUrl;?>
 <link href="<?php echo $url;?>/css/static.css" rel="stylesheet" tpye="text/css"/>
 <?php Yii::app()->clientScript->registerCoreScript('jquery');?>
-<script src="<?php echo $url?>/js/form.js" type="text/javascript" charset="utf-8" async defer></script>
-
 <link href="<?php echo $url;?>/css/form.css" rel="stylesheet" type="text/css" />
 
 <?php echo $content;?>
 
+<script src="<?php echo $url?>/js/form.js" type="text/javascript" charset="utf-8" async defer></script>
