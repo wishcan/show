@@ -4327,3 +4327,270 @@ REQUEST_URI=/show/index.php?r=Admin/User/admin
 in C:\wamp\www\show\protected\modules\Admin\views\user\admin.php (57)
 in C:\wamp\www\show\protected\modules\Admin\controllers\UserController.php (148)
 in C:\wamp\www\show\index.php (13)
+2013/01/07 02:27:25 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (88)
+in C:\wamp\www\show\index.php (13)
+2013/01/07 02:55:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkCname" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkCname')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkCname')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/category/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/category/checkCname&cname=%E6%B5%8B%E8%AF%95%E6%97%A0%E6%9E%81%E9%99%90
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/Category/create
+---
+2013/01/07 02:55:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkCname" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkCname')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkCname')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/Category/...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/Category/checkCname&cname=%E6%B5%8B%E8%AF%95%E6%97%A0%E6%9E%81%E9%99%90
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/Category/create
+---
+2013/01/07 03:17:14 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\models\Category.php:191)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CategoryController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CategoryController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CategoryController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/Category/checkCname&cname=sadsadas
+in C:\wamp\www\show\protected\models\Category.php (191)
+in C:\wamp\www\show\protected\modules\Admin\controllers\CategoryController.php (184)
+in C:\wamp\www\show\index.php (13)
+2013/01/07 03:20:02 [error] [php] Trying to get property of non-object (C:\wamp\www\show\protected\models\Category.php:188)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CategoryController->runAction()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CategoryController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(266): CategoryController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CategoryController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/Category/checkCname&cname=ceshi+
+in C:\wamp\www\show\protected\models\Category.php (188)
+in C:\wamp\www\show\protected\modules\Admin\controllers\CategoryController.php (184)
+in C:\wamp\www\show\index.php (13)
+2013/01/07 04:57:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/News/chec...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/News/checkTitle&data=test
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/news/create&cid=1
+---
+2013/01/07 04:58:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/News/chec...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/News/checkTitle&data=test
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/news/create&cid=1
+---
+2013/01/07 04:58:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/News/chec...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/News/checkTitle&data=das
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/news/create&cid=1
+---
+2013/01/07 04:59:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/News/chec...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/News/checkTitle&data=test
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/news/create&cid=1
+---
+2013/01/07 05:00:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/chec...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/checkTitle&data=dasd
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/news/create&cid=1
+---
+2013/01/07 05:00:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/chec...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/news/checkTitle
+---
+2013/01/07 05:12:58 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (88)
+in C:\wamp\www\show\index.php (13)
+2013/01/07 08:15:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/Gallery/c...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/Gallery/checkTitle&data=asd
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create&cid=21
+---
+2013/01/07 08:21:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/Gallery/c...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/Gallery/checkTitle&data=dsa
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create&cid=21
+---
+2013/01/07 08:21:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkTitle" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkTitle')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkTitle')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/Gallery/c...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/Gallery/checkTitle&data=adsa
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/gallery/create&cid=21
+---
+2013/01/07 08:22:30 [error] [php] Undefined variable: title (C:\wamp\www\show\protected\models\Gallery.php:130)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryController->runAction()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(266): GalleryController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/Gallery/checkTitle&data=adsa
+in C:\wamp\www\show\protected\models\Gallery.php (130)
+in C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php (212)
+in C:\wamp\www\show\index.php (13)
+2013/01/07 08:22:41 [error] [php] Undefined variable: title (C:\wamp\www\show\protected\models\Gallery.php:130)
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryController->runAction()
+#2 C:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 C:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryController->filterAccessControl()
+#5 C:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 C:\wamp\www\yii\framework\web\CController.php(266): GalleryController->runActionWithFilters()
+#8 C:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryController->run()
+#9 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 C:\wamp\www\show\index.php(13): CWebApplication->run()
+REQUEST_URI=/show/index.php?r=Admin/Gallery/checkTitle&data=adsa
+in C:\wamp\www\show\protected\models\Gallery.php (130)
+in C:\wamp\www\show\protected\modules\Admin\controllers\GalleryController.php (212)
+in C:\wamp\www\show\index.php (13)
+2013/01/07 08:43:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkCname" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkCname')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkCname')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/ArtersCat...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/ArtersCategory/checkCname&data=%E4%B9%A6%E6%B3%95
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/artersCategory/create
+---
+2013/01/07 08:43:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkCname" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkCname')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkCname')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/ArtersCat...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/ArtersCategory/checkCname&data=%E4%B9%A6%E6%B3%95
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/artersCategory/create
+---
+2013/01/07 08:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/ArrtersCategory/checkCname"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/ArrtersCa...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/ArrtersCategory/checkCname&data=dsadsa
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/artersCategory/create
+---
+2013/01/07 08:59:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/ArrtersCategory/checkCname"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/ArrtersCa...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/ArrtersCategory/checkCname&data=dsadsa
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/artersCategory/create
+---
+2013/01/07 08:59:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/AtersCategory/checkCname"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/AtersCate...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/AtersCategory/checkCname&data=dsa
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/artersCategory/create
+---
+2013/01/07 09:00:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/AtersCategory/checkCname"。' in C:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/AtersCate...')
+#1 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 C:\wamp\www\show\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/show/index.php?r=Admin/AtersCategory/checkCname&data=%E5%9B%BD%E7%94%BB
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/artersCategory/create
+---
+2013/01/07 09:00:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "checkCname" 动作.' in C:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('checkCname')
+#1 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('checkCname')
+#2 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/ArtersCat...')
+#3 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 C:\wamp\www\show\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/show/index.php?r=Admin/ArtersCategory/checkCname&data=%E5%9B%BD%E7%94%BB
+HTTP_REFERER=http://localhost/show/index.php?r=Admin/artersCategory/create
+---

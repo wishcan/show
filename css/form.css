@@ -203,17 +203,18 @@ option{
 color:#CD392E;
 display: none;
 }
-.user_error span,.pwd_error span,.rpwd_error span,.pass span{
+.user_error span,.check_error span,.pwd_error span,.rpwd_error span,.pass span{
 line-height: 12px;
 position: relative;
 top:-3px;
 display: none;
 }
-.user_error i,.pwd_error i,.rpwd_error i,.pass i{
-	display: inline-block;
+.user_error i,.pwd_error i,.check_error i,.rpwd_error i,.pass i{
+	
 	width:20px;
 	height:20px;
 	background: url(/show/images/opa-icons-color32.png) no-repeat scroll -390px -37px;
+	display:none;
 }
 .pass{
 	color:#429C38;

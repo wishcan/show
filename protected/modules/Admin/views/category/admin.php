@@ -22,11 +22,12 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
-
-<h1>栏目管理</h1>
-
-
-<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button alink')); ?>
+<?php $url=Yii::app()->request->baseUrl;?>
+<script src="<?php echo $url?>/js/form.js" type="text/javascript" charset="utf-8" async defer></script>
+<div id="form_content">
+<h3 class="top_l"><span id="title">栏目管理</span><i class="top_r"></i></h3>
+<div class="c"></div>
+<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button form_link')); ?>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,

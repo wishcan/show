@@ -19,7 +19,7 @@ div.form label{
 	float:left;
 
 	display:block;
-	background:url(../images/admin_img/top_2.png)repeat-x;
+	background:url(../images/admin_img/top_2.png) repeat-x;
 
 }
 h3{
@@ -27,7 +27,7 @@ color:#317EAC;
 
 }
 .top_l{
-	background:url(../images/admin_img/top_1.png)no-repeat scroll left 0px ;
+	background:url(../images/admin_img/top_1.png) no-repeat scroll left 0px ;
 	
 	padding-left:6px;
 }
@@ -42,7 +42,7 @@ color:#317EAC;
 	float: left;
 	width: 6px;
 	display: block;
-	background:url(../images/admin_img/top_3.png)no-repeat scroll right 0px;
+	background:url(../images/admin_img/top_3.png) no-repeat scroll right 0px;
 }
 #form_content,.center{
 	width: 1000px;
@@ -61,7 +61,7 @@ color:#317EAC;
 
 	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
 }
-
+a,img{border:none}
 div.form
 {
 	padding: 20px;
@@ -96,12 +96,15 @@ input[type="submit"]:hover,input[type="button"]:hover{
 	font-weight: bold;
 
 }
+a{
+	border:none;
+}
 div.form #bswf{
 	cursor: pointer;
 	width: 50px;
 	height:50px;
 	padding:5px;
-	background:url(../images/admin_img/upload_bg.gif)no-repeat scroll left 0px ;
+	background: url("../images/admin_img/upload_bg.gif") no-repeat scroll left 0 transparent;
 	background-color: none;
 }
 div.form label .limit{

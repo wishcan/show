@@ -125,4 +125,14 @@ class Gallery extends CActiveRecord
 			return false;
 		}
 	}
+	public static function check($title)
+	{
+		$model=self::model()->find('title=:title',array(':title'=>$title));
+		if($model)
+		{
+			return 0;
+		}else{
+			return 1;
+		}
+	}
 }

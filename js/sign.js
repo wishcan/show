@@ -14,7 +14,7 @@ function showError(element,error,num)
 	$(element).addClass('inperror');
 	$(error).css("display",'inline');
 	$(".error"+num).show().siblings().hide();
-	$(error+" i").show();
+	$(error+" i").css("display",'inline-block');
 	errorType=0;
 }
 function showPass(num)

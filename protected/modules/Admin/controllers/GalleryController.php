@@ -35,7 +35,7 @@ class GalleryController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','checkTitle'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -207,5 +207,9 @@ class GalleryController extends Controller
 			Yii::app()->end();
 		}
 	}
-
+	public function actionCheckTitle()
+	{								
+		echo Gallery::check($_GET['data']);
+	}
+	
 }

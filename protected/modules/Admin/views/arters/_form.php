@@ -13,20 +13,21 @@
 	<p class="note"> <span class="required">*</span> 为必填项</p>
 
 	<?php echo $form->errorSummary($model); ?>
-<<<<<<< HEAD
-
-	<div class="row">
-		<span>姓名</span>
-		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
-				<select name="Arters[sex]">
-					<option value='1'>男</option>
-					<option value='2'>女</option>
-		
-				</select><span class="red">*</span>
-=======
 	<div class='row'>
 		<span>姓名</span>
 		<?php echo $form->textField($model,'name',array('size'=>45,'maxlength'=>45)); ?>
+			<span class="red">*</span>
+			<p class='name_error check_error'>
+				<i></i>
+				<span class='error1'>姓名不能为空</span>
+				<span class='error2'>此成员已添加</span>
+			</p>
+			<p class='pass'>
+				<i></i>
+			</p>
+		<?php echo $form->error($model,'name'); ?>
+	</div>
+	<span>性别</span>
 		<select value='' name="Arters[sex]" >
 			<?php if($model->sex=='女'){?>
 				<option value='2'>女</option>
@@ -37,10 +38,7 @@
 				<option value='2'>女</option>
 			<?php }?>
 		</select>
-	<span class="red">*</span>
->>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
-		<?php echo $form->error($model,'name'); ?>
-	</div>
+
 	<div class="row">
        <span>个人简介:</span><span class="red">*</span><br/>
 		<?php echo $form->textArea($model,'description',array('size'=>60,'maxlength'=>300,'style'=>'resize:none;width:600px;height:100px;')); ?>
@@ -48,32 +46,18 @@
 	</div>
 
 	<div class="row">
-	
-<<<<<<< HEAD
-	<span>生日</span> <input  type="text"id="f_date" name="Arters[birthDay]" /><br />
-=======
-	<span>生日</span>
-	<?php echo $form->textField($model,'birthDay',array('id'=>'f_date','value'=>$model->birthDay));?><br />		
->>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
-	<script type="text/javascript">//<![CDATA[
-	      Calendar.setup({
-	        inputField : "f_date",
-	        trigger    : "f_date",
-	        onSelect   : function() { this.hide() },
-	        showTime   : 12,
-	        dateFormat : "%Y-%m-%d"
-	      });
 
-    //]]></script>
+	<span>生日</span>
+
+	<?php echo $form->textField($model,'birthDay',array('id'=>'f_date','value'=>$model->birthDay));?>		
+	<span class='red'>*</span>
 	</div>
 
 	<div class="row">
-<<<<<<< HEAD
+	
 		<span>分类</span>
-=======
-		<span>分类</span>&nbsp;&nbsp;&nbsp;
 		
->>>>>>> c6b36b97f3bc6b3fa7dcd61c57a20744c751554e
+
 		<?php echo $form->dropDownList($model,'bl_arters_category_cateid',ArtersCategory::getCateName()); ?><span class="red">*</span>
 		<?php echo $form->error($model,'bl_arters_category_cateid'); ?>
 	</div>
@@ -100,6 +84,18 @@
 		<?php echo CHtml::submitButton($model->isNewRecord ? '添加' : '更新'); ?>
 	</div>
 
-<?php $this->endWidget(); ?>
+<?php $this->endWidget();
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/check.js');
+?>
+	<script type="text/javascript">//<![CDATA[
+	      Calendar.setup({
+	        inputField : "f_date",
+	        trigger    : "f_date",
+	        onSelect   : function() { this.hide() },
+	        showTime   : 12,
+	        dateFormat : "%Y-%m-%d"
+	      });
 
+    //]]>
+	      </script>
 </div><!-- form -->

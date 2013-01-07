@@ -121,11 +121,15 @@ class Arters extends CActiveRecord
 		}
 	}
 
-
-	public static function getSex()
+	public static function check($name)
 	{
-		$array=array('1'=>'男','2'=>'女');
-		return $array;
+		$model=self::model()->find('name=:name',array(':name'=>$name));
+		if($model){
+			return 0;
+		}else{
+			return 1;
+		}
 	}
+	
 
 }
