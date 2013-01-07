@@ -1,6 +1,6 @@
 <?php
 
-class GalleryController extends Controller
+class VideoController extends Controller
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -27,7 +27,7 @@ class GalleryController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view','upload'),
+				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -50,11 +50,6 @@ class GalleryController extends Controller
 	 */
 	public function actionView($id)
 	{
-
-		if(isset($_GET['id']))
-		{
-			$id=$_GET['id'];
-		}
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -66,36 +61,16 @@ class GalleryController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Gallery;
+		$model=new Video;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Gallery']))
+		if(isset($_POST['Video']))
 		{
-			/**
-			 *文章完成添加后，链接数据库 进行附表的添加，图片的地址为年月日+图片本来名字	
-			 *	
-			 *
-			*/
-			$model->attributes=$_POST['Gallery'];
+			$model->attributes=$_POST['Video'];
 			if($model->save())
-			{
-				$db=Yii::app()->db;
-				$sql="insert into bl_gallery_data(thumb,gid)values(:thumb,:gid)";
-				$command=$db->createCommand($sql);
-				$gid=$model->gid;
-				$command->bindParam(":gid",$gid);
-				
-				foreach ($_POST['thumb'] as $v)
-				 {
-					$v=date("ymd").$v;
-					$command->bindParam(":thumb",$v);
-					$command->execute();
-				}
-				$this->redirect(array('view','id'=>$model->gid));
-			}
-					
+				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('create',array(
@@ -115,17 +90,18 @@ class GalleryController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Gallery']))
+		if(isset($_POST['Video']))
 		{
-			$model->attributes=$_POST['Gallery'];
+			$model->attributes=$_POST['Video'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->gid));
+				$this->redirect(array('view','id'=>$model->id));
 		}
 
 		$this->render('update',array(
 			'model'=>$model,
 		));
 	}
+
 	/**
 	 * Deletes a particular model.
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
@@ -151,7 +127,7 @@ class GalleryController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Gallery');
+		$dataProvider=new CActiveDataProvider('Video');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -162,11 +138,10 @@ class GalleryController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Gallery('search');
-
+		$model=new Video('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Gallery']))
-			$model->attributes=$_GET['Gallery'];
+		if(isset($_GET['Video']))
+			$model->attributes=$_GET['Video'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -180,7 +155,7 @@ class GalleryController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Gallery::model()->findByPk($id);
+		$model=Video::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -192,12 +167,10 @@ class GalleryController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='gallery-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='video-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
-
-
 }

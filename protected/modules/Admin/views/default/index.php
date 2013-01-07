@@ -94,8 +94,8 @@
 				));
 
  $this->endWidget();?>
-       	
-	</li>
+    	
+	</li> 
 	<li><h6>管理</h6>
 			<?php
 			$this->beginWidget('CTreeView',array(
@@ -108,6 +108,11 @@
 
  $this->endWidget();?>
 
+	</li>
+	<li><h6>视频</h6>
+	
+	<a style='width:115px' target='con' href='<?php echo $this->createAbsoluteUrl("video/create");?>'>添加视频</a>
+	<a style='margin:5px 0 0 0px;width:115px' target='con'  href='<?php echo $this->createAbsoluteUrl("video/admin");?>'>视频管理</a>
 	</li>
 
        			 </div>

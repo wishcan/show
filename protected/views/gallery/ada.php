@@ -109,8 +109,10 @@ $(function(){
 											}
 									
 									});
-
-							var item=$('<img src="'+oProduct.thumb+'" border="0" >').hide();
+								if(!oProduct.title){
+									oProduct.title='爱达作品'
+										}
+							var item=$('<a href="index.php?r=gallery/showImg&gdid='+oProduct.gdid+'"><img title="'+oProduct.title+'" src="'+oProduct.thumb+'" border="0" ></a>').hide();
 							row.append(item)
 							item.fadeIn(500);		
 						}
@@ -126,46 +128,9 @@ $(function(){
 	/*
 	 *点击效果开始
 	*/
-	function setSize(element,element2)
-	{
-		var w=setWH($(element2).width());
-		var h=setWH($(element2).height());
-		$(element).css({'width':w,'height':h});
-//		$(".prev").css({'top':h/2.5,'right':10});
-	//	$(".next").css({'top':h/2.5,'left':10});
-		
-	$("#bigImg").css({"left":($(window).width()-parseInt($("#bigImg img").width()))/2,'top':($(window).height()-h)/2+$(window).scrollTop()})
-	$(".zhezao").css({'width':$(document).width(),'height':$(document).height()});
-	}
-	$("#stage li img").live('click',function(){
-			$(".close").show();
-			$(".zhezao").width($(document).width()).show();
-			$(".zhezao").height($(document).height())
-			var clone=$(this).clone();
-			var index=$(this).parent().index();
-			$(clone).addClass('isshow');
-			$(clone).attr('index',index);
-			$(".prev,.next").show();
-			$("#bigImg").append(clone).fadeIn(500);
-			setSize(clone,$(this));
-	})
-	$(window).resize(function(){
-			setSize($("#bigImg img",$("#bigImg img")));
-		})
-	$(".close").click(function(){
-		$(".zhezao").hide();
-		$("#bigImg img").remove();
-		$("#bigImg").hide();
-	
-		})
-	/*设置宽高*/
-	function setWH(wh)
-	{
-		return wh*3;
-	}
+
 
 })
-
 
 </script>
 <input type='hidden' value='<?php echo $gid;?>' />
@@ -178,11 +143,5 @@ $(function(){
 	<li></li>	
 </ul>
 <!--遮罩-->
-<div class='zhezao'>
-</div>
-<div id='bigImg'>
-<i class='close'></i>
-
-</div>	
 		
 </div>

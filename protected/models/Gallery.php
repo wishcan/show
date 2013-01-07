@@ -143,7 +143,12 @@ class Gallery extends CActiveRecord
 	{
 		if(!isset($cid))return false;
 		$model=Gallery::model()->findAll("cid=:cid order by gid",array(":cid"=>$cid));
-		return $model;
+		$gid='';
+		foreach($model as $v){
+			$gid.=','.$v->gid;
+		}
+		$gid=trim($gid,',');
+		return $gid;
 	}
 
 	

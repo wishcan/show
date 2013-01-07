@@ -45,7 +45,6 @@ class galleryController extends Controller
 			$cid=$_GET['cid'];
 			$model=Gallery::model()->findAll("cid=:cid",array(":cid"=>$cid));
 			if(empty($model)) exit('请求的结果不存在');
-		
 			$gid=$model[0]->gid;
 			$xiaotu=self::GetOuter($gid);
 			$this->render('showImg',array('xiaotu'=>$xiaotu,'title'=>$model[0]->title));
@@ -82,12 +81,7 @@ class galleryController extends Controller
 	public function actionShey()
 	{
 
-		$model=Gallery::model()->getGallery(25);
-		$gid='';
-		foreach($model as $v){
-		$gid.=','.$v->gid;
-		}
-		$gid=trim($gid,',');	
+		$gid=Gallery::model()->getGallery(25);
 		$this->render('shey',array('gid'=>$gid));
 	}
 	public function actionPhoto()//显示单个类别的照片
@@ -99,7 +93,12 @@ class galleryController extends Controller
 	/*
 	 * 获得指定栏目的图片文章ID
 	 */
-
+	public function actionAda()
+	{
+		$gid=Gallery::model()->getGallery('56');
+		$model=Gallery::getData($gid);
+		$this->render('ada',array('model'=>$model,'gid'=>$gid));
+	}
 	
 	
 	
