@@ -182,7 +182,7 @@ class AdvertController extends Controller
 		$aid=$_POST['aid'];
 
 		$db=Yii::app()->db;
-				$sql='insert into bl_advert_data(aid,thumb)value(:aid,:thumb)';
+		$sql='insert into bl_advert_data(aid,thumb)value(:aid,:thumb)';
 		$command=$db->createCommand($sql);
 		$command->bindParam(":aid",$aid);
 		foreach($_POST['thumb'] as $v)
@@ -205,7 +205,7 @@ class AdvertController extends Controller
 	{	
 
 
-		$db=Yii::app()->db;
+			$db=Yii::app()->db;
 			if(isset($_GET['aid']))
 			{
 				$on='a.aid='.$_GET['aid'];

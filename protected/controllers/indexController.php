@@ -9,16 +9,16 @@
  	public function actionIndex()
  	{
  		//$news=News::model()->findAll('cid=:cid order by createTime desc limit 10',array(":cid"=>'27'));
- 		$news=News::model()->findAll(
- 				array('select'=>'title,createTime,id',
- 					  'order'=>'createTime desc',
- 					  'limit'=>'10',
- 					  'condition'=>'cid=:cid',
-					   'params'=>array(':cid'=>'27'),	
- 						));
- 		$cate=self::getGalleryCate();	
- 		$advert=Advert::model()->getAdverts(1);	
- 		$this->render("index",array('news'=>$news,'cate'=>$cate,'advert'=>$advert));
+ 		// $news=News::model()->findAll(
+ 		// 		array('select'=>'title,createTime,id',
+ 		// 			  'order'=>'createTime desc',
+ 		// 			  'limit'=>'10',
+ 		// 			  'condition'=>'cid=:cid',
+			// 		   'params'=>array(':cid'=>'27'),	
+ 		// 				));
+ 		// $cate=self::getGalleryCate();	
+ 		// $advert=Advert::model()->getAdverts(1);	
+ 		 $this->render("index");
 
  	}
  	public function actionError()

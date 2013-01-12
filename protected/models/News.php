@@ -157,6 +157,15 @@ class News extends CActiveRecord
 			return false;
 		}
 	}
-
+	public static function check($data)
+	{
+		$model=self::model()->find('title=:title',array(':title'=>$data));
+		if($model)
+		{
+			return 0;
+		}else{
+			return 1;
+		}
+	}
 
 }

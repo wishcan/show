@@ -8,14 +8,16 @@
 
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'后台管理',
+	'name'=>'宝隆艺术网',
 	'defaultController'=>'index',
+
 	// preloading 'log' component
 	'preload'=>array('log'),
 	// autoloading model and component classes
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.widgets.yii-bootsrap.*',
 	),
 	'language'=>'zh_cn',
 	'aliases' => array(
@@ -42,7 +44,15 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+			'loginUrl'=>'index.php?r=Admin/user/login',//修改默认的登陆控制器和方法
 		),
+		'cache'=>array(
+			'class'=>'system.caching.CMemCache',
+			'servers'=>array(
+					array('host'=>'localhost','port'=>'11211','weight'=>60),
+				),
+			),
+
 		'error'=>array(
 			'class'=>array('CController'),
 		),

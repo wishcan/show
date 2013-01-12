@@ -82,4 +82,15 @@ class Role extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
+	public static  function getRoles($rid=0)
+	{
+		if($rid)
+		{
+			$model=self::model()->findByPk($rid);
+			return $model->rname;
+		}else{
+			$model=self::model()->findAll();
+			return CHtml::listData($model,'rid','rname');
+		}
+	}
 }

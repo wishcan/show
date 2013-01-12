@@ -22,11 +22,28 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
+<div id="form_content">
+<div class="content" style='margin-left:0px;'>
+        
+        <div class="header">
+            
+            <h1 class="page-title">栏目管理</h1>
+        </div>
+        
+                <ul class="breadcrumb">
+            <li><a href="index.html">后台</a> <span class="divider">/</span></li>
+            <li class="active">栏目</li>
+        </ul>
 
-<h1>栏目管理</h1>
-
-
-<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button alink')); ?>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                    
+<div class="btn-toolbar">
+    <a href='<?php echo $this->createAbsoluteUrl('category/create');?>'><button class="btn btn-primary"><i class="icon-plus"></i>添加栏目</button></a>  
+  <button class='search-button btn'>高级搜索</button>
+  <div class="btn-group">
+  </div>
+</div>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,

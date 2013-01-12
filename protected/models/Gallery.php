@@ -125,6 +125,7 @@ class Gallery extends CActiveRecord
 			return false;
 		}
 	}
+
 	//$num获取的数量为30张
 	public static function getData($gid,$start=0,$end=30)
 	{
@@ -147,4 +148,16 @@ class Gallery extends CActiveRecord
 	}
 
 	
+
+	public static function check($title)
+	{
+		$model=self::model()->find('title=:title',array(':title'=>$title));
+		if($model)
+		{
+			return 0;
+		}else{
+			return 1;
+		}
+	}
+
 }

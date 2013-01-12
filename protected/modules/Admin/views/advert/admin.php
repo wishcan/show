@@ -22,16 +22,28 @@ $('.search-form form').submit(function(){
 });
 ");
 ?>
-<?php 
-$url=Yii::app()->request->baseUrl;?>
-<script src="<?php echo $url?>/js/form.js" type="text/javascript" charset="utf-8" async defer></script>
 <div id="form_content">
-<link rel="stylesheet" type="text/css" href="<?php Yii::app()->baseUrl.'css/default.css' ?>">
-<h3 class="top_l"><span id="title">广告位管理</span><i class="top_r"></i></h3>
-<div class="c"></div>
+<div class="content" style='margin-left:0px;'>
+        
+        <div class="header">
+            
+            <h1 class="page-title">广告位管理</h1>
+        </div>
+        
+                <ul class="breadcrumb">
+            <li><a href="index.html">后台</a> <span class="divider">/</span></li>
+            <li class="active">广告位</li>
+        </ul>
 
-<?php echo CHtml::link('高级搜索','#',array('class'=>'search-button form_link')); ?>
-<?php echo CHtml::link('广告位添加',array('advert/create'),array('class'=>'form_link')); ?>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                    
+<div class="btn-toolbar">
+    <a href='<?php echo $this->createAbsoluteUrl('advert/create');?>'><button class="btn btn-primary"><i class="icon-plus"></i>添加广告位</button></a>  
+	  <button class='search-button btn'>高级搜索</button>
+  <div class="btn-group">
+  </div>
+</div>
 <div class="search-form" style="display:none">
 <?php $this->renderPartial('_search',array(
 	'model'=>$model,

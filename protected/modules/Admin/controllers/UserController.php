@@ -27,7 +27,7 @@ class UserController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view','login','create','logout','CheckUsername'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -172,5 +172,37 @@ class UserController extends Controller
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
+	}
+	public function actionLogin()
+	{
+			$model=new LoginForm;
+
+				if(isset($_POST['ajax']) && $_POST['ajax']==='login-form')
+			{
+				echo CActiveForm::validate($model);
+				Yii::app()->end();
+			}
+							
+			if(isset($_POST['LoginForm']))
+			{
+				
+				$model->attributes=$_POST['LoginForm'];
+				if($model->validate() && $model->login())
+					$this->redirect(Yii::app()->createUrl('Admin'));
+			}
+
+			$this->render('login',array('model'=>$model));
+	}
+
+
+	public function actionLogout()
+	{
+		Yii::app()->user->logout();
+		$this->redirect(Yii::app()->homeUrl);
+	}
+	public function actionCheckUsername()
+	{
+			echo 1;exit;
+ 		echo User::check($_POST['username']);
 	}
 }
