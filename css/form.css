@@ -176,7 +176,6 @@ div.wide.form .buttons, div.wide.form .hint, div.wide.form .errorMessage
 }
 div.form input[type="text"],div.form input[type='password'],div.form select{
 	width:200px;
-	height:25px;
 	margin-left:15px;
 	/*border-radius: 2px;*/
 
@@ -227,4 +226,3 @@ background-position: -422px -38px;
 box-shadow:0 1px 1px rgba(249, 9, 25, 0.075) inset, 0 0 8px rgba(249, 9, 25, 0.6);
 
 }
-

@@ -68,6 +68,8 @@ $('.search-form form').submit(function(){
 			'header'=>'操作',
 			'createButtonLabel'=>'添加广告',
 			'createButtonUrl'=>'Yii::app()->createAbsoluteUrl("Admin/advert/create",array("aid"=>$data->aid))',
+			'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
+			
 		),
 	),
 )); ?>

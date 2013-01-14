@@ -8,10 +8,17 @@ $this->breadcrumbs=array(
 
 <?php $url=Yii::app()->request->baseUrl;?>
 
-<script src="<?php echo $url?>/js/form.js" type="text/javascript" charset="utf-8" async defer></script>
-<link rel="stylesheet" type="text/css" href="<?php Yii::app()->baseUrl.'css/default.css' ?>">
-<div id="form_content">
-<h3 class="top_l"><span id="title">预览添加</span><i class="top_r"></i></h3>
+<div class="content" style='margin-left:0px;'>
+        
+        <div class="header">
+            
+            <h1 class="page-title">添加图片信息</h1>
+        </div>
+        
+                <ul class="breadcrumb">
+            <li><a href="index.html">后台</a> <span class="divider">/</span></li>
+            <li class="active">图片信息</li>
+        </ul>
 <div class="c"></div>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -2,7 +2,7 @@
 
 <?php 
 
-	$content='欢迎使用百度编辑器!';
+	$content='';
 	if(!empty($model->newsData))
 	{
 		$news=$model->newsData->attributes;
@@ -52,10 +52,16 @@
 
     <div id="divFileProgressContainer"></div>
 
-    <div class="swfupload" id="bswf"style="display:inline-block"><button id="swfupload"></button></div>
-      <span>缩略图上传(<span class='red'>限一张</span> &nbsp;)</span>
+    <div class="swfupload" style=' float:left'id="bswf"style="display:inline-block">
+        <button id="swfupload"></button>
+     </div>
+      <span style='float:left;line-height:28px;font-size:16px;color:#FF8822;margin-left:15px;'>
+        缩略图上传(<span class='red'>限一张</span> &nbsp;)</span>
+    
     </div>
+    
     <div id="smallImg"> 
+    
     </div>
 </div>
 

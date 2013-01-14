@@ -61,6 +61,8 @@ $('.search-form form').submit(function(){
 		'rname',
 		array(
 			'class'=>'CButtonColumn',
+			'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
+			
 		),
 	),
 )); ?>

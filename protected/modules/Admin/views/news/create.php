@@ -11,8 +11,16 @@ $this->menu=array(
 ?>
 
 
-<div id="form_content">
-<link rel="stylesheet" type="text/css" href="<?php Yii::app()->baseUrl.'css/default.css' ?>">
-<h3 class="top_l"><span id="title">文章添加</span><i class="top_r"></i></h3>
-<div class="c"></div>
+<div class="content" style='margin-left:0px;'>
+        
+        <div class="header">
+            
+            <h1 class="page-title">添加文章</h1>
+        </div>
+        
+                <ul class="breadcrumb">
+            <li><a href="index.html">后台</a> <span class="divider">/</span></li>
+            <li class="active">文章</li>
+        </ul>
+        <div class='c'></div>
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

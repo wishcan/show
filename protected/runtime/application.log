@@ -295,3 +295,28 @@ Stack trace:
 #15 {main}
 REQUEST_URI=/show/index.php?r=Admin
 ---
+2013/01/14 03:18:52 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "C:\wamp\www\show\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in C:\wamp\www\yii\framework\web\CAssetManager.php:116
+Stack trace:
+#0 C:\wamp\www\yii\framework\web\CAssetManager.php(101): CAssetManager->setBasePath('C:\wamp\www\sho...')
+#1 C:\wamp\www\yii\framework\web\CAssetManager.php(219): CAssetManager->getBasePath()
+#2 C:\wamp\www\yii\framework\web\CClientScript.php(449): CAssetManager->publish('C:\wamp\www\yii...')
+#3 C:\wamp\www\yii\framework\web\widgets\CTreeView.php(149): CClientScript->getCoreScriptUrl()
+#4 C:\wamp\www\yii\framework\web\CBaseController.php(148): CTreeView->init()
+#5 C:\wamp\www\yii\framework\web\CBaseController.php(190): CBaseController->createWidget('CTreeView', Array)
+#6 C:\wamp\www\show\protected\modules\Admin\views\default\index.php(53): CBaseController->beginWidget('CTreeView', Array)
+#7 C:\wamp\www\yii\framework\web\CBaseController.php(127): require('C:\wamp\www\sho...')
+#8 C:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('C:\wamp\www\sho...', NULL, true)
+#9 C:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('C:\wamp\www\sho...', NULL, true)
+#10 C:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#11 C:\wamp\www\show\protected\modules\Admin\controllers\DefaultController.php(9): CController->render('index')
+#12 C:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): DefaultController->actionIndex()
+#13 C:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#14 C:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#15 C:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#16 C:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#17 C:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin')
+#18 C:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 C:\wamp\www\show\index.php(13): CApplication->run()
+#20 {main}
+REQUEST_URI=/show/index.php?r=Admin
+---

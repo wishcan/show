@@ -3,19 +3,18 @@
         <div class="navbar-inner">
                 <ul class="nav pull-right">
                     
-                    <li><a href="#" class="hidden-phone visible-tablet visible-desktop" role="button">Settings</a></li>
+                    <!-- <li><a href="#" class="hidden-phone visible-tablet visible-desktop" role="button">Settings</a></li> -->
                     <li id="fat-menu" class="dropdown">
                         <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-                            <i class="icon-user"></i> Jack Smith
+                            <i class="icon-user"></i> <?php echo Yii::app()->user->id;?>
                             <i class="icon-caret-down"></i>
                         </a>
 
                         <ul class="dropdown-menu">
-                            <li><a tabindex="-1" href="#">My Account</a></li>
+                           <!--  <li><a tabindex="-1" href="#">My Account</a></li> -->
                             <li class="divider"></li>
-                            <li><a tabindex="-1" class="visible-phone" href="#">Settings</a></li>
                             <li class="divider visible-phone"></li>
-                            <li><a tabindex="-1" href="sign-in.html">退出</a></li>
+                            <li><a tabindex="-1" href="<?php $this->createAbsoluteUrl('user/logout');?>">退出</a></li>
                         </ul>
                     </li>
                     
@@ -102,8 +101,8 @@
       
 
     
-    <div class="content iframe" style='height:100%'>
-        <iframe src="" name='con' style='width:100%;height:inherit;border:none' ></iframe>
+    <div class="content iframe" style='height:auto; height:660px;'>
+        <iframe src="" name='con' style='width:100%;height:960px;border:none' ></iframe>
       
 </div>
 
@@ -128,16 +127,17 @@
     <script type="text/javascript">
         $("[rel=tooltip]").tooltip();
         $(function() {
-          setSize();
+ setSize();
           $(window).resize(function(){
             setSize();
           })
           function setSize()
           {
-                      $('.iframe').css('height',$(document).height());
-          $('iframe').css('height',$(document).height());
+          //$('.iframe').css('height',$(window).height()+100);
+          //$('iframe').css('height',$(window).height()+100);
+            // $('iframe').css('height','auto');
           }
-            $('.demo-cancel-click').click(function(){return false;});
+            //$('.demo-cancel-click').click(function(){return false;});
         });
     </script>
     

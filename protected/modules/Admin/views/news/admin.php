@@ -58,8 +58,8 @@ $('.search-form form').submit(function(){
 	'columns'=>array(
 		array(
 			'name'=>'id',
-			'headerHtmlOptions'=>array(
-				'width'=>'10px',)	
+	//		'headerHtmlOptions'=>array(
+	//			'width'=>'10px',)	
 
 			),
 		array(
@@ -73,9 +73,9 @@ $('.search-form form').submit(function(){
 		'source',
 		array(
 			'name'=>'click',
-			'headerHtmlOptions'=>array(
-				'width'=>'20px',
-				),
+			// 'headerHtmlOptions'=>array(
+			// 	'width'=>'20px',
+			// 	),
 			),
 		'recomendation',
 		'tag',
@@ -88,7 +88,7 @@ $('.search-form form').submit(function(){
 		array(
 			'class'=>'CButtonColumn',
 			'header'=>'操作',
-				'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
+			'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
 			'headerHtmlOptions'=>array(
 					'style'=>'width:100px;'
 					

@@ -64,6 +64,7 @@ $('.search-form form').submit(function(){
 // 		    'viewButtonImageUrl'=>false,
 //              'updateButtonImageUrl'=>false,
 //              'deleteButtonImageUrl'=>false,
+			'createButtonImageUrl'=>Yii::app()->baseUrl.'/images/create.png',
              'createButtonLabel'=>'添加子栏目',
              'headerHtmlOptions'=>array(
              		'style'=>'width:200px;'

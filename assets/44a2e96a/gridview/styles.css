@@ -25,21 +25,21 @@
 
 .grid-view table.items th
 {
-	color: white;
-	background: url("bg.gif") repeat-x scroll left top white;
+	color: #666;
+	height:35px;
+	background:url(bg.png) repeat-x;
 	text-align: center;
 }
 
 .grid-view table.items th a
 {
-	color: #EEE;
 	font-weight: bold;
 	text-decoration: none;
 }
 
 .grid-view table.items th a:hover
 {
-	color: #FFF;
+	color: #333;
 }
 
 .grid-view table.items th a.asc
