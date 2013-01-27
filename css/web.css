@@ -1,305 +1,142 @@
+/*首页CSS*/
 *{
-	padding:0px;
 	margin:0px;
-	font-family:'微软雅黑';
 }
-ul li{
-	list-style:none;
+.l{
+	float: left;
 }
-a:visited {color: #333}
-a{
-	text-decoration:none;
-
+.r{
+	float: right;
 }
-a img{
-	border: 0;
+.c{
+	display:block;
+	clear:both;
 }
 
-body{
-background-color: #f5f5f5;
-}
 .center{
 	width:960px;
-	margin:0 auto;
-	}
-.text_l{
-	text-align:left;	
+	margin: 0 auto;
 }
-.text_r{
-	text-align:right;
-}	
-.orange{
-	color:#ff6600;
+/*头部CSS开始*/
+#head{
+	height:36px;
+	background: url(../images/head_bg.png) repeat-x;
 }
-.black{
-	color:black;
-}
-#header{
-	height:35px;
-	
-	background:url('../images/top_bg.jpg')repeat-x;
-}
-
-#header b{
-line-height:28px;
-margin: 20px 20px 40px 0px;
-}
-#header a{
-	border:none;
+#head a{
+	line-height: 36px;
+	color:#fff;
 	text-decoration:none;
-	color:black;
 }
+.h_c{
+	margin:20px 0 0 120px;
 
+}
 .logo{
-	padding:20px 0px 0 150px;
+	display: block;
+	width:181px;
+	height: 64px;
+	background: url(../images/logo.png);
 }
-#search-form{
-	margin:20px 270px;
-	margin-right:0px;
-}
-#search-form input[type="text"]{
-	width:265px;
-	padding:3px;
-	border-left:solid 1px #689812;
-	color:#999999;
-	font-weight:nomal;
-	margin-left:-5px;
-}
-#search-form .button{
-	width:87px;
-	height:30px;
-	margin-left:2px;
-	background:url(../images/bg.png)no-repeat scroll  -278px 1px;
-	cursor:pointer;
-}
-#search-form select{
-width:80px;
-color:#6B832D;
-background:url(../images/xiala.jpg)no-repeat 44px 2px;
-font-weight:bold;
-}
-select option{
-	color:#000;
-	font-weight: normal;
-}
-#search-form select,#search-form input{
-	height:25px; 
-	border:none;
-	font-size:20px;
-	float: left;
-}
-.select1{
-	border:solid 1px #D2E4B1;
-	float: left;
+.h_c ul{
+	height:16px;
+	padding:5px;
+	padding-top:4px;
 	overflow: hidden;
-	background-color: #fff;
+	background: #ECECEC;
+	position: relative;
+	left: -52px;
+	border-left: solid 1px #ddd;
+}
+.h_c ul li{
+	margin-top:2px;
+	list-style: none;
+	color:#333;
+	_float:left;
 }
 
-.select2{
-	padding:0px 5px;
-	width:60px;
-	/*overflow: hidden;*/
-	float: left;
-	margin-top:3px;
-	
-}
-#menu{
-	background:#EBEBEB;
-}
-.u1{
-	width:960px;
-	height:60px;
-	
-	margin-top:15px;
-}
-.u1 li{
-	float: left;
+.search{
+	margin:10px 0 0 50px; 
+	border-radius: 3px;
+	background: #fff;
 	padding:5px;
-	margin-right:10px;
-	font-weight:bold;
-	background:#ebebeb;
+	background: url(../images/s.png) repeat-x;
 }
-.u1 li:hover{
-	background:#0EBEFE;
+.tiaojian{
+	text-indent: 2em;
+	display: block;
+	font-size: 14px;
+	color:#999;
+	height:28px;
+	width:260px;
+	border:none;
+	background:url(../images/tiaojian.png) no-repeat;
 }
-.u1 li:hover #header .u1 li a{
+.sousuo{
+	display:block;
+	height:28px;
+	width: 64px;
+	padding:3px;
+	cursor: pointer;
+	border:none;
+	background: none;
+	background: url(../images/sousuo_h.png) no-repeat;
+}
+.sousuo:hover{
+	background: url(../images/sousuo.png) no-repeat;
+}
+#web_menu{
+	height: 108px;
+	width: 960px;
+	background: url(../images/dh_bg.png) repeat-x;
+}
+#web_menu ul{
+	float:left;
+	*margin-left: 30px;
+}
+#web_menu ul li{
+	height: 28px;
+	list-style: none;
+}
+#web_menu ul li a b{
+	padding:0 5px;
+	font-size: 18px;
+	color:#333;
+}
+#web_menu ul li a b:hover{
+	color:#086BA8;
+}
+#web_menu ul li a{
+	color:#535250;
+}
+#web_menu ul li a:hover{
+	color:#059AF6;
+
+}
+
+
+/*头部CSS结束*/
+/*内容部分CSS开始{*/
+#content{
+
+	*margin-top: 194px;
+
+}
+/*内容部分CSS结束*/
+#foot{
+	margin: 20px 0;
+	text-align: center;
+}
+#foot a{
+	color:#fff;
+	text-decoration: none;
+}
+#foot p{
 	color:#fff;
 }
-#header .u1 li a{
-		color:#8EB136;
-		font-size:20px;
-		line-height:50px;
-
-}
-#header .u1 li .on{
-	color:#ff6600;
-}
-#huandeng img{
-	width:960px;
-	height:300px;
-}
-#huandeng{
-	background:#333;
-	margin-top:5px;
-	height:300px;
-	overflow:hidden;
-}
-#huandeng div{
-	width:960px;
-overflow:hidden;
-}
-#huandeng .prev,.next{
-	display: block;
-	position: relative;
-	width:40px;
-	height:40px;
-	top:-150px;
-	background:url(../images/sprite.png);
-	cursor:pointer;
-}
-#huandeng .prev{
-	background-position:-261px -122px;
-}
-#huandeng .next{
-	background-position:right -123px;
-}
-.endHuandeng{
-	
-	height:25px;
-	background:url(../images/menu_bg.jpg)
-}
-
-.u2 li a,.u3 li a ,.u4 li a ,.u5 li a{
-	display: block;
-	width:206px;
-	height:47px;
-	background-color: #ceedab;
-	position:relative;
-	z-index:99;
-	margin:10px;
-	margin-right:0px;
-} 
-
-.u2 li a{
-	margin-left:13px;
-}
-.u3 li a {
-	margin-left:28px;
-	width:210px;
-}
-.u4 li a {
-	margin-left:27px;width:213px;
-
-}
-.u5 li a{
-	margin-left:23px;
-	width:203px;
-}
-#huihua ul{
-float:left;
-} 
-
-#huihua{
-	margin:50px 0 0 13px;
-	height:430px;
-
-} 
-#huihua ul li a{
-	color:#333;
-	float:left;
-	line-height:47px;
-	text-align:center;
-}
-#huihua ul li a:hover{
-	background:#5F655F;
-	color:#fdfdfd;
-}
-h1,h2,h3,h4{
-	color:#84AB26;
-	text-align:center;
-	padding:10px;
-}
-h2,h3,h4{
-	text-align:left;
-}
-.date{
-	/*margin-right:20px;*/
-}
-.hui{
-	position:relative;width:1010px;height:540px;top:-518px;left:-40px;
-
-}
-
-#zonghui,#xinwen,.video,.qutan,.xuetang,#chuban,.liebiao li{
-	width:940px;
-	padding:10px;
+#foot .youlian,#foot .xiangguan
+{
 	border:solid 1px #ddd;
-	border-radius:5px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.8) inset;
-	box-shadow: 0px 0px 5px rgba(200,200,200,0.5);
-	margin:15px 0;
-	float:left;
-}
-#zonghui a{ padding:5px;clear:both;}
-
-#zonghui a:hover{
-	color:#ff7711;
-
-}
-#xinwen ul li a,.qutan li a,.xuetang li a{
-	margin-right:20px;
-}
-#xinwen ul li a:hover,.qutan li a:hover,.xuetang li a:hover{
-	text-decoration:underline;
-	color:#ff6600;
-}
-
-#xinwen ul li{
-
-padding:3px;
-
-}
-.video li{
-	margin-right:5px;
-	margin-left:4px;
-	box-shadow: 0px 0px 10px rgba(0,0,0,0.8) inset;
-	box-shadow: 0px 0px 5px rgba(200,200,200,0.5);
-}
-.video li,.video li p {
+	background: #616F8A;
+	border-radius: 4px;
 	padding:5px;
-}
-.qutan,.xuetang{
-	width:450px;
-}
-.qutan{
-	margin-right:16px;
-}
-.chuban ul li{
-	background-color: #f4f4f4;
-	margin-bottom:5px;
-	box-shadow: 0px 0px 5px rgba(180,180,180,0.5);
-}
-#foot {
-	margin-top:25px;
-	background-color: #999;
-}
-#foot hr{
-	border:solid 2px #333;
-}
-#foot p,#foot a{
-	color:#f4f4f4;
-	text-align:center;
-}
-#foot h1{
-	color:#000;
-}
-#weizhi{
-	padding:5px;
-}
-#weizhi b{
-	font-size:18px;
-
-}
-#weizhi a{
-	text-decoration:underline;
 }

@@ -52,10 +52,9 @@ return array(
 					array('host'=>'localhost','port'=>'11211','weight'=>60),
 				),
 			),
+		'Dispose'=>array(
+			),
 
-		'error'=>array(
-			'class'=>array('CController'),
-		),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
@@ -106,5 +105,6 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
+		'about'=>'12345',
 	),
 );

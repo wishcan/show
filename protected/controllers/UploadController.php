@@ -26,13 +26,27 @@ class UploadController extends Controller
 		 *
 		 */	
  		$this->deleteTemp();
-		date_default_timezone_set('PRC');
 		$filedata=$_FILES['Filedata'];
 		$temp=$this->dir.'temp/'.$filedata['name'];
 		$filedata['name']=date("ymd").$filedata['name'];
-		$this->dir=$this->dir.date('ym').'/';
 		$tmp_name=$filedata['tmp_name'];
-		$file=$this->dir.$filedata['name'];
+		$info=pathinfo($filedata['name']);
+		$type=$info['extension'];
+ 		switch ($type) {
+ 			case 'swf':
+ 				# code...
+ 			$file=$this->dir.'flash/'.$filedata['name'];
+ 				break;
+ 			case 'pdf':
+ 			$file=$this->dir.'pdf/'.$filedata['name'];
+ 			break;
+ 			default:
+ 				# code...
+ 			$this->dir=$this->dir.date('ym').'/';
+ 			$file=$this->dir.$filedata['name'];
+ 				break;
+ 		}
+	
 		is_dir($this->dir)?'':mkdir($this->dir);	
 		move_uploaded_file($filedata['tmp_name'],$file);
 		copy($file,$temp);

@@ -1,0 +1,490 @@
+body{
+	background: #f4f4f4;
+}
+/*本月活动栏*/
+#byhd{
+
+width: 960px;
+overflow: hidden;
+border:solid 1px #ddd;
+border-radius: 5px;
+margin-top:10px;
+height:100px;
+background: url(../images/hd_bg.png) repeat;
+/*float: left;*/
+}
+
+#byhd_h{
+	width: 840px;
+	height:86px;	
+	padding:40px 0 0 120px; 
+	background: url(../images/byhd.png) no-repeat;
+	float: left;
+}
+#byhd_h li{
+	list-style: none;
+	display: block;
+	float: left;
+	/**float: none;*/
+	padding:5px;
+	width: 180px;
+	margin-left: 15px;
+}
+#byhd_h li a,.riqi{
+	*margin-top:15px;
+}
+
+#byhd_h li a{
+	color:#333;
+}
+
+#byhd_h .lf{
+
+}
+a{
+	color:#333;
+	text-decoration: none;
+	border: none;
+}
+
+a img{
+	border: none;
+}
+a:hover{
+	color:#ff6600;
+}
+ul li{
+	list-style: none;
+}
+#byhd_h li a:hover{
+	color:#059AF6;
+}
+#byhd_h li .aon{
+	color:#ff6600;
+}
+/*hzs-->幻灯片+最新新闻+宝隆住户*/
+#hzs{
+	margin-top: 10px;
+}
+#hzs ul{
+	padding:0px;
+}
+#hzs ul li{
+	float:left;
+	list-style: none;
+}
+.zxxw{
+	width: 
+}
+.zxxw,.blzh
+{
+border:solid 1px #697792;
+height:199px;
+width: 318px;
+margin-left:9px; 
+border-top: none;
+border-radius: 3px;
+}
+
+.hdp{
+	width: 300px;
+	height: 199px;
+	overflow: hidden;
+}
+
+.hzs_head{
+	color:#fff;
+	background: url(../images/hzs_h.png) no-repeat ;
+	font-weight: normal;
+	height: 25px;
+	line-height:25px;
+	text-indent: 1em;
+	/*background: #697792;*/
+}
+.zxxw p{
+	padding:3px;
+}
+.zxxw p a{
+	margin-left: 5px;
+	
+}
+/*园内艺术家*/
+.blzh{
+	overflow: hidden;
+	position: relative;}
+.blzh ul{
+position: relative;
+}
+.blzh li{
+	margin-top: 5px;
+	padding:10px 5px;
+	/*border:solid 1px #ddd;  */
+}
+.blzh .num{
+	position: relative;
+	z-index: 999;
+	top:-15px;
+	left: 135px;
+	font-size: 10px;
+	}
+
+.blzh .num b{
+	padding:2px;
+	color:#37AFB3;
+	cursor: pointer;
+}	
+.blzh .num .bon{
+	color:#ff6600;
+}	
+.blzh li img{
+	height: 120px;
+}
+.blzh  li p{
+	margin-top:3px;
+}
+/*广告位2*/
+.gg{
+	margin-top:15px;
+}
+.gg2{
+	width: 600px;
+}
+.gg3{
+	width:322px;
+	margin-left: 30px;
+}
+/*新闻*/
+#xinwen{
+	
+}
+.xinxi{
+	width:660px;
+	margin-top: 15px;border: solid 1px #ddd;
+	padding: 5px;
+	background: #fff;
+	border-radius: 5px;
+	border-top: solid 3px #333;
+	padding-bottom: 25px;
+}
+.xinxi ul{
+	padding:5px;
+	width:298px;
+	margin:5px 20px 0 0px;
+	border-bottom:dashed 1px #A7C984;
+}
+.xinxi ul li{
+	/*list-style-type: square;*/
+	list-style-image: url(../images/jiantou.png);
+	list-style-type: square;
+	list-style-position:inside;
+	padding:0px;
+	margin:0px;
+}
+.xinxi ul li:hover{
+	list-style-image: url(../images/jiantou_h.png);
+}
+.xinxi ul li span{
+	float: right;
+	*float: none;
+}
+.xinxi ul h4{
+	border-bottom: solid 1px #666;
+	padding: 2px;
+	color:#0F6FCF;
+}
+.head2{
+	line-height: 35px;
+	width:115px;
+	text-indent: 2em;
+	height: 35px;
+	color:#fff;
+	background: url(/show/images/head2_bg.png) no-repeat;
+	border-radius: 2px;
+}
+.paihang{
+	background: #f4f4f4;
+	margin-top:15px;
+	width: 278px;
+	border: solid 1px #C6CAD3; 
+	border-top: solid 2px #fff;
+	background: url(../images/rens.png);
+}
+.paihang ul,#shipin ul{
+	margin-left: 0px;
+	padding: 0px;
+}
+.paihang ul li{
+		list-style: none;
+		padding: 2px;
+}
+.paimai{
+	position: relative;
+	left:-10px;
+	top:-5px;
+	width: 134px;
+	height: 45px;
+	background: url(../images/paimai.png);
+}
+.ph_h{
+	width: 280px;
+/*	height: 42px;*/
+	height: 30px;
+	border-radius:2px;
+	color:#fff;
+	line-height: 30px;
+    background: url(../images/head_bg.png) repeat-x;
+
+}
+.ph_h2{
+	/*border-bottom: solid 1px #333;*/
+	padding: 5px;
+}
+.ph_b1,.s1{
+	font-size: 18px;
+	color:#333;
+	padding-left: 15px;
+}
+.ph_b2,.ph_s2{
+	float: right;
+	color:#075989;
+    margin-right: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+.gg4{
+	margin: 15px 10px 0 0;
+
+}
+/*视频*/
+#shipin .head2{
+	width: 80px;
+	height: 38px;
+	color:#5672D3;
+	padding-left: 10px;
+	line-height: 48px;
+	background:url(../images/shi.png) no-repeat; 
+}
+#shipin ul li{
+	list-style: none;
+	float: left;
+	margin: 0px;
+}
+#shipin .fenlei{
+	padding-left: 20px;
+}
+#shipin .fenlei a{
+	margin-right: 10px;
+}
+#shipin ul{
+	width: 660px;
+}
+#shipin ul li img,#shipin ul li span,#shipin ul li a{
+	display: block;
+	float: none;
+	text-align: center;
+}
+#shipin ul li img{
+	padding: 2px;
+	border: solid 1px #ddd;
+	background:#fff;
+	border-radius: 4px;
+}
+#shipin ul li span{
+	margin-top: 5px;
+}
+#shipin{
+	/*margin-top:-20px;*/
+		background: url(../images/rens.png);
+}
+#shipin ul li a{
+	margin:5px; 
+}
+/*专题*/
+#zhuanti{
+	border-top: solid 3px #37AFB3;
+	width: 940px;
+		background: url(../images/rens.png);
+}
+#zhuanti ul {
+	width: 940px;
+	border: none;
+}
+#zhuanti ul li{
+	margin-right: 5px;
+	list-style: none;
+	width: 182px;
+	float: left;
+}
+#zhuanti ul li img{
+	width: 182px;
+}
+#zhuanti ul li p{
+	text-align: center;
+}
+/*当代艺术*/
+#yishu{
+background: #fff;
+margin:15px 0px 0 0;
+border:solid 1px #ddd;
+border-radius: 3px;
+border-top: solid 3px #37AFB3; 
+background: url(../images/rens.png);
+width: 270px;
+}
+#yishu img{
+	width: 260px;
+	height:90px;
+}
+#yishu h4{
+	font-size: 22px;
+	color:#666;
+	padding:5px;
+
+}
+.more{
+	font-size: 14px;
+	color:#37AFB3;
+	float: right
+}
+#yishu li{
+	list-style:none;
+	margin-top: 5px;
+	padding: 2px;
+}
+#yishu li p{
+	text-align: center;
+}
+/*在线展厅*/
+#zaixian,#rens,#zanlan{
+	width: 960px;
+	border: solid 1px #ddd;
+	border-top:solid 3px #37AFB3;
+	border-radius: 3px;
+	background: url(../images/rens.png);
+	margin-top: 15px;
+}
+.bigImg{
+	margin-left: 8px;
+}
+#zaixian .smallImg{
+width: 650px;	
+}
+#zaixian .smallImg ul{
+	width: 650px;
+	
+	padding-left:0px;
+}
+#zaixian .smallImg ul li{											
+	list-style: none;
+	float:left;
+	margin-left: 5px;
+	height: 129px;
+}
+#zaixian .smallImg ul li img{
+	width: 155px;
+}
+#zaixian .smallImg ul li .p1{
+	height: 25px;
+	position: relative;
+	text-align: center;
+	top:-25px;
+	color:red;
+	background: #333;
+	opacity: 0.5;
+}
+#zaixian .smallImg .p2{
+		position: relative;
+		color:#fff;
+		opacity: 1;
+		top:-50px;
+		text-align: center;
+}
+/*艺术人生*/
+#rens{
+	padding: 0px;
+	margin-top: 15px;
+	overflow: hidden;
+	background: url(../images/rens.png);
+	border-top:solid 3px #333;
+}
+#rens ul li{
+
+	padding: 5px;
+}
+#rens .ren_menu,#zaixian h3{
+	width: 950px;
+	height: 30px;
+	background: url(../images/menu.png);
+	padding: 5px;
+	padding-bottom: 0px;
+}
+#rens ul{
+width: 1130px;
+margin-top: 15px;
+/*background: url(../images/rens.png);*/
+}
+#rens .ren_menu .fenlei{
+	margin-left: 300px;
+}
+#rens .ren_menu .fenlei a{
+	font-size: 20px;
+	color:#A38021;
+	display: block;
+	margin-right: 15px;
+	padding:3px;
+	padding-top: 0px;
+}
+#rens .ren_menu .fenlei a:hover{
+background: #37AFB3;
+color:#fff;
+}
+#rens .jieshao{
+	width: 190px;
+	position: relative;
+	background:#37AFB3;
+	color:#fff;
+	height: 135px;
+	display: none;
+}
+.gg5{
+	margin-top:15px; 
+}
+/*展览拍卖*/
+#zanlan{
+	border: none;
+	background: none;
+}
+#zanlan h3{
+	padding:10px;
+	background: url(../images/menu.png);
+}
+.zl,.pm{
+border:solid 1px #ddd;
+width: 460px;
+margin-top: 10px;
+border-radius: 5px;
+}
+.zl{
+	margin-right: 35px;
+}
+#zanlan ul li{
+padding: 2px;
+}
+#zanlan .zl h3,#zanlan .pm h3{
+	width: 435px;
+	height: 37px;
+	padding: 0px;
+	color:#fff;
+	line-height: 37px;
+	padding-left: 25px;
+	border-radius: 5px 5px 0 0;
+}
+#zanlan .zl h3{
+	background: url(../images/zl_bg.png);
+}
+#zanlan .pm h3{
+	background: url(../images/pm_bg.png);
+}
+.shijian{
+	float: right;
+}

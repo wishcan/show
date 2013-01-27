@@ -36,12 +36,26 @@ class Controller extends CController
 		$dir=Yii::app()->getBaseUrl().'/upload/'.$dir.'/';
 		return $dir;
 	}
-
+	#链接数据库
 	public function dbLink($sql)
 	{
 		$db=Yii::app()->db;
 		$command=$db->createCommand($sql);
 		return $command;
+	}
+	/**
+	 *修改配置文件
+	 *需要参数为 1 配置文件键名 2修改的键值	
+	*/
+	public function cC($key,$value)
+	{
+
+		$file=file_get_contents('C:/wamp/www/show/protected/config/main.php');
+		$reg='/[\'\"]'.$key.'[\'\"]\=\>[\'\"](.*)[\'\"]/isU';
+		$str="'".$key."'".'=>'."'".$value."'";
+		var_dump(preg_match($reg, $file));
+		$config=preg_replace($reg, $str, $file);
+		file_put_contents('C:/wamp/www/show/protected/config/main.php', $config); 
 	}
 
 

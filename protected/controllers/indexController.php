@@ -4,21 +4,16 @@
  
  	/**
  	 * $news为新闻动态
- 	 * 
+ 	 * 广告获取必须传入数组参数
  	 */
  	public function actionIndex()
  	{
- 		//$news=News::model()->findAll('cid=:cid order by createTime desc limit 10',array(":cid"=>'27'));
- 		// $news=News::model()->findAll(
- 		// 		array('select'=>'title,createTime,id',
- 		// 			  'order'=>'createTime desc',
- 		// 			  'limit'=>'10',
- 		// 			  'condition'=>'cid=:cid',
-			// 		   'params'=>array(':cid'=>'27'),	
- 		// 				));
- 		// $cate=self::getGalleryCate();	
- 		// $advert=Advert::model()->getAdverts(1);	
- 		 $this->render("index");
+ 		$gg1=Dispose::advert('upload/flash/My_QHs_201301072022.swf');
+ 		$gg2=Dispose::advert('upload/flash/20130109094844365.swf','http://www.baidu.com',
+ 						array('class'=>'gg2',
+ 								'htmlOptions'=>'style="width:660px;height:48px;"'));
+ 		$gg3=Dispose::advert('images/index_b.png','',array('htmlOptions'=>'style="width:270px;height:48px;margin-left:10px;"'));
+ 		$this->render("index",array('gg1'=>$gg1,'gg2'=>$gg2,'gg3'=>$gg3));
 
  	}
  	public function actionError()
