@@ -8,7 +8,6 @@
 	function imgJquery(element,size,setTime,animateTime)
 	{
 
-		
 		var set;
 		var imgPlay;
 		// element=element;
@@ -32,6 +31,7 @@
 				})
 				//uw->UL的总宽度
 				// //点击.prev 或者.next 的时候停止动画计算当前
+
 				var width=$(element).width();
 				var uw=parseInt($(element).length)*width;
 			
@@ -55,7 +55,7 @@
 						}
 				})
 				$(".next").click(function(){
-					
+
 					 left=parseInt($(element).parent().css("margin-left"));
 
 					if((left-width)>(-uw))
@@ -118,7 +118,9 @@
 	*/
 	function imgPlay1(element,index,animateTime)
 	{
-		$(element).eq(index).stop(true,true).fadeIn(animateTime).siblings().hide();
+
+		$(element).eq(index).stop(true,true).fadeIn(animateTime).siblings().fadeOut(500);
+
 	}
 	function imgPlay2(element,index,animateTime)
 	{

@@ -22,15 +22,14 @@
 			if(substr($v['link'],0,3)=='www' || substr($v['link'],0,4)=='http')
 				{
 						$v['link']='arters/create';
-					echo ' <a href="http://'.$v['link'].'">';
+					echo ' <a href="http://'.$v['link'].'" >';
 				}else
 				{
-					echo 	' <a href="localhost/'.$v['link'].">";
+				
+					echo 	' <a href="localhost/'.$v['link'].'">';
 				}
 				
 			?>
-				<a href="<?php echo 'http://'.$v['link'];?>">
-			
 					<img src="<?php echo $v['thumb']?>" />
 				</a>
 
@@ -73,9 +72,6 @@
 					}else{
 						alert(data);
 					}
-
-
-
 
 				}
 				);

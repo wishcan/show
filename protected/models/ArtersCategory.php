@@ -102,6 +102,20 @@ class ArtersCategory extends CActiveRecord
 					return CHtml::listData($model,'cateid','cname');
 					}
 			 
+
+
+	}
+	public static function check($cname)
+	{
+		$model=self::model()->find('cname=:cname',array(':cname'=>$cname));
+			if($model)
+			{
+				return 0;
+			}else{
+				return 1;
+			}
+		
+
 	}
 	
 }

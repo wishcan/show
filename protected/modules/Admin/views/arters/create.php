@@ -1,7 +1,14 @@
-
-<div id="form_content">
-
-<h3 class="top_l"><span id="title">添加成员</span><i class="top_r"></i></h3>
+<div class="content" style='margin-left:0px;'>
+        
+        <div class="header">
+            
+            <h1 class="page-title">添加艺术家成员</h1>
+        </div>
+        
+                <ul class="breadcrumb">
+            <li><a href="index.html">后台</a> <span class="divider">/</span></li>
+            <li class="active">艺术家</li>
+        </ul>
 <div class="c"></div>
 
 

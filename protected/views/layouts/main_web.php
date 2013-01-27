@@ -12,13 +12,18 @@
 	<?php Yii::app()->clientScript->registerCoreScript('jquery');?>
 	<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/web.js');  ?>  
 	<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/imgJquery.js');?>
+<<<<<<< HEAD
 	<title> 杨彦艺术网</title>
+=======
+	<title> 宝隆艺术网</title>
+>>>>>>> df5fb8b012f47d193deb10e0c4982163c2092bba
 </head>
 
 <style type="text/css">
 </style>
 <body>
 
+<<<<<<< HEAD
 <div id="header">
 	<div class="center">
 		<span class="text_l orange"><b>杨彦艺术网</b></span>
@@ -149,5 +154,7 @@
 <!-- 尾部结束 -->
 
 
+=======
+>>>>>>> df5fb8b012f47d193deb10e0c4982163c2092bba
 
 </body>

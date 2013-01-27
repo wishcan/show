@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <script type="text/javascript">
 $(function(){
 	imgJquery('#huandeng ul li',2,3000);
@@ -176,3 +177,5 @@ $(function(){
 	</div>
 	
 </div>
+=======
+>>>>>>> df5fb8b012f47d193deb10e0c4982163c2092bba

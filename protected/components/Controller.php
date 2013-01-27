@@ -36,11 +36,7 @@ class Controller extends CController
 		$dir=Yii::app()->getBaseUrl().'/upload/'.$dir.'/';
 		return $dir;
 	}
-	public static function error($msg='系统出了点问题3秒后返回上一页')
-	{
-// 		$message=$msg;
-		
-	}
+
 	public function dbLink($sql)
 	{
 		$db=Yii::app()->db;
@@ -48,4 +44,7 @@ class Controller extends CController
 		return $command;
 	}
 
+
+
 }
+

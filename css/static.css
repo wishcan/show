@@ -24,7 +24,7 @@ div.form label{
 	float:left;
 
 	display:block;
-	background:url(../images/admin_img/top_2.png)repeat-x;
+	background:url(../images/admin_img/top_2.png) repeat-x;
 
 }
 h3{
@@ -32,7 +32,7 @@ color:#317EAC;
 
 }
 .top_l{
-	background:url(../images/admin_img/top_1.png)no-repeat scroll left 0px ;
+	background:url(../images/admin_img/top_1.png) no-repeat scroll left 0px ;
 	
 	padding-left:6px;
 }
@@ -47,21 +47,28 @@ color:#317EAC;
 	float: left;
 	width: 6px;
 	display: block;
-	background:url(../images/admin_img/top_3.png)no-repeat scroll right 0px;
+	background:url(../images/admin_img/top_3.png) no-repeat scroll right 0px;
 }
-#form_content{
-	width: 1000px;
+#form_content,.center{
 	margin:0 auto; 
 	border:solid 1px #ddd;
 	padding: 5px;
 }
+.content{
+	margin-left: 0px;
+}
+.center{
+	width:960px;
+	height:646px;
+	padding:0px;
+	border:none;
+}
+.inputFocus,input[type='text']:hover,input[type='password']:hover{
 
-.inputFocus,input[type='text']:hover{
 
-	*border-color:rgba(82,168,236,0.8);
 	 box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
 }
-
+a,img{border:none}
 div.form
 {
 	padding: 20px;
@@ -96,8 +103,12 @@ input[type="submit"]:hover,input[type="button"]:hover{
 	font-weight: bold;
 
 }
+a{
+	border:none;
+}
 div.form #bswf{
 	cursor: pointer;
+<<<<<<< HEAD
 	width: 102px;
 	height:79px;
 	padding:5px;
@@ -112,6 +123,12 @@ div.form #SWFUpload_0{
 		background:url("../images/admin_img/upload_bg.png");
 		background-repeat:no-repeat;
 	cursor: pointer;
+=======
+	width:112px;
+	height: 28px;
+	background: url("../images/admin_img/upload_bg.gif") no-repeat scroll left 0 transparent;
+	background-color: none;
+>>>>>>> df5fb8b012f47d193deb10e0c4982163c2092bba
 }
 div.form label .limit{
 	color:red;

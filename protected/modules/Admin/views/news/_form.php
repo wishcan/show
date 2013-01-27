@@ -2,7 +2,7 @@
 
 <?php 
 
-	$content='欢迎使用百度编辑器!';
+	$content='';
 	if(!empty($model->newsData))
 	{
 		$news=$model->newsData->attributes;
@@ -23,6 +23,14 @@
 		<span>标题</span>
 		<?php echo $form->textField($model,'title',array('size'=>30,'maxlength'=>30)); ?>
 		 <span class="red">*</span>
+			 <p class='news_error check_error'>
+			 		<i></i>
+			 		<span class='error1'>标题不能为空</span>
+			 		<span class='error2'>标题已存在</span>
+			 </p>
+			 <p class='pass'>
+			 	<i></i>
+			 </p>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
 
@@ -43,10 +51,17 @@
     <div class="row">
 
     <div id="divFileProgressContainer"></div>
-  <span>缩略图上传(<span class='red'>限一张</span> &nbsp;)</span>
-    <div class="swfupload" id="bswf"style=""><button id="swfupload"></button></div>
+
+    <div class="swfupload" style=' float:left'id="bswf"style="display:inline-block">
+        <button id="swfupload"></button>
+     </div>
+      <span style='float:left;line-height:28px;font-size:16px;color:#FF8822;margin-left:15px;'>
+        缩略图上传(<span class='red'>限一张</span> &nbsp;)</span>
+    
     </div>
+    
     <div id="smallImg"> 
+    
     </div>
 </div>
 
@@ -167,6 +182,7 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
         ),
     )
 );
+Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/check.js');
 ?>
  
 

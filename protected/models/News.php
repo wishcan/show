@@ -159,6 +159,7 @@ class News extends CActiveRecord
 			return false;
 		}
 	}
+<<<<<<< HEAD
    /**要求传入的参数为数组
 	 *参数键名即条件
 	 *值为条件要求值
@@ -178,5 +179,17 @@ class News extends CActiveRecord
 		return $data;
 	}
 
+=======
+	public static function check($data)
+	{
+		$model=self::model()->find('title=:title',array(':title'=>$data));
+		if($model)
+		{
+			return 0;
+		}else{
+			return 1;
+		}
+	}
+>>>>>>> df5fb8b012f47d193deb10e0c4982163c2092bba
 
 }

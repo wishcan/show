@@ -190,6 +190,18 @@ class Category extends CActiveRecord
 
 
 	}
+	public static function check($cname)
+	{
+			$model=self::model()->find('cname=:cname',array(":cname"=>$cname));
+			
+			
+				if($model){
+					
+				return 0;
+				}else{
+						return 1;
+				}
+	}
 
 
 

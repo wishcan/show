@@ -5,7 +5,11 @@
 	'enableAjaxValidation'=>false,
 )); ?>
 
+<<<<<<< HEAD
 	<p class="note"><span class="required">*</span>为必填项</p>
+=======
+	<p class="note"> <span class="required">*</span> 为必填项.</p>
+>>>>>>> df5fb8b012f47d193deb10e0c4982163c2092bba
 
 	<?php echo $form->errorSummary($model); ?>
 

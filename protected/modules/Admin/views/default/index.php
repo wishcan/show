@@ -1,23 +1,28 @@
 
-<?php	$url=Yii::app()->request->baseUrl;?>
+   <div class="navbar">
+        <div class="navbar-inner">
+                <ul class="nav pull-right">
+                    
+                    <!-- <li><a href="#" class="hidden-phone visible-tablet visible-desktop" role="button">Settings</a></li> -->
+                    <li id="fat-menu" class="dropdown">
+                        <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
+                            <i class="icon-user"></i> <?php echo Yii::app()->user->id;?>
+                            <i class="icon-caret-down"></i>
+                        </a>
 
-	<!--Head Begi-->
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
-<title>后台管理</title>
-<link href="<?php echo $url;?>/css/admin/reset.css" rel="stylesheet" type="text/css" />
-<link href="<?php echo $url;?>/css/admin/system.css" rel="stylesheet" type="text/css" />
-
-</head>
-<body scroll="no">
-<div class="header">
-	<div class="logo lf"><a href="" target="_blank">
-		<span class="invisible">宝隆内容管理系统</span></a></div>
-    <div class="rt">
-    	<div class="tab_style white cut_line text-r"><a href="javascript:;" onclick="lock_screen()"> 锁屏</a><span>|</span><a href="<?php echo Yii::app()->homeUrl;?>" target="_blank">官方网站</a><span>|</span><a href="http://v9.help.phpcms.cn" target="_blank">帮助？</a>
+                        <ul class="dropdown-menu">
+                           <!--  <li><a tabindex="-1" href="#">My Account</a></li> -->
+                            <li class="divider"></li>
+                            <li class="divider visible-phone"></li>
+                            <li><a tabindex="-1" href="<?php $this->createAbsoluteUrl('user/logout');?>">退出</a></li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <a class="brand" href="<?php echo Yii::app()->createUrl('index')?>"><span class="first">宝隆</span> <span class="second">后台管理系统</span></a>
         </div>
-        <div class="style_but"></div>
     </div>
+<<<<<<< HEAD
     <div class="col-auto" style="overflow: visible">
     	<div class="log white cut_line">您好  [超级管理员]<span>|</span><a href="?m=admin&c=index&a=public_logout">[退出]</a><span>|</span>
     		<a href="" target="_blank" id="site_homepage">站点首页</a><span>|</span>
@@ -135,18 +140,42 @@
        			  <div class="l_menu">
 	          		 <h3 class="f14"><span class="switchs cu on" title="栏目管理"></span>栏目管理</h3>
 
-
-	           		 <ul class="show">
-		               	<li class="sub_menu">
-		                	<a href="<?php echo $this->createAbsoluteUrl("Category/create");?>" target="con" hidefocus="true" style="outline:none;">新建栏目</a></li>
-		                <li class="sub_menu">
-		                	<a href="<?php echo $this->createAbsoluteUrl("Category/admin");?>" hidefocus="true" target="con" style="outline:none;">栏目管理</a></li>
-	           		 </ul>
-       			 </div>
-       			        			  <div class="l_menu">
-	          		 <h3 class="f14"><span class="switchs cu on" title="栏目管理"></span>模块管理</h3>
+=======
+    
+>>>>>>> df5fb8b012f47d193deb10e0c4982163c2092bba
 
 
+    
+    <div class="sidebar-nav">
+        <a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i class="icon-dashboard"></i>个人面板</a>
+        <ul id="dashboard-menu" class="nav nav-list collapse in">
+            <li><a href="index.html">站点信息</a></li>
+            <li ><a href="users.html">友情链接</a></li>
+        </ul>
+         <a href="#user-menu" class="nav-header" data-toggle="collapse" ><i class="icon-comment"></i>会员管理</a>
+          <ul id="user-menu" class="nav nav-list collapse">
+              <li ><a href="<?php echo $this->createAbsoluteUrl("User/admin");?>" target='con'>用户管理</a></li>
+              <li ><a href="<?php echo $this->createAbsoluteUrl("Role/admin");?>" target='con'>角色管理</a></li>
+          </ul>
+
+
+        <a href="#accounts-menu" class="nav-header" data-toggle="collapse"><i class="icon-briefcase"></i>文章管理<span class="label label-info">+3</span></a>
+        <ul id="accounts-menu" class="nav nav-list collapse">
+            <li> 
+                <?php
+                $this->beginWidget('CTreeView',array(
+                  'data'=>Category::model()->getCateList(0,'news/admin'),
+                  'animated'=>'slow',
+                  'collapsed'=>'true',
+                  'persist'=>'cookie',
+
+                  ));
+             $this->endWidget();?>
+
+            </li>
+        </ul>
+
+<<<<<<< HEAD
 	           		 <ul class="show">
 		               	<li class="sub_menu">
 		                <h6>广告模块</h6>
@@ -168,131 +197,95 @@
         </div>
         <a href="javascript:;" id="openClose" style="outline-style: none; outline-color: invert; outline-width: medium;" hideFocus="hidefocus" class="open" title="展开与关闭"><span class="hidden">展开</span></a>
     </div>
+=======
+        <a href="#show-menu" class="nav-header" data-toggle="collapse"><i class="icon-exclamation-sign"></i>图片信息管理 <i class="icon-chevron-up"></i></a>
+        <ul id="show-menu" class="nav nav-list collapse">
+              <li> 
+                  <?php
+                  $this->beginWidget('CTreeView',array(
+                    'data'=>Category::model()->getCateList(0,'gallery/admin'),
+                    'animated'=>'slow',
+                    'collapsed'=>'true',
+                    'persist'=>'cookie',
+                    ));
+               $this->endWidget();?>
 
-	<div class="col-1 lf cat-menu" id="display_center_id" style="display:none" height="100%">
-		<div class="content">
-        	<iframe name="center_frame" id="center_frame" src="" frameborder="false" scrolling="auto" style="border:none" width="100%" height="auto" allowtransparency="true"></iframe>
-        </div>
+            </li>
+        </ul>
+>>>>>>> df5fb8b012f47d193deb10e0c4982163c2092bba
+
+        <a href="#cate-menu" class="nav-header" data-toggle="collapse"><i class="icon-legal"></i>栏目管理</a>
+          <ul id="cate-menu" class="nav nav-list collapse">
+                <li class="sub_menu">
+                    <a href="<?php echo $this->createAbsoluteUrl("Category/create");?>" target="con" hidefocus="true" style="outline:none;">新建栏目</a></li>
+                <li class="sub_menu">
+                    <a href="<?php echo $this->createAbsoluteUrl("Category/admin");?>" hidefocus="true" target="con" style="outline:none;">栏目管理</a></li>
+          </ul>
+
+        <a href="#model-menu" class="nav-header" data-toggle="collapse"><i class="icon-question-sign"></i>模块管理</a>
+           <ul id="model-menu" class="nav nav-list collapse">
+              <li class="sub_menu">
+                    <h6>广告模块</h6>
+                        <ul>
+                          <li><a href="<?php echo $this->createAbsoluteUrl('advert/admin');?>"  target='con'>广告位管理</a></li>
+                          <li><a href="<?php echo $this->createAbsoluteUrl('advert/edit')?>" target='con'>广告管理</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="sub_menu">
+                   <h6>艺术家模块</h6>
+                        <ul>
+                          <li><a href="<?php echo $this->createAbsoluteUrl('artersCategory/admin')?>" target="con">艺术家栏目管理</a></li>
+                          <li><a href="<?php echo $this->createAbsoluteUrl('arters/admin')?>" target="con">艺术家信息管理</a></li>
+                        </ul>
+               </li>
+
+           </ul>
     </div>
+      
 
-    <div class="col-auto mr8">
-        <div class="crumbs">
-            <div class="shortcut cu-span">
-                <a href="?m=admin&c=cache_all&a=init" target="right"><span>更新缓存</span></a>
-                <a href="#"><span>后台地图</span></a></div>
-        	当前位置：<span id="current_pos"></span></div>
-            <div class="col-1">
-                <div class="content" style="position:relative; overflow:hidden">
-                    <iframe name="con" id="rightMain" src="" frameborder="false" scrolling="auto" style="overflow-x:hidden;border:none; margin-bottom:30px" width="100%" height="auto" allowtransparency="true"></iframe>
-                    <div class="fav-nav">
-                        <div id="panellist"></div>
-                        <div id="paneladd"><a class="panel-add" href="javascript:add_panel();"><em>添加</em></a></div>
-                    </div>
-                </div>
+    
+    <div class="content iframe" style='height:auto; height:660px;'>
+        <iframe src="" name='con' style='width:100%;height:960px;border:none' ></iframe>
+      
+</div>
+
+
+                    
+                    <footer>
+                        <hr>
+
+                        <!-- Purchase a site license to remove this link from the footer: http://www.portnine.com/bootstrap-themes -->
+                        <p class="pull-right">A <a href="http://www.portnine.com/bootstrap-themes" target="_blank">Free Bootstrap Theme</a> by <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+
+                        <p>&copy; 2012 <a href="http://www.portnine.com" target="_blank">Portnine</a></p>
+                    </footer>
+                    
             </div>
         </div>
-</div>
-<!--}Content End-->
-<script type="text/javascript">
-//clientHeight-0; 空白值 iframe自适应高度
-function windowW(){
-	if($(window).width()<980){
-			$('.header').css('width',980+'px');
-			$('#content').css('width',980+'px');
-			$('body').attr('scroll','');
-			$('body').css('overflow','');
-	}
-}
-windowW();
-$(window).resize(function(){
-	if($(window).width()<980){
-		windowW();
-	}else{
-		$('.header').css('width','auto');
-		$('#content').css('width','auto');
-		$('body').attr('scroll','no');
-		$('body').css('overflow','hidden');
-
-	}
-});
-window.onresize = function(){
-	var heights = document.documentElement.clientHeight-150;document.getElementById('rightMain').height = heights;
-	var openClose = $("#rightMain").height()+39;
-	$('#center_frame').height(openClose+9);
-	$("#openClose").height(openClose+30);
-}
-window.onresize();
-//站点下拉菜单
-$(function(){
-	//默认载入左侧菜单
-
-})
-
-//左侧开关
-$("#openClose").click(function(){
-	if($(this).data('clicknum')==1) {
-		$("html").removeClass("on");
-		$(".left_menu").removeClass("left_menu_on");
-		$(this).removeClass("close");
-		$(this).data('clicknum', 0);
-	} else {
-		$(".left_menu").addClass("left_menu_on");
-		$(this).addClass("close");
-		$("html").addClass("on");
-		$(this).data('clicknum', 1);
-	}
-	return false;
-});
+    </div>
+    
 
 
-
-function _M(menuid,targetUrl) {
-	$('.top_menu').removeClass("on");
-	$('#_M'+menuid).addClass("on");
-	//当点击顶部菜单后，隐藏中间的框架
-	$('#display_center_id').css('display','none');
-	//显示左侧菜单，当点击顶部时，展开左侧
-	$(".left_menu").removeClass("left_menu_on");
-	$("#openClose").removeClass("close");
-	$("html").removeClass("on");
-	$(".l_menu").eq(menuid).show().siblings().hide();
-//	$("#openClose").data('clicknum', 0);
-//	$("#current_pos").data('clicknum', 1);
-}
-$(".top_menu").click(function()
-{
-	var index=$(this).index();
-	_M(index,'#');
-})
-$(".sub_menu").click(function()
-{	$(".sub_menu").removeClass("ob fb blue ");
-	$(this).addClass("ob fb blue");
-	$("#current_pos").data('clicknum', 1);
-
-})
-
-$(".left_menu ul li a").click(function()
-{
-		$(".aon").removeClass('aon');
-		$(this).addClass('aon');
-		
-	
-})
-$(".left_menu ul li a").hover(function()
-{	
-	$(this).animate({"margin-left":3},500);
-},function()
-{
-	$(this).animate({"margin-left":0},200)
-})
-
-$(".l_menu .cate_menu").click(function()
-{
-	$(".cate_on").removeClass("cate_on");
-	$(this).addClass("cate_on");
-	$(this).next("ul").slideToggle();
-})
-
-</script>
-</body>
+    <script src="<?php echo Yii::app()->baseUrl;?>/css/lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript">
+        $("[rel=tooltip]").tooltip();
+        $(function() {
+ setSize();
+          $(window).resize(function(){
+            setSize();
+          })
+          function setSize()
+          {
+          //$('.iframe').css('height',$(window).height()+100);
+          //$('iframe').css('height',$(window).height()+100);
+            // $('iframe').css('height','auto');
+          }
+            //$('.demo-cancel-click').click(function(){return false;});
+        });
+    </script>
+    
+  </body>
 </html>
+
+
