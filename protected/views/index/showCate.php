@@ -1,4 +1,4 @@
-	<style type="">
+	<style type="text/css">
  a{
 		display: block;
 		float: left;
@@ -8,7 +8,8 @@
 		border-radius:2px;
 		text-decoration:none;
 		color:#666;
-		
+		min-width:100px;
+
 	}
 	a:hover{
 		background-color: #999;
@@ -46,10 +47,12 @@
 	})
 		
 	</script>
+	<div style='float:left;width:280px;'>
 	<?php foreach($cate as $v):?>
 		
-	<a href='<?php echo $this->createAbsoluteUrl('gallery/show',array('cid'=>$v->id))?>'>
+	<a href='<?php echo $this->createAbsoluteUrl('gallery/show',array('cid'=>$v->id))?>' target="bank">
 		<?php  echo $v->cname;?>
 		
 	 </a>
 	 <?php endforeach;?>
+	</div>

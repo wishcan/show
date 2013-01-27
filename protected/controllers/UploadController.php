@@ -54,8 +54,8 @@ class UploadController extends Controller
 					
 					if(file_exists($dir.'/'.$v) && $v!=='.'&&$v!=='..' )
 					{
+						if(time()-filectime($dir.'/'.$v)>3600) @unlink($dir.'/'.$v);
 						
-						@unlink($dir.'/'.$v);
 					}
 			}
 		}else{		
@@ -70,11 +70,15 @@ class UploadController extends Controller
 	{
 		 $month=date("ym");
 		$fileName=$this->dir.$month.'/'.date("ymd").$_POST['data'];
-		// echo $fileName;
 		if(file_exists($fileName))
 		{
-			@unlink($fileName);
-			
+
+		 	if(unlink($fileName)){
+				if(unlink($this->dir.'/temp/'.$_POST['data']))
+				{
+					echo 1;
+				}
+			}
 		}else{
 			echo 0;
 		}

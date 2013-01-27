@@ -39,24 +39,45 @@ return array(
 
 	// application components
 	'components'=>array(
+		// 'cache'=>array(
+		// 	'class'=>'system.caching.CMemcache',
+		// 	'servers'=>array(
+		// 		 array('host'=>'localhost','port'=>11211,'weight'=>60),
+		// 		// array('host'=>'server2','post'=>11211,'weight'=>40),
+		// 		),
+
+		//	),
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
-		'error'=>array(
-			'class'=>array('CController'),
-		),
+		'VideoUrlParser'=>array(
+				
+			),
+
 		// uncomment the following to enable URLs in path-format
-		/*
+
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			// 'showScriptName' => false, //去除index.php
+			'urlSuffix'=>'.html', //加上.html
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
+				'gallery'=>'gallery/index',
+				'shey'=>'gallery/shey',
+				'ada'=>'gallery/ada',
+				'news'=>'news/index',
+				'duyi'=>'news/duyi',
+				'shipin'=>'video/index',
+				'pinlun'=>'news/pinglun',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				'news/<nid:\d+>'=>'news/neirong?nid',
+				
+
 			),
 		),
-		*/
+	
 //		'db'=>array(
 //			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 //		),
@@ -81,12 +102,14 @@ return array(
 					'class'=>'CFileLogRoute',
 					'levels'=>'error, warning',
 				),
-				// uncomment the following to show log messages on web pages
-				/*
+			
+				#在页面内显示LOGO信息	
 				array(
 					'class'=>'CWebLogRoute',
+					'levels'=>'trace,info,error,warning,xdebug',
+					'showInFireBug'=>true,
 				),
-				*/
+				
 			),
 		),
 	),

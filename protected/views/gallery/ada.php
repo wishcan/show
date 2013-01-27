@@ -69,7 +69,10 @@ background:url(/show/images/delete_2.png);
 </style>
 <script type='text/javascript'>
 $(function(){
-
+	$("#stage li img").click(function(){
+		alert($(this).index());
+		continue;
+	})
 	loadMore();
 	load=1;
 	$(window).scroll(function(){

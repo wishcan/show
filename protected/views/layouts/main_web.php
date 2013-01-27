@@ -12,7 +12,7 @@
 	<?php Yii::app()->clientScript->registerCoreScript('jquery');?>
 	<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/web.js');  ?>  
 	<?php Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/imgJquery.js');?>
-	<title> 度一精舍</title>
+	<title> 杨彦艺术网</title>
 </head>
 
 <style type="text/css">
@@ -21,7 +21,7 @@
 
 <div id="header">
 	<div class="center">
-		<span class="text_l orange"><b>度一精舍</b></span>
+		<span class="text_l orange"><b>杨彦艺术网</b></span>
 		<span class="text_r r  black">
 			<b><a href="javascript:void(0)">加入收藏</a></b>
 			<b><a href="javascript:void(0)">联系我们</a></b>
@@ -33,7 +33,7 @@
 			</a>
 		</div>
 
-		<div id="search-form">
+<!-- 		<div id="search-form">
 			<form class="search">
 				<div class="select1">
 					<div class="select2">
@@ -51,13 +51,14 @@
 					<input type="submit" value="" class="button"/>
 				</div>
 			</form>
-		</div>
-		<div class="c"></div>
-	</div>
-	<div id="menu">
-		  <div class="center">	
-			<ul class="u1">
-				
+		</div> -->
+
+	</div><div class='c'></div>
+	<div id='menu' style='margin-top:20px;'>
+	<div style='background:#F0F3F4;height:60px;border-radius:10px;border:solid 1px #ddd;box-shadow: 0px 0px 5px #F0F3F4;' >
+ <div class="center">	
+			<ul class="u1 l" style='margin-top:0px;' >	
+		
 				<li style="margin-left:20px;">
 				<a  class='on' href="<?php echo Yii::app()->getBaseUrl();?>">首页</a></li>
 				<li><a href="<?php echo $this->createAbsoluteUrl("news/index");?>">新闻动态</a></li>
@@ -66,18 +67,52 @@
 				<li><a href="<?php echo $this->createAbsoluteUrl("gallery/ada");?>">爱达杨作品</a></li>
 				<li><a href="<?php echo $this->createAbsoluteUrl("video/index");?>">视频短片</a></li>
 				<li><a href="<?php echo $this->createAbsoluteUrl("news/duyi");?>">度一学堂</a></li>
-				<li><a href="<?php echo $this->createAbsoluteUrl("news/comment");?>">诸家评论</a></li>
-				<li><a href="<?php echo $this->createAbsoluteUrl("about/index");?>">杨彦相关</a></li>
+				<li><a href="<?php echo $this->createAbsoluteUrl("news/pinglun");?>">诸家评论</a></li>
+				<li><a href="javascript:void(0)">杨彦相关</a></li>
 				
 			</ul>
-			
+			<!--分类-->
+			<div class='fen fenlei'>
+				<?php
+					foreach(Category::getChildren(24) as $v)
+					{
+
+						
+						echo '<a href='.Yii::app()->createUrl('gallery/show',array('cid'=>$v->id)).'>'.$v->cname.'</a>';
+					}
+
+				?>
+			</div>
+			<!--分类结束-->
+			<!--关于杨彦开始-->
+			<div class='about fenlei' style='text-align:right'>
+				<a href='<?php echo  $this->createAbsoluteUrl('news/neirong',array('nid'=>47))?>' >杨彦简介</a>
+				<a href='<?php echo  $this->createAbsoluteUrl('news/neirong',array('nid'=>48))?>' >杨彦履历</a>
+				<a href='#' >常用印谱</a>
+			</div>
+			<!--杨彦相关结束-->
+			<!--摄影分类开始-->
+			<div class='sfenlei fenlei'>
+				<?php
+					foreach(Category::getChildren(25) as $v)
+					{
+
+						
+						echo '<a href='.Yii::app()->createUrl('gallery/show',array('cid'=>$v->id)).'>'.$v->cname.'</a>';
+					}
+
+				?>
+
+			</div>
+			<!---->
 			</div>
 	</div>
-	
+
 	
 
 </div>
  <div class="c"></div>
+ 
 <!-- 输出开始 -->
 <?php  echo $content;?>
 <!-- 输出结束 -->
@@ -89,21 +124,12 @@
 		<div class="hudong">
 			<h1>互动空间</h1>
 			<p>
-				<a>[雅昌杨彦官方网]</a>
-				<a>[博宝艺术网]</a>
-				<a>[93学社] </a>
-				<a>[中国艺术家官网]</a> 
-				<a>[中国美术家网] </a>
-				<a>[艺超网]</a>
-				<a>[艺术国际]</a>
-				<a>[大千画廊]</a>
-	 			<a>[翰文轩]</a>
-	 			<a>[赤马画廊]</a>
-	 			<a>[北京画店]</a>
-	 			<a>[画家村网]</a>
-	 			<a>[正品斋]</a>
-	 			<a> [CCTV书画]</a>
-	
+				<?php
+					foreach(Link::getLinks() as $v){
+
+						echo '<a href="'.$v->url.'">['.$v->name.']</a>';
+					}
+		?>
 			</p>
 		</div>
 		
@@ -113,7 +139,7 @@
 		<h1>关于我们</h1>
 		<p>【杨彦艺术网】</p>
 		<p> 北京杨彦画友会 度一文化</p>
-<p>联系地址：北京市朝阳区华威里翌景嘉园2号楼1A、1C （100021） 电话：010-87731618 87731985(传真) Email：87731985@163.com
+<p>联系地址：北京市昌平区北七家镇王府街21号宝隆艺园度一精舍（100000） 电话：010-87731618 87731985(传真) Email：87731985@163.com
 京ICP备05067422号</p>
 <p>杨彦艺术网【度一精舍】 Www.杨彦.Com</p>
 		</div>

@@ -9,7 +9,8 @@ class galleryController extends Controller
 		$sql='select * from bl_gallery_data order by gdid desc limit 0,20';
 		$command=$db->createCommand($sql);
 		$row=$command->queryAll();
-		$this->render('index',array("row"=>$row));	
+		$advert=Advert::getAdverts(2);
+		$this->render('index',array("row"=>$row,'advert'=>$advert));	
 	}
 	/*
 	 * 点击图片的显示单张图片
@@ -57,6 +58,7 @@ class galleryController extends Controller
 	 */
 	public function actionGetMoreImg()
 	{
+
 		if(isset($_GET['gid']))
 		{
 			$gid=$_GET['gid'];
@@ -80,8 +82,8 @@ class galleryController extends Controller
 	#摄影作品
 	public function actionShey()
 	{
-
-		$gid=Gallery::model()->getGallery(25);
+			isset($_GET['cid'])?$cate=$_GET['cid']:$cate=25;
+		$gid=Gallery::model()->getGallery($cate);
 		$this->render('shey',array('gid'=>$gid));
 	}
 	public function actionPhoto()//显示单个类别的照片

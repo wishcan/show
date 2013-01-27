@@ -147,6 +147,8 @@ class News extends CActiveRecord
 			{
 				$this->bl_user_id=Yii::app()->user->id;
 				$this->cid=$_GET['cid'];
+				
+
 			}else
 			{
 				$this->updateTime=time();
@@ -156,6 +158,24 @@ class News extends CActiveRecord
 		{
 			return false;
 		}
+	}
+   /**要求传入的参数为数组
+	 *参数键名即条件
+	 *值为条件要求值
+	 *
+	 * */
+	public function getData($criteria,$pageSize=10,$openPage=1)
+	{
+		if($openPage){
+		$count=News::model()->count($criteria);
+		$pager=new CPagination($count);
+		$pager->pageSize=$pageSize;
+		$pager->applyLimit($criteria);
+		$data['pager']=$pager;
+		}
+		$news=News::model()->findAll($criteria);
+		$data['news']=$news;
+		return $data;
 	}
 
 

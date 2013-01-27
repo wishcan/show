@@ -26,13 +26,12 @@
     	</div>
         <ul class="nav white" id="top_menu">
         <li id="_M0" class="on top_menu"><a href="javascript:void(0);" hidefocus="true" style="outline:none;">我的面板</a></li>
-        <li id="_M1" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">设置</a></li>
      <!--    <li id="_M2" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">模块</a></li> -->
-        <li id="_M2" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">用户</a></li>
-        <li id="_M3" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">文章管理</a></li>
-        <li id="_M4" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">图片信息</a></li>
-        <li id="_M5" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">栏目管理</a>
-        	<li id="_M6" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">模块管理</a></li>
+        <li id="_M1" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">用户</a></li>
+        <li id="_M2" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">文章管理</a></li>
+        <li id="_M3" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">图片信息</a></li>
+        <li id="_M4" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">栏目管理</a>
+        	<li id="_M5" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">模块管理</a></li>
        <!--  <li id="_M6" class="top_menu"><a href="javascript:void(0);"  hidefocus="true" style="outline:none;">phpsso</a></li>   -->
         <!-- <li class="tab_web"><a href="javascript:;"><span>默认站点</span></a></li> -->
         </ul>
@@ -46,27 +45,14 @@
 	<div class="col-left left_menu">
     	<div id="leftMain">
 	          <div class="l_menu">
-          		 <h3 class="f14"><span class="switchs cu on" title="个人信息"></span>个人信息</h3>
+          		 <h3 class="f14"><span class="switchs cu on" title="个人信息"></span>网站信息</h3>
            		 <ul>
-	               	<li  class="sub_menu">
-	                	<a href="" hidefocus="true" style="outline:none;">个人信息修改</a></li>
+	     				<li><a href="<?php echo $this->createAbsoluteUrl('link/admin') ?>" hidefocus="true" target="con" style="outline:none;">友情链接</a></li>	
 	                <li  class="sub_menu">
-	                	<a href="" hidefocus="true" style="outline:none;">密码修改</a></li>
+	                	<a href="" hidefocus="true" style="outline:none;">个人密码修改</a>
+	                </li>
            		 </ul>
        			 </div>
-				<div class="l_menu">
-						<h3 class="f14"><span class="switchs cu on" title="相关设置"></span>相关设置</h3>
-			            <ul>
-			                <li class="sub_menu">
-			                	<a href="" hidefocus="true" style="outline:none;">站点设置</a></li>
-			                <li class="sub_menu">
-			                	<a href=<?php ?> hidefocus="true" style="outline:none;">基本设置</a></li>
-			                <li  class="sub_menu">
-			                	<a href="" hidefocus="true" style="outline:none;">安全设置</a></li>
-			                <li  class="sub_menu">
-			                	<a href="" hidefocus="true" style="outline:none;">邮箱配置</a></li>
-			            </ul>
-			        </div>
 			        <div class="l_menu">
 			            <h3 class="f14"><span class="switchs cu on" title="相关设置"></span>管理员设置</h3>
 			            <ul>
@@ -118,36 +104,32 @@
        			 </div>
        			 <div class="l_menu">
 	          		 <h3 class="f14"><span class="switchs cu on" title="作品管理"></span>图片类文章</h3>
-	          		 	<h6>发布</h6>
-		          		 	<ul>
-		          		 	<?php 
-		          		 	$model=Category::model()->getTypeCate(2);
+	          		 	<li><h6>发布</h6>	
+	<?php
+			$this->beginWidget('CTreeView',array(
+				'data'=>Category::model()->getCateList(0,'gallery/create'),
+				'animated'=>'slow',
+				'collapsed'=>'true',
+				'persist'=>'cookie',
 
-		          		 		foreach($model as $k=> $v)
-		          		 	{
-		          		 		
-		          		 		
-		          		 	 echo "<li class='sub_menu'><a href=".$this->createAbsoluteUrl('gallery/create',array('cid'=>$k))." target='con'>".$v."添加</a></li>";
-		          		 	}
-		          		 	
+				));
 
-		          				?>
-		          			</ul>
-	          		 	<h6>管理</h6>
-	          		 		<ul>
-		          		 	<?php 
-		          		 	$model=Category::model()->getTypeCate(2);
+ $this->endWidget();?>
+    	
+	</li> 
+	<li><h6>管理</h6>
+			<?php
+			$this->beginWidget('CTreeView',array(
+				'data'=>Category::model()->getCateList(0,'news/admin'),
+				'animated'=>'slow',
+				'collapsed'=>'true',
+				'persist'=>'cookie',
 
-		          		 		foreach($model as $k=> $v)
-		          		 	{
-		          		 		
-		          		 		
-		          		 	 echo "<li class='sub_menu'><a href=".$this->createAbsoluteUrl('gallery/admin',array('cid'=>$k))." target='con'>".$v."管理</a></li>";
-		          		 	}
-		          		 	
+				));
 
-		          				?>
-		          			</ul>
+ $this->endWidget();?>
+
+	</li>
        			 </div>
 
        			  <div class="l_menu">
@@ -174,13 +156,13 @@
 			                	</ul>
 
 		                </li>
-		                <li class="sub_menu">
-		               <h6>艺术家模块</h6>
+		           		<li class="sub_menu">
+		               <h6>出版/杂志模块</h6>
 		               			<ul>
-		               				<li><a href="<?php echo $this->createAbsoluteUrl('artersCategory/admin')?>" target="con">艺术家栏目管理</a></li>
-		               				<li><a href="<?php echo $this->createAbsoluteUrl('arters/admin')?>" target="con">艺术家信息管理</a></li>
+		               				<li><a href="<?php echo $this->createAbsoluteUrl('opus/admin')?>" target="con">出版/杂志管理</a></li>
+		               				<li><a href="<?php echo $this->createAbsoluteUrl('opus/admin')?>" target="con">内容管理</a></li>
 		               			</ul>
-		           </li>
+		           		</li>
 	           		 </ul>
        			 </div>
         </div>

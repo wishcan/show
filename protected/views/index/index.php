@@ -3,9 +3,24 @@ $(function(){
 	imgJquery('#huandeng ul li',2,3000);
 })
 </script>
+<style type='text/css'>
+	ul li{
+		list-style:none;
+		margin:0px;
+		padding:0px;
+		list-style-position:outside;
+		}
+	ul{
 
+		margin:0px;
+		padding:0px;
+		list-style:none;
+	}	
+
+</style>
 	<!-- 幻灯片开始 -->
-
+<style type='text/css'>
+</style>
 	<div id="huandeng">
 	<div class="center">
 		<ul class="center">	
@@ -31,7 +46,7 @@ $(function(){
 			<li><a href="<?php echo Yii::app()->createUrl('gallery/show',array('cid'=>$v->id));?>"><span class="l date">2012</span><span><?php echo mb_substr($v->cname,0,12,'UTF-8');?></span></a></li>
 		<?php if(($k+1)%6==0){
 			$u++;
-			echo '</ul><ul class="u'.$u.'">';}
+			echo '</ul> <ul class="u'.$u.'">';}
 			?>
 		<?php endforeach;?>
 		</ul>
@@ -51,7 +66,7 @@ $(function(){
 			<a href="">绘瓷系列</a>
 			<a href="">匾额系列</a>
 			<a href="">对联系列</a>
-		<a href="">金石系列</a>
+			<a href="">金石系列</a>
 		</p>
 	<!-- 艺术总汇结束 -->
 	</div>
@@ -78,21 +93,14 @@ $(function(){
 	<!-- 新闻结束 -->
 	<div class="c"></div>
 	<!-- 视频开始 -->
-	<div class="video">
+	<div class="video shipin">
 		<h3>视频</h3>
 		<ul>
-			<li class='l'><img src="<?php echo Yii::app()->getBaseUrl()?>/images/zanwei2.jpg" />
-				<p>邱启明大跳骑马舞</p></li>
+			<?php foreach($video as $v){
 		
-			<li class='l'><img src="<?php echo Yii::app()->getBaseUrl()?>/images/zanwei2.jpg" />
-				<p>邱启明大跳骑马舞</p></li>
-		
-			<li class='l'><img src="<?php echo Yii::app()->getBaseUrl()?>/images/zanwei2.jpg" />
-				<p>邱启明大跳骑马舞</p></li>
-			
-			<li class='l'><img src="<?php echo Yii::app()->getBaseUrl()?>/images/zanwei2.jpg" />
-				<p>邱启明大跳骑马舞</p></li>
-		
+			echo '<li class="l"> <a href="'.Yii::app()->createUrl('video/kankan').'">'.'<img src="'.$v->thumb.'"/><p>'.mb_substr($v->title,0,12,'UTF-8').'</p></a>';
+		}
+		?>
 		</ul>
 	
 	</div>
@@ -102,7 +110,7 @@ $(function(){
 	<div id="zonghe" style='width:980px;'>
 		
 		<ul class='l qutan'>
-			<h3>趣谈</h3>
+			<h3>诸家评论</h3>
 			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
 			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>
 			<li><a href="">新闻新闻新闻新闻新闻新闻新闻新闻</a><span><?php echo date("y-m-d h:i:s");?></span></li>

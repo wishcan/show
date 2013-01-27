@@ -30,7 +30,7 @@ $("div.form #smallImg .close").live('click',function(){
 		var v=$(this).next('img').attr('val'); /* 获得图片的文件名*/
 		var th=$(this);
 		$.post(
-			'/show/index.php?r=Upload/delete',
+			'/show/index.php/Upload/delete',
 			{data:v},
 			function(data){
 				$(th).next("img").remove();

@@ -96,7 +96,7 @@ class Category extends CActiveRecord
 	{
 		if(!isset($cid))
 		{
-			return ;
+			return false;
 		}else
 		{
 			$model=self::model()->findByPk($cid);
@@ -142,6 +142,7 @@ class Category extends CActiveRecord
 		return $children;
 		
 	}
+
 	public static function appendChildren(&$data,$model,$path=5)
 	{
 
@@ -156,6 +157,7 @@ class Category extends CActiveRecord
 		}
 
 	}
+	#生成树型结构
 	public static function getCateList($id=0,$method)
 	{
 		$data=array();

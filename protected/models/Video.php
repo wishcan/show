@@ -38,7 +38,7 @@ class Video extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('title, thumb', 'length', 'max'=>45),
+			array('title, thumb', 'length', 'max'=>200),
 			array('tag', 'length', 'max'=>20),
 			array('createTime', 'safe'),
 			// The following rule is used by search().
@@ -93,5 +93,42 @@ class Video extends CActiveRecord
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	
+	public function beforeSave()
+	{
+		if(parent::beforeSave())
+		{			
+			$result=VideoUrlParser::parse($this->thumb);
+			$this->thumb=$result['img'];
+			$this->swf=$result['object'];
+			if(!isset($this->title))
+			{
+				$this->title=$result['title'];
+			}
+			return true;
+		}else
+		{
+			return false;
+		}
+	}
+
+	public function getData($vid=0,$pageSize=10)
+	{
+		if(!$vid)
+		{
+			$criteria=new CDbCriteria();
+			$criteria->order='createTime desc';
+			$count=self::model()->count($criteria);
+			$pager=new CPagination($count);
+			$pager->pageSize=$pageSize;
+			$pager->applyLimit($criteria);
+			$news=self::model()->findAll($criteria);
+			$data['pager']=$pager;
+			$data['videos']=$news;
+			return $data;
+		}else{
+			return self::model()->findByPk($vid);
+		}
 	}
 }

@@ -11,10 +11,7 @@ a{
 	padding-top:8px;
 	
 }
-#list_l .wenzi{
-	width:500px;
-	
-}
+
 #list_l .shijian{
 	text-align:right;
 	float: right;
@@ -68,6 +65,10 @@ text-decoration:underline;
 	color:#ddd;
 	font-weight:10;
 }
+
 .jianjie p{
 	color:#3189F4;
+}
+#weizhi a:hover{
+color:#ff6600;
 }

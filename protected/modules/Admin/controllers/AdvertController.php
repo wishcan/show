@@ -275,6 +275,10 @@ class AdvertController extends Controller
 	}
 	public function actionDeleteImg()
 	{
+		/*同步删除文件夹中的文件
+		 *
+		 *	
+		*/
 		$dir=$_SERVER['DOCUMENT_ROOT'];
 		if(is_file($dir.$_GET['src']))
 		{

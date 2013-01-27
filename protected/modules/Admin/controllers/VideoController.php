@@ -26,19 +26,19 @@ class VideoController extends Controller
 	public function accessRules()
 	{
 		return array(
-			array('allow',  // allow all users to perform 'index' and 'view' actions
+			array('allow', 
 				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
-			array('allow', // allow authenticated user to perform 'create' and 'update' actions
+			array('allow', 
 				'actions'=>array('create','update'),
 				'users'=>array('@'),
 			),
-			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+			array('allow', 
+				'actions'=>array('admin','delete','createThumb'),
 				'users'=>array('admin'),
 			),
-			array('deny',  // deny all users
+			array('deny', 
 				'users'=>array('*'),
 			),
 		);
@@ -62,15 +62,11 @@ class VideoController extends Controller
 	public function actionCreate()
 	{
 		$model=new Video;
-
-		// Uncomment the following line if AJAX validation is needed
-		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['Video']))
 		{
 			$model->attributes=$_POST['Video'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('create'));
 		}
 
 		$this->render('create',array(
@@ -173,4 +169,15 @@ class VideoController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	/*对转载的URL地址进行解析
+	 *返回JSON文件
+	*/
+	public function actionCreateThumb()
+	{
+		$result=VideoUrlParser::parse($_POST['url']);
+		$result?$result['status']=1:$result['status']=0;
+		echo json_encode($result);
+	}
+	
 }

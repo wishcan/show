@@ -55,7 +55,6 @@ foreach($row as $v):
 
 		$(".edit").click(function(){
 			var data=$(this).parent().serialize();
-			alert(data);
 			$.post(
 				"<?php echo $this->createAbsoluteUrl('advert/updateImg')?>",
 				data,

@@ -117,4 +117,17 @@ class User extends CActiveRecord
 			return false;
 		}
 	}
+	public static function getUserName($uid){
+		
+		if($uid)
+		{
+			$model=self::modle()->findByPk($uid);
+			return $model->username;
+		}else{
+			
+			return '管理员';
+		}
+		
+		
+	} 
 }

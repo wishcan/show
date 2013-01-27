@@ -10,7 +10,6 @@
 	<thead>
 		<tr>
 			<th>广告图</th>
-			<th>页面</th>
 			<th>广告位</th>
 			<th>操作</th>
 		</tr>
@@ -36,8 +35,7 @@
 				</a>
 
 			</td>
-			<td>1</td>
-			<td>2</td>
+			<td><?php echo $v['guangao'];?></td>
 			<td>
 				<a class="btn btn-success edit" href="<?php echo $this->createAbsoluteUrl('advert/change',array('adid'=>$v['adid']))?>">
 					<i class="icon-zoom-in icon icon-white"></i>

@@ -134,7 +134,7 @@ class Gallery extends CActiveRecord
 		}
 		$num=30;
 		$limit=$start.', '.$end;
-		$sql='select * from bl_gallery_data where gid in ('.$gid.') order by gdid limit '.$limit;
+		$sql='select * from bl_gallery_data where gid in ('.$gid.') order by gdid desc limit '.$limit;
 		$command=Yii::app()->controller->dbLink($sql);
 		$row=$command->queryAll();
 		return $row;

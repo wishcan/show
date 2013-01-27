@@ -19,6 +19,8 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('tag')); ?>:</b>
 	<?php echo CHtml::encode($data->tag); ?>
 	<br />
-
+	<b><?php echo CHtml::encode($data->getAttributeLabel('swf')); ?>:</b>
+	<?php echo CHtml::encode($data->swf); ?>
+	<br />
 
 </div>
