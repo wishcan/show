@@ -753,3 +753,6 @@ Stack trace:
 REQUEST_URI=/show/index.php?r=comment
 HTTP_REFERER=http://localhost/show/index.php?r=index/index
 ---
+2013/02/01 03:00:12 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in C:\wamp\www\show\protected\modules\Admin\controllers\NewsController.php (88)
+in C:\wamp\www\show\index.php (13)
