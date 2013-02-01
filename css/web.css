@@ -12,7 +12,9 @@
 	display:block;
 	clear:both;
 }
-
+ul li {
+	list-style:none;
+}
 .center{
 	width:960px;
 	margin: 0 auto;

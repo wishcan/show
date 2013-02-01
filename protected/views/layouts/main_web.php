@@ -24,12 +24,12 @@
 	
 	<div class='center '>
 		<p class='h_menu'>
-			<a href='#' style="微软雅黑" >宝隆艺术网 </a>  
+			<a href='<?php echo Yii::app()->createUrl("index/index")?>' style="微软雅黑" >宝隆艺术网 </a>  
 			<a href='#' class='r' style='*margin-top:-35px;'>招商加盟:010-8178-8388</a>
 		</p>
 		<div class='c'></div>
 		<div class='h_c l'>
-			<a href='<?php Yii::app()->baseUrl;?>' class='logo l'></a>		
+			<a href='<?php echo Yii::app()->createUrl("index/index")?>' class='logo l'></a>		
 			<form class='search l'>
 				
 				<input type='text' name='' class='tiaojian l'/>
@@ -48,13 +48,13 @@
 		<div id='web_menu' class='l' >
 				<ul style='*margin-left:40px;'>
 					<li>
-						<a href='#'><b>新闻</b></a>
+						<a href='<?php echo Yii::app()->createUrl('news')?>'><b>新闻</b></a>
 						<a href='#'>综合</a>
 						<a href='#'>市场</a>
 						<a href='#'>收藏</a>
 					</li>
 					<li>
-						<a href='#'><b>评论</b></a>
+						<a href='<?php echo Yii::app()->createUrl('comment')?>'><b>评论</b></a>
 						<a href='#'>综合</a>
 						<a href='#'>展览</a>
 						<a href='#'>作品</a>
