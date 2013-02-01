@@ -2,7 +2,7 @@
 
 class SiteController extends Controller {
 
-	public $layout='//layouts/column';
+	public $layout='//layouts/column1';
 public function actionIndex()
 	{
 		// renders the view file 'protected/views/site/index.php'
