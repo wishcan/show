@@ -12,7 +12,4 @@ $this->menu=array(
 	array('label'=>'Manage About', 'url'=>array('admin')),
 );
 ?>
-
-<h1>Update About <?php echo $model->id; ?></h1>
-
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

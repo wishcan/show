@@ -1,17 +1,35 @@
+<div class="content" style='margin-left:0px;'>
+        
+        <div class="header">
+            
+            <h1 class="page-title">公司信息</h1>
+        </div>
+        
+                <ul class="breadcrumb">
+            <li><a href="index.html">后台</a> <span class="divider">/</span></li>
+            <li class="active">编辑信息</li>
+        </ul>
+
+        <div class="container-fluid">
+            <div class="row-fluid">
+                    
+<div class="btn-toolbar">
+
+  <div class="btn-group">
+  </div>    
+</div>
+
 <div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'about-form',
 	'enableAjaxValidation'=>false,
 )); ?>
-
-	<p class="note"><span class="required">*</span>为必填项</p>
-
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'address'); ?>
-		<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textField($model,'address',array('size'=>60,'maxlength'=>500,'style'=>'width:300px')); ?>
 		<?php echo $form->error($model,'address'); ?>
 	</div>
 
@@ -23,7 +41,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'content'); ?>
-		<?php echo $form->textField($model,'content',array('size'=>60,'maxlength'=>500)); ?>
+		<?php echo $form->textArea($model,'content',array('size'=>60,'maxlength'=>500)); ?>
 		<?php echo $form->error($model,'content'); ?>
 	</div>
 

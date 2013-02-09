@@ -66,11 +66,11 @@ class About extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'address' => 'Address',
-			'keywords' => 'Keywords',
-			'content' => 'Content',
-			'telephone' => 'Telephone',
-			'putNum' => 'Put Num',
+			'address' => '公司地址',
+			'keywords' => '关键字',
+			'content' => '简介',
+			'telephone' => '公司号码',
+			'putNum' => '备案号',
 			'id' => 'ID',
 		);
 	}

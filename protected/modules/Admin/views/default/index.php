@@ -29,7 +29,7 @@
     <div class="sidebar-nav">
         <a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i class="icon-dashboard"></i>个人面板</a>
         <ul id="dashboard-menu" class="nav nav-list collapse in">
-            <li><a href="index.html">站点信息</a></li>
+            <li><a target='con'href="<?php echo $this->createAbsoluteUrl('about/view',array('id'=>1));?>">站点信息</a></li>
             <li ><a href="users.html">友情链接</a></li>
         </ul>
          <a href="#user-menu" class="nav-header" data-toggle="collapse" ><i class="icon-comment"></i>会员管理</a>
