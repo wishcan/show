@@ -16,12 +16,12 @@
 			isset($css['class'])? $class=$css['class']:$class='';
 			isset($css['htmlOptions'])?$htmlOptions=$css['htmlOptions']:$htmlOptions='';							
 			$info=pathinfo($advert);
-			if(!isset($info['extension'])) return $data='这不是一个文件';
+			if(!isset($info['extension'])) return $data='此文件不存在';
 			$type=$info['extension'];
 			switch ($type) {
 				case 'swf':
-					$data='<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="320" style="height: 100px;" id="FlashID" title="gg1" class="'.$class.$htmlOptions.'">
-      <param name="movie" value="$advert" />
+					$data='<object data="'.$advert.'" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"  width="960"  height="100" id="FlashID" title="gg1" class="'.$class.'" '.$htmlOptions.'">
+ 
       <param name="quality" value="high" />
       <param name="wmode" value="opaque" />
       <param name="swfversion" value="9.0.45.0" />
@@ -29,7 +29,7 @@
       <param name="expressinstall" value="Scripts/expressInstall.swf" />
       <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
       <!--[if !IE]>-->
-      <object type="application/x-shockwave-flash" data="'.$advert.' " width="960" height="100" class="'.$class.'" '.$htmlOptions.'">
+      <object type="application/x-shockwave-flash" data="'.$advert.' "width="960" height="100" class="'.$class.'" '.$htmlOptions.'">
         <!--<![endif]-->
         <param name="quality" value="high" />
         <param name="wmode" value="opaque" />

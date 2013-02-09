@@ -60,7 +60,7 @@
 						<a href='#'>作品</a>
 					</li>
 					<li>
-						<a href='#'><b>专题</b></a>
+						<a href='<?php echo Yii::app()->createUrl('subject')?>'><b>专题</b></a>
 						<a href='#'>事件</a>
 						<a href='#'>观点</a>
 						<a href='#'>点评</a>
@@ -68,7 +68,7 @@
 				</ul>
 				<ul>
 					<li>
-						<a href='#'><b>拍卖</b></a>
+						<a href='<?php echo Yii::app()->createUrl('auction')?>'><b>拍卖</b></a>
 						<a href='#'>预展</a>
 						<a href='#'>展讯</a>
 						<a href='#'>成果</a>

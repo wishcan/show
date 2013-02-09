@@ -1,0 +1,16 @@
+.t_cate{
+	background:url(../images/f4.png) repeat-x;
+	height:30px;
+	width:940px;
+	padding-left: 20px;
+	
+}
+.t_cate a{
+	color:#fff;
+	line-height: 30px;
+	padding:4px 0;
+	background-color: red;
+}
+.t_cate a:hover{
+		background-color: red;
+}

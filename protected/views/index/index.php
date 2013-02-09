@@ -1,8 +1,8 @@
 	<!-- 广告位1 -->
 	<?php $url=Yii::app()->baseUrl;?>
 	<link rel="stylesheet" type="text/css" href="<?php echo $url?>/css/shouye.css"/>
-	<script type="text/javascript" src='/show/js/imgJquery.js'></script>
-	<script type="text/javascript" src='/show/js/web.js'></script>
+	<script type="text/javascript" src='<?php echo Yii::app()->baseUrl;?>/js/imgJquery.js'></script>
+	<script type="text/javascript" src='<?php echo Yii::app()->baseUrl;?>/js/web.js'></script>
 	<div class='gg1 gg'>
 	<?php echo $gg1;?>
 	</div>
@@ -27,10 +27,10 @@
 <div id='hzs'>	
 	<div class='hdp l'>
 		<ul>
-			<li><a href=''><img src='/show/images/zanwei/zw2.jpg'/></a></li>
-			<li><a href=''><img src='/show/images/zanwei/zw2.jpg'/></a></li>
-			<li><a href=''><img src='/show/images/zanwei/zw2.jpg'/></a></li>
-			<li><a href=''><img src='/show/images/zanwei/zw2.jpg'/></a></li>
+			<li><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw2.jpg'/></a></li>
+			<li><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw2.jpg'/></a></li>
+			<li><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw2.jpg'/></a></li>
+			<li><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw2.jpg'/></a></li>
 		</ul>
 		<script type="text/javascript">
 			imgJquery($(".hdp ul li"));	
@@ -55,42 +55,42 @@
 	<h3 class='hzs_head'>园内艺术家</h3>
 		<ul>
 			<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>
 			</li>
 			<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>	
 			</li>
 			<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>
 			</li>
 						<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>
 			</li>
 						<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>
 			</li>			<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>
 			</li>
 			<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>	
 			</li>
 			<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>
 			</li>
 						<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>
 			</li>
 						<li>
-				<a href=''><img src='/show/images/zanwei/zw3.jpg'/></a>
+				<a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw3.jpg'/></a>
 					<p>贺伟国工作室</p>
 			</li>
 		</ul>
@@ -126,7 +126,7 @@
 			<li><a href=''>建立艺术品评估体系</a><span>2013-01-19</span>
 			
 				<div>
-					<img class='l' src='/show/images/zanwei/zw17.jpg' />
+					<img class='l' src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw17.jpg' />
 					<b>简介简介简介</b>
 				</div>
 				<div class='c'></div>
@@ -141,7 +141,7 @@
 			<li><a href=''>建立艺术品评估体系</a><span>2013-01-19</span>
 			
 				<div>
-					<img class='l' src='/show/images/zanwei/zw17.jpg' />
+					<img class='l' src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw17.jpg' />
 					<b>简介简介简介</b>
 				</div>
 				<div class='c'></div>
@@ -209,24 +209,24 @@
 	<p class='fenlei'><a href=''>综合</a><a href=''>节目</a><a href=''>拍卖</a></p>
 	<ul>
 
-		<li class='l'><a href=''><img src='/show/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>
-		<li class='l'><a href=''><img src='/show/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
-		<li class='l'><a href=''><img src='/show/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
-		<li class='l'><a href=''><img src='/show/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
-		<li class='l'><a href=''><img src='/show/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
-		<li class='l'><a href=''><img src='/show/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
-		<li class='l'><a href=''><img src='/show/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
-		<li class='l'><a href=''><img src='/show/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>
+		<li class='l'><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>
+		<li class='l'><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
+		<li class='l'><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
+		<li class='l'><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
+		<li class='l'><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
+		<li class='l'><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
+		<li class='l'><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>	
+		<li class='l'><a href=''><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw16.jpg'/><span>画家牟成</span></a></li>
 
 	</ul>
 </div>
 <!--广告位4-->
 <div class='gg4 r'>
-	<img src='/show/images/zanwei/zw10.jpg' />
+	<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw10.jpg' />
 </div>
 <!--宝隆历届拍卖入口-->
 <div class='gg4 r'>
-	<img src='/show/images/zanwei/zw10.jpg' />
+	<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw10.jpg' />
 </div>
 <div class='c'></div>
 <!--专题-->
@@ -235,33 +235,33 @@
 	<ul class='l'>
 		<li>
 			
-			<img src='/show/images/zanwei/zw19.jpg' />
+			<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw19.jpg' />
 			<p>画展....</p>
 			<p>展出的地方</p>
 		</li>
 				<li>
 			
-			<img src='/show/images/zanwei/zw19.jpg' />
+			<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw19.jpg' />
 			<p>画展....</p>
 			<p>展出的地方</p>
 		</li>
 
 		<li>
 			
-			<img src='/show/images/zanwei/zw19.jpg' />
+			<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw19.jpg' />
 			<p>画展....</p>
 			<p>展出的地方</p>
 		</li>
 
 		<li>
 			
-			<img src='/show/images/zanwei/zw19.jpg' />
+			<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw19.jpg' />
 			<p>画展....</p>
 			<p>展出的地方</p>
 		</li>
 				<li>
 			
-			<img src='/show/images/zanwei/zw19.jpg' />
+			<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw19.jpg' />
 			<p>画展....</p>
 			<p>展出的地方地方地方地方</p>
 		</li>
@@ -275,7 +275,7 @@
 			<li><a href=''>建立艺术品评估体系</a><span>2013-01-19</span>
 			
 				<div>
-					<img class='l' src='/show/images/zanwei/zw17.jpg' />
+					<img class='l' src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw17.jpg' />
 					<b>简介简介简介</b>
 				</div>
 				<div class='c'></div>
@@ -291,7 +291,7 @@
 			<li><a href=''>建立艺术品评估体系</a><span>2013-01-19</span>
 			
 				<div>
-					<img class='l' src='/show/images/zanwei/zw17.jpg' />
+					<img class='l' src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw17.jpg' />
 					<b>简介简介简介</b>
 				</div>
 				<div class='c'></div>
@@ -306,7 +306,7 @@
 			<li><a href=''>建立艺术品评估体系</a><span>2013-01-19</span>
 			
 				<div>
-					<img class='l' src='/show/images/zanwei/zw17.jpg' />
+					<img class='l' src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw17.jpg' />
 					<b>简介简介简介</b>
 				</div>
 				<div class='c'></div>
@@ -322,7 +322,7 @@
 			<li><a href=''>建立艺术品评估体系</a><span>2013-01-19</span>
 			
 				<div>
-					<img class='l' src='/show/images/zanwei/zw17.jpg' />
+					<img class='l' src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw17.jpg' />
 					<b>简介简介简介</b>
 				</div>
 				<div class='c'></div>
@@ -335,33 +335,33 @@
 <!--当代艺术-->
 <div id='yishu' class='r'>
 	<h4>当代艺术 <a class='more' href='#'>更多>>></a></h4>
-	<li><img src='/show/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li>
-	<li><img src='/show/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li>
-	<li><img src='/show/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li>
-	<!-- <li><img src='/show/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li> -->
-<!-- 	<li><img src='/show/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li>
-	<li><img src='/show/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li> -->
+	<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li>
+	<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li>
+	<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li>
+	<!-- <li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li> -->
+<!-- 	<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li>
+	<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw11.jpg' /><p>著名画家黎增辉</p></li> -->
 </div>
 <!--艺术展览-->
 <div class='c'></div>
 <div class='gg5'>
-	<img src='/show/images/zanwei/zw23.jpg' />
+	<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw23.jpg' />
 </div>
 <div id='zaixian' class='l'>
 <h3>在线展厅</h3>
 	<div class='bigImg l'>
-		<img class='zuida' src='/show/images/zanwei/zw20.jpg' />
+		<img class='zuida' src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw20.jpg' />
 	</div>
 	<div class='smallImg l'>
 		<ul>
-			<li><img src='/show/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
-			<li><img src='/show/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
-			<li><img src='/show/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
-			<li><img src='/show/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
-			<li><img src='/show/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
-			<li><img src='/show/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
-			<li><img src='/show/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
-			<li><img src='/show/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
+			<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
+			<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
+			<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
+			<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
+			<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
+			<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
+			<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
+			<li><img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw21.jpg' /><p class='p1'></p><p class='p2'><b>作品名</b></p></li>
 		</ul>
 	</div>
 </div>	
@@ -380,42 +380,42 @@
 	</div>
 		<ul class='c'>
 			<li class='l'>
-				<img src='/show/images/zanwei/zw22.jpg' />
+				<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw22.jpg' />
 				<p>何家英</p>
 			</li>
 			<div class='jieshao l'>
 					某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的
 				</div>
 			<li class='l'>
-				<img src='/show/images/zanwei/zw22.jpg' />
+				<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw22.jpg' />
 				<p>何家英</p>
 			</li>
 			<div class='jieshao l'>
 					某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的
 				</div>				
 			<li class='l'>
-				<img src='/show/images/zanwei/zw22.jpg' />
+				<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw22.jpg' />
 				<p>何家英</p>
 			</li>
 			<div class='jieshao l'>
 					某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的
 				</div>				
 			<li class='l'>
-				<img src='/show/images/zanwei/zw22.jpg' />
+				<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw22.jpg' />
 				<p>何家英</p>
 			</li>	
 			<div class='jieshao l'>
 					某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的
 				</div>				
 			<li class='l'>
-				<img src='/show/images/zanwei/zw22.jpg' />
+				<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw22.jpg' />
 				<p>何家英</p>
 			</li>
 			<div class='jieshao l'>
 					某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的某某人是干嘛干嘛的
 				</div>			
 			<li class='l'>
-				<img src='/show/images/zanwei/zw22.jpg' />
+				<img src='<?php echo Yii::app()->baseUrl;?>/images/zanwei/zw22.jpg' />
 				<p>何家英</p>
 			</li>	
 		</ul>

@@ -239,21 +239,6 @@ $(function(){
     
 </div>
 <script type='text/javascript'>
-var i=type=0;
-var str=5;
-for(j=1;j<5;j++){
-	i=0;
-	for(i;i<10;i++){
-		if(i==str)
-			{
-		type=1;
-		break
-			}else{
 
-	alert(i)
-				}
-		}
-
-}
 </script>
 
