@@ -9,7 +9,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'宝隆艺术网',
-	'defaultController'=>'index',
+// 	'defaultController'=>'index',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -106,5 +106,6 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 		'about'=>'12345',
+		'keyWords'=>'',
 	),
 );
