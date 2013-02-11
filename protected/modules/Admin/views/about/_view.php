@@ -19,6 +19,9 @@
 	<b><?php echo CHtml::encode($data->getAttributeLabel('telephone')); ?>:</b>
 	<?php echo CHtml::encode($data->telephone); ?>
 	<br />
+	<b><?php echo CHtml::encode($data->getAttributeLabel('mobile')); ?>:</b>
+	<?php echo CHtml::encode($data->telephone); ?>
+	<br />
 
 	<b><?php echo CHtml::encode($data->getAttributeLabel('putNum')); ?>:</b>
 	<?php echo CHtml::encode($data->putNum); ?>
