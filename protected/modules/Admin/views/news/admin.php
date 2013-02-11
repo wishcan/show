@@ -34,7 +34,7 @@ $('.search-form form').submit(function(){
             <div class="row-fluid">
                     
 <div class="btn-toolbar">
-    <a href='<?php echo $this->createAbsoluteUrl('news/create');?>'><button class="btn btn-primary"><i class="icon-plus"></i>添加文章</button></a>
+    <a href='<?php echo $this->createAbsoluteUrl('news/create',array("cid"=>$_GET['cid']));?>'><button class="btn btn-primary"><i class="icon-plus"></i>添加文章</button></a>
   
     <a href='<?php echo $this->createAbsoluteUrl('news/create',array('typeid'=>3));?>'><button class="btn btn-primary">草稿箱</button></a>
   	 <a href='<?php echo $this->createAbsoluteUrl('news/create',array('typeid'=>2));?>'><button class="btn btn-primary">待审核</button></a>

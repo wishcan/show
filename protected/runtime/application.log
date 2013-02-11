@@ -809,3 +809,203 @@ Stack trace:
 REQUEST_URI=/showbl/index.php?r=Admin/About/update
 HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/about/index
 ---
+2013/02/09 03:49:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?
+---
+2013/02/09 05:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "loin" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('loin')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('loin')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('site/loin')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php?r=site/loin
+---
+2013/02/11 06:16:49 [error] [exception.CException] exception 'CException' with message '属性 "CWebApplication.param" 未被定义.' in D:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\wamp\www\yii\framework\base\CModule.php(106): CComponent->__get('param')
+#1 D:\wamp\www\showbl\protected\views\layouts\main_sd.php(5): CModule->__get('param')
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\sho...')
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sho...', Array, true)
+#4 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(77): CBaseController->renderFile('D:\wamp\www\sho...', Array, true)
+#5 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate('<div id="conten...')
+#6 D:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput('<div id="conten...')
+#7 D:\wamp\www\yii\framework\web\CBaseController.php(207): COutputProcessor->run()
+#8 D:\wamp\www\yii\framework\web\CBaseController.php(301): CBaseController->endWidget('CContentDecorat...')
+#9 D:\wamp\www\showbl\protected\views\layouts\column_sd.php(6): CBaseController->endContent()
+#10 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\sho...')
+#11 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sho...', Array, true)
+#12 D:\wamp\www\yii\framework\web\CController.php(785): CBaseController->renderFile('D:\wamp\www\sho...', Array, true)
+#13 D:\wamp\www\showbl\protected\controllers\IndexController.php(10): CController->render('index')
+#14 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): IndexController->actionIndex()
+#15 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#19 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#20 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/showbl/index.php
+---
+2013/02/11 06:17:01 [error] [php] Undefined index: content (D:\wamp\www\showbl\protected\views\layouts\main_sd.php:5)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(77): IndexController->renderFile()
+#1 D:\wamp\www\yii\framework\web\widgets\CContentDecorator.php(55): CContentDecorator->decorate()
+#2 D:\wamp\www\yii\framework\web\widgets\COutputProcessor.php(45): CContentDecorator->processOutput()
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(207): CContentDecorator->run()
+#4 D:\wamp\www\yii\framework\web\CBaseController.php(301): IndexController->endWidget()
+#5 D:\wamp\www\showbl\protected\views\layouts\column_sd.php(6): IndexController->endContent()
+#6 D:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#7 D:\wamp\www\yii\framework\web\CBaseController.php(96): IndexController->renderInternal()
+#8 D:\wamp\www\yii\framework\web\CController.php(785): IndexController->renderFile()
+#9 D:\wamp\www\showbl\protected\controllers\IndexController.php(10): IndexController->render()
+#10 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): IndexController->actionIndex()
+#11 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#12 D:\wamp\www\yii\framework\web\CController.php(287): IndexController->runAction()
+#13 D:\wamp\www\yii\framework\web\CController.php(266): IndexController->runActionWithFilters()
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(276): IndexController->run()
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#16 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php
+in D:\wamp\www\showbl\protected\views\layouts\main_sd.php (5)
+in D:\wamp\www\showbl\protected\views\layouts\column_sd.php (6)
+in D:\wamp\www\showbl\protected\controllers\IndexController.php (10)
+2013/02/11 06:56:54 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 06:56:54 [error] [php] Undefined index: cid (D:\wamp\www\showbl\protected\models\News.php:149)
+Stack trace:
+#0 D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php(89): News->save()
+#1 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#2 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): NewsController->runAction()
+#4 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): NewsController->filterAccessControl()
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(266): NewsController->runActionWithFilters()
+#10 D:\wamp\www\yii\framework\web\CWebApplication.php(276): NewsController->run()
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=Admin/news/create
+in D:\wamp\www\showbl\protected\models\News.php (149)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (89)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 06:58:20 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:11:51 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:12:51 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:12:55 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:14:21 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:14:39 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:15:43 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:16:03 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:16:13 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:27:14 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:31:18 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:31:18 [error] [exception.CException] exception 'CException' with message '属性 "NewsData.attrubutes" 未被定义.' in D:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attrubutes', Array)
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php(133): CActiveRecord->__set('attrubutes', Array)
+#2 [internal function]: NewsController->actionUpdate('1')
+#3 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#4 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/upda...')
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/showbl/index.php?r=Admin/news/update&id=1
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/news/update&id=1
+---
+2013/02/11 07:34:58 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:34:58 [error] [exception.CException] exception 'CException' with message '属性 "NewsData.attrubutes" 未被定义.' in D:\wamp\www\yii\framework\base\CComponent.php:174
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(160): CComponent->__set('attrubutes', Array)
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php(132): CActiveRecord->__set('attrubutes', Array)
+#2 [internal function]: NewsController->actionUpdate('1')
+#3 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#4 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#5 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/upda...')
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/showbl/index.php?r=Admin/news/update&id=1
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/news/update&id=1
+---
+2013/02/11 07:38:30 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (131)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:51:05 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (130)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:54:38 [error] [php] Trying to get property of non-object (D:\wamp\www\showbl\protected\views\about\index.php:9)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): AboutController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): AboutController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\AboutController.php(9): AboutController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AboutController->actionIndex()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): AboutController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): AboutController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): AboutController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=about
+in D:\wamp\www\showbl\protected\views\about\index.php (9)
+in D:\wamp\www\showbl\protected\controllers\AboutController.php (9)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 07:56:47 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)

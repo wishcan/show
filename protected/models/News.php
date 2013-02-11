@@ -49,7 +49,7 @@ class News extends CActiveRecord
 		// will receive user inputs.
 		return array(
 			array('title', 'required'),
-			array('cid, bl_user_id, click, recomendation, updateTime, type_id, home_cate, home_top, children_top', 'numerical', 'integerOnly'=>true),
+			array('cid, bl_user_id, click, recomendation, type_id, home_cate, home_top, children_top', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>30),
 			array('decription', 'length', 'max'=>100),
 			array('source', 'length', 'max'=>10),
@@ -165,6 +165,13 @@ class News extends CActiveRecord
 			return 0;
 		}else{
 			return 1;
+		}
+	}
+	public static function getNews($id)
+	{
+		if(is_array($id))
+		{
+
 		}
 	}
 

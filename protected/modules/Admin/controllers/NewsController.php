@@ -125,12 +125,30 @@ class NewsController extends Controller
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['News']))
 		{
 			$model->attributes=$_POST['News'];
-			if($model->save())
+			if($model->save()){
 				$this->redirect(array('view','id'=>$model->id));
+				$db=Yii::app()->db;
+				$content=$_POST['News']['newsData']['content'];
+				$nid=$id;
+				if(isset($_POST['thumb']))
+				{
+					$thumb=date("ymd").$_POST['thumb'][0];
+				}else{
+					$thumb=' ';
+				}
+				$sql="update bl_news_data set content ='".$content."', thumb='".$thumb."' where nid=:nid";
+				$command=$db->createCommand($sql);
+				$command->bindParam(":nid",$nid);
+				if($command->execute()){
+					exit(1);
+				}else{
+					exit(2);
+				}
+
+			}
 		}
 
 		$this->render('update',array(

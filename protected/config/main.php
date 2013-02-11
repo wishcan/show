@@ -105,7 +105,13 @@ return array(
 	'params'=>array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
-		'about'=>'12345',
-		'keyWords'=>'',
+		'about'=>array(
+			'keywords'=>'某些某些',
+			'description'=>'另外的某些某些',
+			'pageName'=>'尚德佳艺',	
+
+
+			),
+			
 	),
 );

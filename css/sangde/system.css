@@ -1,0 +1,98 @@
+
+/*********公用************************/
+
+*{
+	margin: 0;
+	padding:0;
+}
+ul li{
+	list-style:none;
+}
+a{
+	text-decoration: none;
+	color:#333;
+}
+body{
+	min-height: 900px;
+}
+.content{
+	width:1280px;
+	margin: 0 auto;
+}
+.c{
+	clear: both;
+}
+.l{
+	float: left;
+}
+.r{
+	float:right;
+}
+.crumb{
+	text-align: center;
+	padding:60px 0 15px 0;
+	border-bottom: #333 solid 1px;
+
+}
+.crumb a{
+	font-weight:600;
+}
+.crumb span{
+	color:#be6262;
+	font-weight:600;
+}
+#foot{
+	text-align: center;
+	padding:10px 0;
+}
+.breadcrumbs{
+display: inline;
+}
+.top_title{
+	width:1280px;
+	height:291px;
+}
+.log{
+	width:405px;
+	height:382px;
+	background:url(./images/log.png);
+	/*display: block;*/
+}
+
+s{
+	text-decoration: none;
+}
+.tag{
+	position: relative;
+	top:180px;
+	left:260px;
+	width:130px;
+	color:#a0a0a0;
+}
+.tag b{font-size: 19px;}
+.tag span{
+	font-size:13px;
+	font-weight:600;
+}
+.tag s{
+	margin:0 10px 0 15px;
+	font-size:14px;
+}
+/*********公司概况************************/
+.top_about{
+background:url(./images/about_title.png);
+}
+.news{
+	float: left;
+	width:480px;
+	margin-left:200px;
+}
+.news p{
+	line-height: 1.5em;
+}
+.qianm{
+	float: right;
+}
+.about_log{
+	margin:66px 0 0 61px;
+}
