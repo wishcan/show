@@ -44,6 +44,7 @@ $this->menu=array(
         'telephone',
         'putNum',
         'id',
+    	'mobile',
     ),
 )); ?>
 

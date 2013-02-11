@@ -46,8 +46,10 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 		'keywords',
 		'content',
 		'telephone',
+		'mobile',
 		'putNum',
 		'id',
+			
 		array(
 			'class'=>'CButtonColumn',
 		),

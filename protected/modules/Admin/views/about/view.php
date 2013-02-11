@@ -26,5 +26,6 @@
 		'telephone',
 		'putNum',
 		'id',
+		'mobile',
 	),
 )); ?>

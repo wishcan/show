@@ -50,7 +50,11 @@
 		<?php echo $form->textField($model,'telephone',array('size'=>15,'maxlength'=>15)); ?>
 		<?php echo $form->error($model,'telephone'); ?>
 	</div>
-
+	<div class="row">
+		<?php echo $form->labelEx($model,'mobile'); ?>
+		<?php echo $form->textField($model,'mobile',array('size'=>15,'maxlength'=>15)); ?>
+		<?php echo $form->error($model,'telephone'); ?>
+	</div>
 	<div class="row">
 		<?php echo $form->labelEx($model,'putNum'); ?>
 		<?php echo $form->textField($model,'putNum',array('size'=>60,'maxlength'=>100)); ?>
