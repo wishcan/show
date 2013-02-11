@@ -43,7 +43,7 @@ class About extends CActiveRecord
 			array('address, keywords, content', 'length', 'max'=>500),
 			array('telephone', 'length', 'max'=>15),
 			array('putNum', 'length', 'max'=>100),
-			array('address, keywords, content, telephone,mobile, putNum, id', 'safe',
+			array('address, keywords, content, telephone,mobile, putNum, id', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('address, keywords, content, telephone, putNum, id', 'safe', 'on'=>'search'),
