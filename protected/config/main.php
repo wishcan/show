@@ -8,14 +8,9 @@
 
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-<<<<<<< HEAD
+
 	'name'=>'尚德佳艺术',
 	'defaultController'=>'index',
-=======
-	'name'=>'宝隆艺术网',
-	// 'defaultController'=>'index',
->>>>>>> master
-
 	// preloading 'log' component
 	'preload'=>array('log'),
 	// autoloading model and component classes
@@ -77,10 +72,10 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=shangde',
+			'connectionString' => 'mysql:host=localhost;dbname=hdm0210658_db',
 			'emulatePrepare' => true,
-			'username' => 'root',
-			'password' => '',
+			'username' => 'hdm0210658',
+			'password' => 'q1w2e3asd',
 			'charset' => 'utf8',
 		),
 		
