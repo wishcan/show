@@ -1,24 +1,33 @@
 <?php
 /**公司概况*/
-class AboutController extends Controller
+
+/*公司信息和加入我们页面的信息都可通过后台更改*/
+
+class AboutController extends SController
 {
-	public $layout='//layouts/column_sd';
+	
 	public function actionIndex()
 	{
 		$row=News::model()->findByPk(3);
+		if(is_null($row)) new CHttpException(404,'没有文章！');
 		$this->render('index',array('row'=>$row));
 	}
 	public function actionJoin()
 	{
-		$this->render('join');
+
+		$row=News::model()->findByPk(3);
+		$this->render('join',array('row'=>$row));
 	}
 	public function actionConact()
 	{
 		$row=About::model()->findByPk(1);
 		$this->render('conact',array('row'=>$row));
 	}
+	public function actionContent()
+	{
 
-	// Uncomment the following methods and override them if needed
+	}
+ 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()
 	{

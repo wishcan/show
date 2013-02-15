@@ -1,8 +1,8 @@
 <?php
 
-class IndexController extends Controller {
+class IndexController extends sController {
 
-	public $layout='//layouts/column_sd';
+
 public function actionIndex()
 	{
 		// renders the view file 'protected/views/site/index.php'

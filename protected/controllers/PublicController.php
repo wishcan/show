@@ -1,17 +1,16 @@
 <?php
 
-class NewsController extends SController
+class PublicController extends SController
 {
-
 	public function actionIndex()
 	{
 		$criteria=new CDbCriteria();
-		$criteria->order='createTime desc';
+		$criteria->order='createTime asc';
 		$criteria->condition='cid=:cid';
-		$criteria->params=array(':cid'=>3);
+		$criteria->params=array(':cid'=>22);
 		// Yii::app()->cache->set(1,,60);
-		$row=News::getData($criteria,11);
-			if(empty($row['news'])) throw new CHttpException(404,'没有文章！');
+		$row=News::getData($criteria,3);
+		if(empty($row['news'])) throw new CHttpException(404,'没有文章！');
 		$this->render('index',array('pages'=>$row['pager'],'news'=>$row['news']));
 	}
 	public function actionContent()
@@ -23,7 +22,6 @@ class NewsController extends SController
 		$row=News::model()->findByPk($_GET['nid']);
 		$this->render('content',array('row'=>$row));
 	}
-
 	// Uncomment the following methods and override them if needed
 	/*
 	public function filters()

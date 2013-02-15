@@ -7,6 +7,7 @@
 <meta type='keywords' value='<?php echo  Yii::app()->params['about']['keywords'];?>'>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" type="text/css" href="<?php Yii::app()->baseUrl;?>/showbl/css/sangde/system.css">
+<?php Yii::app()->clientScript->registerCoreScript('jquery');  ?>
 <title>
 
 <?php echo isset($this->pageTitle)? CHtml::encode($this->pageTitle):isset(Yii::app()->params['about']['pageName'])?Yii::app()->params['about']['pageName']:'尚德佳'; ?> 	
@@ -27,8 +28,7 @@
 </div>
 <!--页尾-->
 <div id='foot' class='content'>
-
-<a href=''>网站地图</a>|<a href=''>联系我们</a>|<a href='<?php echo Yii::app()->createUrl('honour')?>'>尚德殊荣</a>
+<a href=''>网站地图</a>|<a href=''>联系我们</a>|<a href='<?php echo Yii::app()->createUrl('laruel')?>'>尚德殊荣</a>
 </div>
 </body>
 

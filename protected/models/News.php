@@ -167,12 +167,19 @@ class News extends CActiveRecord
 			return 1;
 		}
 	}
-	public static function getNews($id)
+	public function getData($criteria,$pageSize=10,$openPage=1)
 	{
-		if(is_array($id))
-		{
-
+		if($openPage){
+		$count=News::model()->count($criteria);
+		$pager=new CPagination($count);
+		$pager->pageSize=$pageSize;
+		$pager->applyLimit($criteria);
+		$data['pager']=$pager;
 		}
+		$news=News::model()->findAll($criteria);
+		$data['news']=$news;
+		return $data;
 	}
+
 
 }

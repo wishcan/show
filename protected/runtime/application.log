@@ -1009,3 +1009,428 @@ in D:\wamp\www\showbl\index.php (13)
 2013/02/11 07:56:47 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
 in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
 in D:\wamp\www\showbl\index.php (13)
+2013/02/11 12:01:59 [error] [exception.CException] exception 'CException' with message 'AboutController 无法找到请求的视图 "conact".' in D:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('conact', Array, true)
+#1 D:\wamp\www\showbl\protected\controllers\AboutController.php(18): CController->render('conact', Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AboutController->actionConact()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('conact')
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('about/conact')
+#8 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/showbl/index.php?r=about/conact
+---
+2013/02/11 12:25:52 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\views\about\join.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): AboutController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): AboutController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\AboutController.php(13): AboutController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AboutController->actionJoin()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): AboutController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): AboutController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): AboutController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=about/join
+in D:\wamp\www\showbl\protected\views\about\join.php (10)
+in D:\wamp\www\showbl\protected\controllers\AboutController.php (13)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 13:16:58 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\views\comment\index.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): CommentController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): CommentController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\CommentController.php(8): CommentController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): CommentController->actionIndex()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): CommentController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): CommentController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CommentController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=comment
+in D:\wamp\www\showbl\protected\views\comment\index.php (10)
+in D:\wamp\www\showbl\protected\controllers\CommentController.php (8)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 14:08:42 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 14:19:14 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\views\comment\index.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): CommentController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): CommentController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\CommentController.php(10): CommentController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): CommentController->actionIndex()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): CommentController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): CommentController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CommentController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=comment
+in D:\wamp\www\showbl\protected\views\comment\index.php (10)
+in D:\wamp\www\showbl\protected\controllers\CommentController.php (10)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/11 14:19:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "content" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('content')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php?r=news/content&nid=4
+HTTP_REFERER=http://localhost/showbl/index.php?r=comment
+---
+2013/02/11 14:19:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "content" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('content')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php?r=news/content&nid=4
+HTTP_REFERER=http://localhost/showbl/index.php?r=comment
+---
+2013/02/12 02:46:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "auction"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('auction')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=auction
+---
+2013/02/12 06:21:54 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 06:22:06 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 06:22:14 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 06:22:24 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 06:22:34 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 06:22:44 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 06:22:54 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 06:23:04 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 06:24:30 [error] [php] A non well formed numeric value encountered (D:\wamp\www\showbl\protected\views\comment\index.php:12)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CBaseController.php(96): CommentController->renderInternal()
+#1 D:\wamp\www\yii\framework\web\CController.php(870): CommentController->renderFile()
+#2 D:\wamp\www\yii\framework\web\CController.php(783): CommentController->renderPartial()
+#3 D:\wamp\www\showbl\protected\controllers\CommentController.php(10): CommentController->render()
+#4 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): CommentController->actionIndex()
+#5 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#6 D:\wamp\www\yii\framework\web\CController.php(287): CommentController->runAction()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CommentController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CommentController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=comment
+in D:\wamp\www\showbl\protected\views\comment\index.php (12)
+in D:\wamp\www\showbl\protected\controllers\CommentController.php (10)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 07:28:05 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\controllers\CommentController.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(287): CommentController->runAction()
+#1 D:\wamp\www\yii\framework\web\CController.php(266): CommentController->runActionWithFilters()
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CommentController->run()
+#3 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#4 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#5 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=comment
+in D:\wamp\www\showbl\protected\controllers\CommentController.php (10)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 07:28:58 [error] [exception.CException] exception 'CException' with message 'CommentController 无法找到请求的视图 "news".' in D:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('news', Array, true)
+#1 D:\wamp\www\showbl\protected\controllers\CommentController.php(18): CController->render('news', Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): CommentController->actionIndex()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('comment')
+#8 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/showbl/index.php?r=comment
+---
+2013/02/12 07:45:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "content" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('content')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php?r=news/content&nid=11
+HTTP_REFERER=http://localhost/showbl/index.php?r=comment/index
+---
+2013/02/12 07:45:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "content" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('content')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php?r=news/content&nid=12
+HTTP_REFERER=http://localhost/showbl/index.php?r=comment/index
+---
+2013/02/12 07:46:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "content" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('content')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php?r=news/content&nid=11
+HTTP_REFERER=http://localhost/showbl/index.php?r=comment/index
+---
+2013/02/12 07:46:17 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\views\comment\content.php:9)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): CommentController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): CommentController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\CommentController.php(25): CommentController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): CommentController->actionContent()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): CommentController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): CommentController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CommentController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=comment/content&nid=12
+in D:\wamp\www\showbl\protected\views\comment\content.php (9)
+in D:\wamp\www\showbl\protected\controllers\CommentController.php (25)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 08:01:42 [error] [php] Undefined variable: news (D:\wamp\www\showbl\protected\views\news\index.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): NewsController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): NewsController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\NewsController.php(15): NewsController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionIndex()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): NewsController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): NewsController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): NewsController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=news
+in D:\wamp\www\showbl\protected\views\news\index.php (10)
+in D:\wamp\www\showbl\protected\controllers\NewsController.php (15)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 08:12:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "content" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('content')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php?r=news/content&nid=4
+HTTP_REFERER=http://localhost/showbl/index.php?r=news
+---
+2013/02/12 08:21:59 [error] [exception.CException] exception 'CException' with message 'NewsController 无法找到请求的视图 "content".' in D:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('content', Array, true)
+#1 D:\wamp\www\showbl\protected\controllers\NewsController.php(24): CController->render('content', Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionContent()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#8 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/showbl/index.php?r=news/content&nid=4
+HTTP_REFERER=http://localhost/showbl/index.php?r=news
+---
+2013/02/12 08:23:44 [error] [exception.CException] exception 'CException' with message 'NewsController 无法找到请求的视图 "content".' in D:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('content', Array, true)
+#1 D:\wamp\www\showbl\protected\controllers\NewsController.php(24): CController->render('content', Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionContent()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#8 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/showbl/index.php?r=news/content&nid=4
+HTTP_REFERER=http://localhost/showbl/index.php?r=news
+---
+2013/02/12 09:37:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "public"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('public')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=public
+---
+2013/02/12 09:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "public"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('public')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=public
+---
+2013/02/12 09:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "public"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('public')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=public
+---
+2013/02/12 13:53:27 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 13:53:55 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 13:54:44 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/12 13:57:35 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/13 02:46:04 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\views\about\join.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): AboutController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): AboutController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\AboutController.php(19): AboutController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AboutController->actionJoin()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): AboutController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): AboutController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): AboutController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=about/join
+in D:\wamp\www\showbl\protected\views\about\join.php (10)
+in D:\wamp\www\showbl\protected\controllers\AboutController.php (19)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/13 05:35:58 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/13 06:06:20 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\views\serve\index.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): ServeController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): ServeController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\ServeController.php(7): ServeController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ServeController->actionIndex()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): ServeController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): ServeController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): ServeController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=serve
+in D:\wamp\www\showbl\protected\views\serve\index.php (10)
+in D:\wamp\www\showbl\protected\controllers\ServeController.php (7)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/13 06:14:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "laure"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('laure')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=laure
+---
+2013/02/13 06:14:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "laure"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('laure')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=laure
+---
+2013/02/13 07:11:24 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\views\laurel\index.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): LaurelController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): LaurelController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\LaurelController.php(7): LaurelController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): LaurelController->actionIndex()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): LaurelController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): LaurelController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): LaurelController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=laurel
+in D:\wamp\www\showbl\protected\views\laurel\index.php (10)
+in D:\wamp\www\showbl\protected\controllers\LaurelController.php (7)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/14 02:42:52 [error] [php] Undefined variable: row (D:\wamp\www\showbl\protected\views\serve\index.php:10)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): ServeController->renderFile()
+#1 D:\wamp\www\yii\framework\web\CController.php(783): ServeController->renderPartial()
+#2 D:\wamp\www\showbl\protected\controllers\ServeController.php(7): ServeController->render()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ServeController->actionIndex()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#5 D:\wamp\www\yii\framework\web\CController.php(287): ServeController->runAction()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): ServeController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): ServeController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=serve
+in D:\wamp\www\showbl\protected\views\serve\index.php (10)
+in D:\wamp\www\showbl\protected\controllers\ServeController.php (7)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/14 06:36:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "laruel"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('laruel')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=laruel
+HTTP_REFERER=http://localhost/showbl/index.php?r=case
+---
+2013/02/14 07:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "laruel"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('laruel')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=laruel
+---
+2013/02/14 07:26:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "laruel"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('laruel')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=laruel
+---

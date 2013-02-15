@@ -8,7 +8,7 @@
 
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
-	'name'=>'宝隆艺术网',
+	'name'=>'尚德佳艺术',
 	'defaultController'=>'index',
 
 	// preloading 'log' component
@@ -72,7 +72,7 @@ return array(
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=blyy',
+			'connectionString' => 'mysql:host=localhost;dbname=shangde',
 			'emulatePrepare' => true,
 			'username' => 'root',
 			'password' => '',

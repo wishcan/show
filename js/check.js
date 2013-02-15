@@ -40,7 +40,7 @@ $(function(){
 				}else{
 					
 						$.get(
-								'/show/index.php?r=Admin/'+action,
+								'/showbl/index.php?r=Admin/'+action,
 								{data:val},
 								function(data){
 									if(data==1){

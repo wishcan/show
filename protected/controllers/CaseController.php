@@ -1,6 +1,6 @@
 <?php
 
-class PulicController extends Controller
+class CaseController extends SController
 {
 	public function actionIndex()
 	{
