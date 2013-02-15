@@ -58,16 +58,8 @@
         <a href="#show-menu" class="nav-header" data-toggle="collapse"><i class="icon-exclamation-sign"></i>图片信息管理 <i class="icon-chevron-up"></i></a>
         <ul id="show-menu" class="nav nav-list collapse">
               <li> 
-                  <?php
-                  $this->beginWidget('CTreeView',array(
-                    'data'=>Category::model()->getCateList(0,'gallery/admin'),
-                    'animated'=>'slow',
-                    'collapsed'=>'true',
-                    'persist'=>'cookie',
-                    ));
-               $this->endWidget();?>
-
-            </li>
+                <a href='<?php echo Yii::app()->createAbsoluteUrl('Admin/galleryCategory/admin')?>' target='con'>上传图片</a>
+              </li> 
         </ul>
 
         <a href="#cate-menu" class="nav-header" data-toggle="collapse"><i class="icon-legal"></i>栏目管理</a>

@@ -809,3 +809,382 @@ Stack trace:
 REQUEST_URI=/showbl/index.php?r=Admin/About/update
 HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/about/index
 ---
+2013/02/15 06:17:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/
+---
+2013/02/15 06:17:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "comment"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('comment')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=comment
+---
+2013/02/15 06:25:06 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blyy.gallery_category' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `gallery_category`.
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 06:25:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blyy.bl_gallery_category' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `bl_gallery_category`.
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 06:30:05 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'blyy.gallery_category' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `gallery_category`.
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 06:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 06:53:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "create"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('create')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=create
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/galleryCategory/admin
+---
+2013/02/15 06:54:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 06:54:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 06:55:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 06:55:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 06:56:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 06:56:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 06:58:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 07:00:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 07:01:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 07:01:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 07:01:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 07:01:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 07:02:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 07:32:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 07:33:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+---
+2013/02/15 07:33:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "index"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/
+HTTP_REFERER=http://localhost/showbl/index.php?r=Admin/gallery/create
+---
+2013/02/15 16:01:04 [error] [php] move_uploaded_file(201302/20130215公司概况  修改 无导航.jpg) [<a href='function.move-uploaded-file'>function.move-uploaded-file</a>]: failed to open stream: Invalid argument (D:\wamp\www\showbl\protected\controllers\UploadController.php:57)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=Upload/add&PHPSESSID=td8s9l9gb2g4um34kkgaeafn00
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (57)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 16:03:29 [error] [php] copy(temp/ff.jpg) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (D:\wamp\www\showbl\protected\controllers\UploadController.php:58)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=Upload/add&PHPSESSID=td8s9l9gb2g4um34kkgaeafn00
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (58)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 16:06:12 [error] [php] copy(temp/ff.jpg) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (D:\wamp\www\showbl\protected\controllers\UploadController.php:59)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=Upload/add&PHPSESSID=td8s9l9gb2g4um34kkgaeafn00
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (59)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 16:08:25 [error] [php] copy(temp/ff.jpg) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (D:\wamp\www\showbl\protected\controllers\UploadController.php:60)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=Upload/add&PHPSESSID=td8s9l9gb2g4um34kkgaeafn00
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (60)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 16:11:14 [error] [php] copy(temp/ff.jpg) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (D:\wamp\www\showbl\protected\controllers\UploadController.php:63)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=Upload/add&PHPSESSID=td8s9l9gb2g4um34kkgaeafn00
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (63)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 16:11:55 [error] [php] copy(D:/wamp/www/showbl/uploadtemp/ff.jpg) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (D:\wamp\www\showbl\protected\controllers\UploadController.php:63)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=Upload/add&PHPSESSID=td8s9l9gb2g4um34kkgaeafn00
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (63)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 08:14:03 [error] [php] Use of undefined constant __FILE - assumed '__FILE' (D:\wamp\www\showbl\protected\controllers\UploadController.php:13)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=upload
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (13)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 08:14:09 [error] [php] Use of undefined constant __FILE - assumed '__FILE' (D:\wamp\www\showbl\protected\controllers\UploadController.php:13)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=upload
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (13)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/15 08:14:16 [error] [exception.CException] exception 'CException' with message 'UploadController 无法找到请求的视图 "index".' in D:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 D:\wamp\www\showbl\protected\controllers\UploadController.php(45): CController->render('index')
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UploadController->actionIndex()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('upload')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php?r=upload
+---
+2013/02/15 08:14:21 [error] [exception.CException] exception 'CException' with message 'UploadController 无法找到请求的视图 "index".' in D:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 D:\wamp\www\showbl\protected\controllers\UploadController.php(46): CController->render('index')
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UploadController->actionIndex()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('upload')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php?r=upload
+---
+2013/02/15 08:14:47 [error] [exception.CException] exception 'CException' with message 'UploadController 无法找到请求的视图 "index".' in D:\wamp\www\yii\framework\web\CController.php:879
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('index', NULL, true)
+#1 D:\wamp\www\showbl\protected\controllers\UploadController.php(46): CController->render('index')
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): UploadController->actionIndex()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('upload')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php?r=upload
+---
+2013/02/15 16:20:09 [error] [php] copy(D:\wamp\www\showbl\protected\controllers/../../uploadtemp/ff.jpg) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (D:\wamp\www\showbl\protected\controllers\UploadController.php:62)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=Upload/add&PHPSESSID=td8s9l9gb2g4um34kkgaeafn00
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (62)
+in D:\wamp\www\showbl\index.php (13)

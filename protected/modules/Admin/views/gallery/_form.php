@@ -7,9 +7,22 @@
         'enctype'=>'multipart/form-data'),
 )); ?>
 
-	<p class="note"> <span class="required">*</span> 为必填项</p>
+<style type="text/css">
+    
+    .uploads{
+        border:solid 2px #fff;
+        width:860px;
+        height:462px;
+        padding: 20px;
+    }
+</style>
+<div class='uploads'>
+	<div class='o'>
+     
 
-	<?php echo $form->errorSummary($model); ?>
+     <span>上传到：</span>
+
+    </div>
 	<div class="row">
 		<span>标题</span>
 		<?php echo $form->textField($model,'title',array('size'=>30,'maxlength'=>30)); ?>
@@ -24,13 +37,6 @@
 			</p>
 		<?php echo $form->error($model,'title'); ?>
 	</div>
-
-    
-    <div class="row">
-        <span>简介</span><br/>
-        <?php echo $form->textArea($model,'description',array('size'=>60,'maxlength'=>100,'style'=>'width:400px;height:100px;resize:none;')); ?>
-        <?php echo $form->error($model,'description'); ?>
-    </div>
     <div>
     <div class="row">
 <!--图片上传后会自动生成input hidden表单 name为thumb 这个在所有的图片上传中通用-->
@@ -43,23 +49,16 @@
     </div>
     </div>
 
-
+</div>
     <div class="row">
         
-       <span>标签</span> <?php echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?>
-        <?php echo $form->error($model,'tag'); ?>
+       <!-- <span>标签</span> <?php// echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?> -->
+        <?php// echo $form->error($model,'tag'); ?>
     </div>
-	<div class="row">
-		<span>状态</span>
-		<?php echo $form->dropDownList($model,'type_id',NewsType::model()->getTypeList(0)); ?>
-		<?php echo $form->error($model,'type_id'); ?>
-	</div>
 
 	<div class="row">
 
 	</div>
-
-
 
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ? '添加' : '更新'); ?>

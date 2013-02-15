@@ -9,7 +9,7 @@
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'宝隆艺术网',
-	'defaultController'=>'index',
+	// 'defaultController'=>'index',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -54,7 +54,7 @@ return array(
 			),
 		'Dispose'=>array(
 			),
-
+		'Image'=>array(),
 		// uncomment the following to enable URLs in path-format
 		/*
 		'urlManager'=>array(
