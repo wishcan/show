@@ -2,6 +2,7 @@
 $this->breadcrumbs=array(
 	'关于我们',
 );?>
+
 <div class='top_title top_about	'>
 </div>
 

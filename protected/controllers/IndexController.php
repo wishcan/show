@@ -1,6 +1,6 @@
 <?php
 
-class IndexController extends sController {
+class IndexController extends SController {
 
 
 public function actionIndex()

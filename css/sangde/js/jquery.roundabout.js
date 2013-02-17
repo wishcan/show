@@ -60,12 +60,12 @@
 
 	defaults = {
 		bearing:0,
-		tilt:-5,
+		tilt:0,
 		minZ: 100,
 		maxZ: 280,
 		minOpacity: 0,
 		maxOpacity: 1.0,
-		minScale: 0.4,
+		minScale: 0.1,
 		maxScale: 1.0,
 		duration: 500,
 		btnNext: null,
@@ -346,7 +346,6 @@
 		initChildren: function(callback, relayout) {
 			var self = $(this),
 			    data = self.data("roundabout");
-
 			callback = callback || function() {};
 			
 			self.children(data.childSelector).each(function(i) {
@@ -454,9 +453,12 @@
 					// update child positions
 					self.children(data.childSelector)
 						.each(function(i) {
+
 							if (methods.updateChild.apply(self, [$(this), info, i, function() { $(this).trigger('ready'); }]) && (!info.animating || data.lastAnimationStep)) {
 								inFocus = i;
+								// $(".roundabout-in-focus").css('top',-20);
 								$(this).addClass("roundabout-in-focus");
+								// $(".roundabout-in-focus").css('top',-5);
 							} else {
 								$(this).removeClass("roundabout-in-focus");
 							}

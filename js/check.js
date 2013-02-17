@@ -40,13 +40,15 @@ $(function(){
 				}else{
 					
 						$.get(
-								'/showbl/index.php?r=Admin/'+action,
+								'/showbl/index.php/Admin/'+action,
 								{data:val},
 								function(data){
 									if(data==1){
+										alert(data)
 										showPass(0)
 										errorType=1;
 									}else{
+										alert(data)
 										showError($(this),error,2);
 										errorType=0;
 									}

@@ -52,6 +52,6 @@ $this->breadcrumbs=array(
 </div>
 <!-- <div class='c'></div> -->
 
-<div class='log about_log l'>
+<div class='log about_log l' style="margin-left:31px">
 <div class='tag' style='width:230px'><s>●</s><b>我们</b><span>的核心竞争力是解除您的困惑</span></div>
 </div> 	

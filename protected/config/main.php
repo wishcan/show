@@ -46,36 +46,50 @@ return array(
 			'allowAutoLogin'=>true,
 			'loginUrl'=>'index.php?r=Admin/user/login',//修改默认的登陆控制器和方法
 		),
-		'cache'=>array(
-			'class'=>'system.caching.CMemCache',
-			'servers'=>array(
-					array('host'=>'localhost','port'=>'11211','weight'=>60),
-				),
-			),
+		// 'cache'=>array(
+		// 	'class'=>'system.caching.CMemCache',
+		// 	'servers'=>array(
+		// 			array('host'=>'localhost','port'=>'11211','weight'=>60),
+		// 		),
+		// 	),
 		'Dispose'=>array(
 			),
 		'Image'=>array(),
 		// uncomment the following to enable URLs in path-format
-		/*
+	
 		'urlManager'=>array(
 			'urlFormat'=>'path',
+			'urlSuffix'=>'.html', //加上.html
+			 // 'showScriptName'=>false,
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+				'guanyu'=>'about/index',
+				'anli'=>'case/index',
+				'zhiwei'=>'about/join',
+				'lianxi'=>'about/conact',
+				'surong'=>'laurel/index',
+				'pinglun'=>'comment/index',
+				'xinwen'=>'news/index',
+				'gongyi'=>'public/index',
+				'fuwuneirong'=>'serve/index',
+				'fuwu'=>'serve/indexs',
+				'neirong'=>'news/content&nid\d+>',
+
 			),
 		),
-		*/
+		
 //		'db'=>array(
 //			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 //		),
 		// uncomment the following to use a MySQL database
 		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=hdm0210658_db',
+			'connectionString' => 'mysql:host=localhost;dbname=shangde',
 			'emulatePrepare' => true,
-			'username' => 'hdm0210658',
-			'password' => 'q1w2e3asd',
+			'username' => 'root',
+			'password' => '',
 			'charset' => 'utf8',
 		),
 		

@@ -1814,3 +1814,306 @@ REQUEST_URI=/showbl/index.php?r=Upload/add&PHPSESSID=td8s9l9gb2g4um34kkgaeafn00
 in D:\wamp\www\showbl\protected\controllers\UploadController.php (62)
 in D:\wamp\www\showbl\index.php (13)
 >>>>>>> master
+2013/02/15 12:27:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[28000] [1045] Access denied for user 'hdm0210658'@'localhost' (using password: YES)' in D:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(News))
+#7 D:\wamp\www\showbl\protected\models\News.php(32): CActiveRecord::model('News')
+#8 D:\wamp\www\showbl\protected\controllers\AboutController.php(11): News::model()
+#9 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AboutController->actionIndex()
+#10 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('about')
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/showbl/index.php?r=about
+---
+2013/02/15 12:27:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection 无法开启数据库连线: SQLSTATE[28000] [1045] Access denied for user 'hdm0210658'@'localhost' (using password: YES)' in D:\wamp\www\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 D:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\wamp\www\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(615): CApplication->getDb()
+#5 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2263): CActiveRecord->getDbConnection()
+#6 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(News))
+#7 D:\wamp\www\showbl\protected\models\News.php(32): CActiveRecord::model('News')
+#8 D:\wamp\www\showbl\protected\controllers\AboutController.php(11): News::model()
+#9 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AboutController->actionIndex()
+#10 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('')
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('about')
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/showbl/index.php?r=about
+---
+2013/02/15 12:48:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "indexs"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('indexs')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php?r=indexs
+---
+2013/02/15 12:48:49 [error] [exception.CException] exception 'CException' with message 'CWebApplication and its behaviors do not have a method or closure named "creaeAbsoluteUrl".' in D:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\showbl\protected\controllers\ServeController.php(13): CComponent->__call('creaeAbsoluteUr...', Array)
+#1 D:\wamp\www\showbl\protected\controllers\ServeController.php(13): CWebApplication->creaeAbsoluteUrl('index')
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): ServeController->actionIndexs()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('indexs')
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('serve/indexs')
+#8 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/showbl/index.php?r=serve/indexs
+---
+2013/02/16 02:59:10 [error] [php] PDO::__construct() [<a href='pdo.--construct'>pdo.--construct</a>]: Premature end of data (mysqlnd_wireprotocol.c:553) (D:\wamp\www\yii\framework\db\CDbConnection.php:422)
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 D:\wamp\www\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive()
+#2 D:\wamp\www\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 D:\wamp\www\yii\framework\base\CApplication.php(431): CWebApplication->getComponent()
+#4 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(615): CWebApplication->getDb()
+#5 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(2263): News->getDbConnection()
+#6 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct()
+#7 D:\wamp\www\showbl\protected\models\News.php(32): model()
+#8 D:\wamp\www\showbl\protected\controllers\AboutController.php(11): model()
+#9 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): AboutController->actionIndex()
+#10 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#11 D:\wamp\www\yii\framework\web\CController.php(287): AboutController->runAction()
+#12 D:\wamp\www\yii\framework\web\CController.php(266): AboutController->runActionWithFilters()
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(276): AboutController->run()
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=about
+in D:\wamp\www\showbl\protected\models\News.php (32)
+in D:\wamp\www\showbl\protected\controllers\AboutController.php (11)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/16 03:20:24 [error] [php] include(Memcache.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory (D:\wamp\www\yii\framework\YiiBase.php:418)
+Stack trace:
+#0 D:\wamp\www\yii\framework\caching\CMemCache.php(113): spl_autoload_call()
+#1 D:\wamp\www\yii\framework\caching\CMemCache.php(90): CMemCache->getMemCache()
+#2 D:\wamp\www\yii\framework\base\CModule.php(388): CMemCache->init()
+#3 D:\wamp\www\yii\framework\web\CUrlManager.php(217): CWebApplication->getComponent()
+#4 D:\wamp\www\yii\framework\web\CUrlManager.php(207): CUrlManager->processRules()
+#5 D:\wamp\www\yii\framework\base\CModule.php(388): CUrlManager->init()
+#6 D:\wamp\www\yii\framework\base\CApplication.php(503): CWebApplication->getComponent()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(134): CWebApplication->getUrlManager()
+#8 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#9 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php?r=laurel
+in D:\wamp\www\showbl\index.php (13)
+2013/02/16 03:21:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/sangde/images/qianm.png"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/sangde/imag...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/css/sangde/images/qianm.png
+HTTP_REFERER=http://localhost/showbl/index.php/guanyu
+---
+2013/02/16 03:21:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/sangde/images/qianm.png"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/sangde/imag...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/css/sangde/images/qianm.png
+HTTP_REFERER=http://localhost/showbl/index.php/guanyu.html
+---
+2013/02/16 03:33:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message '找不到您所要查看的页面,请查看其他页面！' in D:\wamp\www\showbl\protected\controllers\NewsController.php:21
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionContent()
+#1 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#2 D:\wamp\www\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#3 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#4 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('content')
+#5 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('news/content')
+#6 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#7 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#8 {main}
+REQUEST_URI=/showbl/index.php/xinwen
+---
+2013/02/16 09:52:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "css/sangde/images/qianm.png"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('css/sangde/imag...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/css/sangde/images/qianm.png
+HTTP_REFERER=http://localhost/showbl/index.php/guanyu
+---
+2013/02/16 09:53:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/16 10:01:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/16 12:03:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/17 03:22:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/17 03:29:33 [error] [exception.CException] exception 'CException' with message '属性 "News.NewsData" 未被定义.' in D:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('NewsData')
+#1 D:\wamp\www\yii\framework\web\helpers\CHtml.php(2033): CActiveRecord->__get('NewsData')
+#2 D:\wamp\www\showbl\protected\extensions\ueditor\UEditor.php(220): CHtml::resolveValue(Object(News), 'NewsData[conten...')
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(174): UEditor->run()
+#4 D:\wamp\www\showbl\protected\modules\Admin\views\news\_form.php(123): CBaseController->widget('ext.ueditor.UEd...', Array)
+#5 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\sho...')
+#6 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sho...', Array, true)
+#7 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sho...', Array, true)
+#8 D:\wamp\www\showbl\protected\modules\Admin\views\news\create.php(26): CController->renderPartial('_form', Array)
+#9 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\sho...')
+#10 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sho...', Array, true)
+#11 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sho...', Array, true)
+#12 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('create', Array, true)
+#13 D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php(114): CController->render('create', Array)
+#14 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): NewsController->actionCreate()
+#15 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#17 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#18 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#19 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#20 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#21 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#22 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#23 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#24 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/crea...')
+#25 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#26 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#27 {main}
+REQUEST_URI=/showbl/index.php/Admin/news/create/cid/1.html
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/news/admin/cid/1.html
+---
+2013/02/17 04:31:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/17 04:31:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/17 04:43:12 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (88)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/17 04:43:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php:212
+Stack trace:
+#0 D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php(128): NewsController->loadModel('')
+#1 [internal function]: NewsController->actionUpdate('')
+#2 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/upda...')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/showbl/index.php/Admin/news/update/id/
+HTTP_REFERER=http://localhost/showbl/assets/c1cf3ba6/swfupload.swf?preventswfcaching=1361076206971
+---
+2013/02/17 04:43:35 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (134)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/17 04:43:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php:212
+Stack trace:
+#0 D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php(128): NewsController->loadModel('')
+#1 [internal function]: NewsController->actionUpdate('')
+#2 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/upda...')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/showbl/index.php/Admin/news/update/id/
+HTTP_REFERER=http://localhost/showbl/assets/c1cf3ba6/swfupload.swf?preventswfcaching=1361076225685
+---
+2013/02/17 04:43:51 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (134)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/17 04:48:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php:206
+Stack trace:
+#0 D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php(128): NewsController->loadModel('')
+#1 [internal function]: NewsController->actionUpdate('')
+#2 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(NewsController), Array)
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(NewsController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('update')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/news/upda...')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/showbl/index.php/Admin/news/update/id/
+HTTP_REFERER=http://localhost/showbl/assets/c1cf3ba6/swfupload.swf?preventswfcaching=1361076516103
+---
+2013/02/17 04:48:42 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (134)
+in D:\wamp\www\showbl\index.php (13)

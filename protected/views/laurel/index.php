@@ -1,13 +1,18 @@
+
 <?php
 $this->breadcrumbs=array(
 	'尚德殊荣',
-);?>
+);
+$this->pageTitle=Yii::app()->name . ' - 公司殊荣';?>
+
+
 <div class='top_title top_laurel'>
 </div>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl;?>/css/sangde/js/jquery.roundabout.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl;?>/css/sangde/js/roundshow.js"></script>
 <script type="text/javascript" src="<?php echo Yii::app()->baseUrl;?>/css/sangde/js/li.js"></script>
-<div class='imgs '>
+<!--[if lt IE 8 ]><link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->baseUrl;?>/css/i8.css"><![endif]-->
+<div class='imgs laurel'>
 		<div class='prev'></div>
 		<div class='next'></div>
 	<ul class='round'>

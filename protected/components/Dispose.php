@@ -9,19 +9,21 @@
 		 *参数3传入想要修改的属性样式
 		 *
 		*/
-
+		private $class='default';
+		private $htmlOptions='style=""';
 		public static function advert($advert,$link='',$css=array())
 		{
 			$data='';
-			isset($css['class'])? $class=$css['class']:$class='';
-			isset($css['htmlOptions'])?$htmlOptions=$css['htmlOptions']:$htmlOptions='';							
+			isset($css['class'])? $class=$css['class']:$class='default';
+			isset($css['htmlOptions'])?$htmlOptions=$css['htmlOptions']:$htmlOptions='style=""';							
 			$info=pathinfo($advert);
 			if(!isset($info['extension'])) return $data='这不是一个文件';
 			$type=$info['extension'];
 			switch ($type) {
 				case 'swf':
-					$data='<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="320" style="height: 100px;" id="FlashID" title="gg1" class="'.$class.$htmlOptions.'">
-      <param name="movie" value="$advert" />
+					$data='
+					<object type="application/x-shockwave-flash"  width="960" height="100" class="'.$class.'" '.$htmlOptions.'">
+      <param name="movie" value="'.$advert.'" />
       <param name="quality" value="high" />
       <param name="wmode" value="opaque" />
       <param name="swfversion" value="9.0.45.0" />

@@ -14,6 +14,24 @@
 </title>
 </head>
 <body>
+	<div class='menu'>
+	<?php echo About::createMenu();?>
+	</div>
+	<script type="text/javascript">
+	$(function(){
+		function size(){
+			$(".menu").css("top",($(window).height()-$(".menu").height())/2+100+$(window).scrollTop())
+
+		}
+		size();
+		$(window).resize(function(){
+
+			size();
+					})
+
+	})
+
+	</script>
 	<!--内容输出-->
 <?php echo $content;?>
 
@@ -28,7 +46,7 @@
 </div>
 <!--页尾-->
 <div id='foot' class='content'>
-<a href=''>网站地图</a>|<a href=''>联系我们</a>|<a href='<?php echo Yii::app()->createUrl('laruel')?>'>尚德殊荣</a>
+<a href=''>网站地图</a>|<a href=''>联系我们</a>|<a href='<?php echo Yii::app()->createUrl('laurel')?>'>尚德殊荣</a>
 </div>
 </body>
 

@@ -15,6 +15,7 @@ a{
 }
 body{
 	min-height: 900px;
+	z-index:2;
 }
 .content{
 	width:1280px;
@@ -48,6 +49,10 @@ body{
 }
 .breadcrumbs{
 display: inline;
+}
+.menu{
+	position: absolute;
+	top:200px;	 
 }
 .top_title{
 	width:1280px;
@@ -229,8 +234,15 @@ background-repeat:no-repeat;
 	background-repeat: no-repeat;	
 }
 .imgs{
-	margin-left:120px;
+	margin-left:200px;
 	margin-top:20px;
+}
+.laurel .round li div img{
+	*margin-left:-20px;
+	*left:0px;
+}
+.laurel .next{
+	*left:150px;
 }
 .round {
 		
@@ -241,13 +253,14 @@ background-repeat:no-repeat;
 				height:0em;
 			}
 		.round li {
-				height:0em;
-				width: 9em;
+				height:5em;
+				width: 0em;
 				background-color: #ccc;
 				text-align: center;
 				cursor: pointer;
 
 			}
+
 .round li div{
 	width:283px;
 	height:357px;
@@ -281,6 +294,7 @@ background-repeat:no-repeat;
 		.round	li.roundabout-in-focus {
 					cursor: default;
 					height:200px;
+					top:-20px;
 				}
 		.round	li.roundabout-in-focus img{
 
@@ -294,7 +308,7 @@ background-repeat:no-repeat;
 				margin: 0 auto;
 			}
 
-.roundabout-in-focus {  cursor: auto; }
+.roundabout-in-focus {  cursor: auto; height:200px;}
 .next,.prev{
 	position: relative;
 	width:40px;
@@ -314,6 +328,15 @@ background-repeat:no-repeat;
 }
  .prev{
 	background:url(./images/dt_p.gif)	
+}
+.laurel .top,.laurel .left{
+	top:130px;
+}
+.laurel .next{
+left:150px
+}
+.laurel .prev{
+	left:-10px
 }
 #m_next, #m_prev,.bigImg .close{
 	display: block;
@@ -342,7 +365,7 @@ background-repeat:no-repeat;
 	position: relative;
 	float: left;
 	top:400px;
-	left:-270px
+	left:-200px
 }
 .li b{
 display: block;
@@ -373,13 +396,14 @@ background-repeat:no-repeat;
 	float: left;
 	color:#545454;
 	width:610px;
-	font-family:'微软雅黑';
+
 }
 .serve div ul{
 	/*float:left*/
 }
 .serve div ul h3{
-padding:15px 0 30px 0;
+padding:15px 0 20px 0;
+padding-bottom: 1em;
 font-weight:520;
 }
 .serve div .ru{
@@ -388,6 +412,8 @@ margin-left:100px;
 .serve div ul li{
 	padding:2px;
 	padding-left: 5em;
+	font-size:14px;
+	line-height:1.4em;
 
 }
 /********案例展示***********************/
@@ -414,6 +440,7 @@ margin-left:100px;
 	width:10em;
 		/*height:2em;*/
 }
+
 .case .round div img{
 	width:247px;
 	height: 245px;

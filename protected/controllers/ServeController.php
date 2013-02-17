@@ -4,7 +4,15 @@ class ServeController extends SController
 {
 	public function actionIndex()
 	{
+
 		$this->render('index');
+	}
+	public function actionIndexs()
+	{
+		$data= Dispose::advert(Yii::app()->baseUrl.'/upload/flash/sd_fw.swf',
+						Yii::app()->createUrl('index'),
+						array('htmlOptions'=>'style="height:450px"'));
+		$this->render("indexs",array('data'=>$data));
 	}
 
 	// Uncomment the following methods and override them if needed
