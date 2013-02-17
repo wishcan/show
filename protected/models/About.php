@@ -104,7 +104,7 @@ class About extends CActiveRecord
 	{
 		$data= Dispose::advert(Yii::app()->baseUrl.'/upload/flash/sd_menu.swf',
 						Yii::app()->createUrl('index'),
-						array('htmlOptions'=>'style="height:600px;width:350px;z-index:-1"'));
+						array('htmlOptions'=>'style="height:600px;width:200px;z-index:-1"'));
 		return $data;
 	}
 }
