@@ -78,7 +78,7 @@ class NewsController extends Controller
 	public function actionCreate()
 	{
 		$model=new News;
-
+		$data=new NewsData();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
@@ -92,19 +92,23 @@ class NewsController extends Controller
 				$db=Yii::app()->db;
 				$content="'".$_POST['News']['newsData']['content']."'";
 				$nid=$model->id;
-
-				$sql="insert into bl_news_data(nid,thumb,content)values(:nid,:thumb,:content)";
-				$command=$db->createCommand($sql);
-				$command->bindParam(":nid",$nid);
+				$data->nid=$model->id;
+				$data->content=$_POST['News']['newsData']['content'];
 				if(isset($_POST['thumb']))
 				{
 					$thumb=date("ymd").$_POST['thumb'][0];
 				}else{
 					$thumb=' ';
 				}
-				$command->bindParam(":thumb",$thumb);
-				$command->bindParam(":content",$content);
-				$command->execute();
+				$data->thumb=$thumb;
+				$data->save();
+				//$sql="insert into bl_news_data(nid,thumb,content)values(:nid,:thumb,:content)";
+				//$command=$db->createCommand($sql);
+				//$command->bindParam(":nid",$nid);
+				
+			//	$command->bindParam(":thumb",$thumb);
+				//$command->bindParam(":content",$content);
+				//$command->execute();
 				$this->redirect(array('view','id'=>$model->id));
 			}
 		}
@@ -122,16 +126,28 @@ class NewsController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
-
+		$data=$this->loadData($id);
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['News']))
 		{
 			$model->attributes=$_POST['News'];
-			if($model->save())
+			$data->content=$_POST['News']['newsData']['content'];
+			if(isset($_POST['thumb']))
+				{
+					$thumb=date("ymd").$_POST['thumb'][0];
+				}else{
+					$thumb=' ';
+				}
+			$data->thumb=$thumb;
+			if($model->save()){
+				if($data->save())
 				$this->redirect(array('view','id'=>$model->id));
-		}
+				
+				}
+
+			}
+		
 
 		$this->render('update',array(
 			'model'=>$model,
@@ -189,6 +205,13 @@ class NewsController extends Controller
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
+	}
+	public function loadData($nid)
+	{
+		$data=NewsData::model()->find('nid=:nid',array('nid'=>$nid));
+		if($data===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $data;
 	}
 
 	/**
