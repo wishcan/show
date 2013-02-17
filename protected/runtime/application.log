@@ -2117,3 +2117,29 @@ HTTP_REFERER=http://localhost/showbl/assets/c1cf3ba6/swfupload.swf?preventswfcac
 2013/02/17 04:48:42 [warning] [application] Failed to set unsafe attribute "newsData" of "News".
 in D:\wamp\www\showbl\protected\modules\Admin\controllers\NewsController.php (134)
 in D:\wamp\www\showbl\index.php (13)
+2013/02/17 08:42:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shangde.bl_gallery_category' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `bl_gallery_category`.
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (141)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/17 08:42:52 [error] [exception.CDbException] exception 'CDbException' with message '数据库中无法找到 active record class "GalleryCategory" 对应的 table "bl_gallery_category".' in D:\wamp\www\yii\framework\db\ar\CActiveRecord.php:2264
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(379): CActiveRecordMetaData->__construct(Object(GalleryCategory))
+#1 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(394): CActiveRecord::model('GalleryCategory')
+#2 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(78): CActiveRecord->getMetaData()
+#3 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(141): CActiveRecord->__construct('search')
+#4 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAdmin()
+#5 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#6 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#7 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#8 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#12 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('admin')
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#15 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#16 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/admin
+HTTP_REFERER=http://localhost/showbl/index.php/Admin
+---
