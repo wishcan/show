@@ -43,7 +43,7 @@ class UploadController extends Controller
 	{
  		
  		//$this->deleteTemp();
- 		header( 'Content-Type:text/html;charset=gbk');  
+ 		 // header( 'Content-Type:text/html;charset=utf-8 ');  
 		date_default_timezone_set('PRC');
 		isset($_FILES['Filedata'])?$filedata=$_FILES['Filedata']:$filedata=$_FILES['file'];
 		//判断是否存在文件目录要是没有就创建
@@ -56,8 +56,9 @@ class UploadController extends Controller
 		$this->dir=$this->dir.date('Ym').'/';
 
 		$tmp_name=$filedata['tmp_name'];
-		// echo $tmp_name;
+
 		$file=$this->dir.$filedata['name'];
+		
 		$thumb=$this->dir.'small'.$filedata['name'];
 
 		//按年月来创建文件目录
@@ -77,7 +78,7 @@ class UploadController extends Controller
 		//var_dump($_FILES);
 		if(move_uploaded_file($filedata['tmp_name'],$file) && copy($small,$temp))
 		{
-			echo mb_convert_encoding("上传成功",'GBK','UTF-8');
+			echo mb_detect_encoding("上传成功");
 
 		}else{
 			die("上传失败");

@@ -41,9 +41,13 @@ class UploadController extends Controller
 
 	public function actionAdd()
 	{
- 		
+ 		/**
+	     *æ–‡ä»¶æŒ‰å¹´æœˆæ—¥æ—¶åˆ†ç§’åŠ ä¸Šæœ¬æ¥çš„æ–‡ä»¶åè¿›è¡Œå‘½å
+		 *uploadä¸‹çš„tempæ–‡ä»¶ä¸ºç¼“å­˜æ–‡ä»¶æ˜¾ç¤ºç¼©ç•¥å›¾ï¼Œä¸Šä¼ çš„æ—¶å€™å°†è¿™ä¸ªæ–‡ä»¶å¤¹æ¸…ç©º
+		 *
+		 */	
  		//$this->deleteTemp();
- 		header( 'Content-Type:text/html;charset=gbk');  
+ 		// header( 'Content-Type:text/html;charset=utf-8 ');  
 		date_default_timezone_set('PRC');
 		isset($_FILES['Filedata'])?$filedata=$_FILES['Filedata']:$filedata=$_FILES['file'];
 		//判断是否存在文件目录要是没有就创建
@@ -56,8 +60,9 @@ class UploadController extends Controller
 		$this->dir=$this->dir.date('Ym').'/';
 
 		$tmp_name=$filedata['tmp_name'];
-		// echo $tmp_name;
+
 		$file=$this->dir.$filedata['name'];
+
 		$thumb=$this->dir.'small'.$filedata['name'];
 
 		//按年月来创建文件目录
@@ -69,21 +74,24 @@ class UploadController extends Controller
 		$info=pathinfo($file);
 		if(in_array($info['extension'],$imgType))
 		{
-			$images=new Image();	
+			$images=new Image();
 			$images->param($filedata['tmp_name']);
 			//if(!$images->thumb($file,600,500))die('图像上传失败！');
 			$small=$images->thumb($thumb,300,200);
+				
 		}
-		//var_dump($_FILES);
-		if(move_uploaded_file($filedata['tmp_name'],$file) && copy($small,$temp))
+		if(move_uploaded_file($filedata['tmp_name'],mb_convert_encoding($file,'UTF-8','auto')) && copy($small,$temp))
 		{
-			echo mb_convert_encoding("上传成功",'GBK','UTF-8');
+			echo "上传成功";
 
 		}else{
 			die("上传失败");
 		}
+
 	}
-	
+	/**
+	 *åˆ é™¤ç¼“å­˜çš„å›¾ç‰‡æ–‡ä»¶	
+	*/
 
 		public function deleteTemp()
 	{
@@ -101,11 +109,13 @@ class UploadController extends Controller
 					}
 			}
 		}else{		
-			echo 'jh';
+			echo 'ç›®å½•ä¸å ­˜åœ¨';
 		}
 	}
 
-	
+	/**
+	 *å¼‚æ­¥åˆ é™¤å›¾ç‰‡	
+	*/
 	public function actionDelete()
 	{
 		 $month=date("Ym");

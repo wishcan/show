@@ -18,6 +18,7 @@ return array(
 		'application.models.*',
 		'application.components.*',
 		'application.widgets.yii-bootsrap.*',
+		'ext.upload.Upload'
 	),
 	'language'=>'zh_cn',
 	'aliases' => array(

@@ -7,17 +7,17 @@ $this->breadcrumbs=array(
 ?>
 
 <?php $url=Yii::app()->request->baseUrl;?>
-<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+
 <div class="content" style='margin-left:0px;'>
         
         <div class="header">
             
-            <h1 class="page-title">娣诲姞鍥剧墖淇℃伅</h1>
+            <h1 class="page-title">添加图片信息</h1>
         </div>
         
                 <ul class="breadcrumb">
-            <li><a href="index.html">鍚庡彴</a> <span class="divider">/</span></li>
-            <li class="active">鍥剧墖淇℃伅</li>
+            <li><a href="index.html">后台</a> <span class="divider">/</span></li>
+            <li class="active">图片信息</li>
         </ul>
 <div class="c"></div>
 

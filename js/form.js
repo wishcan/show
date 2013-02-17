@@ -24,13 +24,13 @@ $(".button-column a img").css({"width":"11","height":"11"});
 上传文件删除JS效果
 
 */
-$("#smallImg").hide();
+
 
 $("div.form #smallImg .close").live('click',function(){
-		var v=$(this).next('img').attr('val'); /* 获得图片的文件名*/
+		var v=$(this).prev('input').val(); /* 获得图片的文件名*/
 		var th=$(this);
 		$.post(
-			'/show/index.php?r=Upload/delete',
+			'/showbl/index.php?r=Upload/delete',
 			{data:v},
 			function(data){
 				$(th).next("img").remove();

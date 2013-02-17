@@ -50,9 +50,11 @@ function uploadProgress(file, bytesLoaded) {
 
 		var progress = new FileProgress(file,  this.customSettings.upload_target);
 		progress.setProgress(percent);
-		if (percent === 100) {
+		
+		if (percent) {
 			progress.setStatus("Creating thumbnail...");
-			$("#smallImg").show();
+
+			// $("#smallImg").show();
 			var i=type=0;
 			//alert($(".form form input[type=hidden]").length);
 				for(i;i<$(".form form input[type=hidden]").length;i++){
@@ -64,10 +66,13 @@ function uploadProgress(file, bytesLoaded) {
 				}
 			if(!type)
 			{
+			
 				$(".form form").append("<input type='hidden' value='"+file.name+"' name='thumb[]'/>");
-				$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
-				
-				$("#smallImg img").fadeIn(1500);
+			//	$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
+			/*点击单选框 生成缩略图单选框*/
+				$("#smallImg").append("<li><img src='"+__URL__+"/upload/temp/"+file.name+"' val='"+file.name+"' /><input type='radio'  value='"+file.name+"'/><span>设为封面</span><span class='close'>删除</span></li>");
+
+
 			}
 				
 			progress.toggleCancel(false, this);
@@ -259,7 +264,6 @@ function FileProgress(file, targetID) {
 		this.fileProgressElement.appendChild(progressBar);
 
 		this.fileProgressWrapper.appendChild(this.fileProgressElement);
-
 		document.getElementById(targetID).appendChild(this.fileProgressWrapper);
 		fadeIn(this.fileProgressWrapper, 0);
 
