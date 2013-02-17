@@ -1,4 +1,4 @@
-<div class="form">
+<div class="form" style='margin-left:0px'>
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'gallery-form',
@@ -21,7 +21,7 @@
      
 
      <span>上传到：</span>
-
+     <span>或</span><a href="<?php echo Yii::app()->createUrl('Admin/galleryCategory/create')?>">新建栏目</a>
     </div>
 	<div class="row">
 		<span>标题</span>
@@ -48,17 +48,7 @@
     <label>图片预览 </label>
     </div>
     </div>
-
 </div>
-    <div class="row">
-        
-       <!-- <span>标签</span> <?php// echo $form->textField($model,'tag',array('size'=>20,'maxlength'=>20)); ?> -->
-        <?php// echo $form->error($model,'tag'); ?>
-    </div>
-
-	<div class="row">
-
-	</div>
 
     <div class="row buttons">
         <?php echo CHtml::submitButton($model->isNewRecord ? '添加' : '更新'); ?>

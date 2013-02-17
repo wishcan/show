@@ -46,17 +46,17 @@ return array(
 			'allowAutoLogin'=>true,
 			'loginUrl'=>'index.php?r=Admin/user/login',//修改默认的登陆控制器和方法
 		),
-		'cache'=>array(
-			'class'=>'system.caching.CMemCache',
-			'servers'=>array(
-					array('host'=>'localhost','port'=>'11211','weight'=>60),
-				),
-			),
+		// 'cache'=>array(
+		// 	'class'=>'system.caching.CMemCache',
+		// 	'servers'=>array(
+		// 			array('host'=>'localhost','port'=>'11211','weight'=>60),
+		// 		),
+		// 	),
 		'Dispose'=>array(
 			),
 		'Image'=>array(),
 		// uncomment the following to enable URLs in path-format
-		/*
+	
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 			'rules'=>array(
@@ -65,7 +65,7 @@ return array(
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
 			),
 		),
-		*/
+		
 //		'db'=>array(
 //			'connectionString' => 'sqlite:'.dirname(__FILE__).'/../data/testdrive.db',
 //		),

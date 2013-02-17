@@ -53,11 +53,22 @@ function uploadProgress(file, bytesLoaded) {
 		if (percent === 100) {
 			progress.setStatus("Creating thumbnail...");
 			$("#smallImg").show();
-			$(".form form").append("<input type='hidden' value="+file.name+" name='thumb[]'/>");
-				$("#smallImg").append("<span class='close'>X</span><img val="+file.name+" src='/show/upload/temp/"+file.name+"'/>");
+			var i=type=0;
+			//alert($(".form form input[type=hidden]").length);
+				for(i;i<$(".form form input[type=hidden]").length;i++){
+					if(($(".form form input[type=hidden]").eq(i).val())==(file.name))
+					{
+							return type=1;
+
+						}
+				}
+			if(!type)
+			{
+				$(".form form").append("<input type='hidden' value='"+file.name+"' name='thumb[]'/>");
+				$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
 				
-					$("#smallImg img").fadeIn(1500);
-				
+				$("#smallImg img").fadeIn(1500);
+			}
 				
 			progress.toggleCancel(false, this);
 		} else {
