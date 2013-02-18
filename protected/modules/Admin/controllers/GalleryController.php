@@ -65,12 +65,11 @@ class GalleryController extends Controller
 	 * If creation is successful, the browser will be redirected to the 'view' page.
 	 */
 	public function actionCreate()
-	{
+	{	
 		$model=new Gallery;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-
 		if(isset($_POST['Gallery']))
 		{
 			/**
@@ -78,6 +77,7 @@ class GalleryController extends Controller
 			 *	
 			 *
 			*/
+
 			$model->attributes=$_POST['Gallery'];
 			if($model->save())
 			{

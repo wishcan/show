@@ -1,12 +1,16 @@
 <div class="form" style='margin-left:0px'>
 
+
+
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'gallery-form',
 	'enableAjaxValidation'=>false,
     'htmlOptions'=>array(
         'enctype'=>'multipart/form-data'),
-)); ?>
-<meta http-equiv="Content-Type" content="text/html; charset=gbk" />
+));
+
+Yii::app()->clientScript->registerMetaTag(' text/html;charset=gbk', null, 'Content-Type');  
+?>
 
 <style type="text/css">
     

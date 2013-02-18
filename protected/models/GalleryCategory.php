@@ -35,7 +35,7 @@ class GalleryCategory extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cateid', 'required'),
+			array('cname', 'required'),
 			array('cateid', 'numerical', 'integerOnly'=>true),
 			array('cname', 'length', 'max'=>10),
 			// The following rule is used by search().
@@ -61,8 +61,8 @@ class GalleryCategory extends CActiveRecord
 	public function attributeLabels()
 	{
 		return array(
-			'cateid' => 'Cateid',
-			'cname' => 'Cname',
+			'cateid' => 'ID',
+			'cname' => '栏目名',
 		);
 	}
 

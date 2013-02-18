@@ -1,11 +1,22 @@
 <div class="form" style='margin-left:0px'>
 
+
+<form action="<?php echo Yii::app()->createUrl('upload/add')?>" method="post"
+enctype="multipart/form-data">
+<input type="file" name="file" id="file" /> 
+<br />
+<input type="submit" name="submit" value="Submit" />
+</form>
+<?php exit?>
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'gallery-form',
 	'enableAjaxValidation'=>false,
     'htmlOptions'=>array(
         'enctype'=>'multipart/form-data'),
-)); ?>
+));
+
+Yii::app()->clientScript->registerMetaTag(' text/html;charset=gbk', null, 'Content-Type');  
+?>
 
 <style type="text/css">
     
@@ -18,17 +29,17 @@
 </style>
 <div class='uploads'>
 	<div class='o'>
-     <span>ÉÏ´«µ½£º</span>
-     <span>»ò</span><a href="<?php echo Yii::app()->createUrl('Admin/galleryCategory/create')?>">ÐÂ½¨À¸Ä¿</a>
+     <span>ä¸Šä¼ åˆ°ï¼š</span>
+     <span>æˆ–</span><a href="<?php echo Yii::app()->createUrl('Admin/galleryCategory/create')?>">æ–°å»ºæ ç›®</a>
     </div>
 	<div class="row l">
-		<span>±êÌâ</span>
+		<span>æ ‡é¢˜</span>
 		<?php echo $form->textField($model,'title',array('size'=>30,'maxlength'=>30)); ?>
 		<span class='red'>*</span>
 			<p class='gallery_error check_error'>
 				<i></i>
-				<span class='error1'>±êÌâ²»ÄÜÎª¿Õ</span>
-				<span class='error2'>ÎÄÕÂÒÑ¾­´æÔÚ</span>
+				<span class='error1'>æ ‡é¢˜ä¸èƒ½ä¸ºç©º</span>
+				<span class='error2'>æ–‡ç« å·²ç»å­˜åœ¨</span>
 			</p>
 			<p class='pass'>
 				<i></i>
@@ -39,11 +50,11 @@
      <div id="smallImg" style="display:block">
     </div>
     <div class="row">
-<!--Í¼Æ¬ÉÏ´«ºó»á×Ô¶¯Éú³Éinput hidden±íµ¥ nameÎªthumb Õâ¸öÔÚËùÓÐµÄÍ¼Æ¬ÉÏ´«ÖÐÍ¨ÓÃ-->
+<!--å›¾ç‰‡ä¸Šä¼ åŽä¼šè‡ªåŠ¨ç”Ÿæˆinput hiddenè¡¨å• nameä¸ºthumb è¿™ä¸ªåœ¨æ‰€æœ‰çš„å›¾ç‰‡ä¸Šä¼ ä¸­é€šç”¨-->
          <div id="divFileProgressContainer"></div>
               
               <div class="swfupload" id="bswf"style=""><button id="swfupload"></button>
-              </div><span class='limit l'>ÏÞ99ÕÅ</span>
+              </div><span class='limit l'>é™99å¼ </span>
               <div class='c'></div>
     </div>
 
@@ -52,7 +63,7 @@
 </div>
 
     <div class="row buttons">
-        <?php echo CHtml::submitButton($model->isNewRecord ? 'Ìí¼Ó' : '¸üÐÂ'); ?>
+        <?php echo CHtml::submitButton($model->isNewRecord ? 'æ·»åŠ ' : 'æ›´æ–°'); ?>
     </div>
 
   <?php $this->endWidget(); ?>

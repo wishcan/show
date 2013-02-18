@@ -43,18 +43,19 @@ class UploadController extends Controller
 	{
  		
  		//$this->deleteTemp();
- 		header( 'Content-Type:text/html;charset=gbk');  
+ 		// header( 'Content-Type:text/html;charset=gbk');  
 		date_default_timezone_set('PRC');
 		isset($_FILES['Filedata'])?$filedata=$_FILES['Filedata']:$filedata=$_FILES['file'];
 		//判断是否存在文件目录要是没有就创建
 		is_dir($this->dir.'/temp')?'':mkdir($this->dir.'/temp',777);
 		//修改文件的名字 
+		
+		//修改中文编码
+		$filedata['name']=iconv("UTF-8","GB2312//IGNORE",$filedata['name']) ;
 		$temp=$this->dir.'temp/'.$filedata['name'];
-
 		$filedata['name']=date("Ymd").$filedata['name'];
-
 		$this->dir=$this->dir.date('Ym').'/';
-
+		
 		$tmp_name=$filedata['tmp_name'];
 		// echo $tmp_name;
 		$file=$this->dir.$filedata['name'];
@@ -71,11 +72,12 @@ class UploadController extends Controller
 		{
 			$images=new Image();	
 			$images->param($filedata['tmp_name']);
-			//if(!$images->thumb($file,600,500))die('图像上传失败！');
-			$small=$images->thumb($thumb,300,200);
+			$images->thumb($thumb,300,200);
+			// /$thumb=iconv('gbk','UTF-8',$thumb);
 		}
-		//var_dump($_FILES);
-		if(move_uploaded_file($filedata['tmp_name'],$file) && copy($small,$temp))
+		// echo $thumb.'<br />';
+	
+		 if(move_uploaded_file($filedata['tmp_name'],$file) &&  copy($thumb,$temp))  
 		{
 			echo mb_convert_encoding("上传成功",'GBK','UTF-8');
 
