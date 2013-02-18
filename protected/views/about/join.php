@@ -19,7 +19,7 @@ $this->breadcrumbs=array(
 <div class='zezhao'></div>
 <div class='positions'>
 	<b class='close'></b>
-<img src='<?php echo Yii::app()->baseUrl?>/css/sangde/images/positions.jpg' />
+<img src='<?php echo Yii::app()->baseUrl?>/css/sangde/images/position.png' />
 
 </div>
 <script type="text/javascript">
