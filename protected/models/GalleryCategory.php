@@ -38,6 +38,7 @@ class GalleryCategory extends CActiveRecord
 			array('cname', 'required'),
 			array('cateid', 'numerical', 'integerOnly'=>true),
 			array('cname', 'length', 'max'=>10),
+			array('cateid, cname, pid', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('cateid, cname', 'safe', 'on'=>'search'),
@@ -62,7 +63,7 @@ class GalleryCategory extends CActiveRecord
 	{
 		return array(
 			'cateid' => 'ID',
-			'cname' => '栏目名',
+			'cname' => '图册名',
 		);
 	}
 
@@ -84,4 +85,93 @@ class GalleryCategory extends CActiveRecord
 			'criteria'=>$criteria,
 		));
 	}
-}
+	public static function getCate()
+	{
+		$model=GalleryCategory::model()->findAll('pid=0');
+		return $model;
+
+	}
+	public static function addThumb($data)
+	{
+	
+		if(empty($data)) die('数据不能为空,请重试');
+		$sql='insert into bl_gallery_thumb(cateid,thumb)values(:cid,:thumb)';
+		//查询是否存在数据 如果存在就不执行下一条
+		$sql2='select tid from bl_gallery_thumb where cateid='.$data["cid"]. ' and thumb="'.$data['thumb'].'"';
+		$command=MYS::dbLink($sql);
+		$command2=MYS::dbLink($sql2);
+		$command->bindParam(":cid",$data['cid']);
+		$command->bindParam(":thumb",$data['thumb']);
+		$row=$command2->execute();
+		 if(!$row){
+		 	//删除其他的记录再插入
+		 	$sql3='delete form bl_gallery_thumb where cateid='.$data["cid"];
+		 	$command3=MYS::dbLink($sql3);
+		 	$command3->execute();
+	        if($command->execute())
+	        	{
+
+	        		return 1;
+	        	
+	        	}else{
+	        	
+	        		return 2;
+	        	}
+
+	       }else{
+	       	return 3;
+	       }
+	}
+
+
+
+	public function addDesc($data)
+	{
+
+		if(empty($data)) die('数据不能为空,请重试');
+		$sql='update bl_gallery_data set description="'.$data["desc"].'" where gdid='.$data['gdid'];
+		//查询是否存在数据 如果存在就不执行下一条''
+		//还需要优化，将所有的曾经的封面都可以给列出来
+		$sql2='select gdid from bl_gallery_data where gdid='.$data['gdid'];
+		$command=MYS::dbLink($sql);
+		$command2=MYS::dbLink($sql2);
+		$row=$command2->execute();
+		 if(!$row){
+
+		 	 	return 3;
+	        
+	       }else if($command->execute()){
+
+	        		return 1;
+	        	
+	        	}else{
+	        	
+	        		return 2;
+	        	}
+	       }
+
+	
+	public function del($data)
+	{
+		if(empty($data)) die('数据不能为空,请重试');
+		$sql='delete from bl_gallery_data  where gdid='.$data['gdid'];
+		//查询是否存在数据 如果存在就不执行下一条''
+		$sql2='select gdid from bl_gallery_data where gdid='.$data['gdid'];
+		$command=MYS::dbLink($sql);
+		$command2=MYS::dbLink($sql2);
+		$row=$command2->execute();
+		 if(!$row){
+
+		 	 	return 3;
+	        
+	       }else if($command->execute()){
+
+	        		return 1;
+	        	
+	        	}else{
+	        	
+	        		return 2;
+	        	}
+	    }
+	}
+

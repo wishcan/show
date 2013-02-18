@@ -4,13 +4,6 @@ $this->breadcrumbs=array(
 	$model->cateid,
 );
 
-$this->menu=array(
-	array('label'=>'List GalleryCategory', 'url'=>array('index')),
-	array('label'=>'Create GalleryCategory', 'url'=>array('create')),
-	array('label'=>'Update GalleryCategory', 'url'=>array('update', 'id'=>$model->cateid)),
-	array('label'=>'Delete GalleryCategory', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->cateid),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage GalleryCategory', 'url'=>array('admin')),
-);
 ?>
 
 <h1>View GalleryCategory #<?php echo $model->cateid; ?></h1>
@@ -21,4 +14,5 @@ $this->menu=array(
 		'cateid',
 		'cname',
 	),
-)); ?>
+));
+?>

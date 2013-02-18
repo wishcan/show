@@ -51,12 +51,10 @@ class GalleryController extends Controller
 	public function actionView($id)
 	{
 
-		if(isset($_GET['id']))
-		{
-			$id=$_GET['id'];
-		}
+		// isset($id)?$id=$id:isset($_GET['cid'])?$id=$_GET['cid']:die('图册不存在');
+		$data=Gallery::getData($id,0,999);
 		$this->render('view',array(
-			'model'=>$this->loadModel($id),
+			'data'=>$data,
 		));
 	}
 
@@ -67,39 +65,48 @@ class GalleryController extends Controller
 	public function actionCreate()
 	{	
 		$model=new Gallery;
-
+		$cate=GalleryCategory::model()->findAll();
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
-		if(isset($_POST['Gallery']))
+		if(isset($_POST['thumb']))
+
 		{
+			// echo "<pre>";
+			// print_r($_POST);
+			// print_r($_GET);
+			// 	exit;
 			/**
 			 *文章完成添加后，链接数据库 进行附表的添加，图片的地址为年月日+图片本来名字	
 			 *	
 			 *
 			*/
-
-			$model->attributes=$_POST['Gallery'];
+			// $model->attributes=$_POST['Gallery'];
+			// $model->gid=$_GET['cid'];
+			$model->cid=$_GET['cid'];
+			$cid=$_GET['cid'];
 			if($model->save())
 			{
+
 				$db=Yii::app()->db;
-				$sql="insert into bl_gallery_data(thumb,gid)values(:thumb,:gid)";
+				$sql="insert into bl_gallery_data(thumb,cid)values(:thumb,:cid)";
 				$command=$db->createCommand($sql);
-				$gid=$model->gid;
-				$command->bindParam(":gid",$gid);
+				$cid=$model->cid;
+				$command->bindParam(":cid",$cid);
 				
 				foreach ($_POST['thumb'] as $v)
 				 {
-					$v=date("ymd").$v;
+					$v=date("Ymd").$v;
 					$command->bindParam(":thumb",$v);
 					$command->execute();
 				}
-				$this->redirect(array('view','id'=>$model->gid));
+				$this->redirect(array('view','id'=>$cid));
 			}
 					
 		}
-
+		// var_dump($cate);exit;
 		$this->render('create',array(
 			'model'=>$model,
+			'cate'=>$cate,
 		));
 	}
 

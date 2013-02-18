@@ -52,25 +52,38 @@ function uploadProgress(file, bytesLoaded) {
 		progress.setProgress(percent);
 		
 		if (percent) {
+<<<<<<< HEAD
 			progress.setStatus("上传当中");
+=======
+			progress.setStatus("正在上传......");
+>>>>>>> master
 
 			// $("#smallImg").show();
-			var i=type=0;
+			var i=type=j=0;
 			//alert($(".form form input[type=hidden]").length);
 				for(i;i<$(".form form input[type=hidden]").length;i++){
 					if(($(".form form input[type=hidden]").eq(i).val())==(file.name))
 					{
 							return type=1;
 
-					}
+						}
 				}
 			if(!type)
 			{
 			
 				$(".form form").append("<input type='hidden' value='"+file.name+"' name='thumb[]'/>");
 			//	$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
+<<<<<<< HEAD
 			/*点击单选框 生成缩略图单选框*/
 				$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>设为封面</span><span class='del'>删除</span></li>");
+=======
+			for (j;j<20;j++){
+				i++;
+			}
+
+				//先显示文字上传成功的信息这个暂时先放下
+				//$("#smallImg").append("<img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>设为封面</span><span class='del'>删除</span>");
+>>>>>>> master
 
 
 			}

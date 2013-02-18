@@ -4174,28 +4174,18 @@ Stack trace:
 REQUEST_URI=/showbl/index.php/Admin/galleryCategory/index.php?r=Admin/user/login
 HTTP_REFERER=http://localhost/showbl/index.php/Admin
 ---
+<<<<<<< HEAD
 2013/02/18 02:45:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.php" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+=======
+2013/02/18 04:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin.html"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
 Stack trace:
-#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('index.php')
-#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index.php')
-#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
-#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/showbl/index.php/Admin/galleryCategory/index.php?r=Admin/user/login
-HTTP_REFERER=http://localhost/showbl/index.php/Admin
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin.html')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin.html
 ---
-2013/02/18 02:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.php" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
-Stack trace:
-#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('index.php')
-#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index.php')
-#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
-#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
-#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
-#5 {main}
-REQUEST_URI=/showbl/index.php/Admin/galleryCategory/index.php?r=Admin/user/login
----
-2013/02/18 02:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+2013/02/18 07:06:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
 Stack trace:
 #0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
 #1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
@@ -4203,6 +4193,1326 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
 ---
+2013/02/18 07:06:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:10:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:12:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:15:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:15:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:16:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:19:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:20:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:20:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:21:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:29:06 [error] [php] Undefined variable: cate (D:\wamp\www\showbl\protected\modules\Admin\views\gallery\_form.php:28)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): GalleryController->renderFile()
+#1 D:\wamp\www\showbl\protected\modules\Admin\views\gallery\create.php(24): GalleryController->renderPartial()
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(96): GalleryController->renderInternal()
+#4 D:\wamp\www\yii\framework\web\CController.php(870): GalleryController->renderFile()
+#5 D:\wamp\www\yii\framework\web\CController.php(783): GalleryController->renderPartial()
+#6 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(105): GalleryController->render()
+#7 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#8 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryController->runAction()
+#10 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryController->filterAccessControl()
+#13 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 D:\wamp\www\yii\framework\web\CController.php(266): GalleryController->runActionWithFilters()
+#16 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryController->run()
+#17 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/gallery/create
+in D:\wamp\www\showbl\protected\modules\Admin\views\gallery\_form.php (28)
+in D:\wamp\www\showbl\protected\modules\Admin\views\gallery\create.php (24)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (105)
+2013/02/18 07:30:48 [error] [php] Undefined variable: cate (D:\wamp\www\showbl\protected\modules\Admin\views\gallery\_form.php:28)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(870): GalleryController->renderFile()
+#1 D:\wamp\www\showbl\protected\modules\Admin\views\gallery\create.php(24): GalleryController->renderPartial()
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(127): require()
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(96): GalleryController->renderInternal()
+#4 D:\wamp\www\yii\framework\web\CController.php(870): GalleryController->renderFile()
+#5 D:\wamp\www\yii\framework\web\CController.php(783): GalleryController->renderPartial()
+#6 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(105): GalleryController->render()
+#7 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#8 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#9 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryController->runAction()
+#10 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#11 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#12 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryController->filterAccessControl()
+#13 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#14 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#15 D:\wamp\www\yii\framework\web\CController.php(266): GalleryController->runActionWithFilters()
+#16 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryController->run()
+#17 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#18 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#19 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/gallery/create
+in D:\wamp\www\showbl\protected\modules\Admin\views\gallery\_form.php (28)
+in D:\wamp\www\showbl\protected\modules\Admin\views\gallery\create.php (24)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (105)
+2013/02/18 07:32:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:33:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:34:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:34:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:35:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:35:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:35:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:36:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:39:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:39:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:43:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:44:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 07:50:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 08:33:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 08:33:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 08:38:42 [warning] [application] Failed to set unsafe attribute "pid" of "GalleryCategory".
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (71)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 08:45:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 08:45:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 08:46:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 08:46:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 08:47:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 08:47:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 09:01:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 09:13:47 [error] [php] Undefined index: Gallery (D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php:83)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryController->runAction()
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryController->filterAccessControl()
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): GalleryController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/gallery/create/cid/4
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (83)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:14:11 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `bl_gallery` (`gid`, `uid`, `cid`) VALUES (:yp0, :yp1, :yp2).
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (85)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:14:11 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '4' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `bl_gallery` (`gid`, `uid`, `cid`) VALUES (:yp0, :yp1, :yp2)' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(1014): CDbCommand->execute()
+#1 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(787): CActiveRecord->insert(NULL)
+#2 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(85): CActiveRecord->save()
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/create/cid/4
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/create/cid/4
+---
+2013/02/18 09:30:07 [error] [exception.CException] exception 'CException' with message '属性 "Gallery.recommendation" 未被定义.' in D:\wamp\www\yii\framework\base\CComponent.php:131
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(144): CComponent->__get('recommendation')
+#1 D:\wamp\www\yii\framework\validators\CNumberValidator.php(79): CActiveRecord->__get('recommendation')
+#2 D:\wamp\www\yii\framework\validators\CValidator.php(197): CNumberValidator->validateAttribute(Object(Gallery), 'recommendation')
+#3 D:\wamp\www\yii\framework\base\CModel.php(158): CValidator->validate(Object(Gallery), NULL)
+#4 D:\wamp\www\yii\framework\db\ar\CActiveRecord.php(786): CModel->validate(NULL)
+#5 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(90): CActiveRecord->save()
+#6 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#7 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#9 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#12 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#13 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#14 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#16 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#17 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#18 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/create/cid/4
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/create/cid/4
+---
+2013/02/18 09:31:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gid' in 'field list'. The SQL statement executed was: insert into bl_gallery_data(thumb,gid)values(:thumb,:gid).
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (102)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:31:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gid' in 'field list'. The SQL statement executed was: insert into bl_gallery_data(thumb,gid)values(:thumb,:gid)' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(102): CDbCommand->execute()
+#1 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#2 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#12 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/create/cid/4
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/create/cid/4
+---
+2013/02/18 09:32:47 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gid' in 'field list'. The SQL statement executed was: insert into bl_gallery_data(thumb,gid)values(:thumb,:cid).
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (104)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:32:47 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gid' in 'field list'. The SQL statement executed was: insert into bl_gallery_data(thumb,gid)values(:thumb,:cid)' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(104): CDbCommand->execute()
+#1 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryController->actionCreate()
+#2 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#3 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#4 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('create')
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/c...')
+#12 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/create/cid/4
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/create/cid/4
+---
+2013/02/18 09:34:17 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gid' in 'where clause'. The SQL statement executed was: select * from bl_gallery_data where gid in (10) order by gdid limit 0, 999.
+in D:\wamp\www\showbl\protected\models\Gallery.php (140)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (59)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:34:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gid' in 'where clause'. The SQL statement executed was: select * from bl_gallery_data where gid in (10) order by gdid limit 0, 999' in D:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\showbl\protected\models\Gallery.php(140): CDbCommand->queryAll()
+#2 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(59): Gallery::getData('10', 0, 999)
+#3 [internal function]: GalleryController->actionView('10')
+#4 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#5 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#16 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/10
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/create/cid/4
+---
+2013/02/18 17:36:05 [error] [php] copy(D:\wamp\www\showbl\protected\controllers/../../upload/201302/small20130218IMG_1240.JPG) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (D:\wamp\www\showbl\protected\controllers\UploadController.php:80)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Upload/add?PHPSESSID=lv5p5pfhrftsufdonbc4modtf7
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (80)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:36:42 [error] [php] Undefined variable: gid (D:\wamp\www\showbl\protected\models\Gallery.php:138)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs()
+#1 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#2 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#3 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryController->runAction()
+#4 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#5 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#6 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryController->filterAccessControl()
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#8 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(266): GalleryController->runActionWithFilters()
+#10 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryController->run()
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#12 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#13 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/11
+in D:\wamp\www\showbl\protected\models\Gallery.php (138)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (59)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:38:16 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gdid' in 'order clause'. The SQL statement executed was: select * from bl_gallery_data where cid in (12) order by gdid limit 0, 999.
+in D:\wamp\www\showbl\protected\models\Gallery.php (140)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (59)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:38:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'gdid' in 'order clause'. The SQL statement executed was: select * from bl_gallery_data where cid in (12) order by gdid limit 0, 999' in D:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\showbl\protected\models\Gallery.php(140): CDbCommand->queryAll()
+#2 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(59): Gallery::getData('12', 0, 999)
+#3 [internal function]: GalleryController->actionView('12')
+#4 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#5 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#16 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/12
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/create/cid/6
+---
+2013/02/18 17:45:32 [error] [php] copy(D:\wamp\www\showbl\protected\controllers/../../upload/201302/small20130218IMG_1240.JPG) [<a href='function.copy'>function.copy</a>]: failed to open stream: No such file or directory (D:\wamp\www\showbl\protected\controllers\UploadController.php:80)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): UploadController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): UploadController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): UploadController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): UploadController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Upload/add?PHPSESSID=lv5p5pfhrftsufdonbc4modtf7
+in D:\wamp\www\showbl\protected\controllers\UploadController.php (80)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:45:35 [error] [php] Undefined index: cid (D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php:54)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#1 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#2 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryController->runAction()
+#3 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#4 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#5 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryController->filterAccessControl()
+#6 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#7 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#8 D:\wamp\www\yii\framework\web\CController.php(266): GalleryController->runActionWithFilters()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryController->run()
+#10 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#11 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#12 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/5
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (54)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 09:46:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php:193
+Stack trace:
+#0 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(57): GalleryController->loadModel('6')
+#1 [internal function]: GalleryController->actionView('6')
+#2 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#3 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#4 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#6 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#11 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#13 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#14 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#15 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#16 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/6
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/create/cid/6
+---
+2013/02/18 11:04:48 [error] [exception.CException] exception 'CException' with message 'GalleryController and its behaviors do not have a method or closure named "getDir".' in D:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\showbl\protected\modules\Admin\views\gallery\view.php(18): CComponent->__call('getDir', Array)
+#1 D:\wamp\www\showbl\protected\modules\Admin\views\gallery\view.php(18): GalleryController->getDir('201302181.jpg')
+#2 D:\wamp\www\yii\framework\web\CBaseController.php(127): require('D:\wamp\www\sho...')
+#3 D:\wamp\www\yii\framework\web\CBaseController.php(96): CBaseController->renderInternal('D:\wamp\www\sho...', Array, true)
+#4 D:\wamp\www\yii\framework\web\CController.php(870): CBaseController->renderFile('D:\wamp\www\sho...', Array, true)
+#5 D:\wamp\www\yii\framework\web\CController.php(783): CController->renderPartial('view', Array, true)
+#6 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(58): CController->render('view', Array)
+#7 [internal function]: GalleryController->actionView('5')
+#8 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#9 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#10 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#11 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#13 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#17 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#19 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#20 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/5
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/create/cid/5
+---
+2013/02/18 11:05:39 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<br ) order by gdid limit 0, 999' at line 1. The SQL statement executed was: select * from bl_gallery_data where cid in (<br ) order by gdid limit 0, 999.
+in D:\wamp\www\showbl\protected\models\Gallery.php (140)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php (55)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 11:05:39 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '<br ) order by gdid limit 0, 999' at line 1. The SQL statement executed was: select * from bl_gallery_data where cid in (<br ) order by gdid limit 0, 999' in D:\wamp\www\yii\framework\db\CDbCommand.php:528
+Stack trace:
+#0 D:\wamp\www\yii\framework\db\CDbCommand.php(390): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 D:\wamp\www\showbl\protected\models\Gallery.php(140): CDbCommand->queryAll()
+#2 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(55): Gallery::getData('<br ', 0, 999)
+#3 [internal function]: GalleryController->actionView('<br ')
+#4 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#5 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#16 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/%3Cbr%20/%3E%3Cfont%20size=
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 11:05:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:06:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:07:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:14:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:15:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:17:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:18:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:18:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:19:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:19:33 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:19:55 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:20:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:20:40 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:21:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:22:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:22:22 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:22:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:23:31 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:27:46 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:28:08 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:28:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:28:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:39:21 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:39:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 11:42:59 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:08:47 [error] [exception.CException] exception 'CException' with message 'GalleryController and its behaviors do not have a method or closure named "dbLink".' in D:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\Gallery.php(139): CComponent->__call('dbLink', Array)
+#1 D:\wamp\www\showbl\protected\models\Gallery.php(139): GalleryController->dbLink('select * from b...')
+#2 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(55): Gallery::getData('5', 0, 999)
+#3 [internal function]: GalleryController->actionView('5')
+#4 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#5 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#16 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:09:16 [error] [exception.CException] exception 'CException' with message 'GalleryController and its behaviors do not have a method or closure named "dbLink".' in D:\wamp\www\yii\framework\base\CComponent.php:266
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\Gallery.php(139): CComponent->__call('dbLink', Array)
+#1 D:\wamp\www\showbl\protected\models\Gallery.php(139): GalleryController->dbLink('select * from b...')
+#2 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryController.php(55): Gallery::getData('5', 0, 999)
+#3 [internal function]: GalleryController->actionView('5')
+#4 D:\wamp\www\yii\framework\web\actions\CAction.php(107): ReflectionMethod->invokeArgs(Object(GalleryController), Array)
+#5 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(48): CAction->runWithParamsInternal(Object(GalleryController), Object(ReflectionMethod), Array)
+#6 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#7 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#8 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#9 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#10 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#11 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#12 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#13 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#15 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#16 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#17 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:10:06 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:10:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:10:54 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:11:09 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:16:05 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:16:06 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:16:25 [error] [exception.CHttpException.403] exception 'CHttpException' with message '您未被授权执行这个动作' in D:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php:157
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\auth\CAccessControlFilter.php(120): CAccessControlFilter->accessDenied(Object(CWebUser), '???????????????...')
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+---
+2013/02/18 12:16:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:17:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:17:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:17:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.php" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+>>>>>>> master
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/index.php?r=Admin/user/login
+<<<<<<< HEAD
+HTTP_REFERER=http://localhost/showbl/index.php/Admin
+---
+2013/02/18 02:45:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.php" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+=======
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:17:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "index.php" 动作.' in D:\wamp\www\yii\framework\web\CController.php:484
+>>>>>>> master
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(271): CController->missingAction('index.php')
+#1 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('index.php')
+#2 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#3 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#4 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/index.php?r=Admin/user/login
+<<<<<<< HEAD
+---
+2013/02/18 02:45:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+=======
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:17:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+2013/02/18 12:17:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+>>>>>>> master
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin/assets/ico/favicon.ico
+---
+<<<<<<< HEAD
 2013/02/18 02:45:52 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S02]: Base table or view not found: 1146 Table 'shangde.bl_gallery_category' doesn't exist. The SQL statement executed was: SHOW COLUMNS FROM `bl_gallery_category`.
 in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (141)
 in D:\wamp\www\showbl\index.php (13)
@@ -4251,3 +5561,720 @@ REQUEST_URI=/showbl/index.php/Admin/galleryCategory/admin.html
 in D:\wamp\www\showbl\protected\modules\Admin\views\galleryCategory\admin.php (19)
 in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (148)
 in D:\wamp\www\showbl\index.php (13)
+=======
+2013/02/18 12:18:58 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:18:59 [error] [php] Undefined index: data (D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php:175)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryCategoryController->runAction()
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryCategoryController->filterAccessControl()
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): GalleryCategoryController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryCategoryController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:19:02 [error] [php] Undefined index: data (D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php:175)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryCategoryController->runAction()
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryCategoryController->filterAccessControl()
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): GalleryCategoryController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryCategoryController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:19:39 [error] [php] Undefined index: data (D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php:175)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryCategoryController->runAction()
+#1 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#2 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#3 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryCategoryController->filterAccessControl()
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#5 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(266): GalleryCategoryController->runActionWithFilters()
+#7 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryCategoryController->run()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#9 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:21:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:21:03 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"cid","thumb")values(":cid",":thumb")' at line 1. The SQL statement executed was: insert into bl_gallery_thumb("cid","thumb")values(":cid",":thumb").
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (102)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:21:03 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"cid","thumb")values(":cid",":thumb")' at line 1. The SQL statement executed was: insert into bl_gallery_thumb("cid","thumb")values(":cid",":thumb")' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(102): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(175): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:21:10 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"cid","thumb")values(":cid",":thumb")' at line 1. The SQL statement executed was: insert into bl_gallery_thumb("cid","thumb")values(":cid",":thumb").
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (102)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:21:10 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"cid","thumb")values(":cid",":thumb")' at line 1. The SQL statement executed was: insert into bl_gallery_thumb("cid","thumb")values(":cid",":thumb")' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(102): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(175): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:21:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:21:44 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"cid","thumb")values('5','201302181.jpg')' at line 1. The SQL statement executed was: insert into bl_gallery_thumb("cid","thumb")values(:cid,:thumb).
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (102)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:21:44 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"cid","thumb")values('5','201302181.jpg')' at line 1. The SQL statement executed was: insert into bl_gallery_thumb("cid","thumb")values(:cid,:thumb)' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(102): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(175): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:21:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"cid","thumb")values('5','201302181.jpg')' at line 1. The SQL statement executed was: insert into bl_gallery_thumb("cid","thumb")values(:cid,:thumb).
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (102)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:21:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"cid","thumb")values('5','201302181.jpg')' at line 1. The SQL statement executed was: insert into bl_gallery_thumb("cid","thumb")values(:cid,:thumb)' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(102): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(175): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:22:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:23:01 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cid' in 'field list'. The SQL statement executed was: insert into bl_gallery_thumb(cid,thumb)values(:cid,:thumb).
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (102)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:23:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'cid' in 'field list'. The SQL statement executed was: insert into bl_gallery_thumb(cid,thumb)values(:cid,:thumb)' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(102): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(175): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:32:56 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg".
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (106)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:32:56 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg"' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(106): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(175): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:33:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:34:55 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg".
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (106)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (175)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:34:55 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg"' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(106): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(175): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:43:47 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:43:49 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg".
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (108)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (176)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:43:49 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg"' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(108): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(176): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:44:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg".
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (108)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (176)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:44:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg"' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(108): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(176): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:44:07 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg".
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (108)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (176)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 12:44:07 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'thumb="201302181.jpg"' at line 1. The SQL statement executed was: select tid from bl_gallery_thumb where cateid=5and thumb="201302181.jpg"' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(108): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(176): GalleryCategory::addThumb(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddThumb()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addThumb')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addThumb
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 12:44:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:53:45 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:59:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 12:59:57 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 13:00:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 13:01:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 13:01:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 13:01:35 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 13:02:00 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 13:20:52 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 13:21:53 [error] [php] Undefined index: cid (D:\wamp\www\showbl\protected\models\GalleryCategory.php:101)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryCategoryController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryCategoryController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): GalleryCategoryController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryCategoryController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addDesc
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (101)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (193)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 13:23:10 [error] [php] Undefined index: desc (D:\wamp\www\showbl\protected\models\GalleryCategory.php:129)
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams()
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): GalleryCategoryController->runAction()
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CAccessControlFilter->filter()
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): GalleryCategoryController->filterAccessControl()
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): GalleryCategoryController->runActionWithFilters()
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): GalleryCategoryController->run()
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController()
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CWebApplication->run()
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addDesc
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (129)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (193)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 13:23:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tid' in 'field list'. The SQL statement executed was: select tid from bl_gallery_data where gdid=55.
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (137)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (193)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 13:23:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tid' in 'field list'. The SQL statement executed was: select tid from bl_gallery_data where gdid=55' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(137): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(193): GalleryCategory->addDesc(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddDesc()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addDesc')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addDesc
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 13:23:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tid' in 'field list'. The SQL statement executed was: select tid from bl_gallery_data where gdid=55.
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (137)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (193)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 13:23:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'tid' in 'field list'. The SQL statement executed was: select tid from bl_gallery_data where gdid=55' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(137): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(193): GalleryCategory->addDesc(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddDesc()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addDesc')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addDesc
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 13:26:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc="试试咯" where gdid=55' at line 1. The SQL statement executed was: update bl_gallery_data set desc="试试咯" where gdid=55.
+in D:\wamp\www\showbl\protected\models\GalleryCategory.php (145)
+in D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php (193)
+in D:\wamp\www\showbl\index.php (13)
+2013/02/18 13:26:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'desc="试试咯" where gdid=55' at line 1. The SQL statement executed was: update bl_gallery_data set desc="试试咯" where gdid=55' in D:\wamp\www\yii\framework\db\CDbCommand.php:354
+Stack trace:
+#0 D:\wamp\www\showbl\protected\models\GalleryCategory.php(145): CDbCommand->execute()
+#1 D:\wamp\www\showbl\protected\modules\Admin\controllers\GalleryCategoryController.php(193): GalleryCategory->addDesc(Array)
+#2 D:\wamp\www\yii\framework\web\actions\CInlineAction.php(50): GalleryCategoryController->actionAddDesc()
+#3 D:\wamp\www\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#4 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#5 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#6 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#10 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('addDesc')
+#12 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/galleryCa...')
+#13 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#14 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/showbl/index.php/Admin/galleryCategory/addDesc
+HTTP_REFERER=http://localhost/showbl/index.php/Admin/gallery/view/id/5
+---
+2013/02/18 13:31:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+2013/02/18 13:38:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message '您的请求无效。' in D:\wamp\www\yii\framework\web\CController.php:337
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 D:\wamp\www\yii\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 D:\wamp\www\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 D:\wamp\www\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 D:\wamp\www\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 D:\wamp\www\yii\framework\web\CController.php(292): CFilterChain->run()
+#7 D:\wamp\www\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 D:\wamp\www\yii\framework\web\CWebApplication.php(276): CController->run('view')
+#9 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/gallery/v...')
+#10 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#11 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
+---
+>>>>>>> master
