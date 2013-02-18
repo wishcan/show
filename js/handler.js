@@ -52,7 +52,7 @@ function uploadProgress(file, bytesLoaded) {
 		progress.setProgress(percent);
 		
 		if (percent) {
-			progress.setStatus("ÉÏ´«µ±ÖĞ");
+			progress.setStatus("ä¸Šä¼ ä¸­");
 
 			// $("#smallImg").show();
 			var i=type=0;
@@ -69,8 +69,8 @@ function uploadProgress(file, bytesLoaded) {
 			
 				$(".form form").append("<input type='hidden' value='"+file.name+"' name='thumb[]'/>");
 			//	$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
-			/*µã»÷µ¥Ñ¡¿ò Éú³ÉËõÂÔÍ¼µ¥Ñ¡¿ò*/
-				$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>ÉèÎª·âÃæ</span><span class='del'>É¾³ı</span></li>");
+			/*ÂµÃ£Â»Ã·ÂµÂ¥Ã‘Â¡Â¿Ã² Ã‰ÃºÂ³Ã‰Ã‹ÃµÃ‚Ã”ÃÂ¼ÂµÂ¥Ã‘Â¡Â¿Ã²*/
+				$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>Ã‰Ã¨ÃÂªÂ·Ã¢ÃƒÃ¦</span><span class='del'>Ã‰Â¾Â³Ã½</span></li>");
 
 
 			}
@@ -119,7 +119,7 @@ function uploadComplete(file) {
 			var i;
 			var progress = new FileProgress(file,  this.customSettings.upload_target);
 			progress.setComplete();
-			progress.setStatus('ÉÏ´«³É¹¦');
+			progress.setStatus('Ã‰ÃÂ´Â«Â³Ã‰Â¹Â¦');
 			progress.toggleCancel(false);
 		}
 	} catch (ex) {

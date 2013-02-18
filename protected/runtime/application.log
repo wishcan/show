@@ -3204,3 +3204,11 @@ Stack trace:
 REQUEST_URI=/showbl/index.php/Admin/galleryCategory/view/id
 HTTP_REFERER=http://localhost/showbl/index.php/Admin/galleryCategory/create
 ---
+2013/02/18 04:06:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin.html"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
+Stack trace:
+#0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin.html')
+#1 D:\wamp\www\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#2 D:\wamp\www\showbl\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/showbl/index.php/Admin.html
+---
