@@ -21,4 +21,4 @@ $this->breadcrumbs=array(
         </ul>
 <div class="c"></div>
 
-<?php echo $this->renderPartial('_form', array('model'=>$model)); ?>
+<?php echo $this->renderPartial('_form', array('model'=>$model,'cate'=>$cate)); ?>

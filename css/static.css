@@ -123,11 +123,11 @@ div.form #smallImg{
 	padding:20px;
 	height:300px;
 
+
 }
 div.form #smallImg img{
 	width: 100px;
 	height: 100px;
-	display: none;
 	position:relative;
 	z-index: 10;
 	left: -12px;

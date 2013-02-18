@@ -17,31 +17,37 @@ Yii::app()->clientScript->registerMetaTag(' text/html;charset=gbk', null, 'Conte
     .uploads{
         border:solid 2px #fff;
         width:860px;
-        height:462px;
+        /*height:462px;*/
         padding: 20px;
+    }
+    .gate{
+        height:46px;
+        overflow: hidden;
+    }
+    .up_t span,.gate div,.or{
+        padding:10px 5px;
     }
 </style>
 <div class='uploads'>
-	<div class='o'>
-     <span>上传到：</span>
-     <span>或</span><a href="<?php echo Yii::app()->createUrl('Admin/galleryCategory/create')?>">新建栏目</a>
+	<div class='up_t'>
+         <span class='l up'>上传到：</span>
+         <div class='gate l'>
+                <?php 
+                foreach ($cate as $v):?>
+                    
+                <div>
+              <?php echo '<a href="'.Yii::app()->createUrl('Admin/gallery/create',array('cid'=>$v->cateid)).'">'.$v->cname.'</a>'?>
+                </div>
+               <?php endforeach;  ?>
+         </div>      
+         <div class='or l'>
+            <span>或</span>
+             <a href="<?php echo Yii::app()->createUrl('Admin/galleryCategory/create')?>">新建栏目</a>
+        </div>
     </div>
-	<div class="row l">
-		<span>标题</span>
-		<?php echo $form->textField($model,'title',array('size'=>30,'maxlength'=>30)); ?>
-		<span class='red'>*</span>
-			<p class='gallery_error check_error'>
-				<i></i>
-				<span class='error1'>标题不能为空</span>
-				<span class='error2'>文章已经存在</span>
-			</p>
-			<p class='pass'>
-				<i></i>
-			</p>
-	</div>
     <div class='c'></div>
     <div>
-     <div id="smallImg" style="display:block">
+     <div id="smallImg" style="display:none">
     </div>
     <div class="row">
 <!--图片上传后会自动生成input hidden表单 name为thumb 这个在所有的图片上传中通用-->
@@ -95,7 +101,7 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
         ),
     )
 );
-Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/check.js');
+// Yii::app()->clientScript->registerScriptFile(Yii::app()->baseUrl.'/js/check.js');
 ?>
  
 

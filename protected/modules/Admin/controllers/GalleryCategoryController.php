@@ -35,7 +35,7 @@ class GalleryCategoryController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete','addThumb','addDesc','del'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -50,6 +50,7 @@ class GalleryCategoryController extends Controller
 	 */
 	public function actionView($id)
 	{
+
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -138,11 +139,9 @@ class GalleryCategoryController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new GalleryCategory('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['GalleryCategory']))
-			$model->attributes=$_GET['GalleryCategory'];
+		if(!isset($_GET['pid'])) die("请通过后台进入");
 
+		$model=GalleryCategory::model()->findAll('pid=:pid',array(':pid'=>$_GET['pid']));
 		$this->render('admin',array(
 			'model'=>$model,
 		));
@@ -160,7 +159,82 @@ class GalleryCategoryController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
+	//更改或者新建封面图片
+	public  function actionAddThumb()
+	{
 
+		if(!isset($_POST['thumb']))
+		{	
+		   
+		   		   die("系统出现故障，请联系技术员");
+
+		}
+		$data=array();
+				$data['thumb']=$_POST['thumb'];
+				$data['cid']=$_POST['cid'];
+		//交给model来完成
+
+		echo GalleryCategory::addThumb($data);
+	}
+
+	public function actionAddDesc()
+	{
+		if(!isset($_POST['desc']))
+
+		{
+			die("系统出现故障，请联系技术员");
+
+		}
+
+		$data=array();
+				$data['desc']=$_POST['desc'];
+				$data['gdid']=$_POST['gdid'];
+
+		echo GalleryCategory::addDesc($data);		
+
+	}
+	public function actionDel()
+	{
+		if(!isset($_POST['gdid']))
+
+		{
+			die("系统出现故障，请联系技术员");
+
+		}
+
+		$data=array();
+				$data['gdid']=$_POST['gdid'];
+
+		echo GalleryCategory::del($data);		
+
+	}
+
+	// public function actionUpload($cid)
+	// {
+	// 	if(!isset($cid)) $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+	// 	if(isset($_POST['thumb']))
+	// 	{
+
+		
+	// 			$db=Yii::app()->db;
+	// 			$sql="insert into bl_gallery_data(thumb,cid)values(:thumb,:cid)";
+	// 			$command=$db->createCommand($sql);
+	// 			$cid=$post['cid'];
+	// 			$command->bindParam(":cid",$cid);
+				
+	// 			foreach ($_POST['thumb'] as $v)
+	// 			 {
+	// 				$v=date("ymd").$v;
+	// 				$command->bindParam(":thumb",$v);
+	// 				$command->execute();
+	// 			}
+	// 			$this->redirect(array('view','id'=>$cid));
+
+	// 	}else{
+	// 		$this->render('upload',array('cid'=>$cid,'cate'=>$cate));
+	// 	}
+	
+	// }
 	/**
 	 * Performs the AJAX validation.
 	 * @param CModel the model to be validated

@@ -57,9 +57,11 @@
 
         <a href="#show-menu" class="nav-header" data-toggle="collapse"><i class="icon-exclamation-sign"></i>图片信息管理 <i class="icon-chevron-up"></i></a>
         <ul id="show-menu" class="nav nav-list collapse">
+          <?php foreach(GalleryCategory::getCate() as $m):?>
               <li> 
-                <a href='<?php echo Yii::app()->createAbsoluteUrl('Admin/galleryCategory/admin')?>' target='con'>上传图片</a>
+                <a href='<?php echo Yii::app()->createAbsoluteUrl('Admin/galleryCategory/admin',array('pid'=>$m->cateid))?>' target='con'><?php echo $m->cname;?></a>
               </li> 
+            <?php endforeach;?>
         </ul>
 
         <a href="#cate-menu" class="nav-header" data-toggle="collapse"><i class="icon-legal"></i>栏目管理</a>

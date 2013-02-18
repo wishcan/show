@@ -20,15 +20,6 @@ class Controller extends CController
 
 	public $breadcrumbs=array();
 
-	public function p($val)
-	{
-		if(isset($val)&&!is_null($val)&&!empty($val))
-		{
-			echo "<pre>";
-			print_r($val);
-			echo "</pre>";
-		}
-	}
 	#获取上传文件的目录所在
 	public static function getImgDir($fileName)
 	{
@@ -37,7 +28,7 @@ class Controller extends CController
 		return $dir;
 	}
 	#链接数据库
-	public function dbLink($sql)
+	public static function dbLink($sql)
 	{
 		$db=Yii::app()->db;
 		$command=$db->createCommand($sql);

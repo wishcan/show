@@ -52,25 +52,29 @@ function uploadProgress(file, bytesLoaded) {
 		progress.setProgress(percent);
 		
 		if (percent) {
-			progress.setStatus("ÉÏ´«µ±ÖĞ");
+			progress.setStatus("æ­£åœ¨ä¸Šä¼ ......");
 
 			// $("#smallImg").show();
-			var i=type=0;
+			var i=type=j=0;
 			//alert($(".form form input[type=hidden]").length);
 				for(i;i<$(".form form input[type=hidden]").length;i++){
 					if(($(".form form input[type=hidden]").eq(i).val())==(file.name))
 					{
 							return type=1;
 
-					}
+						}
 				}
 			if(!type)
 			{
 			
 				$(".form form").append("<input type='hidden' value='"+file.name+"' name='thumb[]'/>");
 			//	$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
-			/*µã»÷µ¥Ñ¡¿ò Éú³ÉËõÂÔÍ¼µ¥Ñ¡¿ò*/
-				$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>ÉèÎª·âÃæ</span><span class='del'>É¾³ı</span></li>");
+			for (j;j<20;j++){
+				i++;
+			}
+
+				//å…ˆæ˜¾ç¤ºæ–‡å­—ä¸Šä¼ æˆåŠŸçš„ä¿¡æ¯è¿™ä¸ªæš‚æ—¶å…ˆæ”¾ä¸‹
+				//$("#smallImg").append("<img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>è®¾ä¸ºå°é¢</span><span class='del'>åˆ é™¤</span>");
 
 
 			}
@@ -119,7 +123,7 @@ function uploadComplete(file) {
 			var i;
 			var progress = new FileProgress(file,  this.customSettings.upload_target);
 			progress.setComplete();
-			progress.setStatus('ÉÏ´«³É¹¦');
+			progress.setStatus('ä¸Šä¼ æˆåŠŸ');
 			progress.toggleCancel(false);
 		}
 	} catch (ex) {

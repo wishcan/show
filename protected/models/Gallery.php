@@ -44,14 +44,14 @@ class Gallery extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('type_id, recommendation', 'numerical', 'integerOnly'=>true),
+			array('type_id, ', 'numerical', 'integerOnly'=>true),
 			array('title', 'length', 'max'=>45),
 			array('description', 'length', 'max'=>200),
 			array('tag', 'length', 'max'=>20),
 			array('createTime', 'safe'),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('gid, title, description, type_id, recommendation, tag, createTime, updateTime', 'safe', 'on'=>'search'),
+			array('gid, title, description, type_id, tag, createTime, updateTime', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -77,7 +77,6 @@ class Gallery extends CActiveRecord
 			'title' => '标题',
 			'description' => '简介',
 			'type_id' => '状态',
-			'recommendation' => 'Recommendation',
 			'tag' => 'Tag',
 			'createTime' => '添加时间',
 			'updateTime' => '更新时间',
@@ -99,10 +98,11 @@ class Gallery extends CActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('description',$this->description,true);
 		$criteria->compare('type_id',$this->type_id);
-		$criteria->compare('recommendation',$this->recommendation);
+	
 		$criteria->compare('tag',$this->tag,true);
 		$criteria->compare('createTime',$this->createTime,true);
 		$criteria->compare('updateTime',$this->updateTime);
+
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
@@ -127,15 +127,15 @@ class Gallery extends CActiveRecord
 	}
 
 	//$num获取的数量为30张
-	public static function getData($gid,$start=0,$end=30)
+	public static function getData($cid,$start=0,$end=30)
 	{
-		if(!isset($gid))
+		if(!isset($cid))
 		{
 			return false;
 		}
 		$num=30;
 		$limit=$start.', '.$end;
-		$sql='select * from bl_gallery_data where gid in ('.$gid.') order by gdid limit '.$limit;
+		$sql='select * from bl_gallery_data where cid in ('.$cid.') order by gdid limit '.$limit;
 		$command=Yii::app()->controller->dbLink($sql);
 		$row=$command->queryAll();
 		return $row;
