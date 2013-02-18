@@ -138,11 +138,11 @@ class GalleryCategoryController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new GalleryCategory('search');
-		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['GalleryCategory']))
-			$model->attributes=$_GET['GalleryCategory'];
-
+			// $model=new GalleryCategory('search');
+			// $model->unsetAttributes();  // clear any default values
+			// if(isset($_GET['GalleryCategory']))
+			// 	$model->attributes=$_GET['GalleryCategory'];
+		$model=GalleryCategory::model()->findAll();
 		$this->render('admin',array(
 			'model'=>$model,
 		));
