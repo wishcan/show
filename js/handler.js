@@ -52,7 +52,7 @@ function uploadProgress(file, bytesLoaded) {
 		progress.setProgress(percent);
 		
 		if (percent) {
-			progress.setStatus("上传当中");
+			progress.setStatus("涓婁紶褰撲腑");
 
 			// $("#smallImg").show();
 			var i=type=0;
@@ -69,8 +69,8 @@ function uploadProgress(file, bytesLoaded) {
 			
 				$(".form form").append("<input type='hidden' value='"+file.name+"' name='thumb[]'/>");
 			//	$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
-			/*点击单选框 生成缩略图单选框*/
-				$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>设为封面</span><span class='del'>删除</span></li>");
+			/*鐐瑰嚮鍗曢�夋 鐢熸垚缂╃暐鍥惧崟閫夋*/
+				$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>璁句负灏侀潰</span><span class='del'>鍒犻櫎</span></li>");
 
 
 			}
@@ -119,7 +119,7 @@ function uploadComplete(file) {
 			var i;
 			var progress = new FileProgress(file,  this.customSettings.upload_target);
 			progress.setComplete();
-			progress.setStatus('上传成功');
+			progress.setStatus('涓婁紶鎴愬姛');
 			progress.toggleCancel(false);
 		}
 	} catch (ex) {
