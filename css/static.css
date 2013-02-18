@@ -116,10 +116,13 @@ div.form label .limit{
 	color:red;
 }
 div.form #smallImg{
-	border:solid 1px #ddd;
+	border:solid 1px #fff;
 	border-radius: 2px;
-	width:auto;
-	height:auto;
+	background-color: #fff;
+	width:inherit;
+	padding:20px;
+	height:300px;
+
 }
 div.form #smallImg img{
 	width: 100px;

@@ -45,8 +45,20 @@
   <!--[if IE 7 ]> <body class="ie ie7 "> <![endif]-->
   <!--[if IE 8 ]> <body class="ie ie8 "> <![endif]-->
   <!--[if IE 9 ]> <body class="ie ie9 "> <![endif]-->
+<<<<<<< HEAD
 
 <body class=""> 
+=======
+  <!--[if (gt IE 9)|!(IE)]><!--> 
+
+
+  <script type="text/javascript">
+
+  __URL__='<?php echo Yii::app()->baseUrl;?>';
+
+  </script>
+  <body class=""> 
+>>>>>>> master
 <?php echo $content;?>
 </body>
     <script src="<?php echo $url?>/js/form.js" type="text/javascript" charset="utf-8" async defer></script>

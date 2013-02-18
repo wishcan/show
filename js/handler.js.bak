@@ -62,7 +62,7 @@ function uploadProgress(file, bytesLoaded) {
 					{
 							return type=1;
 
-					}
+						}
 				}
 			if(!type)
 			{

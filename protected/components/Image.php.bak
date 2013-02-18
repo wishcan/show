@@ -135,10 +135,8 @@ class image {
             // 对jpeg图形设置隔行扫描
             $type == 'jpeg' && imageinterlace($newimg,1);
             // 生成图片
-			// $filename=mb_convert_encoding($filename,"UTF-8",'auto');
-            // header( 'Content-Type:text/html;charset=utf-8 ');  
             $imageFun = 'image'.$type;
-            !@$imageFun($newimg,$filename,100) && die('保存失败!检查目录是否存在并且可写?');
+            !@$imageFun($newimg,mb_convert_encoding($filename,"GBK"),100) && die('保存失败!检查目录是否存在并且可写?');
             ImageDestroy($newimg);
             ImageDestroy($oldimg);
             return $filename;

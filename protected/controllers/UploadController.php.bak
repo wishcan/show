@@ -76,8 +76,8 @@ class UploadController extends Controller
 			// /$thumb=iconv('gbk','UTF-8',$thumb);
 		}
 		// echo $thumb.'<br />';
-	
-		 if(move_uploaded_file($filedata['tmp_name'],$file) &&  copy($thumb,$temp))  
+		 <!-- $temp=iconv('gbk','UTF-8',$temp); -->
+		if(move_uploaded_file($filedata['tmp_name'],$file) &&  copy($thumb,$temp))  
 		{
 			echo mb_convert_encoding("上传成功",'GBK','UTF-8');
 
