@@ -9,73 +9,65 @@ $this->breadcrumbs=array(
 ?>
 
 <style type="text/css">
-*{
-	magin:0px;
-	padding:0px;
 
-}
-.edit{
-	padding-left:20px;
-
-}
-li{
-	list-style: none;
-}
-	.del{
-		color:red;
-	}
-	.desc{
-		margin-top:10px;
-	}
-   
-	.thumb{
-		max-width:200px;
-		max-height: 200px;
-		cursor:pointer;
-	}
-	.dv{
-		width:200px;
-		height:200px;
-		background-color: #DDD;
-		text-align: center;
-		line-height: 2em;
-	}
-	li{
-		margin-bottom:10px;
-
-	}
 </style>
 <div class='edit'>
+<script type='type/javascript'> 
 
-<table>
+</script>
+<div id='gallery_view'>
+
 <?php 
+if(empty($data))
+{
+
+ echo CHtml::link("暂无图片请添加",array('gallery/create','cid'=>$_GET['id']),array('class'=>'btn'));;
+
+}
 foreach ($data as $v):?>
-<tr>
-	
-		<td class='dv'>
-			<img class='thumb' cid='<?php echo $v['cid'];?>' title="点击图片设为封面" src='<?php  echo MYS::getDir($v['thumb']).'small'.$v['thumb']?>'   />
+<ul class='c'>
+
+		<li class='dv <?php if($v["covert"]==1) echo "covert"; ?>' >
+				<img class='thumb' cid='<?php echo $v['cid'];?>' title="点击图片设为封面" src='<?php  echo MYS::getDir($v['thumb']).'small/'.$v['thumb']?>'/>
 			<input type='hidden' value='<?php echo $v['thumb']?>' class='th' />
 			<input type='hidden' value='<?php echo $v['gdid']?>' class='pk' />
-		</td>
-		<div>
-		<td>描述</span>：
-						<input type='text' name='Gallery["desc"]' class='desc' />
+		</li>
+		<li class='text'>
+			<span>描述</span>：
+						<input type='text' name='Gallery["desc"]' class='desc' value='<?php echo $v['description']?>'/>
+		</li>
+		<li class='text'>
 						<span class='btn ok'>添加备注</span>
-			</td>
-		<td>		
 						<span class='del btn'>删除图片</span>
-		</td>
-	</tr>
+		</li>
+	</ul>
 
 <?php endforeach;?>
-</table>
+</div>
 <script type="text/javascript">
+$(function()
+{
+	var l=$('#gallery_view img').length;
+	var i=0;
 
+	window.onload=function(){
+
+		for(i;i<l;i++)
+		{
+
+			var iH=$('#gallery_view .dv').eq(i).find("img").height();
+			var T=($('#gallery_view .dv').eq(i).height()-iH)/2;
+			$('#gallery_view .dv').eq(i).find("img").css('top',T);
+		}
+
+	}	
+})
 	$(".thumb").live('click',function(){
 		var data = getData($(this));
+		th=$(this);
 		$.post(
-			'<?php echo Yii::app()->createUrl("Admin/galleryCategory/addThumb")?>',
-			{cid:data['cid'],thumb:data['thumb']},
+			'<?php echo Yii::app()->createUrl("Admin/gallery/changeThumb")?>',
+			{cid:data['cid'],gdid:data['gdid']},
 			function(data){
 
 				switch(data)
@@ -89,6 +81,8 @@ foreach ($data as $v):?>
 
 					alert("设置成功");
 
+					$('.covert').removeClass('covert');
+					$(th).parent().addClass('covert');
 					break;
 					case "2":
 
@@ -99,6 +93,12 @@ foreach ($data as $v):?>
 
 					alert("这已经是此图册的封面了,请选择其它的图片吧!");
 
+					break;
+					case "4":
+					alert("非法操作，请重试");
+					break;
+					default:
+					alert(data);
 					break;
 
 
@@ -116,7 +116,7 @@ $(".ok").live("click",function(){
 	var data=getData($(this));
 
 	$.post(
-		'<?php echo Yii::app()->createUrl("Admin/galleryCategory/addDesc")?>',
+		'<?php echo Yii::app()->createUrl("Admin/gallery/addDesc")?>',
 		{gdid:data['gdid'],desc:data['desc']},
 		function(data)
 		{
@@ -130,9 +130,8 @@ $(".ok").live("click",function(){
 					alert("数据库写入出错，请检查或联系技术人员410345759@qq.com");
 				break;
 
-				case "3":
-				alert("请重试");
-
+				case "4":
+				alert("数据不能为空");
 				break;
 			}
 		}
@@ -143,9 +142,9 @@ $(".ok").live("click",function(){
 $(".del").live("click",function()
 {
 	var data=getData($(this));
-	th=$(this)
+	th=$(this);
 	$.post(
-		'<?php echo Yii::app()->createUrl("Admin/galleryCategory/del")?>',
+		'<?php echo Yii::app()->createUrl("Admin/gallery/del")?>',
 		{gdid:data['gdid'],desc:data['thumb']},
 		function(data)
 		{

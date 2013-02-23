@@ -35,7 +35,7 @@ class GalleryController extends Controller
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete','checkTitle'),
+				'actions'=>array('admin','delete','checkTitle','changeThumb','addDesc','del'),
 				'users'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -51,7 +51,9 @@ class GalleryController extends Controller
 	public function actionView($id)
 	{
 
-		// isset($id)?$id=$id:isset($_GET['cid'])?$id=$_GET['cid']:die('图册不存在');
+			if(!isset($id)){
+				$id=$_GET['id'];
+			}
 		$data=Gallery::getData($id,0,999);
 		$this->render('view',array(
 			'data'=>$data,
@@ -66,48 +68,59 @@ class GalleryController extends Controller
 	{	
 		$model=new Gallery;
 		$cate=GalleryCategory::model()->findAll();
+		$type=1;
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 		if(isset($_POST['thumb']))
 
 		{
-			// echo "<pre>";
-			// print_r($_POST);
-			// print_r($_GET);
-			// 	exit;
-			/**
-			 *文章完成添加后，链接数据库 进行附表的添加，图片的地址为年月日+图片本来名字	
-			 *	
-			 *
-			*/
-			// $model->attributes=$_POST['Gallery'];
-			// $model->gid=$_GET['cid'];
-			$model->cid=$_GET['cid'];
-			$cid=$_GET['cid'];
-			if($model->save())
-			{
+				$model->cid=$_GET['cid'];
 
-				$db=Yii::app()->db;
-				$sql="insert into bl_gallery_data(thumb,cid)values(:thumb,:cid)";
-				$command=$db->createCommand($sql);
-				$cid=$model->cid;
-				$command->bindParam(":cid",$cid);
-				
-				foreach ($_POST['thumb'] as $v)
-				 {
-					$v=date("Ymd").$v;
-					$command->bindParam(":thumb",$v);
-					$command->execute();
+				$cid=$_GET['cid'];
+
+				$data=array();
+
+				$GalleryData=new GalleryData();
+
+				$UploadFile=new UploadFile();
+				if($model->save())
+				{
+					$data['cid']=$cid;
+					/**
+					 *前提建立在于TEMP中有文件 不能在半道中将文件一走		
+					 *	
+					*/
+					$files=$UploadFile->renameFile();
+					$sql="insert into bl_gallery_data(thumb,cid,covert)values(:thumb,:cid,:covert)";
+
+					$command=MYS::dbLink($sql);
+					$command->bindParam(':cid',$cid);
+					foreach($files as $k => $v)
+					{	
+						if($k==0 && is_null(GalleryData::model()->find('cid=:cid and covert=1',array(':cid'=>$cid))))
+						{
+							$covert=1;
+
+						}else{	
+
+							$covert=0;
+						}
+						$command->bindParam(':covert',$covert);
+						
+						$command->bindParam(':thumb',$v);
+						$command->execute();
+					}
+					$type=0;
+					$this->goView($model->cid);
 				}
-				$this->redirect(array('view','id'=>$cid));
-			}
-					
+			
 		}
-		// var_dump($cate);exit;
-		$this->render('create',array(
-			'model'=>$model,
-			'cate'=>$cate,
-		));
+		if($type){
+			$this->render('create',array(
+				'model'=>$model,
+				'cate'=>$cate,
+			));
+	}
 	}
 
 	/**
@@ -115,6 +128,16 @@ class GalleryController extends Controller
 	 * If update is successful, the browser will be redirected to the 'view' page.
 	 * @param integer $id the ID of the model to be updated
 	 */
+	 public function goView($id)
+	{
+			if(!isset($id)){
+				$id=$_GET['id'];
+			}
+		$data=Gallery::getData($id,0,999);
+		$this->render('view',array(
+			'data'=>$data,
+		));
+	 }
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
@@ -122,7 +145,7 @@ class GalleryController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Gallery']))
+		if(isset($_POST['thumb']))
 		{
 			$model->attributes=$_POST['Gallery'];
 			if($model->save())
@@ -205,9 +228,64 @@ class GalleryController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+	/**
+     *检查标题是否存在
+	*/
 	public function actionCheckTitle()
 	{								
 		echo Gallery::check($_GET['data']);
 	}
+
+	/**
+ 	 *修改图册封面	
+	*/
+	public function actionChangeThumb()
+	{
+		if(!$_POST['cid']){
+				echo 4;
+				return;}
+		$data=array();
+		$data=$_POST;
+		echo Gallery::changeThumb($data);
+	}
+
+	/**
+	 *添加备注
+	*/
+	public function actionAddDesc()
+	{
+		if(!$_POST['desc'])
+		{
+			echo 4;
+			return;
+		}	
+
+		$data=array();
+				$data['desc']=$_POST['desc'];
+				$data['gdid']=$_POST['gdid'];
+		echo Gallery::addDesc($data);		
+
+	}
+
+
+	public function actionDel()
+	{
+
+		if(!isset($_POST['gdid']))
+
+		{
+			die("系统出现故障，请联系技术员");
+
+		}
+
+				$data=array();
+				$data['gdid']=$_POST['gdid'];
+
+				echo Gallery::del($data);		
+
+	}
+
+
 	
 }

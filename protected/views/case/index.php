@@ -13,18 +13,53 @@ $this->breadcrumbs=array(
 		<div class='prev'></div>
 		<div class='next'></div>
 	<ul class='round'>
-		<li><div><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/case.png' /></div></li>
-		<li><div><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/case.png' /></div></li>
-		<li><div><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/case.png' /></div></li>
-		<li><div><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/case.png' /></div></li>
-		<li><div><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/case.png' /></div></li>
-		<li><div><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/case.png' /></div></li>
-		<li><div><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/case.png' /></div></li>
-		<li><div><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/case.png' /></div></li>
+
+		<?php foreach ($cid as $v):?>
+		<?php  $thumb = GalleryData::getThumb($v);if(!$thumb)break;?>
+		<li>
+				
+			<div>
+				<img  src='<?php echo  MYS::getDir($thumb->thumb)."small/".$thumb->thumb;?> '  thumb= <?php echo $thumb->thumb;?>  />
+			<p class='p1'>
+				<b><?php 
+							if($thumb->description)
+								{
+									echo $thumb->description;
+								}else{
+									$cateName=GalleryCategory::getCate($v,1);
+									$cateName=$cateName->cname;
+									if($cateName)
+										{
+											echo $cateName;
+										}else
+										{
+											echo '案例展示';
+										}
+									}
+								?>
+				</b></p>
+			<p class='p2'><b>Graphic Display</b></p>
+			</div>
+		</li>
+	<?php endforeach;?>
 	</ul>
 	<div class='li'>
 
-</div>
+	</div>
+
+	<div class='big'>
+		<?php foreach($cid as $n) :?>
+		<ul>
+			<?php foreach (GalleryData::getData($n) as  $m) :?>
+				<li>
+				
+					<img src='<?php echo  MYS::getDir($m->thumb).$m->thumb;?> ' thumb= <?php echo $m->thumb;?> />
+				</li>
+			<?php endforeach;?>
+		</ul>
+
+	<?php endforeach;?>
+	</div>
 </div>
 
 </div>

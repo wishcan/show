@@ -1,17 +1,18 @@
 <?php
 
-<<<<<<< HEAD
+
 class IndexController extends SController {
-=======
-class IndexController extends Controller {
->>>>>>> master
 
 
+/*引导页*/
 public function actionIndex()
 	{
 		// renders the view file 'protected/views/site/index.php'
 		// using the default layout 'protected/views/layouts/main.php'
-		$this->render('index');
+		$flash=Dispose::advert(Yii::app()->baseUrl.'/upload/flash/'.'sd_logo.swf','',array('htmlOptions'=>'style="width:1280px;height:894px
+			"'));
+
+		$this->render('index',array('flash'=>$flash));
 	}
 
 	/**
@@ -26,6 +27,16 @@ public function actionIndex()
 	    	else
 	        	$this->render('error', $error);
 	    }
+	}
+	/**
+	 *首页
+	*/
+	public function actionWeb()
+	{
+		$flash=Dispose::advert(Yii::app()->baseUrl.'/upload/flash/'.'sd_web.swf','',array('htmlOptions'=>'style="width:1280px;height:894px
+			"'));
+		$this->render('web',array('flash'=>$flash));
+
 	}
 
 	/**

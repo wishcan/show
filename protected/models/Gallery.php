@@ -160,4 +160,87 @@ class Gallery extends CActiveRecord
 		}
 	}
 
+
+	/**
+	 *修改图册的封面
+	 *@param $cid 图册的ID
+	 *@param $gdid 图片的ID
+	 *@param $cover 封面的字段 默认为1 即为 设为封面
+	*/
+
+
+	public  static function changeThumb($data,$covert=1)
+	{
+		$cid=$data['cid'];
+		$gdid=$data['gdid'];
+
+		$sql1='update bl_gallery_data set covert=0 where cid=:cid and covert =1';
+		$sql2='update bl_gallery_data set covert=:covert where gdid=:gdid';
+		$command1=MYS::dbLink($sql1);
+		$command1->bindParam(':cid',$cid);
+		$command1->execute();
+		$command2=MYS::dbLink($sql2);
+		if($gdid){
+			$command2->bindParam(':gdid',$gdid);
+			$command2->bindParam(':covert',$covert);
+			if($command2->execute())
+			{
+
+				return  1;
+
+			}else{
+				return 2;
+			}
+		}
+	}
+
+
+		public function addDesc($data)
+	{
+
+		if(empty($data)) die('数据不能为空,请重试');
+		$sql='update bl_gallery_data set description="'.$data["desc"].'" where gdid='.$data['gdid'];
+		//查询是否存在数据 如果存在就不执行下一条''
+		//还需要优化，将所有的曾经的封面都可以给列出来
+		$sql2='select gdid from bl_gallery_data where gdid='.$data['gdid'];
+		$command=MYS::dbLink($sql);
+		$command2=MYS::dbLink($sql2);
+		$row=$command2->execute();
+		 if(!$row){
+
+		 	 	return 3;
+	        
+	       }else if($command->execute()){
+
+	        		return 1;
+	        	
+	        	}else{
+	        	
+	        		return 2;
+	        	}
+	       }
+
+	 public function del($data)
+	{
+		if(empty($data)) die('数据不能为空,请重试');
+		$sql1='select gdid from bl_gallery_data where gdid='.$data['gdid'];
+		$sql2='delete from bl_gallery_data  where gdid='.$data['gdid'];
+		//查询是否存在数据 如果存在就不执行下一条''
+		$command1=MYS::dbLink($sql1);
+		$command2=MYS::dbLink($sql2);
+		$row=$command1->execute();
+		 if(!$row){
+
+		 	 	return 3;
+	        
+	       }else if($command2->execute()){
+
+	        		return 1;
+	        	
+	        	}else{
+	        	
+	        		return 2;
+	        	}
+	    } 
+
 }

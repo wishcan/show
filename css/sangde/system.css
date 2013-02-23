@@ -318,7 +318,7 @@ background-repeat:no-repeat;
 	cursor: pointer;
 }
 .prev{
-	left:-130px;
+	left:-100px;
 }
 .next{
 	float: right;
@@ -421,7 +421,7 @@ margin-left:100px;
 }
 .case{
 	height:600px;
-	margin-left:220px;
+	margin-left:180px;
 	margin-top:30px;
 }
 .case .round div{
@@ -436,7 +436,7 @@ margin-left:100px;
 	height:4em;
 }
 .case .round li{
-	width:10em;
+
 		/*height:2em;*/
 }
 
@@ -450,7 +450,7 @@ margin-left:100px;
 	margin-top:6px;
 }
 .case .li{
-	left:340px;
+	left:440px;
 	/*top:30px;*/
 	margin-top:40px;
 }
@@ -460,6 +460,12 @@ margin-left:100px;
 .case .next{
 top:200px;
 /*left:-200px;*/
-left:-80px;
+left:-60px;
 /*right:200px;*/
+}
+.big{display:none;}
+#pager .next{
+	top:0px;
+	left:0px;
+	background:none;
 }

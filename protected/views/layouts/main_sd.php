@@ -20,7 +20,8 @@
 	<script type="text/javascript">
 	$(function(){
 		function size(){
-			$(".menu").css("top",($(window).height()-$(".menu").height())/2+100+$(window).scrollTop())
+			$(".menu").css("position",'fixed');
+			$(".menu").css("top",291)
 
 		}
 		size();
@@ -46,7 +47,17 @@
 </div>
 <!--页尾-->
 <div id='foot' class='content'>
-<a href=''>网站地图</a>|<a href=''>联系我们</a>|<a href='<?php echo Yii::app()->createUrl('laurel')?>'>尚德殊荣</a>
+	<div class='link'>
+		<?php foreach(Link::model()->findAll() as $m)
+		{
+
+			echo CHtml::link($m->name,array($v->link),array('class'=>'firend_link'));
+		}
+		?>
+
+	</div>
+<?php  echo CHtml::link('网站地图',array('index/web'));?>|<?php  echo CHtml::link('联系我们',array('about/conact'));?>|<a href='<?php echo Yii::app()->createUrl('laurel')?>'>尚德殊荣</a>
+
 </div>
 </body>
 

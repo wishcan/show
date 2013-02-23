@@ -46,8 +46,8 @@ $this->breadcrumbs=array(
 						 bh=parseInt($(element).height());
 						 sh=parseInt($(window).scrollTop());
 						  $('.zezhao').css({
-										"width":dw,
-										'height':dh,
+										"width":ww,
+										'height':dh+60,
 										
 						})
 

@@ -16,40 +16,34 @@ $this->pageTitle=Yii::app()->name . ' - 公司殊荣';?>
 		<div class='prev'></div>
 		<div class='next'></div>
 	<ul class='round'>
-		<li><div class='img'><img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/sr.jpg' />
-			<p class='p1'><b>公司殊荣</b></p>
+	<?php foreach ($cid as $v):?>
+	<?php  $thumb = GalleryData::getThumb($v);if(!$thumb)break;?>
+		<li>
+			<div class='img'>
+			<img  src='<?php  echo  MYS::getDir($thumb->thumb)."small/".$thumb->thumb;?>' thumb= <?php echo $thumb->thumb;?> />
+			<p class='p1'><b><?php 
+							if($thumb->description){echo $thumb->description;}else{ echo '尚德殊荣';}?></b></p>
 			<p class='p2'>The company award </p>
-		</div></li>
-		<li><div class='img'>
-				<img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/sr.jpg' />
-				<p class='p1'><b>公司殊荣</b></p>
-				<p class='p2'>The company award </p>
-
 			</div>
 		</li>
-		<li><div class='img'>
-				<img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/sr.jpg' />
-				<p class='p1'><b>公司殊荣</b></p>
-				<p class='p2'>The company award </p>
-			</div>
-		</li>
-				<li><div class='img'>
-				<img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/sr.jpg' />
-				<p class='p1'><b>公司殊荣</b></p>
-				<p class='p2'>The company award </p>
-			</div>
-		</li>
-
+		<?php endforeach;?>
 	</ul>
 <style type="text/css">
-	.big{display:none;}
+
 	</style>
-	<ul class='big'>
-		<img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/sr.jpg' />
-		<img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/sr.jpg' />
-		<img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/sr.jpg' />
-		<img src='<?php echo Yii::app()->baseUrl;?>/css/sangde/images/sr.jpg' />
-	</ul>
+	<div class='big'>
+		<?php foreach($cid as $n) :?>
+		<ul>
+			<?php foreach (GalleryData::getData($n) as  $m) :?>
+				<li>
+					<img src='<?php if(!($m->thumb)) break; echo  MYS::getDir($m->thumb).$m->thumb;?> ' thumb= <?php echo $m->thumb;?> />
+				</li>
+			<?php endforeach;?>
+		
+		</ul>
+	<?php endforeach;?>
+	
+	</div>
 <script type="text/javascript">
 	
 	$(function(){

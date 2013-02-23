@@ -4,7 +4,10 @@ class CaseController extends SController
 {
 	public function actionIndex()
 	{
-		$this->render('index');
+
+
+		$cid=GalleryCategory::getCateid(3);
+		$this->render('index',array('cid'=>$cid));
 	}
 
 	// Uncomment the following methods and override them if needed

@@ -77,8 +77,8 @@ $this->widget('application.extensions.swfupload.CSwfUpload', array(
     'config'=>array(
         'use_query_string'=>true,
         'upload_url'=>Yii::app()->createUrl("Upload/add"), //Use $this->createUrl method or define yourself
-        'file_size_limit'=>'2 MB',
-        'file_types'=>'*.jpg;*.png;*.gif',
+        'file_size_limit'=>Yii::app()->params['file_size_limit'],//修改配置项
+        'file_types'=>Yii::app()->params['file_type'],
         'file_types_description'=>'Image Files',
         'file_upload_limit'=>99,
         'file_queue_error_handler'=>'js:fileQueueError',

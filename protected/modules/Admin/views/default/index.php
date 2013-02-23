@@ -19,7 +19,7 @@
                     </li>
                     
                 </ul>
-                <a class="brand" href="<?php echo Yii::app()->createUrl('index')?>"><span class="first">宝隆</span> <span class="second">后台管理系统</span></a>
+                <a class="brand" href="<?php echo Yii::app()->createUrl('index')?>"><span class="first"><?php echo Yii::app()->params['CMSName'];?></span> <span class="second">后台管理系统</span></a>
         </div>
     </div>
     
@@ -29,13 +29,15 @@
     <div class="sidebar-nav">
         <a href="#dashboard-menu" class="nav-header" data-toggle="collapse"><i class="icon-dashboard"></i>个人面板</a>
         <ul id="dashboard-menu" class="nav nav-list collapse in">
-            <li><a target='con'href="<?php echo $this->createAbsoluteUrl('about/view',array('id'=>1));?>">站点信息</a></li>
-            <li ><a href="users.html">友情链接</a></li>
+            <li><?php echo CHtml::link('站点信息',array('about/view','id'=>1),array('target'=>'con')) ?></li>
+            <li ><?php echo CHtml::link('友情链接',array('link/admin'),array('target'=>'con'))?></li>
         </ul>
          <a href="#user-menu" class="nav-header" data-toggle="collapse" ><i class="icon-comment"></i>会员管理</a>
           <ul id="user-menu" class="nav nav-list collapse">
-              <li ><a href="<?php echo $this->createAbsoluteUrl("User/admin");?>" target='con'>用户管理</a></li>
-              <li ><a href="<?php echo $this->createAbsoluteUrl("Role/admin");?>" target='con'>角色管理</a></li>
+
+              <li><?php echo CHtml::link('用户管理',array('User/admin'),array('target'=>'con')) ?></li>
+              <li><?php echo CHtml::link('角色管理',array('Role/admin'),array('target'=>'con')) ?></li>
+
           </ul>
 
 
@@ -71,7 +73,7 @@
                 <li class="sub_menu">
                     <a href="<?php echo $this->createAbsoluteUrl("Category/admin");?>" hidefocus="true" target="con" style="outline:none;">栏目管理</a></li>
           </ul>
-
+<div style='display:none'>
         <a href="#model-menu" class="nav-header" data-toggle="collapse"><i class="icon-question-sign"></i>模块管理</a>
            <ul id="model-menu" class="nav nav-list collapse">
               <li class="sub_menu">
@@ -91,6 +93,7 @@
                </li>
 
            </ul>
+         </div>
     </div>
       
 

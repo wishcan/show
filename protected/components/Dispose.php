@@ -22,16 +22,19 @@
 			switch ($type) {
 				case 'swf':
 					$data='
-					<object type="application/x-shockwave-flash"  width="960" height="100" class="'.$class.'" '.$htmlOptions.'">
+					<!--[if IE]>
+					<object class="'.$class.'" width="960" height="400"type="application/x-shockwave-flash"'.$htmlOptions.' >
       <param name="movie" value="'.$advert.'" />
       <param name="quality" value="high" />
       <param name="wmode" value="opaque" />
       <param name="swfversion" value="9.0.45.0" />
       <!-- 此 param 标签提示使用 Flash Player 6.0 r65 和更高版本的用户下载最新版本的 Flash Player。如果您不想让用户看到该提示，请将其删除。 -->
       <param name="expressinstall" value="Scripts/expressInstall.swf" />
+        <![endif]-->
       <!-- 下一个对象标签用于非 IE 浏览器。所以使用 IECC 将其从 IE 隐藏。 -->
+ 
       <!--[if !IE]>-->
-      <object type="application/x-shockwave-flash" data="'.$advert.' " width="960" height="100" class="'.$class.'" '.$htmlOptions.'">
+      <object type="application/x-shockwave-flash" data="'.$advert.' " width="960" height="100" class="'.$class.'" '.$htmlOptions.'>
         <!--<![endif]-->
         <param name="quality" value="high" />
         <param name="wmode" value="opaque" />

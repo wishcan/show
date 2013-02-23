@@ -38,14 +38,14 @@ class GalleryData extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('cid, desc', 'required'),
+			array('cid', 'required'),
 			array('cid', 'numerical', 'integerOnly'=>true),
 			array('thumb', 'length', 'max'=>400),
 			array('title', 'length', 'max'=>20),
-			array('desc', 'length', 'max'=>2000),
+			array('description', 'length', 'max'=>2000),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('thumb, title, cid, gdid, desc', 'safe', 'on'=>'search'),
+			array('thumb, title, cid, gdid, description', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -70,7 +70,8 @@ class GalleryData extends CActiveRecord
 			'title' => 'Title',
 			'cid' => 'Cid',
 			'gdid' => 'Gdid',
-			'desc' => 'Desc',
+			'description' => 'description',
+
 		);
 	}
 
@@ -89,10 +90,23 @@ class GalleryData extends CActiveRecord
 		$criteria->compare('title',$this->title,true);
 		$criteria->compare('cid',$this->cid);
 		$criteria->compare('gdid',$this->gdid);
-		$criteria->compare('desc',$this->desc,true);
+		$criteria->compare('description',$this->description,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,
 		));
+	}
+	public static function getData($cid)
+	{
+		if(!$cid) return false;
+		return self::model()->findAll("cid=:cid",array("cid"=>$cid));
+
+
+	}
+	public static function getThumb($cid,$covert=1)
+	{
+
+		if(!$cid) return false;
+		return self::model()->find('cid=:cid and covert=:covert',array(':cid'=>$cid,':covert'=>$covert));
 	}
 }

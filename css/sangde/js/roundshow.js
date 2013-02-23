@@ -106,13 +106,20 @@ $(function(){
 			setSize();
 	 		/*点击效果触发*/
 				$(element).live('click',function(){
+							setSize();
 					$("#clickShow").show();
 					$(".zezhao").show()
-					var index=$(this).parent().index();
-					pp=$(this).parent().parent();
-					setSize();
-					$(".allImg img").eq(index).addClass("imgon");
-				$(".allImg").animate({"left":-index*bw},0);
+					len=$(".allImg img").length;
+					for(var j=0;j<len-1;j++){
+						if($(".allImg img").eq(j).attr('thumb')==$(this).attr('thumb'))
+						{
+							 $(".allImg img").eq(j).addClass("imgon");
+							 $(".allImg").animate({"left":(-j)*bw},0);
+								index=j;
+							
+						}
+					}	
+
 				}) 
 
 	}
@@ -184,24 +191,23 @@ $(function(){
 
 				
 			$("#m_next").live('click',function(){
-				var index=$(".imgon").index();
+				// var index=$(".imgon").index();
 				$(".imgon").removeClass("imgon");
-				if(index==$(".allImg img").length-1) index=0;
+					
 				$(".allImg img").eq(index+1).addClass("imgon");
 					index++;
-					$(".allImg").animate({"left":(-index)*bw},100);
+					if(index==len) index=0;	
+					$(".allImg").animate({"left":(-index)*bw},100-index);
 					addimgfocus(index);
 				})
 
 			$("#m_prev").live('click',function(){
 				al=parseInt($(".allImg").css('left'));
 				if(al>=0)return false;
-				var index=$(".imgon").index();
 				$(".imgon").removeClass("imgon");
-				if(index==1) index==0;
 				$(".allImg img").eq(index-1).addClass("imgon");
 					index--;
-				$(".allImg").animate({"left":(-index)*bw},100);
+				$(".allImg").animate({"left":(-index)*bw},100-index);
 				addimgfocus(index);
 				})
 

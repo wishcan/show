@@ -1,25 +1,4 @@
-<!-- 一个我经常使用的图片处理类，很好用的。给大家推荐一下！主要包括图片的裁剪，缩放，加水印等。下面是一些简单的使用方法。
-include("imageclass.php");			//这里注意imageclass.php的路径
-$imgs=new image();
-$imgs->param($tempFile);
-if(!$imgs->thumb($targetFile,600,500))die('图像上传失败！');		//对图片进行缩放
 
-$imgs->water($targetFile,$water,$pos=0,$pct=50);主要包括两个参数，$targetFile为已经上传到服务器的文件路径，$water为水印图片,$pos为水印图片位置，$pct为透明度；
-$pos位置说明：
-0://随机
-1://1为顶端居左
-2://2为顶端居中
-3://3为顶端居右
-4://4为中部居左
-5://5为中部居中
-6://6为中部居右
-7://7为底端居左
-8://8为底端居中
-9://9为底端居右
-
-
-将//里边的内容保存在imageclass.php里边，就可以调用了。 -->
-<!-- /////////////////////////////////////////////////////////////// -->
 <?php
 /* +-------------------------------------------------------------+
 * | Copyright (c) 2008-2009 Diqiye.Com All rights reserved.
@@ -135,7 +114,7 @@ class image {
             // 对jpeg图形设置隔行扫描
             $type == 'jpeg' && imageinterlace($newimg,1);
             // 生成图片
-			// $filename=mb_convert_encoding($filename,"UTF-8",'auto');
+      // $filename=mb_convert_encoding($filename,"UTF-8",'auto');
             // header( 'Content-Type:text/html;charset=utf-8 ');  
             $imageFun = 'image'.$type;
             !@$imageFun($newimg,$filename,100) && die('保存失败!检查目录是否存在并且可写?');
@@ -233,5 +212,3 @@ class image {
         }
 }
 ?>
-<!-- ///////////////////////////////////////////////////////////////////////////
-祝：使用顺利! -->

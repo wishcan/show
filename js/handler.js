@@ -16,7 +16,7 @@ function fileQueueError(file, errorCode, message) {
 			imageName = "zerobyte.gif";
 			break;
 		case SWFUpload.QUEUE_ERROR.FILE_EXCEEDS_SIZE_LIMIT:
-			imageName = "toobig.gif";
+			alert( '文件 < '+file.name+" >的大小超过2MB，未能进行上传");
 			break;
 		case SWFUpload.QUEUE_ERROR.ZERO_BYTE_FILE:
 		case SWFUpload.QUEUE_ERROR.INVALID_FILETYPE:
@@ -52,11 +52,8 @@ function uploadProgress(file, bytesLoaded) {
 		progress.setProgress(percent);
 		
 		if (percent) {
-<<<<<<< HEAD
-			progress.setStatus("上传当中");
-=======
+
 			progress.setStatus("正在上传......");
->>>>>>> master
 
 			// $("#smallImg").show();
 			var i=type=j=0;
@@ -73,17 +70,13 @@ function uploadProgress(file, bytesLoaded) {
 			
 				$(".form form").append("<input type='hidden' value='"+file.name+"' name='thumb[]'/>");
 			//	$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
-<<<<<<< HEAD
+
 			/*点击单选框 生成缩略图单选框*/
-				$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>设为封面</span><span class='del'>删除</span></li>");
-=======
-			for (j;j<20;j++){
-				i++;
-			}
+			//	$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>设为封面</span><span class='del'>删除</span></li>");
+
 
 				//先显示文字上传成功的信息这个暂时先放下
 				//$("#smallImg").append("<img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>设为封面</span><span class='del'>删除</span>");
->>>>>>> master
 
 
 			}

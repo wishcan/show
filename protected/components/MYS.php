@@ -19,8 +19,9 @@ class MYS {
 	{
 
 
-		$dir=substr($img,0,6);
-		$dir=Yii::app()->baseUrl.'/upload/'.$dir.'/';
+		$UploadFile=new UploadFile;
+		
+		$dir=$UploadFile->getDir($img);
 		return $dir;
 
 

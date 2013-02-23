@@ -31,7 +31,7 @@ class GalleryCategoryController extends Controller
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array('create','update','delete'),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
@@ -108,16 +108,22 @@ class GalleryCategoryController extends Controller
 	 * If deletion is successful, the browser will be redirected to the 'admin' page.
 	 * @param integer $id the ID of the model to be deleted
 	 */
-	public function actionDelete($id)
+	public function actionDelete()
 	{
+		isset($_GET['id'])?$id=$_GET['id']:$id=$_POST['id'];
 		if(Yii::app()->request->isPostRequest)
 		{
 			// we only allow deletion via POST request
-			$this->loadModel($id)->delete();
+			if($this->loadModel($id)->delete())
+			{
+				echo 1;
+			}else{
+				echo 2;
+			}
 
 			// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
-			if(!isset($_GET['ajax']))
-				$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+			// if(!isset($_GET['ajax']))
+			// 	$this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
 		}
 		else
 			throw new CHttpException(400,'Invalid request. Please do not repeat this request again.');
@@ -139,17 +145,14 @@ class GalleryCategoryController extends Controller
 	 */
 	public function actionAdmin()
 	{
-<<<<<<< HEAD
+
 			// $model=new GalleryCategory('search');
 			// $model->unsetAttributes();  // clear any default values
 			// if(isset($_GET['GalleryCategory']))
 			// 	$model->attributes=$_GET['GalleryCategory'];
-		$model=GalleryCategory::model()->findAll();
-=======
 		if(!isset($_GET['pid'])) die("请通过后台进入");
 
 		$model=GalleryCategory::model()->findAll('pid=:pid',array(':pid'=>$_GET['pid']));
->>>>>>> master
 		$this->render('admin',array(
 			'model'=>$model,
 		));
@@ -167,82 +170,7 @@ class GalleryCategoryController extends Controller
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
 	}
-	//更改或者新建封面图片
-	public  function actionAddThumb()
-	{
 
-		if(!isset($_POST['thumb']))
-		{	
-		   
-		   		   die("系统出现故障，请联系技术员");
-
-		}
-		$data=array();
-				$data['thumb']=$_POST['thumb'];
-				$data['cid']=$_POST['cid'];
-		//交给model来完成
-
-		echo GalleryCategory::addThumb($data);
-	}
-
-	public function actionAddDesc()
-	{
-		if(!isset($_POST['desc']))
-
-		{
-			die("系统出现故障，请联系技术员");
-
-		}
-
-		$data=array();
-				$data['desc']=$_POST['desc'];
-				$data['gdid']=$_POST['gdid'];
-
-		echo GalleryCategory::addDesc($data);		
-
-	}
-	public function actionDel()
-	{
-		if(!isset($_POST['gdid']))
-
-		{
-			die("系统出现故障，请联系技术员");
-
-		}
-
-		$data=array();
-				$data['gdid']=$_POST['gdid'];
-
-		echo GalleryCategory::del($data);		
-
-	}
-
-	// public function actionUpload($cid)
-	// {
-	// 	if(!isset($cid)) $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
-	// 	if(isset($_POST['thumb']))
-	// 	{
-
-		
-	// 			$db=Yii::app()->db;
-	// 			$sql="insert into bl_gallery_data(thumb,cid)values(:thumb,:cid)";
-	// 			$command=$db->createCommand($sql);
-	// 			$cid=$post['cid'];
-	// 			$command->bindParam(":cid",$cid);
-				
-	// 			foreach ($_POST['thumb'] as $v)
-	// 			 {
-	// 				$v=date("ymd").$v;
-	// 				$command->bindParam(":thumb",$v);
-	// 				$command->execute();
-	// 			}
-	// 			$this->redirect(array('view','id'=>$cid));
-
-	// 	}else{
-	// 		$this->render('upload',array('cid'=>$cid,'cate'=>$cate));
-	// 	}
-	
-	// }
 	/**
 	 * Performs the AJAX validation.
 	 * @param CModel the model to be validated
