@@ -3212,6 +3212,7 @@ Stack trace:
 #3 {main}
 REQUEST_URI=/showbl/index.php/Admin.html
 ---
+<<<<<<< HEAD
 2013/02/18 07:06:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "Admin/assets/ico/favicon.ico"。' in D:\wamp\www\yii\framework\web\CWebApplication.php:280
 Stack trace:
 #0 D:\wamp\www\yii\framework\web\CWebApplication.php(135): CWebApplication->runController('Admin/assets/ic...')
@@ -5242,3 +5243,5 @@ Stack trace:
 #12 {main}
 REQUEST_URI=/showbl/index.php/Admin/gallery/view/assets/ico/favicon.ico
 ---
+=======
+>>>>>>> 26b5293c4d9a460e359ef1bd487ff865cf22e1e0

@@ -52,7 +52,11 @@ function uploadProgress(file, bytesLoaded) {
 		progress.setProgress(percent);
 		
 		if (percent) {
+<<<<<<< HEAD
 			progress.setStatus("正在上传......");
+=======
+			progress.setStatus("上传中");
+>>>>>>> 26b5293c4d9a460e359ef1bd487ff865cf22e1e0
 
 			// $("#smallImg").show();
 			var i=type=j=0;
@@ -69,12 +73,17 @@ function uploadProgress(file, bytesLoaded) {
 			
 				$(".form form").append("<input type='hidden' value='"+file.name+"' name='thumb[]'/>");
 			//	$("#smallImg").append("<span class='close'>X</span><img val='"+file.name+"' src='/upload/temp/"+file.name+"'/>");
+<<<<<<< HEAD
 			for (j;j<20;j++){
 				i++;
 			}
 
 				//先显示文字上传成功的信息这个暂时先放下
 				//$("#smallImg").append("<img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>设为封面</span><span class='del'>删除</span>");
+=======
+			/*µã»÷µ¥Ñ¡¿ò Éú³ÉËõÂÔÍ¼µ¥Ñ¡¿ò*/
+				$("#smallImg").append("<li><img src='/showbl/upload/temp/"+file.name+"' val='"+file.name+"'  /><input type='radio'  value='"+file.name+"'/><span>ÉèÎª·âÃæ</span><span class='del'>É¾³ý</span></li>");
+>>>>>>> 26b5293c4d9a460e359ef1bd487ff865cf22e1e0
 
 
 			}
@@ -123,7 +132,11 @@ function uploadComplete(file) {
 			var i;
 			var progress = new FileProgress(file,  this.customSettings.upload_target);
 			progress.setComplete();
+<<<<<<< HEAD
 			progress.setStatus('上传成功');
+=======
+			progress.setStatus('ÉÏ´«³É¹¦');
+>>>>>>> 26b5293c4d9a460e359ef1bd487ff865cf22e1e0
 			progress.toggleCancel(false);
 		}
 	} catch (ex) {
